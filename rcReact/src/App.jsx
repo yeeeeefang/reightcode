@@ -1,14 +1,12 @@
 // import Card from './components/Card'
-import './css/App.css'
+import Home from './pages/Home'
 
-const App = () => {
+function App() {
   return (
-    <div>
+    <>
 
-      
-    </div>
+    </>
   )
 }
-
 
 export default App
