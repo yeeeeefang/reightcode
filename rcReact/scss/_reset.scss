@@ -135,7 +135,7 @@ a {
 
 /* 卷軸樣式 */
 //:: =>偽元素
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     //捲動條
     width: 15px; //垂直卷軸寬
     height: 15px; //水平卷軸高
@@ -169,7 +169,7 @@ a {
 }
 ::-webkit-resizer{//多行文字欄位右下縮放按鈕
     background-color: $lesser-1;
-}
+} */
 
 
 /* reset end */
