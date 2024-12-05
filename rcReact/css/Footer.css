@@ -165,6 +165,37 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-body {
-  background-color: #FFD640;
-}/*# sourceMappingURL=Home.css.map */
+.nav1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.nav1 #nav1-1 {
+  display: flex;
+  padding: 10px 0;
+}
+.nav1 #nav1-1 .item1 {
+  padding-right: 0 80px 0 0;
+}
+.nav1 #nav1-1 .item1 p {
+  font-size: 1.25rem;
+}
+.nav1 #nav1-1 .item2 {
+  width: 6rem;
+}
+.nav1 #nav1-1 .item2 p {
+  font-size: 1rem;
+}
+.nav1 #nav1-2 {
+  margin-right: 30px;
+}
+.nav1 #nav1-2 .logo {
+  width: 70px;
+  margin-bottom: 30px;
+}
+.nav1 #nav1-2 .icon {
+  display: flex;
+  align-items: center;
+  width: 48px;
+}/*# sourceMappingURL=Footer.css.map */
