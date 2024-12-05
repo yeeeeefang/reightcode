@@ -166,8 +166,9 @@ a {
 } */
 /* reset end */
 #page-2 {
+  height: 1400px;
   background-color: #FFD640;
-  background-size: contain;
+  background-size: 100%;
   background-image: url("../public/images/homePathA.png");
 }
 #page-2 .content-bk-1 .content-1,
@@ -251,6 +252,7 @@ a {
   text-align: right;
 }
 #page-2 #homeDecoA {
+  display: block;
   position: absolute;
   top: 223px;
   left: 73px;
@@ -258,10 +260,26 @@ a {
 }
 #page-2 #homeDecoB {
   width: 50px;
+  top: 563px;
+  left: 1243px;
+  position: absolute;
 }
 #page-2 #blueA {
   width: 177px;
+  top: 527px;
+  left: 822px;
+  position: absolute;
 }
 #page-2 #redIP {
   width: 270px;
+  top: 1040px;
+  left: 501px;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+
+#page-3 {
+  height: 1400px;
+  background-color: #FFD640;
+  background-size: contain;
 }/*# sourceMappingURL=Home.css.map */
