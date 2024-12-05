@@ -165,6 +165,121 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-body {
+#page-2 {
+  height: 1400px;
   background-color: #FFD640;
+  background-size: 100%;
+  background-image: url("../public/images/homePathA.png");
+}
+#page-2 .content-bk-1 .content-1,
+#page-2 .content-bk-1 .content-2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 48px;
+  color: #CA5171;
+  margin-left: 50px;
+}
+#page-2 .content-bk-1 .content-1 .eng-text-1,
+#page-2 .content-bk-1 .content-2 .eng-text-1 {
+  margin-left: 30px;
+  color: rgba(0, 0, 0, 0.85);
+}
+#page-2 .content-bk-1 .content-1 .eng-text-2,
+#page-2 .content-bk-1 .content-2 .eng-text-2 {
+  margin-left: 103px;
+  color: rgba(0, 0, 0, 0.85);
+}
+#page-2 .content-bk-1 .content-1 span,
+#page-2 .content-bk-1 .content-2 span {
+  font-size: 64px;
+  color: #FFFFFF;
+  padding: 0 20px;
+}
+#page-2 .content-bk-1 .content-1 .eng-text-1,
+#page-2 .content-bk-1 .content-1 .eng-text-2,
+#page-2 .content-bk-1 .content-2 .eng-text-1,
+#page-2 .content-bk-1 .content-2 .eng-text-2 {
+  font-size: 24px;
+}
+#page-2 .content-bk-1 .content-2 {
+  margin-left: 256px;
+}
+#page-2 .content-bk-2 {
+  display: flex;
+  flex-direction: column;
+}
+#page-2 .content-bk-2 .content-3 {
+  margin: 200px 0 0 160px;
+}
+#page-2 .content-bk-2 .content-3 .text-2 {
+  display: block;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.85);
+  /*                 background-color: $fc-5;
+  */
+  /* 背景顏色待調整 */
+}
+#page-2 .content-bk-2 .content-3 .eng-text-2 {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+#page-2 .content-bk-2 .content-3 .sml-text-2 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.85);
+  width: 617px;
+}
+#page-2 .content-bk-2 .content-4 {
+  margin: 153px 118px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+#page-2 .content-bk-2 .content-4 .text-2 {
+  display: block;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #FFF0C0;
+  /* 背景顏色待調整 */
+}
+#page-2 .content-bk-2 .content-4 .eng-text-2 {
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.85);
+}
+#page-2 .content-bk-2 .content-4 .sml-text-2 {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.85);
+  width: 411px;
+  text-align: right;
+}
+#page-2 #homeDecoA {
+  display: block;
+  position: absolute;
+  top: 223px;
+  left: 73px;
+  width: 53px;
+}
+#page-2 #homeDecoB {
+  width: 50px;
+  top: 563px;
+  left: 1243px;
+  position: absolute;
+}
+#page-2 #blueA {
+  width: 177px;
+  top: 527px;
+  left: 822px;
+  position: absolute;
+}
+#page-2 #redIP {
+  width: 270px;
+  top: 1040px;
+  left: 501px;
+  position: absolute;
+  transform: rotate(-10deg);
+}
+
+#page-3 {
+  height: 1400px;
+  background-color: #FFD640;
+  background-size: contain;
 }/*# sourceMappingURL=Home.css.map */
