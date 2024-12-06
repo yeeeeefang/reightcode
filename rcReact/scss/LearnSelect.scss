@@ -1,6 +1,7 @@
 @use './reset';
 @use './variables' as *;
 
+
 * {
     background-color: $primary;
 }
@@ -57,7 +58,7 @@
             background-color: transparent;
             width: 630px;
             height: 630px;
-            left: 5px;
+            left: 20px;
             bottom: 10px;
         }
         .tier1a {
