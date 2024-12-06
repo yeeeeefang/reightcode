@@ -1,0 +1,20 @@
+@use './reset';
+@use './variables/' as *;
+.card {
+    background-color: rgb(249, 249, 249);
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 0 #33322f;
+    h3{
+        font-size: $font-size-16;
+        font-weight:$font-w-bold ;
+        
+    }
+    .item{
+        .content{
+            border-radius: 20px;
+            border: #33322f 2px solid;
+        }
+    }
+
+}

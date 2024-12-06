@@ -1,8 +1,11 @@
+import TrendCard from "../components/TrendCard";
+
+
 function Trend(){
 
     return(
         <>
-        
+        <TrendCard/>
         </>
     )
 }
