@@ -6,7 +6,7 @@ import LearnSelect from './pages/LearnSelect'
 function App() {
   return (
     <>
-    <LearnSelect/>
+    <Home/>
     </>
   )
 }

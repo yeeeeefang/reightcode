@@ -49,7 +49,7 @@ function Home() {
             </section>
 
             <section id="page-3">
-                
+
                 <div className="content-bk">
                     <div className="content-bk-3">
                         <p>會</p><p>擔</p><p>心</p><p>這</p><p>些</p><p>情</p><p>況</p><p>嗎</p><p>？</p>
@@ -91,15 +91,15 @@ function Home() {
                         更是一場充滿樂趣的探索之旅</p>
                 </div>
                 <div className="content-bk">
-                <div className="content-7">
-                    <p>
-                        \ 讓學程式成為習慣 /
-                    </p>
-                </div>
-                <div className="content-8">
-                    <p>\ 好玩又好學 /</p>
-                </div>
-                <img className="content-img" src="../public/images/pinkA.svg" alt="" />
+                    <div className="content-7">
+                        <p>
+                            \ 讓學程式成為習慣 /
+                        </p>
+                    </div>
+                    <div className="content-8">
+                        <p>\ 好玩又好學 /</p>
+                    </div>
+                    <img className="content-img" src="../public/images/pinkA.svg" alt="" />
                 </div>
                 <div>
                     <p>程式結合單字學習</p>
