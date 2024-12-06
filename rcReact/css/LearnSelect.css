@@ -165,10 +165,11 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+/* 
 * {
-  background-color: #FFD640;
-}
-
+    background-color: $primary;
+} 
+    這邊會讓全部背景被套用到喔！！*/
 #topbar {
   display: flex;
   flex: 1;

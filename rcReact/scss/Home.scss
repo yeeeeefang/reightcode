@@ -2,12 +2,14 @@
 @use './variables'as *;
 
 #page-2 {
-    background-repeat: no-repeat;
     background-color: $primary;
-    background-size:100%;
     background-image: url('../public/images/homePathA.png');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 
     .content-bk-1 {
+
         .content-1,
         .content-2 {
             display: flex;
@@ -50,6 +52,11 @@
         .content-3 {
             display: flex;
             margin: 228px 0 0 160px;
+
+            .content-3-img {
+                margin: 100px;
+            }
+
             .text-2 {
                 font-size: 32px;
                 color: $fc-2;
@@ -72,22 +79,23 @@
         }
 
         .content-4 {
-            margin: 153px  118px  0 0;
+            margin-right: 118px;
             display: flex;
             flex-direction: column;
             align-items: end;
 
             .text-2 {
-                display: block;
                 font-size: 32px;
                 color: $fc-2;
-                background-color: $fc-5;
+                text-align: right;
+                /* background-color: $fc-5; */
                 /* 背景顏色待調整 */
             }
 
             .eng-text-2 {
                 font-size: 28px;
                 color: $fc-2;
+                text-align: right;
             }
 
             .sml-text-2 {
@@ -96,18 +104,137 @@
                 width: 411px;
                 text-align: right;
             }
+
+            .content-4-img {
+                transform: rotate(-10deg);
+                margin-right: 650px;
+            }
+
         }
     }
 
-    #redIP {
-transform: rotate(-10deg);
+}
+
+#page-3 {
+    height: 820px;
+    background-color: $primary;
+    position: relative;
+    background-image: url(../public/images/homeDeco.png);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .back-img {
+        width: 600px;
+        position: absolute;
+        top: 208px;
+        right: 390px;
+    }
+
+    .content-bk {
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin-right: 100px;
+
+    }
+
+    .content-bk-3 {
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+
+        p {
+            height: 65px;
+            width: 65px;
+            border-radius: 50%;
+            font-size: 50px;
+            background-color: #FFFFFF;
+            text-align: center;
+            line-height: 65px
+        }
+    }
+
+    .content-bk-4 {
+        border: 1px solid;
+        color: $fc-2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70%;
+
+
+
+        .content-5,
+        .content-7 {
+            text-align: right;
+            flex: 1;
+        }
+
+        .content-6 {
+            text-align: left;
+            flex: 1;
+
+        }
+
+        .text-3 {
+            font-size: 32px;
+
+            span {
+                font-size: 58px;
+                color: $fc-4;
+            }
+
+            .sml-text-3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .ladder {
+        position: absolute;
+        width: 16%;
+        right: 150px;
+
     }
 }
 
-#page-3{
-    height: 1400px;
+#page-4 {
     background-color: $primary;
-    background-size:contain;
-    
 
+    .content-6 {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 36px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-right: 50px;
+    }
+
+    .content-bk {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+
+        .content-7 {
+            transform: rotate(5deg);
+            text-align: right;
+        }
+
+        .content-8 {
+            transform: rotate(-5deg);
+            text-align: start;
+            padding-top: 10px;
+        }
+
+        .content-img {
+            padding-top: 10px;
+        }
+    }
 }
