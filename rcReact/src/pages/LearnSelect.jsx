@@ -5,7 +5,7 @@ export default function LearnSelect() {
         <>
             <header id="topbar">
                 <div className="logo">
-                    <h1 class="logo"><a href="./index.html"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></a></h1>
+                    <h1 className="logo"><a href="./index.html"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></a></h1>
                 </div>
                 <div className="learnBtn">
                     <figure><img src="/images/hamBtn.svg" alt="" /></figure>
@@ -28,11 +28,11 @@ export default function LearnSelect() {
 
                 <div id="course">
                     <div className="selectHTML">
-                        <figure><img src="/images/learnSelectHTML.svg" alt="" /></figure>
+                        <a href=""><img src="/images/learnSelectHTML.svg" alt="" /></a>
                         <p>HTML</p>
                     </div>
                     <div className="selectCSS">
-                        <figure><img src="/images/learnSelectCSS.svg" alt="" /></figure>
+                        <a href=""><img src="/images/learnSelectCSS.svg" alt="" /></a>
                         <p>CSS</p>
                     </div>
                 </div>

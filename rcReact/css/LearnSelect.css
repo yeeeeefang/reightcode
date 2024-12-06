@@ -165,11 +165,10 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-/* 
-* {
-    background-color: $primary;
-} 
-    這邊會讓全部背景被套用到喔！！*/
+body {
+  background-color: #FFD640;
+}
+
 #topbar {
   display: flex;
   flex: 1;
@@ -183,8 +182,14 @@ a {
 #codeCourse {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0 50px;
+}
+@media (max-width: 1023px) {
+  #codeCourse {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 #codeCourse #codePic {
   position: relative;
@@ -262,14 +267,17 @@ a {
   height: 275px;
   z-index: 7;
 }
+#codeCourse #course .selectHTML img:hover {
+  content: url(../public/images/learnSelectHTML_hover.svg);
+}
 #codeCourse #course .selectHTML p {
   background-color: transparent;
   position: absolute;
   z-index: 9;
-  font-size: 60px;
+  font-size: 3rem;
   color: white;
   top: 115px;
-  right: 150px;
+  right: 165px;
 }
 #codeCourse #course .selectCSS {
   position: relative;
@@ -284,12 +292,15 @@ a {
   height: 275px;
   z-index: 8;
 }
+#codeCourse #course .selectCSS img:hover {
+  content: url(../public/images/learnSelectCSS_hover.svg);
+}
 #codeCourse #course .selectCSS p {
   background-color: transparent;
   position: absolute;
   z-index: 10;
-  font-size: 60px;
+  font-size: 3rem;
   color: white;
   bottom: 100px;
-  right: 180px;
+  right: 185px;
 }/*# sourceMappingURL=LearnSelect.css.map */
