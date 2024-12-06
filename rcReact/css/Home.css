@@ -165,12 +165,21 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#page-2 {
+#page-all {
+  background-image: url(../public/images/homeAll.svg);
   background-color: #FFD640;
-  background-image: url("../public/images/homePathA.png");
-  background-position: left center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
+}
+
+#page-2 {
+  /* height: 1400px;
+     background-color: $primary;
+     background-image: url('../public/images/homePathA.png');
+     background-position: left center;
+     background-repeat: no-repeat;
+     background-size: 100%;
+  */
 }
 #page-2 .content-bk-1 .content-1,
 #page-2 .content-bk-1 .content-2 {
@@ -206,22 +215,23 @@ a {
   margin-left: 256px;
 }
 #page-2 .content-bk-2 {
+  border: 1px solid;
   display: flex;
   flex-direction: column;
+  margin: 190px 0 0 190px;
 }
 #page-2 .content-bk-2 .content-3 {
   display: flex;
-  margin: 228px 0 0 160px;
 }
 #page-2 .content-bk-2 .content-3 .content-3-img {
-  margin: 100px;
+  padding: 80px 0 0 50px;
 }
 #page-2 .content-bk-2 .content-3 .text-2 {
+  display: inline-block;
   font-size: 32px;
   color: rgba(0, 0, 0, 0.85);
-  /*                 background-color: $fc-5;
-  *
-                 /* 背景顏色待調整 */
+  background-color: #FFF0C0;
+  /* 背景顏色待調整 */
 }
 #page-2 .content-bk-2 .content-3 .eng-text-2 {
   font-size: 28px;
@@ -230,13 +240,12 @@ a {
 #page-2 .content-bk-2 .content-3 .sml-text-2 {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.85);
-  width: 617px;
 }
 #page-2 .content-bk-2 .content-4 {
-  margin-right: 118px;
+  border: 1px solid;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  margin: 66px 119px 0 0;
 }
 #page-2 .content-bk-2 .content-4 .text-2 {
   font-size: 32px;
@@ -253,22 +262,22 @@ a {
 #page-2 .content-bk-2 .content-4 .sml-text-2 {
   font-size: 20px;
   color: rgba(0, 0, 0, 0.85);
-  width: 411px;
   text-align: right;
 }
 #page-2 .content-bk-2 .content-4 .content-4-img {
+  padding-left: 150px;
   transform: rotate(-10deg);
-  margin-right: 650px;
+  width: 50%;
 }
 
 #page-3 {
-  height: 820px;
-  background-color: #FFD640;
+  /* height: 820px;
+  background-color: $primary;
   position: relative;
   background-image: url(../public/images/homeDeco.png);
   background-size: 600px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,20 +339,26 @@ a {
 }
 #page-3 .ladder {
   position: absolute;
-  width: 16%;
+  width: 17%;
   right: 150px;
 }
 
 #page-4 {
-  background-color: #FFD640;
+  /* height: 2000px;
+  background-color: $primary;
+  background-image: url(../public/images/homePathB.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100%; */
 }
 #page-4 .content-6 {
   display: flex;
   justify-content: flex-end;
-  font-size: 36px;
+  font-size: 2em;
   text-align: center;
   color: #FFFFFF;
-  margin-right: 50px;
+  margin-right: 100px;
+  padding-top: 160px;
 }
 #page-4 .content-bk {
   display: flex;
