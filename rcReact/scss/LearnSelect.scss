@@ -1,13 +1,15 @@
 @use './reset';
 @use './variables' as *;
 
-/* 
-* {
+
+// * {
+//     background-color: $primary;
+// } 
+//     //這邊會讓全部背景被套用到喔！！
+
+body {
     background-color: $primary;
-} 
-    這邊會讓全部背景被套用到喔！！*/
-
-
+}
 
 #topbar {
 
@@ -28,8 +30,14 @@
 #codeCourse {
     display: flex;
     position: relative;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 0 50px;
+
+    @media (max-width:1023px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     #codePic {
         position: relative;
@@ -92,6 +100,8 @@
         }
     }
 
+
+    
     #course{
         display: flex;
         flex-direction: column;
@@ -110,15 +120,19 @@
                 width: 450px;
                 height: 275px;
                 z-index: 7;
+                
+                &:hover{
+                    content: url(../public/images/learnSelectHTML_hover.svg);
+                }
             }
             p{
                 background-color: transparent;
                 position: absolute;
                 z-index: 9;
-                font-size: 60px;
+                font-size: $font-size-48;
                 color: white;
                 top:115px;
-                right:150px;
+                right:165px;
             }
         }
 
@@ -134,15 +148,18 @@
                 height: 275px;
                 z-index: 8;
                 
+                &:hover{
+                    content: url(../public/images/learnSelectCSS_hover.svg);
+                }
             }
             p{
                 background-color: transparent;
                 position: absolute;
                 z-index: 10;
-                font-size: 60px;
+                font-size: $font-size-48;
                 color: white;
                 bottom: 100px;
-                right: 180px;
+                right: 185px;
             }
         }
     }
