@@ -80,9 +80,9 @@ function Home() {
                             </div>
 
                         </div>
-                        {/* <div className="ladder">
-                            <img src="../public/images/homeLadder.png" alt="梯子" />
-                        </div> */}
+                        <div className="ladder">
+                            <img src="../public/images/pinkA.svg" alt="梯子" />
+                        </div>
 
                     </div>
 

@@ -173,6 +173,7 @@ a {
 }
 
 #page-2 {
+  height: 1400px;
   /* height: 1400px;
      background-color: $primary;
      background-image: url('../public/images/homePathA.png');
@@ -215,7 +216,6 @@ a {
   margin-left: 256px;
 }
 #page-2 .content-bk-2 {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   margin: 190px 0 0 190px;
@@ -242,7 +242,6 @@ a {
   color: rgba(0, 0, 0, 0.85);
 }
 #page-2 .content-bk-2 .content-4 {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   margin: 66px 119px 0 0;
@@ -265,12 +264,15 @@ a {
   text-align: right;
 }
 #page-2 .content-bk-2 .content-4 .content-4-img {
-  padding-left: 150px;
+  padding: 0 50px 0 0;
   transform: rotate(-10deg);
-  width: 50%;
+  width: 30%;
+  margin: auto;
 }
 
 #page-3 {
+  border: 1px solid;
+  height: 820px;
   /* height: 820px;
   background-color: $primary;
   position: relative;
@@ -279,29 +281,16 @@ a {
   background-repeat: no-repeat;
   background-position: center; */
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#page-3 .back-img {
-  width: 600px;
-  position: absolute;
-  top: 208px;
-  right: 390px;
 }
 #page-3 .content-bk {
   border: 1px solid;
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 60%;
-  margin-right: 100px;
 }
-#page-3 .content-bk-3 {
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
+#page-3 .content-bk .content-bk-3 {
+  border: 1px solid;
 }
-#page-3 .content-bk-3 p {
+#page-3 .content-bk .content-bk-3 p {
   height: 65px;
   width: 65px;
   border-radius: 50%;
@@ -310,37 +299,31 @@ a {
   text-align: center;
   line-height: 65px;
 }
-#page-3 .content-bk-4 {
+#page-3 .content-bk .content-bk-4 {
   border: 1px solid;
   color: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 70%;
 }
-#page-3 .content-bk-4 .content-5,
-#page-3 .content-bk-4 .content-7 {
+#page-3 .content-bk .content-bk-4 .content-5,
+#page-3 .content-bk .content-bk-4 .content-7 {
   text-align: right;
   flex: 1;
 }
-#page-3 .content-bk-4 .content-6 {
+#page-3 .content-bk .content-bk-4 .content-6 {
   text-align: left;
   flex: 1;
 }
-#page-3 .content-bk-4 .text-3 {
+#page-3 .content-bk .content-bk-4 .text-3 {
   font-size: 32px;
 }
-#page-3 .content-bk-4 .text-3 span {
+#page-3 .content-bk .content-bk-4 .text-3 span {
   font-size: 58px;
   color: #69B169;
 }
-#page-3 .content-bk-4 .text-3 .sml-text-3 {
+#page-3 .content-bk .content-bk-4 .text-3 .sml-text-3 {
   font-size: 20px;
-}
-#page-3 .ladder {
-  position: absolute;
-  width: 17%;
-  right: 150px;
 }
 
 #page-4 {
