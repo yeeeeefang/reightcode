@@ -1,0 +1,283 @@
+@use './reset';
+@use './variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+body {
+    background-color: $primary;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+
+#memberPage {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#topbar {
+
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 30px 50px;
+
+    .logo {
+        img {
+            width: 65px;
+        }
+    }
+}
+
+#member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 690px;
+    width: 390px;
+    background: linear-gradient(to top, $member 85%, transparent 0%);
+
+
+    .memberPic {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 99px;
+        background-color: white;
+        width: 200px;
+        height: 200px;
+
+        img {
+            width: 160px;
+            height: 130px;
+        }
+    }
+
+
+    .memberInfo {
+        width: 260px;
+        height: 260px;
+        background-image: url(/images/memberInfo.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h2 {
+            text-align: center;
+            font-size: $font-size-24;
+            font-weight: $font-w-bold;
+            color: #FA8F21;
+            margin: 0 0 12px 0;
+        }
+
+        .name,
+        .sexal,
+        .age,
+        .school,
+        .time {
+            font-size: $font-size-16;
+            font-weight: $font-w-medium;
+            color: $fc-2;
+            display: flex;
+            flex-direction: row;
+            margin: 0 37px 10px 37px;
+        }
+    }
+
+    .memberAward {
+        width: 260px;
+        height: 260px;
+        background-image: url(../public/images/memberInfo.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        h2 {
+            text-align: center;
+            font-size: $font-size-24;
+            font-weight: $font-w-bold;
+            color: #FA8F21;
+            margin: 0 0 12px 0;
+        }
+
+        .award {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 95px;
+                height: 95px;
+            }
+        }
+    }
+}
+
+
+#progress {
+    width: 380px;
+    height: 380px;
+    background-image: url(../public/images/memberCourse.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 20px 10px;
+    margin: 15px;
+
+    .progressTitle {
+        width: 215px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../public/images/memberB.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+
+        h2 {
+            color: $fc-2;
+            font-size: $font-size-20;
+            font-weight: $font-w-bold;
+        }
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .course1 {
+
+        display: flex;
+        align-items: center;
+        background-color: #FFFCF0;
+        padding: 5px 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px #897359;
+        margin: 25px 0 10px 0;
+        font-size: $font-size-14;
+        font-weight: $font-w-medium;
+
+        img {
+            width: 85px;
+            height: 55px;
+        }
+
+        .course1Info {
+            padding-left: 15px;
+
+            h2 {
+                font-size: $font-size-16;
+                font-weight: $font-w-bold;
+            }
+
+            .progress {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .course2 {
+        display: flex;
+        align-items: center;
+        background-color: #FFFCF0;
+        padding: 5px 15px;
+        border-radius: 10px;
+        box-shadow: 5px 5px #897359;
+        font-size: $font-size-14;
+        font-weight: $font-w-medium;
+
+        img {
+            width: 85px;
+            height: 55px;
+        }
+
+        .course2Info {
+            padding-left: 15px;
+
+            h2 {
+                font-size: $font-size-16;
+                font-weight: $font-w-bold;
+            }
+
+            .progress {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+#collection {
+    width: 330px;
+    height: 360px;
+    background-image: url(../public/images/memberCourse.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px 20px 10px;
+    margin: 15px;
+    .collectionTitle {
+        width: 215px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../public/images/memberP.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        h2 {
+            color: $fc-2;
+            font-size: $font-size-20;
+            font-weight: $font-w-bold;
+        }
+
+        img {
+            width: 48px;
+            height: 48px;
+        }
+    }
+
+    .collect1,.collect2,.collect3,.collect4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFCF0;
+        border-radius: 85px;
+        width: 230px;
+        margin: 5px 0;
+        .title{
+            font-size: 15px;
+            background-color: $primary;
+            border-radius: 85px;
+            width: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        P{
+            font-size: $font-size-14;
+            font-weight: $font-w-bold;
+            margin: 5px 8px;
+        }
+    }
+
+    .collect1{
+        margin-top: 25px;
+    }
+
+}
