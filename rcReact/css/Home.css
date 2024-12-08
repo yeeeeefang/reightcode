@@ -344,7 +344,6 @@ a {
   padding-top: 160px;
 }
 #page-4 .content-bk-all {
-  border: 1px solid red;
   display: flex;
 }
 #page-4 .content-bk-all .content-bk-1 {
@@ -370,7 +369,6 @@ a {
 }
 #page-4 .content-bk-all .content-bk-2,
 #page-4 .content-bk-all .content-bk-3 {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -401,8 +399,20 @@ a {
   height: 700px;
 }
 #page-5 .content-bk-4 {
-  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 450px;
 }
-#page-5 .content-bk-4 .btn {
+#page-5 .content-bk-4 .content-13 {
+  text-align: center;
+  font-size: 32px;
+  margin-right: 100px;
+}
+#page-5 .content-bk-4 .content-bk-5 .greenIp {
+  width: 295px;
+}
+#page-5 .content-bk-4 .content-bk-5 .btn {
   width: 251px;
+  margin-bottom: 30px;
 }/*# sourceMappingURL=Home.css.map */

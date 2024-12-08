@@ -127,10 +127,12 @@ function Home() {
 
 
                     <div className="content-bk-4">
-                        <img className="btn" src="../public/images/btn.png" alt="" />
-                        <p className="content-13">還在猶豫什麼？</p>
-                        <p className="content-14">程式世界等著你去探索 ！</p>
-                        <img className="greenIp" src="../public/images/greenB.svg" alt="" />
+                        <p className="content-13">還在猶豫什麼？
+                            <br /> 程式世界等著你去探索 ！</p>
+                        <div className="content-bk-5">
+                            <img className="btn" src="../public/images/btn.png" alt="" />
+                            <img className="greenIp" src="../public/images/greenB.svg" alt="" />
+                        </div>
                     </div>
                 </section>
 

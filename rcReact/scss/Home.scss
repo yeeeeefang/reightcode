@@ -249,7 +249,7 @@
     }
 
     .content-bk-all {
-        border: 1px solid red;
+
         display: flex;
 
 
@@ -281,7 +281,6 @@
 
         .content-bk-2,
         .content-bk-3 {
-            border: 1px solid;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -312,12 +311,34 @@
 }
 
 #page-5 {
-height: 700px;
+    height: 700px;
 
-.content-bk-4{
-    border: 1px solid;
-    .btn{
-        width: 251px;
+    .content-bk-4 {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 450px;
+
+        .content-13 {
+            text-align: center;
+            font-size: 32px;
+            margin-right: 100px;
+        }
+
+        .content-bk-5 {
+
+
+            .greenIp {
+                width: 295px;
+            }
+
+            .btn {
+                width: 251px;
+                margin-bottom: 30px;
+
+            }
+        }
+
     }
-}
 }
