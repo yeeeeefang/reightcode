@@ -51,7 +51,6 @@ function Home() {
                 </section>
 
                 <section id="page-3">
-
                     <div className="content-bk">
                         <div className="content-bk-3">
                             <p>會</p><p>擔</p><p>心</p><p>這</p><p>些</p><p>情</p><p>況</p><p>嗎</p><p>？</p>
@@ -78,12 +77,10 @@ function Home() {
                                     加上需要通勤，對於家長與孩子而言  都很不方便。<br />
                                     特別是偏遠地區的家庭，能夠選擇的課程資源更有限。</p>
                             </div>
-
                         </div>
-                        {/* <div className="ladder">
-                            <img src="../public/images/homeLadder.png" alt="梯子" />
-                        </div> */}
-
+                        <div className="ladder">
+                            <img src="../public/images/pinkA.svg" alt="梯子" />
+                        </div>
                     </div>
 
                 </section>
@@ -92,33 +89,51 @@ function Home() {
                         <p>不只是學習<br />
                             更是一場充滿樂趣的探索之旅</p>
                     </div>
-                    <div className="content-bk">
-                        <div className="content-7">
-                            <p>
-                                \ 讓學程式成為習慣 /
-                            </p>
+                    <div className="content-bk-all">
+                        <div className="content-bk-1">
+                            <div className="content-7">
+                                <p>
+                                    \ 讓學程式成為習慣 /
+                                </p>
+                            </div>
+                            <div className="content-8">
+                                <p>\ 好玩又好學 /</p>
+                            </div>
+                            <img className="content-img" src="../public/images/pinkA.svg" alt="" />
                         </div>
-                        <div className="content-8">
-                            <p>\ 好玩又好學 /</p>
+                        <div className="content-bk-2">
+                            <div>
+                                <img src="../public/images/home-page3-img1.png" alt="" />
+                            </div>
+                            <p className="content-9">程式結合單字學習</p>
+                            <p className="content-10">寓教於樂的學習樂園
+                                <br />
+                                讓知識充滿溫度</p>
+
                         </div>
-                        <img className="content-img" src="../public/images/pinkA.svg" alt="" />
-                    </div>
-                    <div>
-                        <p>程式結合單字學習</p>
-                        <p>寓教於樂的學習樂園
-                            讓知識充滿溫度</p>
+
+
+                        <div className="content-bk-3">
+                            <img src="../public/images/home-page3-img2.png" alt="" />
+                            <p className="content-11">情緒覺察</p>
+                            <p className="content-12">學習後選擇心情，一起分享成就感
+                                <br />
+                                加入程式探索的行列</p>
+                        </div>
                     </div>
 
-                    <div>
-                        <p>情緒覺察</p>
-                        <p>學習後選擇心情，一起分享成就感
-                            加入程式探索的行列</p>
-                    </div>
-                    <div>
-                        <p>還在猶豫什麼？</p>
-                        <p>程式世界等著你去探索 ！</p>
+                </section>
+                <section id="page-5">
+
+
+                    <div className="content-bk-4">
+                        <img className="btn" src="../public/images/btn.png" alt="" />
+                        <p className="content-13">還在猶豫什麼？</p>
+                        <p className="content-14">程式世界等著你去探索 ！</p>
+                        <img className="greenIp" src="../public/images/greenB.svg" alt="" />
                     </div>
                 </section>
+
             </div>
         </>
 
