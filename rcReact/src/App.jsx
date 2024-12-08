@@ -8,7 +8,6 @@ import Trend from './pages/Trend';
 function App() {
   return (
     <>
-    <TrendCard/>
     </>
   )
 }
