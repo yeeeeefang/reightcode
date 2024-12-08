@@ -1,0 +1,33 @@
+@use './reset';
+@use './variables'as *;
+
+#page-1 {
+    height: 800px;
+
+    .navBarBk {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 50px;
+
+        .logo {
+            width: 87px;
+            height: 53px;
+        }
+
+        .navBarBk-1 {
+            display: flex;
+            margin: 5px;
+
+            .learningBtn {
+                width: 220px;
+                height: 48px;
+                margin-right: 50px;
+            }
+
+            .hamBtn {
+                width: 48px;
+
+            }
+        }
+    }
+}
