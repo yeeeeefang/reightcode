@@ -1,0 +1,134 @@
+@use "./reset";
+@use "./variables" as *;
+
+body {
+    background-color: $learn-h1;
+    height: 100%;
+}
+#topbar {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 30px 50px;
+    height: 50px;
+    .logo {
+        img {
+            width: 65px;
+        }
+    }
+    .learnBtn {
+        img {
+            width: 40px; // 漢堡選單按鈕大小
+            cursor: pointer;
+        }
+    }
+}
+
+.learn-home {
+    display: flex;
+    flex-direction: column; // 整體垂直排列
+    align-items: center;
+    overflow: hidden;
+
+    // 第一區：學習區
+    .learning-section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $primary; // 黃色背景
+        width: 100%;
+        height: 206px;
+
+        img {
+            width: 200px; // 綠色角色大小
+        }
+
+        h2 {
+            font-size: $font-size-64;
+            font-weight: bold;
+            color: #000;
+        }
+    }
+
+    // 第二區和第三區的容器，水平排列
+    .section {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row; // 水平排列
+        justify-content: center;
+        width: 100%;
+
+        // 垂直排列的區域
+        .section3 {
+            display: flex;
+            flex-direction: column; // 垂直排列
+            width: 100%;
+
+            // 第二區：小試身手
+            .practice-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $learn-h3; // 紅色背景
+                height: 206px;
+
+                img {
+                    width: 180px; // 藍色角色大小
+
+                }
+
+                h2 {
+                    font-size:$font-size-64;
+                    font-weight: bold;
+                }
+            }
+
+            // 第三區：探索學習趨勢
+            .explore-section {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: $learn-h2; // 綠色背景
+                height: 205px;
+
+
+                img {
+                    width: 180px; // 粉紅角色大小
+                }
+
+                h2 {
+                    font-size: $font-size-64;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        // 第四區：Do it!
+        .doit-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            justify-content: center;
+            width: 450px;
+
+
+            .speech-bubble {
+                position: relative;
+                top: -20px;
+                left: 10%;
+                background: rgba(255, 255, 255, 0.655);
+                padding: 8px 16px;
+                border-radius: 99px;
+                font-size: $font-size-48;
+                font-weight: $font-w-black;
+                color: #000;
+            }
+
+            img {
+                width: 220px; // 紅色角色大小
+            }
+        }
+    }
+}
