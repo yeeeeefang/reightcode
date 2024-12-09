@@ -55,7 +55,7 @@ export default function LearnHome() {
                             <span>Do it!</span>
                         </div>
                         <img
-                            src="/images/red.svg"
+                            src="/images/redB.svg"
                             alt="Red Character"
                             className="redA"
                         />
