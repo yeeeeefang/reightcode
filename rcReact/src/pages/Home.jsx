@@ -1,8 +1,11 @@
-
+import '../../css/Home.css'
 
 function Home() {
     return (
         <>
+        <div id='page-1'>
+
+        </div>
             <div id="page-all">
                 <section id="page-2">{/* 第二分頁 */}
                     <div className="content-bk-1">

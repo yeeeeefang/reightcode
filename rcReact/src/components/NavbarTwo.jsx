@@ -1,5 +1,4 @@
-
-
+import '../../css/navbar.css'
 
 function NavbarTwo() {
     return (
@@ -7,7 +6,7 @@ function NavbarTwo() {
             <section id="page-1">
                 <div className="navBarBk">
                     <div className="logo">
-                        
+                        <img src="../public/images/logo.png" alt="" />
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
 
                     </div>
