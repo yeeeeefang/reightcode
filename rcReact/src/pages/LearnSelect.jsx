@@ -1,4 +1,4 @@
-import "../../css/LearnSelect.css"
+import "../assets/css/LearnSelect.css"
 
 export default function LearnSelect() {
     return (

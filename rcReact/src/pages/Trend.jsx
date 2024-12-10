@@ -1,5 +1,5 @@
 import TrendCard from "../components/TrendCard";
-import "../../css/Trend.css"
+import "../assets/css/Trend.css"
 
 function Trend(){
 

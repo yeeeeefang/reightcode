@@ -1,4 +1,4 @@
-import '../../css/navbar.css'
+import '../../src/assets/css/navbar.css'
 
 function NavbarTwo() {
     return (

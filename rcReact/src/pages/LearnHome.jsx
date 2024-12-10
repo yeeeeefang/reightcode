@@ -1,4 +1,4 @@
-import "../../css/LearnHome.css"
+import "../assets/css/LearnHome.css"
 
 export default function LearnHome() {
     return (

@@ -1,4 +1,4 @@
-import "../../css/Member.css"
+import "../assets/css/Member.css"
 
 export default function Member() {
     return (
