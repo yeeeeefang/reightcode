@@ -179,7 +179,7 @@ a {
 }
 
 #page-2 {
-  height: 1400px;
+  border: 1px solid;
   /* height: 1400px;
      background-color: $primary;
      background-image: url('../public/images/homePathA.png');
@@ -247,6 +247,10 @@ a {
   font-size: 28px;
   color: rgba(0, 0, 0, 0.85);
   font-weight: 700;
+  line-height: 15px;
+  background-color: #FFF0C0;
+  display: inline-block;
+  margin-top: 15px;
 }
 #page-2 .content-bk-2 .content-3 .sml-text-2 {
   font-size: 20px;
@@ -259,7 +263,13 @@ a {
   flex-direction: column;
   margin: 66px 119px 0 0;
 }
-#page-2 .content-bk-2 .content-4 .text-2 {
+#page-2 .content-bk-2 .content-4 .text-block-2 {
+  text-align: right;
+}
+#page-2 .content-bk-2 .content-4 .text-block-2 .text-2 {
+  display: inline-flex;
+  background-color: #FFF0C0;
+  line-height: 25px;
   font-size: 32px;
   color: rgba(0, 0, 0, 0.85);
   text-align: right;
@@ -267,17 +277,19 @@ a {
   /* background-color: $fc-5; */
   /* 背景顏色待調整 */
 }
-#page-2 .content-bk-2 .content-4 .eng-text-2 {
+#page-2 .content-bk-2 .content-4 .text-block-2 .eng-text-2 {
+  display: inline-block;
+  background-color: #FFF0C0;
   font-size: 28px;
   color: rgba(0, 0, 0, 0.85);
-  text-align: right;
   font-weight: 700;
+  line-height: 15px;
+  margin-top: 15px;
 }
-#page-2 .content-bk-2 .content-4 .sml-text-2 {
+#page-2 .content-bk-2 .content-4 .text-block-2 .sml-text-2 {
   padding-top: 20px;
   font-size: 20px;
   color: rgba(0, 0, 0, 0.85);
-  text-align: right;
   font-weight: 500;
 }
 #page-2 .content-bk-2 .content-4 .content-4-img {
@@ -288,7 +300,8 @@ a {
 }
 
 #page-3 {
-  height: 820px;
+  margin-top: 80px;
+  border: 1px solid;
   /* height: 820px;
   background-color: $primary;
   position: relative;
@@ -336,6 +349,8 @@ a {
 #page-3 .content-bk .content-bk-4 .text-3 {
   font-size: 32px;
   font-weight: 700;
+  background: linear-gradient(to top, #FFF0C0 30%, transparent 30%);
+  display: inline-block;
 }
 #page-3 .content-bk .content-bk-4 .text-3 span {
   font-size: 58px;
@@ -347,7 +362,7 @@ a {
 }
 
 #page-4 {
-  height: 1000px;
+  border: 1px solid;
   /* height: 2000px;
   background-color: $primary;
   background-image: url(../public/images/homePathB.png);
@@ -369,7 +384,6 @@ a {
   display: flex;
 }
 #page-4 .content-bk-all .content-bk-1 {
-  width: 300px;
   margin: 40px 0 0 250px;
 }
 #page-4 .content-bk-all .content-bk-1 .content-7 {
@@ -389,6 +403,7 @@ a {
 #page-4 .content-bk-all .content-bk-1 .content-img {
   margin: auto;
   width: 210px;
+  /* 記得調整 */
   padding-top: 30px;
 }
 #page-4 .content-bk-all .content-bk-2,
@@ -402,6 +417,7 @@ a {
 #page-4 .content-bk-all .content-bk-2 img,
 #page-4 .content-bk-all .content-bk-3 img {
   width: 250px;
+  /* 記得調整 */
   padding-bottom: 15px;
 }
 #page-4 .content-bk-all .content-bk-2 .content-9,
@@ -422,6 +438,8 @@ a {
 }
 
 #page-5 {
+  border: 1px solid;
+  margin-top: 250px;
   height: 700px;
 }
 #page-5 .content-bk-4 {
