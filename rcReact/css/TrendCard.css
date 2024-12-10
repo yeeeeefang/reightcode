@@ -165,25 +165,162 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-.card {
+.cardcontent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 300px 0 0 0;
+  z-index: 100;
+}
+.cardcontent .card1 {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
-  background-color: rgb(245, 245, 245);
-  width: 40%;
+  margin: 30px;
+  align-items: center;
+  background-color: rgb(252, 249, 249);
+  width: 250px;
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
+  position: relative;
 }
-.card h3 {
-  font-size: 1rem;
-  font-weight: 700;
+.cardcontent .card1::before {
+  content: "";
+  width: 82px;
+  height: 88px;
+  background-color: transparent;
+  background-image: url("../public/images/trendSecond.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -25px;
 }
-.card .item {
-  text-align: center;
-  width: 100px;
-}
-.card .item .content {
+.cardcontent .card1 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFC800;
   border-radius: 20px;
-  border: #33322f 2px solid;
+  padding: 5px 15px;
+  margin: 15px 0px 10px 0px;
+}
+.cardcontent .card1 img {
+  width: 100%;
+}
+.cardcontent .card1 .item {
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+}
+.cardcontent .card1 .item .learn {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cardcontent .card1 .item .content {
+  border-radius: 20px;
+  background-color: #E7E7E7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.cardcontent .card2 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
+  background-color: rgb(252, 249, 249);
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 #33322f;
+  position: relative;
+}
+.cardcontent .card2::before {
+  content: "";
+  width: 82px;
+  height: 88px;
+  background-color: transparent;
+  background-image: url("../public/images/trendFirst.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+.cardcontent .card2 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFC800;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 15px 0px 10px 0px;
+}
+.cardcontent .card2 img {
+  width: 100%;
+}
+.cardcontent .card2 .item {
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+}
+.cardcontent .card2 .item .learn {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cardcontent .card2 .item .content {
+  border-radius: 20px;
+  background-color: #E7E7E7;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.cardcontent .card3 {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  align-items: center;
+  background-color: rgb(252, 249, 249);
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 8px 8px 0 #33322f;
+  position: relative;
+}
+.cardcontent .card3::before {
+  content: "";
+  width: 82px;
+  height: 88px;
+  background-color: transparent;
+  background-image: url("../public/images/trendThird.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -10px;
+  left: -25px;
+}
+.cardcontent .card3 h3 {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFC800;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 15px 0px 10px 0px;
+}
+.cardcontent .card3 img {
+  width: 100%;
+}
+.cardcontent .card3 .item {
+  text-align: center;
+  width: 50%;
+  padding-top: 10px;
+}
+.cardcontent .card3 .item .learn {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.cardcontent .card3 .item .content {
+  border-radius: 20px;
+  background-color: #E7E7E7;
+  font-size: 14px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=TrendCard.css.map */
