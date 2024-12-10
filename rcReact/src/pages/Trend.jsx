@@ -17,8 +17,8 @@ function Trend(){
           <TrendCard/>
           <div id="item3">
           <div className="item4"><img className="char-1" src="./public/images/blueA.svg" alt="" /></div>
-          <div className="item4"><img className="char-2" src="./public/images/red.svg" alt="" /></div>
-          <div className="item4"><img className="char-3" src="./public/images/pinkC.svg" alt="" /></div>
+          <div className="item4"><img className="char-2" src="./public/images/redC.svg" alt="" /></div>
+          <div className="item4"><img className="char-3" src="./public/images/pinkE.svg" alt="" /></div>
           </div>
           <div>
             <img className="path" src="./public/images/trendPath.svg" alt="" />

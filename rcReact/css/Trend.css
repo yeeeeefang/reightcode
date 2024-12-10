@@ -169,7 +169,7 @@ a {
   background-color: #FFD640;
   display: flex;
   flex-direction: column;
-  height: 1080px;
+  height: 820px;
   overflow: hidden;
   border: 2px red solid;
 }
@@ -190,20 +190,20 @@ a {
 }
 #div1 .lightcontainer .container .light1 {
   position: absolute;
-  height: 820px;
+  height: 600px;
   transform: translate(20px, 150px);
   z-index: 1;
 }
 #div1 .lightcontainer .container .light2 {
   transform: translate(0, 150px);
   position: absolute;
-  height: 820px;
+  height: 600px;
   z-index: 2;
 }
 #div1 .lightcontainer .container .light3 {
   transform: translate(0, 150px);
   position: absolute;
-  height: 820px;
+  height: 600px;
   z-index: 3;
 }
 #div1 #item3 {
