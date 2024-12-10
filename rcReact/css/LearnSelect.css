@@ -165,10 +165,9 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-body {
-  background-color: #FFD640;
-}
-
+/* body {
+    background-color: $primary;
+} */
 #topbar {
   display: flex;
   flex: 1;
