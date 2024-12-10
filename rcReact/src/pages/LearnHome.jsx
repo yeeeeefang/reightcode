@@ -1,10 +1,11 @@
 import "../assets/css/LearnHome.css"
+import NavbarTwo from "../components/NavbarTwo"
 
 export default function LearnHome() {
     return (
         <>
-        {/* <NavbarTwo/> */}
-            {/* topbar */}
+        {/* <NavbarTwo/>  */}
+            {/* topbar  */}
             <header id="topbar">
                 <div className="logo">
                     <h1 className="logo"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></h1>

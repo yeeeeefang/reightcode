@@ -7,6 +7,8 @@
     justify-content: space-between;
     margin: 30px 50px;
     height: 50px;
+    // background-color: $learn-h1;
+
     .logo {
         img {
             width: 65px;
@@ -33,7 +35,7 @@
         align-items: center;
         background-color: $primary; // 黃色背景
         width: 100%;
-        height: 206px;
+        height: 28vh;
 
         img {
             width: 200px; // 綠色角色大小
@@ -66,10 +68,10 @@
                 justify-content: space-around;
                 align-items: center;
                 background-color: $learn-h3; // 紅色背景
-                height: 206px;
+                height: 28.2vh;
 
                 img {
-                    width: 180px; // 藍色角色大小
+                    width: 150px; // 藍色角色大小
 
                 }
 
@@ -85,7 +87,7 @@
                 justify-content: space-around;
                 align-items: center;
                 background-color: $learn-h2; // 綠色背景
-                height: 205px;
+                height: 28.5vh;
 
 
                 img {
@@ -105,6 +107,7 @@
             display: flex;
             align-items: center;
             flex-direction: column;
+            background-color: $learn-h1;
 
             justify-content: center;
             width: 450px;
