@@ -1,10 +1,11 @@
 import TrendCard from "../components/TrendCard";
-import "../assets/css/Trend.css"
+import "../assets/scss/Trend.scss"
 
 function Trend(){
 
     return (
-        <div id="div1" >
+      <>
+        <section id="div1" >
           <div id="header"></div>
           <div className="lightcontainer">
             <img className="light" src="./public/images/trendLight.png" alt="" />
@@ -23,7 +24,11 @@ function Trend(){
           <div>
             <img className="path" src="./public/images/trendPath.svg" alt="" />
           </div>
-        </div>
+        </section>
+        <section id="div2">
+          
+        </section>
+        </>
       )
 }
 export default Trend
