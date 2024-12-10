@@ -187,6 +187,7 @@ body {
 }
 
 #member {
+  border: 1px solid;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -234,6 +235,9 @@ body {
   display: flex;
   flex-direction: row;
   margin: 0 37px 10px 37px;
+}
+#member .memberInfo .name {
+  padding: 5px;
 }
 #member .memberAward {
   width: 260px;

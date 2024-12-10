@@ -402,12 +402,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 450px;
+  padding-right: 500px;
+}
+#page-5 .content-bk-4 .content-15 {
+  background-image: url(../public/images/Home-content-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 80%;
 }
 #page-5 .content-bk-4 .content-13 {
   text-align: center;
   font-size: 32px;
-  margin-right: 100px;
+  margin: 80px 100px 80px 65px;
 }
 #page-5 .content-bk-4 .content-bk-5 .greenIp {
   width: 295px;
