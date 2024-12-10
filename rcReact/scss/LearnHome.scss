@@ -1,10 +1,10 @@
 @use "./reset";
 @use "./variables" as *;
 
-body {
-    background-color: $learn-h1;
-    height: 100%;
-}
+// body {
+//     background-color: $learn-h1;
+//     height: 100%;
+// }
 #topbar {
     display: flex;
     flex: 1;

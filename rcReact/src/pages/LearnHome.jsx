@@ -3,6 +3,7 @@ import "../../css/LearnHome.css"
 export default function LearnHome() {
     return (
         <>
+        {/* <NavbarTwo/> */}
             {/* topbar */}
             <header id="topbar">
                 <div className="logo">
