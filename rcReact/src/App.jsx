@@ -11,7 +11,6 @@ import NavbarTwo from './components/NavbarTwo';
 function App() {
   return (
     <>
-    <Trend/>
     </>
   )
 }
