@@ -165,11 +165,6 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-body {
-  background-color: #8ECAE6;
-  height: 100%;
-}
-
 #topbar {
   display: flex;
   flex: 1;
