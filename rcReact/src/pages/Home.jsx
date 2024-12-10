@@ -22,6 +22,7 @@ function Home() {
                         <div className="content-3">
                             <div className="text-block-1">
                                 <p className="text-2">程式語言納入108課綱</p>
+                                <br />
                                 <p className="eng-text-2">Programming included in 108 syllabus</p>
                                 <p className="sml-text-2">為了因應科技時代的需求，<br />
                                     108課綱將「程式設計」正式納入中小學的資訊教育。<br />
@@ -35,6 +36,7 @@ function Home() {
                         <div className="content-4">
                             <div className="text-block-2">
                                 <p className="text-2">2030雙語政策</p>
+                                <br />
                                 <p className="eng-text-2">Bilingual 2030</p>
                                 <p className="sml-text-2">教育部正在推動「2030雙語政策」。
                                     <br />目標是到2030年在國民教育中達成雙語環境，
