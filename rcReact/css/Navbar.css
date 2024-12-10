@@ -165,27 +165,24 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#page-1 {
-  height: 800px;
-}
-#page-1 .navBarBk {
+.navBarBk {
   display: flex;
   justify-content: space-between;
   margin: 30px 50px;
 }
-#page-1 .navBarBk .logo {
+.navBarBk .logo {
   width: 87px;
   height: 53px;
 }
-#page-1 .navBarBk .navBarBk-1 {
+.navBarBk .navBarBk-1 {
   display: flex;
   margin: 5px;
 }
-#page-1 .navBarBk .navBarBk-1 .learningBtn {
+.navBarBk .navBarBk-1 .learningBtn {
   width: 220px;
   height: 48px;
   margin-right: 50px;
 }
-#page-1 .navBarBk .navBarBk-1 .hamBtn {
+.navBarBk .navBarBk-1 .hamBtn {
   width: 48px;
 }/*# sourceMappingURL=Navbar.css.map */

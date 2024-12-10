@@ -1,5 +1,10 @@
 @use './reset';
 @use './variables'as *;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+
+#page-1 {
+    height: 800px;
+}
 
 #page-all {
 
@@ -7,7 +12,7 @@
     background-color: $primary;
     background-size: cover;
     background-repeat: no-repeat;
-
+    font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 #page-2 {
@@ -29,6 +34,7 @@
             font-size: 48px;
             color: $fc-1;
             margin-left: 50px;
+            font-weight: $font-w-bold;
 
             .eng-text-1 {
                 margin-left: 30px;
@@ -44,6 +50,7 @@
                 font-size: 64px;
                 color: #FFFFFF;
                 padding: 0 20px;
+                text-shadow: 10px 5px $shadow-1;
             }
 
             .eng-text-1,
@@ -58,8 +65,6 @@
     }
 
     .content-bk-2 {
-
-
         display: flex;
         flex-direction: column;
         margin: 190px 0 0 190px;
@@ -67,7 +72,6 @@
         .content-3 {
 
             display: flex;
-
 
             .content-3-img {
                 padding: 80px 0 0 50px;
@@ -77,7 +81,9 @@
                 display: inline-block;
                 font-size: 32px;
                 color: $fc-2;
+                font-weight: $font-w-bold;
                 background-color: $fc-5;
+                line-height: 25px;
                 /* 背景顏色待調整 */
 
             }
@@ -86,11 +92,14 @@
             .eng-text-2 {
                 font-size: 28px;
                 color: $fc-2;
+                font-weight: $font-w-bold;
             }
 
             .sml-text-2 {
                 font-size: 20px;
                 color: $fc-2;
+                font-weight: $font-w-medium;
+                padding-top: 20px;
 
 
             }
@@ -104,9 +113,12 @@
 
 
             .text-2 {
+
                 font-size: 32px;
                 color: $fc-2;
                 text-align: right;
+                font-weight: $font-w-bold;
+
                 /* background-color: $fc-5; */
                 /* 背景顏色待調整 */
             }
@@ -115,12 +127,15 @@
                 font-size: 28px;
                 color: $fc-2;
                 text-align: right;
+                font-weight: $font-w-bold;
             }
 
             .sml-text-2 {
+                padding-top: 20px;
                 font-size: 20px;
                 color: $fc-2;
                 text-align: right;
+                font-weight: $font-w-medium;
             }
 
             .content-4-img {
@@ -166,15 +181,15 @@
 
         .content-bk-3 {
 
-
-
             p {
+                height: 65px;
                 width: 65px;
                 border-radius: 50%;
                 font-size: 50px;
                 background-color: #FFFFFF;
                 text-align: center;
-                line-height: 65px
+                line-height: 65px;
+                font-weight: $font-w-bold;
             }
         }
 
@@ -186,11 +201,6 @@
             justify-content: space-between;
             margin-top: 200px;
 
-
-
-
-
-
             .content-5,
             .content-7 {
                 text-align: right;
@@ -198,19 +208,17 @@
                 margin-left: 200px;
                 padding-bottom: 40px;
 
-
             }
 
             .content-6 {
                 text-align: left;
                 flex: 1;
                 padding-bottom: 50px;
-
-
             }
 
             .text-3 {
                 font-size: 32px;
+                font-weight: $font-w-bold;
 
                 span {
                     font-size: 58px;
@@ -219,6 +227,7 @@
 
                 .sml-text-3 {
                     font-size: 20px;
+                    font-weight: $font-w-medium;
                 }
             }
         }
@@ -246,6 +255,7 @@
         color: #FFFFFF;
         margin-right: 150px;
         padding-top: 160px;
+        font-weight: $font-w-bold;
     }
 
     .content-bk-all {
@@ -262,6 +272,7 @@
                 text-align: right;
                 font-size: 24px;
                 padding-bottom: 10px;
+                font-weight: $font-w-bold;
             }
 
             .content-8 {
@@ -269,6 +280,7 @@
                 text-align: start;
                 padding-top: 10px;
                 font-size: 24px;
+                font-weight: $font-w-bold;
 
             }
 
@@ -296,6 +308,7 @@
             .content-11 {
                 font-size: 36px;
                 padding-bottom: 15px;
+                font-weight: $font-w-bold;
 
             }
 
@@ -303,6 +316,7 @@
             .content-12 {
                 font-size: 20px;
                 text-align: center;
+                font-weight: $font-w-medium;
 
             }
         }
@@ -319,17 +333,20 @@
         justify-content: center;
         align-items: center;
         padding-right: 500px;
-        .content-15{
+
+        .content-15 {
             background-image: url(../public/images/Home-content-1.png);
-            background-size:100%;
+            background-size: 100%;
             background-repeat: no-repeat;
-            background-position: 80% ;
+            background-position: 80%;
         }
 
         .content-13 {
             text-align: center;
             font-size: 32px;
- margin: 80px 100px 80px 65px;
+            font-weight: $font-w-bold;
+            margin: 80px 100px 80px 65px;
+
         }
 
         .content-bk-5 {
