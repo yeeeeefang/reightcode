@@ -165,97 +165,11 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#div1 {
-  background-color: #FFD640;
+#LearnPageExp .LearnPageExp-bk-1 {
   display: flex;
-  flex-direction: column;
-  height: 820px;
-  overflow: hidden;
-  position: relative;
+  flex-wrap: wrap;
 }
-#div1 .lightcontainer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-#div1 .lightcontainer .light {
-  width: 180px;
-  z-index: 4;
-  position: absolute;
-}
-#div1 .lightcontainer .container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-#div1 .lightcontainer .container .light1 {
-  position: absolute;
-  height: 600px;
-  transform: translate(30px, 150px);
-  z-index: 1;
-}
-#div1 .lightcontainer .container .light2 {
-  transform: translate(0, 150px);
-  position: absolute;
-  height: 600px;
-  z-index: 2;
-}
-#div1 .lightcontainer .container .light3 {
-  transform: translate(0, 150px);
-  position: absolute;
-  height: 600px;
-  z-index: 3;
-}
-#div1 .deco-1 {
-  position: absolute;
-  width: 3%;
-}
-#div1 .deco-2 {
-  position: absolute;
-  width: 3%;
-  top: 400px;
-}
-#div1 .deco-3 {
-  position: absolute;
-  width: 5%;
-}
-#div1 #item3 {
-  position: absolute;
-  z-index: 8;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  top: 490px;
-  width: 100%;
-  height: 200px;
-}
-#div1 #item3 .char-1 {
-  width: 155px;
-  height: 155px;
-}
-#div1 #item3 .char-2 {
-  width: 200px;
-  height: 200px;
-  align-self: flex-start;
-  padding-bottom: 50px;
-}
-#div1 #item3 .char-3 {
-  width: 150px;
-  height: 150px;
-}
-#div1 .path {
-  position: absolute;
-  top: 540px;
-  left: 0;
-  z-index: 5;
-  width: 100%;
-}
-
-#div2 {
-  height: 2160px;
-  background-color: #FFD640;
-  background-image: url("../../../public/images/trendLine.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}/*# sourceMappingURL=Trend.css.map */
+#LearnPageExp .LearnPageExp-bk-1 .LearnPageExp-content-2 progress {
+  accent-color: #DE5B5B;
+  height: 25px;
+}/*# sourceMappingURL=LearnPageExp.css.map */

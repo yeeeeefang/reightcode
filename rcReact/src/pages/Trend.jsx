@@ -1,11 +1,13 @@
 import TrendCard from "../components/TrendCard";
 import TrendCard2 from "../components/TrendCard2";
 import "../assets/scss/Trend.scss"
+import Navbar from '../components/Navbar'
 
 function Trend(){
 
     return (
       <>
+      <Navbar/>
         <section id="div1" >
           <div id="header"></div>
           <div className="lightcontainer">
@@ -31,6 +33,7 @@ function Trend(){
         </section>
         <section id="div2">
           <TrendCard2/>
+          
         </section>
         </>
       )

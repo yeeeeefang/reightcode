@@ -167,10 +167,33 @@ a {
 /* reset end */
 .tdcard {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.tdcard .tdcard-1,
+.tdcard .tdcard-2 {
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.tdcard .card1-1, .tdcard .card2-1, .tdcard .card3-1, .tdcard .card4-1, .tdcard .card5-1, .tdcard .card6-1, .tdcard .card7-1, .tdcard .card8-1 {
+.tdcard .tdcard-1 .card1-1,
+.tdcard .tdcard-1 .card2-1,
+.tdcard .tdcard-1 .card3-1,
+.tdcard .tdcard-1 .card4-1,
+.tdcard .tdcard-1 .card5-1,
+.tdcard .tdcard-1 .card6-1,
+.tdcard .tdcard-1 .card7-1,
+.tdcard .tdcard-1 .card8-1,
+.tdcard .tdcard-2 .card1-1,
+.tdcard .tdcard-2 .card2-1,
+.tdcard .tdcard-2 .card3-1,
+.tdcard .tdcard-2 .card4-1,
+.tdcard .tdcard-2 .card5-1,
+.tdcard .tdcard-2 .card6-1,
+.tdcard .tdcard-2 .card7-1,
+.tdcard .tdcard-2 .card8-1 {
   width: 20%;
   margin: 20px;
   background-color: #FFFFFF;
@@ -179,8 +202,26 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 100px;
 }
-.tdcard .card1-1 .learn-1, .tdcard .card2-1 .learn-1, .tdcard .card3-1 .learn-1, .tdcard .card4-1 .learn-1, .tdcard .card5-1 .learn-1, .tdcard .card6-1 .learn-1, .tdcard .card7-1 .learn-1, .tdcard .card8-1 .learn-1 {
+.tdcard .tdcard-1 .card1-1 .learn-1,
+.tdcard .tdcard-1 .card2-1 .learn-1,
+.tdcard .tdcard-1 .card3-1 .learn-1,
+.tdcard .tdcard-1 .card4-1 .learn-1,
+.tdcard .tdcard-1 .card5-1 .learn-1,
+.tdcard .tdcard-1 .card6-1 .learn-1,
+.tdcard .tdcard-1 .card7-1 .learn-1,
+.tdcard .tdcard-1 .card8-1 .learn-1,
+.tdcard .tdcard-2 .card1-1 .learn-1,
+.tdcard .tdcard-2 .card2-1 .learn-1,
+.tdcard .tdcard-2 .card3-1 .learn-1,
+.tdcard .tdcard-2 .card4-1 .learn-1,
+.tdcard .tdcard-2 .card5-1 .learn-1,
+.tdcard .tdcard-2 .card6-1 .learn-1,
+.tdcard .tdcard-2 .card7-1 .learn-1,
+.tdcard .tdcard-2 .card8-1 .learn-1 {
   line-height: 25px;
   text-align: center;
   font-size: 19px;
@@ -188,4 +229,74 @@ a {
   background-color: #FFD640;
   width: 45%;
   border-radius: 12px;
+  margin-bottom: 12px;
+}
+.tdcard .tdcard-1 .card1-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card2-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card3-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card4-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card5-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card6-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card7-1 .item-1 .learn1-1,
+.tdcard .tdcard-1 .card8-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card1-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card2-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card3-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card4-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card5-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card6-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card7-1 .item-1 .learn1-1,
+.tdcard .tdcard-2 .card8-1 .item-1 .learn1-1 {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+.tdcard .tdcard-1 .card1-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card2-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card3-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card4-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card5-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card6-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card7-1 .item-1 .content-1,
+.tdcard .tdcard-1 .card8-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card1-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card2-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card3-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card4-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card5-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card6-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card7-1 .item-1 .content-1,
+.tdcard .tdcard-2 .card8-1 .item-1 .content-1 {
+  border-radius: 24px;
+  font-size: 17px;
+  background-color: #E7E7E7;
+  margin: 6px;
+}
+.tdcard .out {
+  position: relative;
+  width: 100%;
+  margin-top: 200px;
+}
+.tdcard .out .sofa {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.tdcard .out .sofa img {
+  height: 300px;
+}
+.tdcard .out .deco1-1 {
+  width: 4%;
+  position: absolute;
+  z-index: 10;
+  left: 168px;
+  bottom: 200px;
+}
+.tdcard .out .deco1-2 {
+  width: 3%;
+  position: absolute;
+  z-index: 11;
+  right: 150px;
+  top: 100px;
 }/*# sourceMappingURL=TrendCard2.css.map */
