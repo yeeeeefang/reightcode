@@ -1,12 +1,13 @@
 import "../assets/scss/Login.scss"
-import NavbarTwo from "../components/NavbarTwo"
+import Navbar from "../components/Navbar"
+
 
 export default function Login() {
     return (
         <>
         
             <div id="login-page"> 
-            <NavbarTwo/>
+            <Navbar/>
                 {/* topbar  */}
                 {/* <header className="topbar">
                     <div className="logo">
@@ -17,12 +18,14 @@ export default function Login() {
                     </div>
                 </header> */}
                 <div className="login-main">
+
                     <div className="amoeba-blobs">
                         <img src="/images/login.png" alt="" />
                     </div>
+
                     <div className="characters">
                         <img src="/images/greenA.svg" alt="" className="green-char" />
-                        <img src="/images/redB.svg" alt="" className="red-char" />
+                        <img src="/images/red.svg" alt="" className="red-char" />
                         <img src="/images/blueA.svg" alt="" className="blue-char" />
                         <img src="/images/pinkA.svg" alt="" className="pink-char" />
                     </div>

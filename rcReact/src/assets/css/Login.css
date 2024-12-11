@@ -177,16 +177,41 @@ a {
 #login-page .login-main .amoeba-blobs {
   width: 90%;
   position: relative;
-  left: 150px;
-  top: -400px;
-  border: 1px solid red;
+  left: 152px;
+  top: -350px;
+  overflow: hidden;
 }
-#login-page .login-main .characters {
-  position: relative;
+#login-page .login-main .characters .green-char {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: 540px;
+  left: 390px;
+  transform: rotate(78deg);
 }
-#login-page .login-main .characters img {
-  width: 200px;
+#login-page .login-main .characters .red-char {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  bottom: 10px;
+  left: 550px;
+  transform: rotate(-5deg);
+}
+#login-page .login-main .characters .blue-char {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  bottom: 420px;
+  left: 140px;
+}
+#login-page .login-main .characters .pink-char {
+  width: 175px;
+  height: 175px;
+  position: absolute;
   z-index: 888;
+  bottom: 20px;
+  left: 1230px;
+  transform: rotateY(-180deg);
 }
 #login-page .login-main .login-form {
   flex: 1;
@@ -194,7 +219,10 @@ a {
   padding: 36px;
   border-radius: 20px;
   box-shadow: 8px 8px 0 #534D97;
-  max-width: 400px;
+  width: 400px;
+  position: absolute;
+  bottom: 150px;
+  left: 800px;
 }
 #login-page .login-main .login-form h2 {
   color: #534D97;
@@ -204,7 +232,6 @@ a {
   margin-bottom: 24px;
 }
 #login-page .login-main .login-form form {
-  z-index: 777;
   display: flex;
   flex-direction: column;
 }

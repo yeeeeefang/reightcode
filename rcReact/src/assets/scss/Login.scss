@@ -4,6 +4,7 @@
 #login-page {
     overflow: hidden;
     background-color: $primary; // 背景黃色
+    
 
 
     .login-main {
@@ -15,21 +16,47 @@
         .amoeba-blobs {
             width: 90%;
             position: relative;
-            left: 150px;
-            top: -400px;
-            border: 1px solid red;
+            left: 152px;
+            top: -350px;
+            overflow: hidden;
         }
 
 
         .characters {
-            position: relative;
+            
 
-            img {
-                width: 200px;
-                z-index:888 ;
+            .green-char{
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                bottom: 540px;
+                left: 390px;
+                transform: rotate(78deg);
             }
-
-
+            .red-char{
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                bottom: 10px;
+                left: 550px;
+                transform: rotate(-5deg);
+            }
+            .blue-char{
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                bottom: 420px;
+                left: 140px;
+            }
+            .pink-char{
+                width: 175px;
+                height: 175px;
+                position: absolute;
+                z-index: 888;
+                bottom: 20px;
+                left: 1230px;
+                transform: rotateY(-180deg);
+            }
         }
 
         .login-form {
@@ -38,7 +65,10 @@
             padding: 36px;
             border-radius: 20px;
             box-shadow: 8px 8px 0 $shadow-3;
-            max-width: 400px;
+            width: 400px;
+            position: absolute;
+            bottom: 150px;
+            left: 800px;
 
             h2 {
                 color: $shadow-3; // 紫色標題
@@ -49,7 +79,6 @@
             }
 
             form {
-                z-index: 777;
                 display: flex;
                 flex-direction: column;
 
