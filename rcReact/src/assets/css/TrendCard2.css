@@ -172,7 +172,19 @@ a {
   justify-content: space-around;
   align-items: center;
 }
-.tdcard .trendtitle1 {
+.tdcard .tdtd1,
+.tdcard .tdtd2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tdcard .tdtd1 .ttitle1,
+.tdcard .tdtd2 .ttitle1 {
+  padding-left: 100px;
+}
+.tdcard .tdtd1 .ttitle1 .trendtitle1,
+.tdcard .tdtd2 .ttitle1 .trendtitle1 {
   background-image: url("../../../public/images/trendDeco1.png");
   background-size: contain;
   background-position: center;
@@ -181,18 +193,26 @@ a {
   height: 100px;
   display: flex;
 }
-.tdcard .trendtitle1 .titleicon-1 {
+.tdcard .tdtd1 .ttitle1 .trendtitle1 .titleicon-1,
+.tdcard .tdtd2 .ttitle1 .trendtitle1 .titleicon-1 {
   width: 80px;
   height: 90px;
 }
-.tdcard .trendtitle1 h3 {
+.tdcard .tdtd1 .ttitle1 .trendtitle1 h3,
+.tdcard .tdtd2 .ttitle1 .trendtitle1 h3 {
   font-size: 24px;
   text-align: center;
   line-height: 100px;
   font-weight: bold;
 }
-.tdcard .trendtitle2 {
-  border: 1px solid tomato;
+.tdcard .tdtd1 .ttitle2,
+.tdcard .tdtd2 .ttitle2 {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 90px;
+}
+.tdcard .tdtd1 .ttitle2 .trendtitle2,
+.tdcard .tdtd2 .ttitle2 .trendtitle2 {
   background-image: url("../../../public/images/trendDeco2.png");
   background-size: contain;
   background-position: center;
@@ -202,40 +222,59 @@ a {
   text-align: right;
   display: flex;
 }
-.tdcard .trendtitle2 .titleicon-1 {
+.tdcard .tdtd1 .ttitle2 .trendtitle2 .titleicon-1,
+.tdcard .tdtd2 .ttitle2 .trendtitle2 .titleicon-1 {
   width: 80px;
   height: 90px;
 }
-.tdcard .trendtitle2 h3 {
+.tdcard .tdtd1 .ttitle2 .trendtitle2 h3,
+.tdcard .tdtd2 .ttitle2 .trendtitle2 h3 {
   font-size: 24px;
   text-align: center;
   line-height: 100px;
   font-weight: bold;
 }
-.tdcard .tdcard-1,
-.tdcard .tdcard-2 {
+.tdcard .tdtd1 .tdcard-1,
+.tdcard .tdtd1 .tdcard-2,
+.tdcard .tdtd2 .tdcard-1,
+.tdcard .tdtd2 .tdcard-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.tdcard .tdcard-1 .card1-1,
-.tdcard .tdcard-1 .card2-1,
-.tdcard .tdcard-1 .card3-1,
-.tdcard .tdcard-1 .card4-1,
-.tdcard .tdcard-1 .card5-1,
-.tdcard .tdcard-1 .card6-1,
-.tdcard .tdcard-1 .card7-1,
-.tdcard .tdcard-1 .card8-1,
-.tdcard .tdcard-2 .card1-1,
-.tdcard .tdcard-2 .card2-1,
-.tdcard .tdcard-2 .card3-1,
-.tdcard .tdcard-2 .card4-1,
-.tdcard .tdcard-2 .card5-1,
-.tdcard .tdcard-2 .card6-1,
-.tdcard .tdcard-2 .card7-1,
-.tdcard .tdcard-2 .card8-1 {
-  width: 20%;
-  margin: 20px;
+.tdcard .tdtd1 .tdcard-1 .card1-1,
+.tdcard .tdtd1 .tdcard-1 .card2-1,
+.tdcard .tdtd1 .tdcard-1 .card3-1,
+.tdcard .tdtd1 .tdcard-1 .card4-1,
+.tdcard .tdtd1 .tdcard-1 .card5-1,
+.tdcard .tdtd1 .tdcard-1 .card6-1,
+.tdcard .tdtd1 .tdcard-1 .card7-1,
+.tdcard .tdtd1 .tdcard-1 .card8-1,
+.tdcard .tdtd1 .tdcard-2 .card1-1,
+.tdcard .tdtd1 .tdcard-2 .card2-1,
+.tdcard .tdtd1 .tdcard-2 .card3-1,
+.tdcard .tdtd1 .tdcard-2 .card4-1,
+.tdcard .tdtd1 .tdcard-2 .card5-1,
+.tdcard .tdtd1 .tdcard-2 .card6-1,
+.tdcard .tdtd1 .tdcard-2 .card7-1,
+.tdcard .tdtd1 .tdcard-2 .card8-1,
+.tdcard .tdtd2 .tdcard-1 .card1-1,
+.tdcard .tdtd2 .tdcard-1 .card2-1,
+.tdcard .tdtd2 .tdcard-1 .card3-1,
+.tdcard .tdtd2 .tdcard-1 .card4-1,
+.tdcard .tdtd2 .tdcard-1 .card5-1,
+.tdcard .tdtd2 .tdcard-1 .card6-1,
+.tdcard .tdtd2 .tdcard-1 .card7-1,
+.tdcard .tdtd2 .tdcard-1 .card8-1,
+.tdcard .tdtd2 .tdcard-2 .card1-1,
+.tdcard .tdtd2 .tdcard-2 .card2-1,
+.tdcard .tdtd2 .tdcard-2 .card3-1,
+.tdcard .tdtd2 .tdcard-2 .card4-1,
+.tdcard .tdtd2 .tdcard-2 .card5-1,
+.tdcard .tdtd2 .tdcard-2 .card6-1,
+.tdcard .tdtd2 .tdcard-2 .card7-1,
+.tdcard .tdtd2 .tdcard-2 .card8-1 {
+  width: 16%;
   background-color: #FFFFFF;
   border-radius: 12px;
   box-shadow: 8px 8px 0 hsla(0, 0%, 0%, 0.8);
@@ -246,22 +285,38 @@ a {
   padding: 10px 0;
   margin-bottom: 100px;
 }
-.tdcard .tdcard-1 .card1-1 .learn-1,
-.tdcard .tdcard-1 .card2-1 .learn-1,
-.tdcard .tdcard-1 .card3-1 .learn-1,
-.tdcard .tdcard-1 .card4-1 .learn-1,
-.tdcard .tdcard-1 .card5-1 .learn-1,
-.tdcard .tdcard-1 .card6-1 .learn-1,
-.tdcard .tdcard-1 .card7-1 .learn-1,
-.tdcard .tdcard-1 .card8-1 .learn-1,
-.tdcard .tdcard-2 .card1-1 .learn-1,
-.tdcard .tdcard-2 .card2-1 .learn-1,
-.tdcard .tdcard-2 .card3-1 .learn-1,
-.tdcard .tdcard-2 .card4-1 .learn-1,
-.tdcard .tdcard-2 .card5-1 .learn-1,
-.tdcard .tdcard-2 .card6-1 .learn-1,
-.tdcard .tdcard-2 .card7-1 .learn-1,
-.tdcard .tdcard-2 .card8-1 .learn-1 {
+.tdcard .tdtd1 .tdcard-1 .card1-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card2-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card3-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card4-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card5-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card6-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card7-1 .learn-1,
+.tdcard .tdtd1 .tdcard-1 .card8-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card1-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card2-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card3-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card4-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card5-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card6-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card7-1 .learn-1,
+.tdcard .tdtd1 .tdcard-2 .card8-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card1-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card2-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card3-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card4-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card5-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card6-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card7-1 .learn-1,
+.tdcard .tdtd2 .tdcard-1 .card8-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card1-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card2-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card3-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card4-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card5-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card6-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card7-1 .learn-1,
+.tdcard .tdtd2 .tdcard-2 .card8-1 .learn-1 {
   line-height: 25px;
   text-align: center;
   font-size: 19px;
@@ -271,42 +326,74 @@ a {
   border-radius: 12px;
   margin-bottom: 12px;
 }
-.tdcard .tdcard-1 .card1-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card2-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card3-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card4-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card5-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card6-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card7-1 .item-1 .learn1-1,
-.tdcard .tdcard-1 .card8-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card1-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card2-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card3-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card4-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card5-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card6-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card7-1 .item-1 .learn1-1,
-.tdcard .tdcard-2 .card8-1 .item-1 .learn1-1 {
+.tdcard .tdtd1 .tdcard-1 .card1-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card2-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card3-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card4-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card5-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card6-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card7-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-1 .card8-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card1-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card2-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card3-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card4-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card5-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card6-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card7-1 .item-1 .learn1-1,
+.tdcard .tdtd1 .tdcard-2 .card8-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card1-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card2-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card3-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card4-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card5-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card6-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card7-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-1 .card8-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card1-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card2-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card3-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card4-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card5-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card6-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card7-1 .item-1 .learn1-1,
+.tdcard .tdtd2 .tdcard-2 .card8-1 .item-1 .learn1-1 {
   font-size: 19px;
   font-weight: bold;
   margin: 12px 0;
 }
-.tdcard .tdcard-1 .card1-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card2-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card3-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card4-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card5-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card6-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card7-1 .item-1 .content-1,
-.tdcard .tdcard-1 .card8-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card1-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card2-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card3-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card4-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card5-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card6-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card7-1 .item-1 .content-1,
-.tdcard .tdcard-2 .card8-1 .item-1 .content-1 {
+.tdcard .tdtd1 .tdcard-1 .card1-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card2-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card3-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card4-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card5-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card6-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card7-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-1 .card8-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card1-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card2-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card3-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card4-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card5-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card6-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card7-1 .item-1 .content-1,
+.tdcard .tdtd1 .tdcard-2 .card8-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card1-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card2-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card3-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card4-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card5-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card6-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card7-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-1 .card8-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card1-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card2-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card3-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card4-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card5-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card6-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card7-1 .item-1 .content-1,
+.tdcard .tdtd2 .tdcard-2 .card8-1 .item-1 .content-1 {
   border-radius: 24px;
   font-size: 17px;
   background-color: #E7E7E7;

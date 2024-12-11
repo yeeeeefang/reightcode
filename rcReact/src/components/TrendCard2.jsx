@@ -3,10 +3,12 @@ function TrendCard2() {
     return (
         <>
             <div className="tdcard">
-                <div>
-                    <div className='trendtitle1'>
-                        <img className='titleicon-1' src="../public/images/icon_greenA.svg" alt="" />
-                        <h3>充滿成就感</h3>
+                <section className='tdtd1'>
+                    <div className="ttitle1">
+                        <div className='trendtitle1'>
+                            <img className='titleicon-1' src="../public/images/icon_greenA.svg" alt="" />
+                            <h3>充滿成就感</h3>
+                        </div>
                     </div>
                     <div className="tdcard-1">
                         <div className="card1-1">
@@ -46,58 +48,60 @@ function TrendCard2() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                <div className='trendtitle2'>
-                        <img className='titleicon-1' src="../public/images/icon_blueB.svg" alt="" />
-                        <h3>我能挑戰自己</h3>
-                    </div>
-                <div className="tdcard-2">
-                    <div className="card5-1">
-                        <h3 className="learn-1">CSS</h3>
-                        <img src="../public/images/trendCourse3.png" alt="" />
-                        <div class="item-1">
-                            <h4 className="learn1-1">邊距與內距</h4>
-                            <p className="content-1">學習人數 930人</p>
-                            <p className="content-1">收藏人數 467人</p>
+                </section>
+                <section className='tdtd2'>
+                    <div className="ttitle2">
+                        <div className='trendtitle2'>
+                            <img className='titleicon-1' src="../public/images/icon_blueB.svg" alt="" />
+                            <h3>我能挑戰自己</h3>
                         </div>
                     </div>
-                    <div className="card6-1">
-                        <h3 className="learn-1">HTML</h3>
-                        <img src="../public/images/trendCourse6.png" alt="" />
-                        <div class="item-1">
-                            <h4 className="learn1-1">表單擴展</h4>
-                            <p className="content-1">學習人數 1121人</p>
-                            <p className="content-1">收藏人數 855人</p>
+                    <div className="tdcard-2">
+                        <div className="card5-1">
+                            <h3 className="learn-1">CSS</h3>
+                            <img src="../public/images/trendCourse3.png" alt="" />
+                            <div class="item-1">
+                                <h4 className="learn1-1">邊距與內距</h4>
+                                <p className="content-1">學習人數 930人</p>
+                                <p className="content-1">收藏人數 467人</p>
+                            </div>
+                        </div>
+                        <div className="card6-1">
+                            <h3 className="learn-1">HTML</h3>
+                            <img src="../public/images/trendCourse6.png" alt="" />
+                            <div class="item-1">
+                                <h4 className="learn1-1">表單擴展</h4>
+                                <p className="content-1">學習人數 1121人</p>
+                                <p className="content-1">收藏人數 855人</p>
+                            </div>
+                        </div>
+                        <div className="card7-1">
+                            <h3 className="learn-1">CSS</h3>
+                            <img src="../public/images/trendCourse7.png" alt="" />
+                            <div class="item-1">
+                                <h4 className="learn1-1">定位</h4>
+                                <p className="content-1">學習人數 2512人</p>
+                                <p className="content-1">收藏人數 1111人</p>
+                            </div>
+                        </div>
+                        <div className="card8-1">
+                            <h3 className="learn-1">HTML</h3>
+                            <img src="../public/images/trendCourse8.png" alt="" />
+                            <div class="item-1">
+                                <h4 className="learn1-1">嵌入內容</h4>
+                                <p className="content-1">學習人數 930人</p>
+                                <p className="content-1">收藏人數 467人</p>
+                            </div>
                         </div>
                     </div>
-                    <div className="card7-1">
-                        <h3 className="learn-1">CSS</h3>
-                        <img src="../public/images/trendCourse7.png" alt="" />
-                        <div class="item-1">
-                            <h4 className="learn1-1">定位</h4>
-                            <p className="content-1">學習人數 2512人</p>
-                            <p className="content-1">收藏人數 1111人</p>
-                        </div>
-                    </div>
-                    <div className="card8-1">
-                        <h3 className="learn-1">HTML</h3>
-                        <img src="../public/images/trendCourse8.png" alt="" />
-                        <div class="item-1">
-                            <h4 className="learn1-1">嵌入內容</h4>
-                            <p className="content-1">學習人數 930人</p>
-                            <p className="content-1">收藏人數 467人</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div className='out'>
+                </section>
+                <section className='out'>
                     <div className="sofa">
                         <img src="./public/images/trendSofa.svg" alt="" />
                     </div>
                     <img className='deco1-1' src="../public/images/trendDecoC.png" alt="" />
                     <img className='deco1-2' src="../public/images/trendDecoD.png" alt="" />
-                </div>
+                </section>
 
             </div>
 
