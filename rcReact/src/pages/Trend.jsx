@@ -7,10 +7,11 @@ function Trend(){
 
     return (
       <>
-      <Navbar/>
         <section id="div1" >
-          <div id="header"></div>
+        <Navbar/>
+                   
           <div className="lightcontainer">
+          
             <img className="light" src="./public/images/trendLight.png" alt="" />
             <div className="container">
               <img className="light1" src="./public/images/trendLightA.svg" alt="" />

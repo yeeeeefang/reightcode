@@ -172,9 +172,9 @@ a {
   height: 820px;
   overflow: hidden;
   position: relative;
-  margin-top: -120px;
 }
 #div1 .lightcontainer {
+  margin-top: -100px;
   display: flex;
   align-items: center;
   flex-direction: column;

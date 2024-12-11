@@ -6,7 +6,7 @@
     height: 820px;
     overflow: hidden;
     position: relative;
-    margin-top: -120px;
+    
     // border: 2px red solid;
     
     // #header {
@@ -17,6 +17,7 @@
     // }
 
     .lightcontainer {
+        margin-top: -100px;
         display: flex;
         align-items: center;
         flex-direction: column;

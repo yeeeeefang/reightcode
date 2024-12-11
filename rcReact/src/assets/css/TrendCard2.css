@@ -172,6 +172,25 @@ a {
   justify-content: space-around;
   align-items: center;
 }
+.tdcard .trendtitle1 {
+  background-image: url("../../../public/images/trendDeco1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 100px;
+  display: flex;
+}
+.tdcard .trendtitle1 .titleicon-1 {
+  width: 80px;
+  height: 90px;
+}
+.tdcard .trendtitle1 h3 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
 .tdcard .tdcard-1,
 .tdcard .tdcard-2 {
   display: flex;
