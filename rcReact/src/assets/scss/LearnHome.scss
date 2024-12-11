@@ -1,31 +1,9 @@
 @use "./reset";
-@use "./variables/" as *;
+@use "./variables" as *;
 
 #learnhome-page {
     overflow: hidden;
     background-color: $learn-h1; // 背景藍
-
-    .topbar {
-        display: flex;
-        // flex: 1;
-        justify-content: space-between;
-        // margin: 30px 50px;
-        height: 50px;
-        // background-color: $learn-h1;
-
-        .logo {
-            img {
-                width: 65px;
-            }
-        }
-
-        .learnBtn {
-            img {
-                width: 40px; // 漢堡選單按鈕大小
-                cursor: pointer;
-            }
-        }
-    }
 
     .learn-home {
         display: flex;

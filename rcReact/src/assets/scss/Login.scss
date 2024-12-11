@@ -1,2 +1,124 @@
-@use './reset';
-@use './variables' as *;
+@use "./reset";
+@use "./variables" as *;
+
+#login-page {
+    overflow: hidden;
+    background-color: $primary; // 背景黃色
+
+
+    .login-main {
+
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .amoeba-blobs {
+            width: 90%;
+            position: relative;
+            left: 150px;
+            top: -400px;
+            border: 1px solid red;
+        }
+
+
+        .characters {
+            position: relative;
+
+            img {
+                width: 200px;
+                z-index:888 ;
+            }
+
+
+        }
+
+        .login-form {
+            flex: 1;
+            background-color: $register-1; // 淺粉色
+            padding: 36px;
+            border-radius: 20px;
+            box-shadow: 8px 8px 0 $shadow-3;
+            max-width: 400px;
+
+            h2 {
+                color: $shadow-3; // 紫色標題
+                text-align: center;
+                font-size: $font-size-32;
+                font-weight: $font-w-bold;
+                margin-bottom: 24px;
+            }
+
+            form {
+                z-index: 777;
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    color: $shadow-3;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                }
+
+                input {
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 8px;
+                    margin-bottom: 16px;
+                }
+
+                .forgot-password {
+                    text-align: right;
+                    color: $shadow-3;
+                    font-size: 0.9rem;
+                    margin-bottom: 16px;
+                }
+
+                .login-button {
+                    background-color: $shadow-3;
+                    color: #fff;
+                    border: none;
+                    padding: 18px 36px;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    cursor: pointer;
+
+                    // &:hover {
+                    //     background-color: $shadow-3;
+                    // }
+                }
+            }
+
+            .login-divider {
+                display: flex;
+                align-items: center;
+                margin: 24px 0;
+
+                hr {
+                    flex: 1;
+                    border: none;
+                    height: 2px;
+                    background-color: $register-2;
+                }
+
+                span {
+                    margin: 0 8px;
+                    color: $register-2;
+                    font-weight: bold;
+                }
+            }
+
+            .social-login {
+                display: flex;
+                justify-content: space-around;
+
+                button {
+                    cursor: pointer;
+                    border: none;
+                    background-color: transparent;
+
+                }
+            }
+        }
+    }
+}
