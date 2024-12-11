@@ -1,4 +1,4 @@
-import '../../src/assets/css/TrendCard.css'
+import '../../src/assets/scss/TrendCard.scss'
 function TrendCard() {
 
     return (
