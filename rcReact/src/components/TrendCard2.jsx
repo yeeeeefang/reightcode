@@ -1,82 +1,98 @@
 import '../../src/assets/scss/TrendCard2.scss'
 function TrendCard2() {
-   return(
-    <>
-    <div className="tdcard">
-        <div className="card1-1">
-            <h3 className="learn-1">HTML</h3>
-            <img src="../public/images/trendCourse2.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是CSS?</h4>
-                <p className="content-1">學習人數 2391人</p>
-                <p className="content-1">收藏人數 1022人</p>
+    return (
+        <>
+            <div className="tdcard">
+                <div>
+                <div className="tdcard-1">
+                    <div className="card1-1">
+                        <h3 className="learn-1">HTML</h3>
+                        <img src="../public/images/trendCourse1.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">文字樣式-1</h4>
+                            <p className="content-1">學習人數 2391人</p>
+                            <p className="content-1">收藏人數 1022人</p>
+                        </div>
+                    </div>
+                    <div className="card2-1">
+                        <h3 className="learn-1">CSS</h3>
+                        <img src="../public/images/trendCourse2.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">背景</h4>
+                            <p className="content-1">學習人數 473人</p>
+                            <p className="content-1">收藏人數 294人</p>
+                        </div>
+                    </div>
+                    <div className="card3-1">
+                        <h3 className="learn-1">HTML</h3>
+                        <img src="../public/images/trendCourse4.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">音檔與影片</h4>
+                            <p className="content-1">學習人數 930人</p>
+                            <p className="content-1">收藏人數 467人</p>
+                        </div>
+                    </div>
+                    <div className="card4-1">
+                        <h3 className="learn-1">CSS</h3>
+                        <img src="../public/images/trendCourse3.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">顏色</h4>
+                            <p className="content-1">學習人數 1930人</p>
+                            <p className="content-1">收藏人數 874人</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div className="tdcard-2">
+                    <div className="card5-1">
+                        <h3 className="learn-1">CSS</h3>
+                        <img src="../public/images/trendCourse3.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">邊距與內距</h4>
+                            <p className="content-1">學習人數 930人</p>
+                            <p className="content-1">收藏人數 467人</p>
+                        </div>
+                    </div>
+                    <div className="card6-1">
+                        <h3 className="learn-1">HTML</h3>
+                        <img src="../public/images/trendCourse6.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">表單擴展</h4>
+                            <p className="content-1">學習人數 1121人</p>
+                            <p className="content-1">收藏人數 855人</p>
+                        </div>
+                    </div>
+                    <div className="card7-1">
+                        <h3 className="learn-1">CSS</h3>
+                        <img src="../public/images/trendCourse7.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">定位</h4>
+                            <p className="content-1">學習人數 2512人</p>
+                            <p className="content-1">收藏人數 1111人</p>
+                        </div>
+                    </div>
+                    <div className="card8-1">
+                        <h3 className="learn-1">HTML</h3>
+                        <img src="../public/images/trendCourse8.png" alt="" />
+                        <div class="item-1">
+                            <h4 className="learn1-1">嵌入內容</h4>
+                            <p className="content-1">學習人數 930人</p>
+                            <p className="content-1">收藏人數 467人</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='out'>
+                <div className="sofa">
+                    <img src="./public/images/trendSofa.svg" alt="" />
+                </div>
+                <img className='deco1-1' src="../public/images/trendDecoC.png" alt="" />
+                <img className='deco1-2' src="../public/images/trendDecoD.png" alt="" />
             </div>
-        </div>
-        <div className="card2-1">
-            <h3 className="learn-1">HTML</h3>
-            <img src="../public/images/trendCourse1.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是HTML?</h4>
-                <p className="content-1">學習人數 473人</p>
-                <p className="content-1">收藏人數 294人</p>
+                
             </div>
-        </div>
-        <div className="card3-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-        <div className="card4-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-        <div className="card5-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-        <div className="card6-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-        <div className="card7-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-        <div className="card8-1">
-            <h3 className="learn-1">JS</h3>
-            <img src="../public/images/trendCourse3.png" alt="" />
-            <div class="item-1">
-                <h4 className="learn1-1">什麼是JS?</h4>
-                <p className="content-1">學習人數 930人</p>
-                <p className="content-1">收藏人數 467人</p>
-            </div>
-        </div>
-    </div>
-</>
-   )
+            
+
+        </>
+    )
 }
 export default TrendCard2

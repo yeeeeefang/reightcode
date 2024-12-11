@@ -171,6 +171,7 @@ a {
   flex-direction: column;
   height: 820px;
   overflow: hidden;
+  position: relative;
 }
 #div1 .lightcontainer {
   display: flex;
@@ -251,7 +252,7 @@ a {
 }
 
 #div2 {
-  height: 100vh;
+  height: 2160px;
   background-color: #FFD640;
   background-image: url("../../../public/images/trendLine.png");
   background-size: contain;
