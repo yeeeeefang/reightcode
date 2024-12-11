@@ -166,36 +166,24 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-/* body {
-    background-color: $primary;
-    font-family: 'Zen Maru Gothic', sans-serif;
-}  會套到全版 先註解*/
 #memberPage {
+  background-color: #FFD640;
   display: flex;
   justify-content: space-around;
 }
 
-#topbar {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  margin: 30px 50px;
-}
-#topbar .logo img {
-  width: 65px;
-}
-
 #member {
-  border: 1px solid;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
-  justify-items: center;
-  height: 690px;
+  height: 700px;
   width: 390px;
-  background: linear-gradient(to top, #FFF0C0 85%, transparent 0%);
+  position: relative;
 }
 #member .memberPic {
+  position: absolute;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,7 +196,18 @@ a {
   width: 160px;
   height: 130px;
 }
-#member .memberInfo {
+#member #memberAll {
+  width: 390px;
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 60px 65px 15px 65px;
+  background-color: #FFF0C0;
+  border-radius: 75px 75px 0 0;
+  box-shadow: 10px 10px #897359;
+}
+#member #memberAll .memberInfo {
   width: 260px;
   height: 260px;
   background-image: url(/images/memberInfo.png);
@@ -216,29 +215,33 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-#member .memberInfo h2 {
+#member #memberAll .memberInfo h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #FA8F21;
   margin: 0 0 12px 0;
 }
-#member .memberInfo .name,
-#member .memberInfo .sexal,
-#member .memberInfo .age,
-#member .memberInfo .school,
-#member .memberInfo .time {
+#member #memberAll .memberInfo .name,
+#member #memberAll .memberInfo .sexal,
+#member #memberAll .memberInfo .age,
+#member #memberAll .memberInfo .school,
+#member #memberAll .memberInfo .time {
   font-size: 1rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: row;
-  margin: 0 37px 10px 37px;
+  margin: 0 37px 8px 37px;
 }
-#member .memberInfo .name {
-  padding: 5px;
+#member #memberAll .memberInfo .name p,
+#member #memberAll .memberInfo .sexal p,
+#member #memberAll .memberInfo .age p,
+#member #memberAll .memberInfo .school p,
+#member #memberAll .memberInfo .time p {
+  margin-right: 10px;
 }
-#member .memberAward {
+#member #memberAll .memberAward {
   width: 260px;
   height: 260px;
   background-image: url(../public/images/memberInfo.png);
@@ -246,20 +249,21 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-#member .memberAward h2 {
+#member #memberAll .memberAward h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #FA8F21;
   margin: 0 0 12px 0;
 }
-#member .memberAward .award {
+#member #memberAll .memberAward .award {
   align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px;
 }
-#member .memberAward .award img {
+#member #memberAll .memberAward .award img {
   width: 95px;
   height: 95px;
 }
@@ -385,7 +389,10 @@ a {
   width: 48px;
   height: 48px;
 }
-#collection .collect1, #collection .collect2, #collection .collect3, #collection .collect4 {
+#collection .collect1,
+#collection .collect2,
+#collection .collect3,
+#collection .collect4 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,7 +401,10 @@ a {
   width: 230px;
   margin: 5px 0;
 }
-#collection .collect1 .title, #collection .collect2 .title, #collection .collect3 .title, #collection .collect4 .title {
+#collection .collect1 .title,
+#collection .collect2 .title,
+#collection .collect3 .title,
+#collection .collect4 .title {
   font-size: 15px;
   background-color: #FFD640;
   border-radius: 85px;
@@ -403,11 +413,30 @@ a {
   justify-content: center;
   align-items: center;
 }
-#collection .collect1 P, #collection .collect2 P, #collection .collect3 P, #collection .collect4 P {
+#collection .collect1 P,
+#collection .collect2 P,
+#collection .collect3 P,
+#collection .collect4 P {
   font-size: 0.85rem;
   font-weight: 700;
   margin: 5px 8px;
 }
 #collection .collect1 {
   margin-top: 25px;
+}
+
+#memberRight {
+  display: flex;
+  flex-direction: column;
+}
+#memberRight #rightUp {
+  display: flex;
+}
+#memberRight .award1 h2 {
+  display: flex;
+  align-items: center;
+}
+#memberRight .award1 h2 img {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=Member.css.map */
