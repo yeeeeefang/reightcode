@@ -166,6 +166,10 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+#nav {
+  background-color: #FFD640;
+}
+
 #memberPage {
   background-color: #FFD640;
   display: flex;

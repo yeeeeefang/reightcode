@@ -1,58 +1,58 @@
 import "../assets/css/Member.css"
+import Navbar from "../components/Navbar"
 import NavbarTwo from "../components/NavbarTwo"
 
 export default function Member() {
     return (
         <>
-            <header id="topbar">
-                <NavbarTwo />
-            </header>
+                
 
-            <body>
 
-                <div id="memberPage">
-                    {/* 會員總資料 */}
-                    <div id="member">
-                        {/* 會員圖片 */}
-                        <div className="memberPic"><img src="./images/greenE.svg" alt="會員圖片" />
-                        </div>
-                        <div id="memberAll">
-                            {/* 會員資料 */}
-                            <div className="memberInfo">
-                                <h2>個人資料</h2>
-                                <div className="name">
-                                    <p>姓名：</p>
-                                    <p>王曉明</p>
-                                </div>
-                                <div className="sexal">
-                                    <p>性別：</p>
-                                    <p>男</p>
-                                </div>
-                                <div className="age">
-                                    <p>年齡：</p>
-                                    <p>13歲</p>
-                                </div>
-                                <div className="school">
-                                    <p>學校：</p>
-                                    <p>快樂國中</p>
-                                </div>
-                                <div className="time">
-                                    <p>加入時間：</p>
-                                    <p>2024/12/03</p>
-                                </div>
+<div id="nav">
+    <Navbar/>
+            <div id="memberPage">
+                {/* 會員總資料 */}
+                <div id="member">
+                    {/* 會員圖片 */}
+                    <div className="memberPic"><img src="./images/greenE.svg" alt="會員圖片" />
+                    </div>
+                    <div id="memberAll">
+                        {/* 會員資料 */}
+                        <div className="memberInfo">
+                            <h2>個人資料</h2>
+                            <div className="name">
+                                <p>姓名：</p>
+                                <p>王曉明</p>
                             </div>
-                            {/* 會員獎盃 */}
-                            <div className="memberAward">
-                                <h2>獎盃挑戰</h2>
-                                <div className="award">
-                                    <img src="./images/award.svg" alt="" />
-                                    <img src="./images/award.svg" alt="" />
-                                </div>
+                            <div className="sexal">
+                                <p>性別：</p>
+                                <p>男</p>
+                            </div>
+                            <div className="age">
+                                <p>年齡：</p>
+                                <p>13歲</p>
+                            </div>
+                            <div className="school">
+                                <p>學校：</p>
+                                <p>快樂國中</p>
+                            </div>
+                            <div className="time">
+                                <p>加入時間：</p>
+                                <p>2024/12/03</p>
+                            </div>
+                        </div>
+                        {/* 會員獎盃 */}
+                        <div className="memberAward">
+                            <h2>獎盃挑戰</h2>
+                            <div className="award">
+                                <img src="./images/award.svg" alt="" />
+                                <img src="./images/award.svg" alt="" />
                             </div>
                         </div>
                     </div>
+                </div>
 
-<div id="memberRight">
+                <div id="memberRight">
                     <div id="rightUp">
                         {/* 課程進度 */}
                         <div id="progress">
@@ -110,22 +110,20 @@ export default function Member() {
                         </div>
                     </div>
                     {/* 獎盃總表 */}
-                        <div className="award1">
-                            <h2><img src="./images/iconGreenA.png" alt="" />總堂數</h2>
-                            <figure>
-                                <img src="./images/award.svg" alt="" />
-                                <img src="./images/award.svg" alt="" />
-                                <img src="./images/award.svg" alt="" />
-                                <img src="./images/award.svg" alt="" />
-                                <img src="./images/award.svg" alt="" />
-                                <img src="./images/award.svg" alt="" />
-                            </figure>
-                        </div>
-
-                </div>
-                </div>
-            </body>
-
+                    <div className="award1">
+                        <h2><img src="./images/iconGreenA.png" alt="" />總堂數</h2>
+                        <figure>
+                            <img src="./images/award.svg" alt="" />
+                            <img src="./images/award.svg" alt="" />
+                            <img src="./images/award.svg" alt="" />
+                            <img src="./images/award.svg" alt="" />
+                            <img src="./images/award.svg" alt="" />
+                            <img src="./images/award.svg" alt="" />
+                        </figure>
+                    </div>
+                    </div>
+            </div>
+            </div>
         </>
     )
 }
