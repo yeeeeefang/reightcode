@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function Navbar() {
     return (
         <>
-            <section id="page-1">
+            <section id="Navebar-page-1">
                 <div className="navBarBk">
                     <div className="logo">
                         

@@ -3,7 +3,7 @@ import '../../src/assets/css/navbar.css'
 function NavbarTwo() {
     return (
         <>
-            <section id="page-1">
+            <section id="NavbarTwo-page-1">
                 <div className="navBarBk">
                     <div className="logo">
                         <img src="../public/images/logo.png" alt="" />

@@ -8,10 +8,12 @@ import LearnHome from './pages/LearnHome';
 import Navbar from './components/Navbar';
 import NavbarTwo from './components/NavbarTwo';
 import './assets/scss/App.scss';
+import LearnPageExp from './components/LearnPageExp';
 
 function App() {
   return (
     <>
+
     </>
   )
 }
