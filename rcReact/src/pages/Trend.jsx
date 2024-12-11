@@ -1,4 +1,5 @@
 import TrendCard from "../components/TrendCard";
+import TrendCard2 from "../components/TrendCard2";
 import "../assets/scss/Trend.scss"
 
 function Trend(){
@@ -16,6 +17,9 @@ function Trend(){
             </div>
           </div>
           <TrendCard/>
+          <img className="deco-1" src="./public/images/trendDecoA.png" alt="" />
+          <img className="deco-2" src="./public/images/trendDecoB.png" alt="" />
+          <img className="deco-3" src="./public/images/trendDecoC.png" alt="" />
           <div id="item3">
           <div className="item4"><img className="char-1" src="./public/images/blueA.svg" alt="" /></div>
           <div className="item4"><img className="char-2" src="./public/images/redC.svg" alt="" /></div>
@@ -26,7 +30,7 @@ function Trend(){
           </div>
         </section>
         <section id="div2">
-          
+          <TrendCard2/>
         </section>
         </>
       )

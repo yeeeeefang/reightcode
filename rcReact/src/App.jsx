@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import LearnHome from './pages/LearnHome';
 import Navbar from './components/Navbar';
 import NavbarTwo from './components/NavbarTwo';
+import './assets/scss/App.scss';
 
 function App() {
   return (

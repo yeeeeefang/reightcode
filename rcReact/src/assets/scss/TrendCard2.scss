@@ -1,2 +1,32 @@
 @use './reset';
 @use './variables/' as *;
+
+
+.tdcard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+    .card1-1,.card2-1,.card3-1,.card4-1,.card5-1,.card6-1,.card7-1,.card8-1{
+        // border: 2px solid rgba(255, 0, 0, 0.808);
+        width: 20%;
+        margin: 20px;
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 8px 8px 0 hsla(0, 0%, 0%, 0.8);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .learn-1{
+            line-height: 25px;
+            text-align: center;
+            font-size: 19px;
+            font-weight: bold;
+            background-color:$primary ;
+            width: 45%;
+            border-radius: 12px;
+        }
+    }
+}
