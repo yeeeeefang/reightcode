@@ -7,7 +7,9 @@ function Navbar() {
             <section id="page-1">
                 <div className="navBarBk">
                     <div className="logo">
+                        
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
+                        <a href="./"></a>
                         <img src="../public/images/logo.png" alt="" />
                     </div>
                     <div className="navBarBk-1">
