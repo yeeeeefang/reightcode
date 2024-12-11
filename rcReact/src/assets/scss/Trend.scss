@@ -1,4 +1,5 @@
 @use './reset';
+
 #div1 {
     background-color: #FFD640;
     display: flex;
@@ -6,25 +7,17 @@
     height: 820px;
     overflow: hidden;
     position: relative;
-<<<<<<< HEAD
-=======
-    margin-top: -120px;
->>>>>>> b6dde5dd1c72c7b34ee190441b706dbb0692db10
     
-    // border: 2px red solid;
-    
-    // #header {
-    //     width: 1440px;
-    //     height: 100px;
-    //     background-color: aqua;
+   // border: 2px red solid;
 
-    // }
+    
 
     .lightcontainer {
         margin-top: -100px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-top: -100px;
 
         .light {
             width: 180px;
@@ -60,16 +53,18 @@
         }
     }
 
-    .deco-1{
+    .deco-1 {
         position: absolute;
         width: 3%;
     }
-    .deco-2{
+
+    .deco-2 {
         position: absolute;
         width: 3%;
         top: 400px;
     }
-    .deco-3{
+
+    .deco-3 {
         position: absolute;
         width: 5%;
     }
@@ -86,17 +81,19 @@
         height: 200px;
         // border: 2px rgb(9, 101, 18) solid;
 
-        .char-1{
+        .char-1 {
             width: 155px;
             height: 155px;
         }
-        .char-2{
+
+        .char-2 {
             width: 200px;
             height: 200px;
             align-self: flex-start;
             padding-bottom: 50px;
         }
-        .char-3{
+
+        .char-3 {
             width: 150px;
             height: 150px;
         }
@@ -111,12 +108,13 @@
         width: 100%;
     }
 }
-#div2{
+
+#div2 {
     height: 2160px;
     background-color: #FFD640;
     background-image: url('../../../public/images/trendLine.png');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-   
+
 }

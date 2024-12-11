@@ -13,7 +13,7 @@ import LearnPageExp from './components/LearnPageExp';
 function App() {
   return (
     <>
-
+<Trend/>
     </>
   )
 }

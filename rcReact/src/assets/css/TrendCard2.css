@@ -191,6 +191,26 @@ a {
   line-height: 100px;
   font-weight: bold;
 }
+.tdcard .trendtitle2 {
+  background-image: url("../../../public/images/trendDeco2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 130px;
+  text-align: right;
+  display: flex;
+}
+.tdcard .trendtitle2 .titleicon-1 {
+  width: 80px;
+  height: 90px;
+}
+.tdcard .trendtitle2 h3 {
+  font-size: 24px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+}
 .tdcard .tdcard-1,
 .tdcard .tdcard-2 {
   display: flex;

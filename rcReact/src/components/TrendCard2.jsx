@@ -49,7 +49,7 @@ function TrendCard2() {
                 </div>
                 <div>
                 <div className='trendtitle2'>
-                        <img className='titleicon-1' src="../public/images/icon_greenA.svg" alt="" />
+                        <img className='titleicon-1' src="../public/images/icon_blueB.svg" alt="" />
                         <h3>我能挑戰自己</h3>
                     </div>
                 <div className="tdcard-2">
