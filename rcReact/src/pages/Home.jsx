@@ -1,11 +1,13 @@
 import '../assets/css/Home.css'
+import Navbar from '../components/Navbar'
 
 function Home() {
     return (
         <>
-        <div id='page-1'>
+            <div id='page-1'>
+                <Navbar></Navbar>{/* 合併後上方有空白 待處理 */}
 
-        </div>
+            </div>
             <div id="page-all">
                 <section id="page-2">{/* 第二分頁 */}
                     <div className="content-bk-1">
