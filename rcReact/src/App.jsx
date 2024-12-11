@@ -9,11 +9,11 @@ import Navbar from './components/Navbar';
 import NavbarTwo from './components/NavbarTwo';
 import './assets/scss/App.scss';
 import LearnPageExp from './components/LearnPageExp';
+import Member from './pages/Member';
 
 function App() {
   return (
     <>
-<Trend/>
     </>
   )
 }
