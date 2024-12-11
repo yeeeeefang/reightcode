@@ -168,7 +168,7 @@ a {
 .navBarBk {
   display: flex;
   justify-content: space-between;
-  margin: 30px 50px;
+  padding: 30px 50px;
   position: sticky;
   z-index: 999;
 }

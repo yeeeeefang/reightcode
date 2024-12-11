@@ -6,6 +6,7 @@ function Home() {
         <>
 
             <div id='Home-page-1'>
+                <Navbar/>
                 {/* 合併後上方有空白 待處理 */}
             </div>
             <div id="page-all">

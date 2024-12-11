@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 function Navbar() {
     return (
         <>
-            <section id="Navebar-page-1">
+            <div>
                 <div className="navBarBk">
                     <div className="logo">
-                        
+
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
                         <a href="./"></a>
                         <img src="../public/images/logo.png" alt="" />
@@ -21,7 +21,7 @@ function Navbar() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
