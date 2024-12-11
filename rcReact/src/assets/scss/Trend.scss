@@ -20,9 +20,17 @@
         margin-top: -100px;
 
         .light {
-            width: 180px;
+            width: 150px;
             z-index: 4;
             position: absolute;
+        }
+        .hottitle{
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+            z-index: 5;
+            top: 180px;
         }
 
         .container {
@@ -33,19 +41,19 @@
             .light1 {
                 position: absolute;
                 height: 600px;
-                transform: translate(30px, 150px);
+                transform: translate(30px, 120px);
                 z-index: 1;
             }
 
             .light2 {
-                transform: translate(0, 150px);
+                transform: translate(0, 120px);
                 position: absolute;
                 height: 600px;
                 z-index: 2;
             }
 
             .light3 {
-                transform: translate(0, 150px);
+                transform: translate(0, 120px);
                 position: absolute;
                 height: 600px;
                 z-index: 3;
@@ -56,17 +64,22 @@
     .deco-1 {
         position: absolute;
         width: 3%;
+        top: 500px;
+        left: 125px;
     }
 
     .deco-2 {
         position: absolute;
         width: 3%;
-        top: 400px;
+        top: 150px;
+        left: 400px;
     }
 
     .deco-3 {
         position: absolute;
         width: 5%;
+        top: 200px;
+        right: 200px;
     }
 
     #item3 {
@@ -74,23 +87,23 @@
         z-index: 8;
         display: flex;
         justify-content: space-around;
-        align-items: flex-end;
+        align-items: flex-start;
         // bottom: 90px;
-        top: 490px;
+        top: 530px;
         width: 100%;
-        height: 200px;
+        height: 300px;
         // border: 2px rgb(9, 101, 18) solid;
 
         .char-1 {
             width: 155px;
-            height: 155px;
+            height: 255px;
+            padding-top: 80px;
         }
 
         .char-2 {
             width: 200px;
             height: 200px;
-            align-self: flex-start;
-            padding-bottom: 50px;
+            // padding-bottom: 50px;
         }
 
         .char-3 {

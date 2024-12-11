@@ -167,10 +167,12 @@ a {
 /* reset end */
 .cardcontent {
   position: relative;
-  width: 100%;
+  width: 1440px;
+  height: 580px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: end;
   padding: 180px 0 0 0;
   z-index: 100;
 }
@@ -180,7 +182,8 @@ a {
   margin: 30px 30px 0 30px;
   align-items: center;
   background-color: rgb(252, 249, 249);
-  width: 250px;
+  width: 215px;
+  height: 260px;
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;
@@ -227,10 +230,12 @@ a {
 .cardcontent .card2 {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
   margin: 30px 30px 0 30px;
   align-items: center;
   background-color: rgb(252, 249, 249);
-  width: 250px;
+  width: 215px;
+  height: 260px;
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;
@@ -280,7 +285,8 @@ a {
   margin: 30px 30px 0 30px;
   align-items: center;
   background-color: rgb(252, 249, 249);
-  width: 250px;
+  width: 215px;
+  height: 260px;
   border-radius: 10px;
   box-shadow: 8px 8px 0 #33322f;
   position: relative;

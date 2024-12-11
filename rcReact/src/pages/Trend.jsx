@@ -13,6 +13,7 @@ function Trend(){
           <div className="lightcontainer">
           
             <img className="light" src="./public/images/trendLight.png" alt="" />
+            <h3 className="hottitle">熱門學習趨勢</h3>
             <div className="container">
               <img className="light1" src="./public/images/trendLightA.svg" alt="" />
               <img className="light2" src="./public/images/trendLightB.svg" alt="" />
