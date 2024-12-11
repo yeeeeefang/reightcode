@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/TrendCard2.scss","../scss/variables/_color.scss"],"names":[],"mappings":"CAGA,2ZAiFI,SACA,UACA,SACA,eAGJ,EACI,sBAIJ,KACI,YAEI,yLAGJ,yBACA,gBAIJ,kBAMI,mBAIJ,MAEI,gBAIJ,IACI,cACA,WAIJ,EACI,cAEA,WACA,qBChIJ,QACI,aACA,eACA,6BAGA,wIAEI,UACA,YACA,sBACA,mBACA,oCACA,aACA,sBACA,mBACA,kBAEA,gNACI,iBACA,kBACA,eACA,iBACA,iBC1BH,QD2BG,UACA,mBACA,iBAGA,wRACI,eACA,iBAGJ,gSACI,mBACA,eACD,iBCjBR","file":"TrendCard2.min.css"}
+=======
+{"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/TrendCard2.scss","../scss/variables/_color.scss"],"names":[],"mappings":"CAGA,2ZAiFI,SACA,UACA,SACA,eAGJ,EACI,sBAIJ,KACI,YAEI,yLAGJ,yBACA,gBAIJ,kBAMI,mBAIJ,MAEI,gBAIJ,IACI,cACA,WAIJ,EACI,cAEA,WACA,qBChIJ,QACI,aACA,eACA,6BAGA,wIAEI,UACA,YACA,sBACA,mBACA,oCACA,aACA,sBACA,mBAEA,gNACI,iBACA,kBACA,eACA,iBACA,iBCzBH,QD0BG,UACA","file":"TrendCard2.min.css"}
+>>>>>>> fc29b897dbaee04858e67ba6aac10e2bb5678789
