@@ -168,6 +168,7 @@ a {
 /* reset end */
 #page-1 {
   height: 800px;
+  background-color: #FFD640;
 }
 
 #page-all {
@@ -179,7 +180,6 @@ a {
 }
 
 #page-2 {
-  border: 1px solid;
   /* height: 1400px;
      background-color: $primary;
      background-image: url('../public/images/homePathA.png');
@@ -301,7 +301,6 @@ a {
 
 #page-3 {
   margin-top: 80px;
-  border: 1px solid;
   /* height: 820px;
   background-color: $primary;
   position: relative;
@@ -362,7 +361,6 @@ a {
 }
 
 #page-4 {
-  border: 1px solid;
   /* height: 2000px;
   background-color: $primary;
   background-image: url(../public/images/homePathB.png);
@@ -438,7 +436,6 @@ a {
 }
 
 #page-5 {
-  border: 1px solid;
   margin-top: 250px;
   height: 700px;
 }
