@@ -164,4 +164,99 @@ a {
 ::-webkit-resizer{//多行文字欄位右下縮放按鈕
     background-color: $lesser-1;
 } */
-/* reset end *//*# sourceMappingURL=Login.css.map */
+/* reset end */
+#login-page {
+  overflow: hidden;
+  background-color: #FFD640;
+}
+#login-page .login-main {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#login-page .login-main .amoeba-blobs {
+  width: 90%;
+  position: relative;
+  left: 150px;
+  top: -400px;
+  border: 1px solid red;
+}
+#login-page .login-main .characters {
+  position: relative;
+}
+#login-page .login-main .characters img {
+  width: 200px;
+  z-index: 888;
+}
+#login-page .login-main .login-form {
+  flex: 1;
+  background-color: #FEE3EC;
+  padding: 36px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0 #534D97;
+  max-width: 400px;
+}
+#login-page .login-main .login-form h2 {
+  color: #534D97;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+#login-page .login-main .login-form form {
+  z-index: 777;
+  display: flex;
+  flex-direction: column;
+}
+#login-page .login-main .login-form form label {
+  color: #534D97;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+#login-page .login-main .login-form form input {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+#login-page .login-main .login-form form .forgot-password {
+  text-align: right;
+  color: #534D97;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+#login-page .login-main .login-form form .login-button {
+  background-color: #534D97;
+  color: #fff;
+  border: none;
+  padding: 18px 36px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+#login-page .login-main .login-form .login-divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+}
+#login-page .login-main .login-form .login-divider hr {
+  flex: 1;
+  border: none;
+  height: 2px;
+  background-color: #A2A2A2;
+}
+#login-page .login-main .login-form .login-divider span {
+  margin: 0 8px;
+  color: #A2A2A2;
+  font-weight: bold;
+}
+#login-page .login-main .login-form .social-login {
+  display: flex;
+  justify-content: space-around;
+}
+#login-page .login-main .login-form .social-login button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}/*# sourceMappingURL=Login.css.map */
