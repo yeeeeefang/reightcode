@@ -4,20 +4,20 @@ import NavbarTwo from "../components/NavbarTwo"
 export default function LearnHome() {
     return (
         <>
-            <NavbarTwo/> 
-            <div id="learnhome-page">
+            <div id="learnhome-page">        
+                {/* <NavbarTwo/>  */}
                 {/* topbar  */}
-                {/* <header className="topbar">
+                <header id="topbar">
                     <div className="logo">
                         <h1 className="logo"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></h1>
                     </div>
                     <div className="learnBtn">
                         <figure><img src="/images/hamBtn.svg" alt="" /></figure>
                     </div>
-                </header> */}
+                </header>
 
                 {/* 最大的:要垂直排 */}
-                <div className="learn-home">
+                <div className="learnhome-section1">
                     {/* 第一區 - 學習區 */}
                     <div className="learning-section">
                         <img
@@ -28,9 +28,9 @@ export default function LearnHome() {
                         <h2>學習區</h2>
                     </div>
                     {/* 第二大的:水平 */}
-                    <div className="section">
+                    <div className="learnhome-section2">
                         {/* 第三大的:垂直排 */}
-                        <div className="section3">
+                        <div className="learnhome-section3">
                             {/* 第二區 - 小試身手 */}
                             <div className="practice-section">
                                 <h2>小試身手</h2>
@@ -63,9 +63,12 @@ export default function LearnHome() {
                                 className="redA"
                             />
                         </div>
+
                     </div>
                 </div>
+
             </div>
+
         </>
     )
 }
