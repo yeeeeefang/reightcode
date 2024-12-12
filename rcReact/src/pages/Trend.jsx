@@ -1,8 +1,7 @@
 import TrendCard from "../components/TrendCard";
 import TrendCard2 from "../components/TrendCard2";
 import "../assets/scss/Trend.scss"
-import Footer from '../components/footer'
-
+import Navbar from '../components/Navbar'
 
 function Trend(){
 
@@ -36,9 +35,8 @@ function Trend(){
         </section>
         <section id="div2">
           <TrendCard2/>
-         
+          
         </section>
-         <Footer />
         </>
       )
 }

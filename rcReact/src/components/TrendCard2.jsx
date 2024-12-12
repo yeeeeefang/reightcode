@@ -13,7 +13,7 @@ function TrendCard2() {
                     <div className="tdcard-1">
                         <div className="card1-1">
                             <h3 className="learn-1">HTML</h3>
-                            <img src="../public/images/trendCourse1.png" alt="" />
+                            <img src="../public/images/trendCourse1.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">文字樣式-1</h4>
                                 <p className="content-1">學習人數 2391人</p>
@@ -22,7 +22,7 @@ function TrendCard2() {
                         </div>
                         <div className="card2-1">
                             <h3 className="learn-1">CSS</h3>
-                            <img src="../public/images/trendCourse2.png" alt="" />
+                            <img src="../public/images/trendCourse2.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">背景</h4>
                                 <p className="content-1">學習人數 473人</p>
@@ -31,7 +31,7 @@ function TrendCard2() {
                         </div>
                         <div className="card3-1">
                             <h3 className="learn-1">HTML</h3>
-                            <img src="../public/images/trendCourse4.png" alt="" />
+                            <img src="../public/images/trendCourse4.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">音檔與影片</h4>
                                 <p className="content-1">學習人數 930人</p>
@@ -40,7 +40,7 @@ function TrendCard2() {
                         </div>
                         <div className="card4-1">
                             <h3 className="learn-1">CSS</h3>
-                            <img src="../public/images/trendCourse3.png" alt="" />
+                            <img src="../public/images/trendCourse3.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">顏色</h4>
                                 <p className="content-1">學習人數 1930人</p>
@@ -59,7 +59,7 @@ function TrendCard2() {
                     <div className="tdcard-2">
                         <div className="card5-1">
                             <h3 className="learn-1">CSS</h3>
-                            <img src="../public/images/trendCourse3.png" alt="" />
+                            <img src="../public/images/trendCourse3.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">邊距與內距</h4>
                                 <p className="content-1">學習人數 930人</p>
@@ -68,7 +68,7 @@ function TrendCard2() {
                         </div>
                         <div className="card6-1">
                             <h3 className="learn-1">HTML</h3>
-                            <img src="../public/images/trendCourse6.png" alt="" />
+                            <img src="../public/images/trendCourse6.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">表單擴展</h4>
                                 <p className="content-1">學習人數 1121人</p>
@@ -77,7 +77,7 @@ function TrendCard2() {
                         </div>
                         <div className="card7-1">
                             <h3 className="learn-1">CSS</h3>
-                            <img src="../public/images/trendCourse7.png" alt="" />
+                            <img src="../public/images/trendCourse7.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">定位</h4>
                                 <p className="content-1">學習人數 2512人</p>
@@ -86,7 +86,7 @@ function TrendCard2() {
                         </div>
                         <div className="card8-1">
                             <h3 className="learn-1">HTML</h3>
-                            <img src="../public/images/trendCourse8.png" alt="" />
+                            <img src="../public/images/trendCourse8.svg" alt="" />
                             <div class="item-1">
                                 <h4 className="learn1-1">嵌入內容</h4>
                                 <p className="content-1">學習人數 930人</p>
