@@ -165,57 +165,56 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#login-page {
+#register-page {
   overflow: hidden;
   background-color: #FFD640;
   height: 100vh;
 }
-#login-page .login-main {
+#register-page .register-main {
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
 }
-#login-page .login-main .amoeba-blobs {
-  width: 90%;
+#register-page .register-main .amoeba-blobs2 {
+  width: 120%;
   position: relative;
-  left: 152px;
-  top: -350px;
+  left: 120px;
+  bottom: 500px;
   overflow: hidden;
 }
-#login-page .login-main .characters .green-char {
+#register-page .register-main .characters .green-char {
   width: 180px;
   height: 180px;
   position: absolute;
-  bottom: 600px;
-  left: 380px;
-  transform: rotate(75deg);
+  bottom: 20px;
+  left: 1230px;
 }
-#login-page .login-main .characters .red-char {
-  width: 175px;
-  height: 175px;
-  position: absolute;
-  bottom: 15px;
-  left: 550px;
-  transform: rotate(-5deg);
-}
-#login-page .login-main .characters .blue-char {
+#register-page .register-main .characters .red-char {
   width: 175px;
   height: 175px;
   position: absolute;
   bottom: 280px;
   left: 140px;
+  transform: rotate(-5deg);
 }
-#login-page .login-main .characters .pink-char {
+#register-page .register-main .characters .blue-char {
+  width: 175px;
+  height: 175px;
+  position: absolute;
+  bottom: 15px;
+  left: 550px;
+}
+#register-page .register-main .characters .pink-char {
   width: 175px;
   height: 175px;
   position: absolute;
   z-index: 888;
-  bottom: 20px;
-  left: 1230px;
+  bottom: 540px;
+  left: 390px;
   transform: rotateY(-180deg);
 }
-#login-page .login-main .login-form {
+#register-page .register-main .register-form {
   flex: 1;
   background-color: #FEE3EC;
   padding: 36px;
@@ -226,35 +225,35 @@ a {
   bottom: 100px;
   left: 800px;
 }
-#login-page .login-main .login-form h2 {
+#register-page .register-main .register-form h2 {
   color: #534D97;
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 24px;
 }
-#login-page .login-main .login-form form {
+#register-page .register-main .register-form form {
   display: flex;
   flex-direction: column;
 }
-#login-page .login-main .login-form form label {
+#register-page .register-main .register-form form label {
   color: #534D97;
   font-weight: bold;
   margin-bottom: 8px;
 }
-#login-page .login-main .login-form form input {
+#register-page .register-main .register-form form input {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 8px;
   margin-bottom: 16px;
 }
-#login-page .login-main .login-form form .forgot-password {
+#register-page .register-main .register-form form .forgot-password {
   text-align: right;
   color: #534D97;
   font-size: 0.9rem;
   margin-bottom: 16px;
 }
-#login-page .login-main .login-form form .login-button {
+#register-page .register-main .register-form form .register-button {
   background-color: #534D97;
   color: #fff;
   border: none;
@@ -264,28 +263,28 @@ a {
   font-weight: bold;
   cursor: pointer;
 }
-#login-page .login-main .login-form .login-divider {
+#register-page .register-main .register-form .register-divider {
   display: flex;
   align-items: center;
   margin: 24px 0;
 }
-#login-page .login-main .login-form .login-divider hr {
+#register-page .register-main .register-form .register-divider hr {
   flex: 1;
   border: none;
   height: 2px;
   background-color: #A2A2A2;
 }
-#login-page .login-main .login-form .login-divider span {
+#register-page .register-main .register-form .register-divider span {
   margin: 0 8px;
   color: #A2A2A2;
   font-weight: bold;
 }
-#login-page .login-main .login-form .social-login {
+#register-page .register-main .register-form .social-register {
   display: flex;
   justify-content: space-around;
 }
-#login-page .login-main .login-form .social-login button {
+#register-page .register-main .register-form .social-register button {
   cursor: pointer;
   border: none;
   background-color: transparent;
-}/*# sourceMappingURL=Login.css.map */
+}/*# sourceMappingURL=Register.css.map */

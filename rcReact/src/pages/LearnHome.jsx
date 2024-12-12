@@ -8,14 +8,14 @@ export default function LearnHome() {
             <div id="learnhome-page">        
                 <Navbar/>
                 {/* topbar  */}
-                <header id="topbar">
+                {/* <header id="topbar">
                     <div className="logo">
                         <h1 className="logo"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></h1>
                     </div>
                     <div className="learnBtn">
                         <figure><img src="/images/hamBtn.svg" alt="" /></figure>
                     </div>
-                </header>
+                </header> */}
 
                 {/* 最大的:要垂直排 */}
                 <div className="learnhome-section1">
