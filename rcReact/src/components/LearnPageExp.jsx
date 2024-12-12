@@ -1,11 +1,10 @@
 import '../assets/css/LearnPageExp.css'
-import CircularProgress from './CircularProgress'
 
 function LearnPageExp() {
     return (
         <>
             <section id='LearnPageExp'>
-                <div>
+                <div className='LearnPageExp-bk-big'>
                     <div className='LearnPageExp-content-1'>
                         <p>目前獲得的能力:</p>
                     </div>
@@ -39,9 +38,6 @@ function LearnPageExp() {
                             <progress value={50} max={100} className='LearnPageExp-progress' />
                         </div>
                     </div>
-                </div>
-                <div>
-                    <CircularProgress></CircularProgress>
                 </div>
             </section>
         </>
