@@ -2,7 +2,7 @@
 @use "./variables/"as *;
 
 #LearnPageExp {
-
+;
     .LearnPageExp-bk-1 {
         display: flex;
         flex-wrap: wrap;
@@ -10,7 +10,7 @@
         .LearnPageExp-content-2 {
             progress {
                 accent-color: $learn-p1;
-                height: 25px;
+                height: 85px;
             }
         }
 
