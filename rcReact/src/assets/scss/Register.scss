@@ -1,7 +1,7 @@
 @use "./reset";
 @use "./variables" as *;
 
-#login-page {
+#register-page {
     overflow: hidden;
     background-color: $primary; // 背景黃色
     height: 100vh;
@@ -9,7 +9,7 @@
 
 
 
-    .login-main {
+    .register-main {
 
         // overflow: hidden;
         justify-content: center;
@@ -18,11 +18,11 @@
         height: 100vh;
         // border: 1px solid red;
 
-        .amoeba-blobs {
-            width: 90%;
+        .amoeba-blobs2 {
+            width: 120%;
             position: relative;
-            left: 152px;
-            top: -350px;
+            left: 120px;
+            bottom: 500px;
             overflow: hidden;
             // border: 1px solid red;
         }
@@ -35,16 +35,17 @@
                 width: 180px;
                 height: 180px;
                 position: absolute;
-                bottom: 600px;
-                left: 380px;
-                transform: rotate(75deg);
+                bottom: 20px;
+                left: 1230px;
+
             }
             .red-char{
                 width: 175px;
                 height: 175px;
                 position: absolute;
-                bottom: 15px;
-                left: 550px;
+                bottom: 280px;
+                left: 140px;
+
                 transform: rotate(-5deg);
                 // border: 1px solid red;
             }
@@ -52,22 +53,23 @@
                 width: 175px;
                 height: 175px;
                 position: absolute;
-                bottom: 280px;
-                left: 140px;
+                bottom: 15px;
+                left: 550px;
             }
             .pink-char{
                 width: 175px;
                 height: 175px;
                 position: absolute;
                 z-index: 888;
-                bottom: 20px;
-                left: 1230px;
+                bottom: 540px;
+                left: 390px;
+
                 transform: rotateY(-180deg);
                 // border: 1px solid red;
             }
         }
 
-        .login-form {
+        .register-form {
             flex: 1;
             background-color: $register-1; // 淺粉色
             padding: 36px;
@@ -111,7 +113,7 @@
                     margin-bottom: 16px;
                 }
 
-                .login-button {
+                .register-button {
                     background-color: $shadow-3;
                     color: #fff;
                     border: none;
@@ -128,7 +130,7 @@
                 }
             }
 
-            .login-divider {
+            .register-divider {
                 display: flex;
                 align-items: center;
                 margin: 24px 0;
@@ -147,7 +149,7 @@
                 }
             }
 
-            .social-login {
+            .social-register {
                 display: flex;
                 justify-content: space-around;
 
