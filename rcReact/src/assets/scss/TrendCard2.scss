@@ -146,8 +146,16 @@
           .card1-1,.card3-1 {
             animation: float 2s infinite ease-in-out; /* 2秒循环 */
           }
+          @keyframes float {
+            0%, 100% {
+              transform: translate(10px,-10px); /* 初始位置 */
+            }
+            50% {
+              transform: translate(0); 
+            }
+          }
           .card2-1,.card4-1 {
-            animation: float 3s infinite ease-in-out; /* 2秒循环 */
+            animation: float 3s infinite ease-in-out; 
           }
           
     }
