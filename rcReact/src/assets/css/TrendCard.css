@@ -167,7 +167,7 @@ a {
 /* reset end */
 .cardcontent {
   position: relative;
-  width: 1440px;
+  width: 100%;
   height: 580px;
   display: flex;
   flex-wrap: wrap;
