@@ -166,6 +166,10 @@ a {
 } */
 /* reset end */
 .nav1 {
+  /* 定在最底下 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -189,16 +193,26 @@ a {
   font-size: 1rem;
   font-weight: 500;
 }
-.nav1 #nav1-2 .logo {
+.nav1 .foo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav1 .foo .logo {
   width: 125px;
   margin-bottom: 30px;
   padding-top: 10px;
 }
-.nav1 #nav1-2 .icon {
+.nav1 .foo .icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.nav1 #nav1-2 .icon .iconfb, .nav1 #nav1-2 .icon .iconig {
+.nav1 .foo .icon .iconfb,
+.nav1 .foo .icon .iconig {
   width: 48px;
+}
+.nav1 .foo .footersamll {
+  padding-top: 10px;
 }/*# sourceMappingURL=Footer.css.map */

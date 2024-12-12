@@ -25,20 +25,23 @@ function Footer() {
 
                     </ul>
                 </div>
-                <div id="nav1-2">
-                    <h1 class="logo"><a href="./index.html">
-                        {/*  SVG預設自動寬度100%  */}
-                        <img src="./public/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
-                    </a></h1>
-                    <ul className="icon">
-                        <li><a className="iconfb" href="">
-                            <img src="./public/images/icon_fb.svg" alt="" />
-                        </a></li>
-                        <li><a className="iconig" href="">
-                            <img src="./public/images/icon_ig.svg" alt="" />
-                        </a></li>
+                <div className="foo">
+                    <div id="nav1-2">
+                        <h1 class="logo"><a href="./index.html">
+                            {/*  SVG預設自動寬度100%  */}
+                            <img className='logoimg' src="./public/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
+                        </a></h1>
+                        <ul className="icon">
+                            <li><a className="iconfb" href="">
+                                <img src="./public/images/icon_fb.svg" alt="" />
+                            </a></li>
+                            <li><a className="iconig" href="">
+                                <img src="./public/images/icon_ig.svg" alt="" />
+                            </a></li>
+                        </ul>
 
-                    </ul>
+                    </div>
+                    <small className='footersamll'>Copyright © 2024 RightCode </small>
                 </div>
             </nav >
         </div >

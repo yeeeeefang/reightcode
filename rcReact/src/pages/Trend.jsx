@@ -36,9 +36,9 @@ function Trend(){
         </section>
         <section id="div2">
           <TrendCard2/>
-          
+         
         </section>
-        {/* <Footer/> */}
+         <Footer />
         </>
       )
 }

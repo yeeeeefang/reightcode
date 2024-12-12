@@ -2,6 +2,11 @@
 @use './variables/' as *;
 
 .nav1 {
+  /* 定在最底下 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -30,22 +35,33 @@
     }
   }
 
-  #nav1-2 {
+  .foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .logo {
       width: 125px;
       margin-bottom: 30px;
       padding-top: 10px;
+      // .logoimg{
+      //   text-align: center;
+      // }
     }
 
     .icon {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      
-      .iconfb,.iconig{
+
+      .iconfb,
+      .iconig {
         width: 48px;
       }
+    }
+    .footersamll{
+      padding-top: 10px;
     }
   }
 }
