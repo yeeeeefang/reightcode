@@ -172,7 +172,7 @@ a {
   position: sticky;
   z-index: 999;
 }
-.navBarBk .logo {
+.navBarBk .navlogo {
   width: 87px;
   height: 53px;
 }
@@ -180,11 +180,11 @@ a {
   display: flex;
   margin: 5px;
 }
-.navBarBk .navBarBk-1 .learningBtn {
+.navBarBk .navBarBk-1 .navlearningBtn {
   width: 220px;
   height: 48px;
   margin-right: 50px;
 }
-.navBarBk .navBarBk-1 .hamBtn {
+.navBarBk .navBarBk-1 .navhamBtn {
   width: 48px;
 }/*# sourceMappingURL=Navbar.css.map */

@@ -5,7 +5,7 @@ function NavbarTwo() {
         <>
             <section id="NavbarTwo-page-1">
                 <div className="navBarBk">
-                    <div className="logo">
+                    <div className="navlogo">
                         <img src="../public/images/logo.png" alt="" />
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
 
@@ -14,7 +14,7 @@ function NavbarTwo() {
                         {/* <div className="learningBtn">
                             <img src="../public/images/navBtn.png" alt="" />
                         </div> */}
-                        <div className="hamBtn">
+                        <div className="navhamBtn">
                             <img src="../public/images/hamBtn.svg" alt="" />
                         </div>
                     </div>
