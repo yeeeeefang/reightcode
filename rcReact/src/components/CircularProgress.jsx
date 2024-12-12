@@ -11,7 +11,7 @@ function CircularProgress() {
                 <CircularProgressbar
                     value={percentage}
                     text={`${percentage}%`}
-                    strokeWidth={15}
+                    strokeWidth={10}
                     styles={buildStyles({
                         // 路徑和軌蹟的旋轉，以圈數為單位 (0-1)
                         /* rotation : 0.25 , */

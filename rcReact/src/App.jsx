@@ -14,7 +14,7 @@ import Member from './pages/Member';
 function App() {
   return (
     <>
-    <LearnPageExp/>
+    <Home/>
     </>
   )
 }
