@@ -399,24 +399,6 @@ a {
   background-color: #E7E7E7;
   margin: 6px;
 }
-@keyframes float {
-  0%, 100% {
-    transform: translate(0); /* 初始位置 */
-  }
-  50% {
-    transform: translate(10px, -10px); /* 向上浮动的高度 */
-  }
-}
-.tdcard .tdtd1 .card1-1, .tdcard .tdtd1 .card3-1,
-.tdcard .tdtd2 .card1-1,
-.tdcard .tdtd2 .card3-1 {
-  animation: float 2s infinite ease-in-out; /* 2秒循环 */
-}
-.tdcard .tdtd1 .card2-1, .tdcard .tdtd1 .card4-1,
-.tdcard .tdtd2 .card2-1,
-.tdcard .tdtd2 .card4-1 {
-  animation: float 3s infinite ease-in-out; /* 2秒循环 */
-}
 .tdcard .out {
   position: relative;
   width: 100%;
