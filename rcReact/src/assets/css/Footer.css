@@ -124,7 +124,7 @@ img {
 a {
   display: block;
   /* 將a預設inline改為block，才能設定間距及寬高*/
-  color: #666;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -169,26 +169,25 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: aqua;
+  background-color: #8ECAE6;
+  padding: 40px 125px;
+  height: 250px;
 }
 .nav1 #nav1-1 {
   display: flex;
-  padding: 10px 0;
 }
 .nav1 #nav1-1 .item1 {
-  padding-right: 0 80px 0 0;
+  padding-right: 80px;
 }
-.nav1 #nav1-1 .item1 p {
+.nav1 #nav1-1 .item1 .pp1 {
   font-size: 1.25rem;
+  padding-bottom: 25px;
 }
 .nav1 #nav1-1 .item2 {
-  width: 6rem;
+  padding-bottom: 20px;
 }
 .nav1 #nav1-1 .item2 p {
   font-size: 1rem;
-}
-.nav1 #nav1-2 {
-  margin-right: 30px;
 }
 .nav1 #nav1-2 .logo {
   width: 70px;

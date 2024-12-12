@@ -7,22 +7,23 @@
   justify-content: space-between;
   background-color: $learn-h1;
   padding: 40px 125px;
+  height: 250px;
 
   #nav1-1 {
     display: flex;
-    // padding: 10px 0;
 
     .item1 {
       padding-right: 80px;
 
-      p {
+
+      .pp1 {
         font-size: 1.25rem;
+        padding-bottom: 25px;
       }
     }
 
     .item2 {
-      // width: 6rem;
-
+      padding-bottom: 20px;
 
       p {
         font-size: 1rem;
@@ -31,7 +32,6 @@
   }
 
   #nav1-2 {
-    // margin-right: 30px;
 
     .logo {
       width: 70px;
