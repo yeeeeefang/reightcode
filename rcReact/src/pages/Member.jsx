@@ -110,16 +110,18 @@ export default function Member() {
                         </div>
                     </div>
                     {/* 獎盃總表 */}
-                    <div className="award1">
+                    <div id="award">
+                    <div className="awardContent">
                         <h2><img src="./images/iconGreenA.png" alt="" />總堂數</h2>
-                        <figure>
+                        <div className="awardPic">
                             <img src="./images/award.svg" alt="" />
                             <img src="./images/award.svg" alt="" />
                             <img src="./images/award.svg" alt="" />
                             <img src="./images/award.svg" alt="" />
                             <img src="./images/award.svg" alt="" />
                             <img src="./images/award.svg" alt="" />
-                        </figure>
+                        </div>
+                    </div>
                     </div>
                     </div>
             </div>
