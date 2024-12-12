@@ -6,17 +6,17 @@ function Navbar() {
         <>
             <div>
                 <div className="navBarBk">
-                    <div className="logo">
+                    <div className="navlogo">
 
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
                         <a href="./"></a>
                         <img src="../public/images/logo.png" alt="" />
                     </div>
                     <div className="navBarBk-1">
-                        <div className="learningBtn">
+                        <div className="navlearningBtn">
                             <img src="../public/images/navBtn.png" alt="" />
                         </div>
-                        <div className="hamBtn">
+                        <div className="navhamBtn">
                             <img src="../public/images/hamBtn.svg" alt="" />
                         </div>
                     </div>

@@ -1,13 +1,17 @@
+import '../assets/css/LearnPagePerson.css'
+
 function LearnPagePerson() {
     return (
         <>
-            <section>
-                <div>
-                    <div>
+            <section id="LearnPage-bk-1">
+                <div className='LearnPage-bk-2'>
+                    <div className="LearnPage-bk-3">
                         <p> Hello,<span> 我是誰</span></p>
-                        <p>開始<span>課程名稱</span>的探索之旅</p>
+                        <p>開始<span className="LearnPage-class-1">課程名稱</span>的探索之旅</p>
                     </div>
-                    <img src="" alt="" />
+                    <div className="LearnPage-img-1">
+                        <img src="../public/images/greenA.svg" alt="" />
+                    </div>
                 </div>
                 <div>
 

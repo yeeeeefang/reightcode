@@ -2,17 +2,25 @@
 @use "./variables/"as *;
 
 #LearnPageExp {
+    font-weight: $font-w-medium;
 
-    .LearnPageExp-bk-1 {
-        display: flex;
-        flex-wrap: wrap;
+    .LearnPageExp-bk-big {
+        .LearnPageExp-content-1{
+            padding-bottom: 10px;
+        }
+        .LearnPageExp-bk-1 {
+            display: flex;
+            flex-wrap: wrap;
 
-        .LearnPageExp-content-2 {
-            progress {
-                accent-color: $learn-p1;
-                height: 25px;
+            .LearnPageExp-content-2 {
+                progress {
+                    accent-color: $learn-p1;
+                    height: 25px;
+                    font-weight: $font-w-medium;
+                }
             }
         }
+
 
     }
 }

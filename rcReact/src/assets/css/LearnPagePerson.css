@@ -165,26 +165,24 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-.navBarBk {
+#LearnPage-bk-1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#LearnPage-bk-1 .LearnPage-bk-2 {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 50px;
-  position: sticky;
-  z-index: 999;
 }
-.navBarBk .navlogo {
-  width: 87px;
-  height: 53px;
+#LearnPage-bk-1 .LearnPage-bk-2 .LearnPage-bk-3 {
+  display: block;
+  flex: 2;
 }
-.navBarBk .navBarBk-1 {
-  display: flex;
-  margin: 5px;
+#LearnPage-bk-1 .LearnPage-bk-2 .LearnPage-bk-3 .LearnPage-class-1 {
+  font-size: 2rem;
+  padding: 0px 10px;
+  color: #CA5171;
+  font-weight: 900;
 }
-.navBarBk .navBarBk-1 .navlearningBtn {
-  width: 220px;
-  height: 48px;
-  margin-right: 50px;
-}
-.navBarBk .navBarBk-1 .navhamBtn {
-  width: 48px;
-}/*# sourceMappingURL=Navbar.css.map */
+#LearnPage-bk-1 .LearnPage-bk-2 .LearnPage-img-1 {
+  transform: scaleX(-1);
+  flex: 1;
+}/*# sourceMappingURL=LearnPagePerson.css.map */

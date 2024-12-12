@@ -165,11 +165,18 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#LearnPageExp .LearnPageExp-bk-1 {
+#LearnPageExp {
+  font-weight: 500;
+}
+#LearnPageExp .LearnPageExp-bk-big .LearnPageExp-content-1 {
+  padding-bottom: 10px;
+}
+#LearnPageExp .LearnPageExp-bk-big .LearnPageExp-bk-1 {
   display: flex;
   flex-wrap: wrap;
 }
-#LearnPageExp .LearnPageExp-bk-1 .LearnPageExp-content-2 progress {
-  accent-color: #DE5B5B;
+#LearnPageExp .LearnPageExp-bk-big .LearnPageExp-bk-1 .LearnPageExp-content-2 progress {
+  accent-color: #de5b5b;
   height: 25px;
+  font-weight: 500;
 }/*# sourceMappingURL=LearnPageExp.css.map */
