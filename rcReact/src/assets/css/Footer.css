@@ -182,19 +182,23 @@ a {
 .nav1 #nav1-1 .item1 .pp1 {
   font-size: 1.25rem;
   padding-bottom: 25px;
+  font-weight: 700;
 }
 .nav1 #nav1-1 .item2 {
   padding-bottom: 20px;
-}
-.nav1 #nav1-1 .item2 p {
   font-size: 1rem;
+  font-weight: 500;
 }
 .nav1 #nav1-2 .logo {
-  width: 70px;
+  width: 125px;
   margin-bottom: 30px;
+  padding-top: 10px;
 }
 .nav1 #nav1-2 .icon {
   display: flex;
+  justify-content: space-around;
   align-items: center;
+}
+.nav1 #nav1-2 .icon .iconfb, .nav1 #nav1-2 .icon .iconig {
   width: 48px;
 }/*# sourceMappingURL=Footer.css.map */

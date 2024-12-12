@@ -17,32 +17,35 @@
 
 
       .pp1 {
-        font-size: 1.25rem;
+        font-size: $font-size-20;
         padding-bottom: 25px;
+        font-weight: $font-w-bold;
       }
     }
 
     .item2 {
       padding-bottom: 20px;
-
-      p {
-        font-size: 1rem;
-      }
+      font-size: $font-size-16;
+      font-weight: $font-w-medium ;
     }
   }
 
   #nav1-2 {
 
     .logo {
-      width: 70px;
+      width: 125px;
       margin-bottom: 30px;
+      padding-top: 10px;
     }
 
     .icon {
       display: flex;
+      justify-content: space-around;
       align-items: center;
-      width: 48px;
-
+      
+      .iconfb,.iconig{
+        width: 48px;
+      }
     }
   }
 }

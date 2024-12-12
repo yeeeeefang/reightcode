@@ -31,11 +31,11 @@ function Footer() {
                         <img src="./public/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
                     </a></h1>
                     <ul className="icon">
-                        <li><a className="iconBlue" href="">
-                            <img src="./public/images/iconBlue.png" alt="" />
+                        <li><a className="iconfb" href="">
+                            <img src="./public/images/icon_fb.svg" alt="" />
                         </a></li>
-                        <li><a className="iconPink" href="">
-                            <img src="./public/images/iconPink.png" alt="" />
+                        <li><a className="iconig" href="">
+                            <img src="./public/images/icon_ig.svg" alt="" />
                         </a></li>
 
                     </ul>
