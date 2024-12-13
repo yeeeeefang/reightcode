@@ -35,8 +35,9 @@
                 width: 180px;
                 height: 180px;
                 position: absolute;
-                bottom: 20px;
-                left: 1230px;
+                bottom: 600px;
+                left: 380px;
+                transform: rotate(75deg);
 
             }
             .red-char{
@@ -61,8 +62,10 @@
                 height: 175px;
                 position: absolute;
                 z-index: 888;
-                bottom: 540px;
-                left: 390px;
+                bottom: 20px;
+                left: 1230px;
+                transform: rotateY(-180deg);
+                // border: 1px solid red;
 
                 transform: rotateY(-180deg);
                 // border: 1px solid red;

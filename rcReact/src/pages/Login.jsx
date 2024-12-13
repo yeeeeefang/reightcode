@@ -25,7 +25,7 @@ export default function Login() {
 
                     <div className="characters">
                         <img src="/images/greenA.svg" alt="" className="green-char" />
-                        <img src="/images/red.svg" alt="" className="red-char" />
+                        <img src="/images/red.svg" alt="" className="red-char" /> 
                         <img src="/images/blueA.svg" alt="" className="blue-char" />
                         <img src="/images/pinkA.svg" alt="" className="pink-char" />
                     </div>
