@@ -1,0 +1,53 @@
+@use "./reset";
+@use "./variables"as *;
+
+#LearnGame-page {
+    height: 100vh;
+
+    .LearnGame-blackboard {
+        height: 100%;
+        background-color: $g-board1;
+        border: 13px solid $g-board2;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 68px 100px 83px 100px;
+
+        .LearnGame-content-1,
+        .LearnGame-content-2 {
+            font-size: $font-size-40;
+            color: #fff;
+            font-weight: $font-w-bold;
+        }
+
+        .LearnGame-ready-1 {
+            border: 1px solid;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 25%;
+
+
+            .LearnGame-content-3,
+            .LearnGame-content-4 {
+                font-size: $font-size-24;
+                color: #000;
+                font-weight: $font-w-bold;
+                background-color: $g-board3;
+                display: inline-block;
+                border-radius: 20px;
+                line-height: 60px;
+                padding: 0 6px;
+                text-align: center;
+            }
+
+            .LearnGame-img-1,
+            .LearnGame-img-2 {
+                opacity: 0;
+                width: 10%;
+            }
+        }
+    }
+}
