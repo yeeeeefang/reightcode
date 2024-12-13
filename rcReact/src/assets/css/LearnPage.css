@@ -167,15 +167,36 @@ a {
 /* reset end */
 #LEP-Home {
   background-color: #FFD640;
+  background-image: url(../../../public/images/homeDeco.png);
+  background-position: center;
+  background-size: 800px 660px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
 }
 #LEP-Home #LEP-bk-big {
   display: flex;
+  justify-content: center;
+  padding-top: 69px;
+  padding-left: 94px;
 }
 #LEP-Home #LEP-bk-big .LEP-title {
   background-color: #fff;
   border-radius: 20px;
   padding: 0px 20px;
 }
-#LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP .LEP-PE {
+#LEP-Home #LEP-bk-big .LEP-PersonCard {
+  width: 100%;
+}
+#LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP {
   display: flex;
+  justify-content: center;
+  margin: 0px 70px 0px 33px;
+}
+#LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP .LEP-PE {
+  width: 442px;
+  margin-right: 100px;
+}
+#LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-card {
+  margin-top: 45px;
 }/*# sourceMappingURL=LearnPage.css.map */

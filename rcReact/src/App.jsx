@@ -10,10 +10,12 @@ import NavbarTwo from './components/NavbarTwo';
 import './assets/scss/App.scss';
 import LearnPageExp from './components/LearnPageExp';
 import Member from './pages/Member';
+import LearnPage from './pages/LearnPage';
 
 function App() {
   return (
     <>
+      <LearnPage />
     </>
   )
 }

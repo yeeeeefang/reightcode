@@ -13,10 +13,6 @@ function LearnPagePerson() {
                         <img src="../public/images/greenA.svg" alt="" />
                     </div>
                 </div>
-                <div>
-
-                </div>
-
             </section>
         </>
     )

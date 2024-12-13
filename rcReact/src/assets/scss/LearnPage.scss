@@ -3,28 +3,39 @@
 
 #LEP-Home {
     background-color: $primary;
-
+    background-image: url(../../../public/images/homeDeco.png);
+    background-position: center;
+    background-size: 800px 660px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100vh;
     #LEP-bk-big {
         display: flex;
-
+        justify-content: center;
+        padding-top: 69px;
+        padding-left: 94px;
         .LEP-title {
             background-color: #fff;
             border-radius: 20px;
             padding: 0px 20px;
         }
-
         .LEP-PersonCard {
-
-
+            width: 100%;
             .LEP-personAll {
                 .LEP-PersonEXP {
+                    display: flex;
+                    justify-content: center;
+                    margin: 0px 70px 0px 33px;
                     .LEP-PE {
-                        display: flex;
+                        width: 442px;
+                        margin-right: 100px;
                     }
                 }
             }
+            .LEP-card {
+                margin-top: 45px;
+            }
         }
-
     }
 
 }
