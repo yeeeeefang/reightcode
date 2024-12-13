@@ -167,6 +167,7 @@ a {
 /* reset end */
 #LearnPageExp {
   font-weight: 500;
+  margin-top: -25px;
 }
 #LearnPageExp .LearnPageExp-bk-big .LearnPageExp-content-1 {
   padding-bottom: 10px;

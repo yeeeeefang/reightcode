@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Maru+Gothic&display=swap");
 /* reset */
 html,
 body,
@@ -168,22 +169,45 @@ a {
 #LEP-Home {
   background-color: #FFD640;
   background-image: url(../../../public/images/homeDeco.png);
-  background-position: center;
-  background-size: 800px 660px;
+  background-position: 500px;
+  background-size: 55%;
   background-repeat: no-repeat;
   overflow: hidden;
   height: 100vh;
+  position: relative;
+}
+#LEP-Home .LEP-img-top {
+  position: absolute;
+  z-index: 1;
+  width: 20%;
+  height: 15%;
+  right: -130px;
+  bottom: 0px;
+  transform: rotate(30deg);
+}
+#LEP-Home .LEP-content-top {
+  font-size: 0.85rem;
+  font-weight: 700;
+  position: absolute;
+  right: 72px;
+  bottom: 23px;
+  width: 30%;
+  z-index: 3;
+}
+#LEP-Home .LEP-content-top .LEP-content-top-3 {
+  text-align: right;
 }
 #LEP-Home #LEP-bk-big {
   display: flex;
   justify-content: center;
-  padding-top: 69px;
+  padding-top: 60px;
   padding-left: 94px;
 }
 #LEP-Home #LEP-bk-big .LEP-title {
   background-color: #fff;
   border-radius: 20px;
   padding: 0px 20px;
+  font-family: "Zen Maru Gothic", serif;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard {
   width: 100%;
@@ -198,5 +222,5 @@ a {
   margin-right: 100px;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-card {
-  margin-top: 45px;
+  margin: 45px 110px 0px 30px;
 }/*# sourceMappingURL=LearnPage.css.map */

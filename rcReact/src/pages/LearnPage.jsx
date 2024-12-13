@@ -12,8 +12,13 @@ function LearnPage() {
         <>
             <section id="LEP-Home">
             <NavbarBack/>
-
                 <div id="LEP-bk-big">
+                    <div className="LEP-img-top"><img src="../public/images/homeBubble.png" alt="" /></div>
+                    <div className="LEP-content-top">
+                        <p className="LEP-content-top-1">每個困境中都存在著機會。</p>
+                        <p className="LEP-content-top-2">In the middle of every difficulty lies opportunity.</p>
+                        <p className="LEP-content-top-3">- Albert Einstein</p>
+                    </div>
                     <div className="LEP-title">
                         <LearnTitle />
                     </div>

@@ -68,7 +68,7 @@ function LearnTitle() {
         <>
             <section id='HtmlClassTitle-all'>
                 <h1 className='Html-H1'>HTML</h1>
-                <div>
+                <div className='Html-title-all'>
                     {HtmlClassList.map((Class, index) => (
                         <div key={index} className='Html-Class'>
                             <div >
