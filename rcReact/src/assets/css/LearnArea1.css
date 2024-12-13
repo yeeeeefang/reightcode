@@ -165,103 +165,60 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-.nav1 {
-  /* 定在最底下 */
+#LearnAreaall {
   width: 100%;
+  overflow: hidden;
+  background-color: #FFD640;
+}
+#LearnAreaall .la1 {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  background-color: #8ECAE6;
-  padding: 40px 125px;
-  height: 250px;
+  height: 100vh;
+  position: relative;
 }
-.nav1 #nav1-1 {
-  display: flex;
-}
-.nav1 #nav1-1 .item1 {
-  padding-right: 80px;
-}
-.nav1 #nav1-1 .item1 .pp1 {
-  font-size: 1.25rem;
-  padding-bottom: 25px;
-  font-weight: 700;
-}
-.nav1 #nav1-1 .item2 {
-  padding-bottom: 20px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-.nav1 .donimg {
-  display: block;
-  text-align: center;
-  width: 150px;
-  height: 160px;
-}
-.nav1 .donimg .donimg-1 {
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-}
-.nav1 .foo {
+#LearnAreaall .la1 .la1-1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.nav1 .foo .logo {
-  width: 125px;
-  margin-bottom: 30px;
-  padding-top: 10px;
-}
-.nav1 .foo .icon {
+#LearnAreaall .la1 .la1-1 .la1-11 {
+  flex: 3;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 0 0 125px;
 }
-.nav1 .foo .icon .iconfb,
-.nav1 .foo .icon .iconig {
-  width: 48px;
+#LearnAreaall .la1 .la1-1 .la1-11 .gee {
+  position: absolute;
+  width: 25%;
+  left: 250px;
 }
-.nav1 .foo .footersamll {
-  padding-top: 10px;
-  text-align: right;
+#LearnAreaall .la1 .la1-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
 }
-
-@keyframes ani-love1 {
-  /*動畫名稱為 ani-love1 */
-  0%, 100% {
-    transform: translate(0);
-    /* 初始位置 */
-  }
-  50% {
-    transform: translateY(20px);
-    /* 向上浮动的高度 */
-  }
+#LearnAreaall .la1 .la1-2 .la1-22 {
+  display: flex;
 }
-@keyframes ani-love2 {
-  /*動畫名稱為 ani-love1 */
-  0%, 100% {
-    transform: translate(0);
-    /* 初始位置 */
-  }
-  50% {
-    transform: translateY(-15px);
-    /* 向上浮动的高度 */
-  }
+#LearnAreaall .la1 .la1-2 .la1-22 .rai1 {
+  position: absolute;
+  right: 300px;
+  bottom: 270px;
+  width: 32%;
 }
-.donimg:hover .testt {
-  animation-name: ani-love1;
-  /*動畫名稱*/
-  animation-duration: 2s;
-  /*一次完整動畫時間為2秒*/
-  animation-iteration-count: infinite;
-  /*播放次數為無限次*/
+#LearnAreaall .la1 .la1-2 .la1-22 .rai2 {
+  position: absolute;
+  right: 20px;
+  width: 38%;
 }
-.donimg:hover .testt1 {
-  animation-name: ani-love2;
-  /*動畫名稱*/
-  animation-duration: 2s;
-  /*一次完整動畫時間為2秒*/
-  animation-iteration-count: infinite;
-  /*播放次數為無限次*/
-}/*# sourceMappingURL=Footer.css.map */
+#LearnAreaall .la1 .la1-2 .rainbowtitle {
+  position: absolute;
+  bottom: 120px;
+  right: 570px;
+  font-size: 4rem;
+  font-weight: 900;
+}
+#LearnAreaall .la1 .la1-2 .rainbow {
+  width: 120%;
+}/*# sourceMappingURL=LearnArea1.css.map */

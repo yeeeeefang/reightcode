@@ -266,10 +266,9 @@ a {
 }
 
 #div2 {
-  height: 2160px;
   background-color: #FFD640;
   background-image: url("../../../public/images/trendLine.png");
-  background-size: contain;
-  background-position: center;
+  background-size: 99%;
+  background-position: left top 140px;
   background-repeat: no-repeat;
 }/*# sourceMappingURL=Trend.css.map */

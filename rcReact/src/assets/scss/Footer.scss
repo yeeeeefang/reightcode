@@ -3,8 +3,8 @@
 
 .nav1 {
   /* 定在最底下 */
-  position: fixed;
-  bottom: 0;
+  // position: fixed;
+  // bottom: 0;
   width: 100%;
 
   display: flex;
@@ -90,7 +90,21 @@
   }
 
   50% {
-    transform: translateY(15px);
+    transform: translateY(20px);
+    /* 向上浮动的高度 */
+  }
+}
+@keyframes ani-love2 {
+
+  /*動畫名稱為 ani-love1 */
+  0%,
+  100% {
+    transform: translate(0);
+    /* 初始位置 */
+  }
+
+  50% {
+    transform: translateY(-15px);
     /* 向上浮动的高度 */
   }
 }
@@ -115,17 +129,3 @@
   }
 }
 
-@keyframes ani-love2 {
-
-  /*動畫名稱為 ani-love1 */
-  0%,
-  100% {
-    transform: translate(0);
-    /* 初始位置 */
-  }
-
-  50% {
-    transform: translateY(-10px);
-    /* 向上浮动的高度 */
-  }
-}
