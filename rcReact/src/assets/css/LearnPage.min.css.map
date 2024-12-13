@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/LearnPage.scss"],"names":[],"mappings":"AAAA,YACI,aACA,6BAEJ,sBACQ,aACA,sBACA,UACA","file":"LearnPage.min.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/_reset.scss","../scss/LearnPage.scss","../scss/variables/_color.scss"],"names":[],"mappings":"CAGA,2ZAiFI,SACA,UACA,SACA,eAGJ,EACI,sBAIJ,KACI,YAEI,yLAGJ,yBACA,gBAIJ,kBAMI,mBAIJ,MAEI,gBAIJ,IACI,cACA,WAIJ,EACI,cAEA,WACA,qBCjIJ,UACI,iBCHK,QDKL,sBACI,aAEA,iCACI,sBACA,mBACA,iBAQQ,4EACI","file":"LearnPage.min.css"}

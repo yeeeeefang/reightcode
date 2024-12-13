@@ -1,7 +1,7 @@
 import '../assets/css/LearnCard.css'
 function LearnCard() {
     return (
-        <>
+        <> 
             <section id='LearnPageAll'>
                 <div className='LearnPageLeft-1'>
                     <img src="../public/images/learnPageLeft.svg" alt="" />

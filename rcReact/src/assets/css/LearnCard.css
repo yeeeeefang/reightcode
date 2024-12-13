@@ -183,6 +183,7 @@ a {
   height: 250px;
   border-radius: 10px;
   box-shadow: 10px 10px 0px 2px #000000;
+  background-color: #fff;
 }
 #LearnPageAll .Learn-Card-all .Learn-Card-1 .Learn-Card-bk-1 {
   display: flex;

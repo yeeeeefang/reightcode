@@ -165,17 +165,38 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-#LEP-Home {
-  background-color: #FFD640;
-}
-#LEP-Home #LEP-bk-big {
-  display: flex;
-}
-#LEP-Home #LEP-bk-big .LEP-title {
+#HtmlClassTitle-all {
   background-color: #fff;
   border-radius: 20px;
-  padding: 0px 20px;
 }
-#LEP-Home #LEP-bk-big .LEP-PersonCard .LEP-personAll .LEP-PersonEXP .LEP-PE {
-  display: flex;
-}/*# sourceMappingURL=LearnPage.css.map */
+#HtmlClassTitle-all .Html-H1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #CA5171;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px;
+}
+#HtmlClassTitle-all .Html-Class {
+  overflow: hidden;
+}
+#HtmlClassTitle-all .Html-Class .Html-H2 {
+  text-align: center;
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #FDBABA;
+  margin-top: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  /* 隱藏超出內容 */
+  white-space: nowrap;
+  /* 不換行 */
+  text-overflow: ellipsis;
+  /* 超出部分顯示省略號 */
+}
+#HtmlClassTitle-all .Html-Class .Html-Span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=LearnTitle.css.map */

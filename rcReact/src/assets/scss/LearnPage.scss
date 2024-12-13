@@ -1,11 +1,30 @@
-.LEP-bk-big {
-    display: flex;
-    justify-content: space-around;
+@use "./reset";
+@use "./variables"as *;
 
-.LEP-bk-1 {
+#LEP-Home {
+    background-color: $primary;
+
+    #LEP-bk-big {
         display: flex;
-        flex-direction: column;
-        width: 49%;
-        margin-right: 50px;
+
+        .LEP-title {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 0px 20px;
+        }
+
+        .LEP-PersonCard {
+
+
+            .LEP-personAll {
+                .LEP-PersonEXP {
+                    .LEP-PE {
+                        display: flex;
+                    }
+                }
+            }
+        }
+
     }
+
 }

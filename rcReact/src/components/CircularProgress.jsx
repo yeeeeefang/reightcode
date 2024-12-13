@@ -4,7 +4,7 @@ import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 function CircularProgress() {
     const percentage = 70
     return (
-        <>
+        <> 
             <div style={{ width: 250, height: 250,fontFamily :'nunito' }}>
                 <CircularProgressbar
                     value={percentage}
