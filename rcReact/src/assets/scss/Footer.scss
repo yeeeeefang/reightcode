@@ -35,6 +35,20 @@
     }
   }
 
+  .donimg {
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 160px;
+
+    .donimg-1 {
+      width: 100%;
+      height: 100%;
+      padding-top: 30px;
+
+    }
+  }
+
   .foo {
     display: flex;
     flex-direction: column;
@@ -45,9 +59,7 @@
       width: 125px;
       margin-bottom: 30px;
       padding-top: 10px;
-      // .logoimg{
-      //   text-align: center;
-      // }
+
     }
 
     .icon {
@@ -60,8 +72,60 @@
         width: 48px;
       }
     }
-    .footersamll{
+
+    .footersamll {
       padding-top: 10px;
+      text-align: right;
     }
+  }
+}
+
+@keyframes ani-love1 {
+
+  /*動畫名稱為 ani-love1 */
+  0%,
+  100% {
+    transform: translate(0);
+    /* 初始位置 */
+  }
+
+  50% {
+    transform: translateY(15px);
+    /* 向上浮动的高度 */
+  }
+}
+
+.donimg:hover{
+  .testt{
+    animation-name: ani-love1;
+    /*動畫名稱*/
+    animation-duration: 2s;
+    /*一次完整動畫時間為2秒*/
+    animation-iteration-count: infinite;
+    /*播放次數為無限次*/
+  }
+
+  .testt1{
+    animation-name: ani-love2;
+    /*動畫名稱*/
+    animation-duration: 2s;
+    /*一次完整動畫時間為2秒*/
+    animation-iteration-count: infinite;
+    /*播放次數為無限次*/
+  }
+}
+
+@keyframes ani-love2 {
+
+  /*動畫名稱為 ani-love1 */
+  0%,
+  100% {
+    transform: translate(0);
+    /* 初始位置 */
+  }
+
+  50% {
+    transform: translateY(-10px);
+    /* 向上浮动的高度 */
   }
 }

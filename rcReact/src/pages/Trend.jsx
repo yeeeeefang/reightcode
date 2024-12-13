@@ -29,7 +29,7 @@ function Trend(){
           <div className="item4"><img className="char-2" src="./public/images/redC.svg" alt="" /></div>
           <div className="item4"><img className="char-3" src="./public/images/pinkE.svg" alt="" /></div>
           </div>
-          <div>
+          <div >
             <img className="path" src="./public/images/trendPath.svg" alt="" />
           </div>
         </section>
