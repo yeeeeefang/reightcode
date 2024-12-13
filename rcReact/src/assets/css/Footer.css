@@ -124,7 +124,7 @@ img {
 a {
   display: block;
   /* 將a預設inline改為block，才能設定間距及寬高*/
-  color: #666;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -166,36 +166,53 @@ a {
 } */
 /* reset end */
 .nav1 {
+  /* 定在最底下 */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: aqua;
+  background-color: #8ECAE6;
+  padding: 40px 125px;
+  height: 250px;
 }
 .nav1 #nav1-1 {
   display: flex;
-  padding: 10px 0;
 }
 .nav1 #nav1-1 .item1 {
-  padding-right: 0 80px 0 0;
+  padding-right: 80px;
 }
-.nav1 #nav1-1 .item1 p {
+.nav1 #nav1-1 .item1 .pp1 {
   font-size: 1.25rem;
+  padding-bottom: 25px;
+  font-weight: 700;
 }
 .nav1 #nav1-1 .item2 {
-  width: 6rem;
-}
-.nav1 #nav1-1 .item2 p {
+  padding-bottom: 20px;
   font-size: 1rem;
+  font-weight: 500;
 }
-.nav1 #nav1-2 {
-  margin-right: 30px;
-}
-.nav1 #nav1-2 .logo {
-  width: 70px;
-  margin-bottom: 30px;
-}
-.nav1 #nav1-2 .icon {
+.nav1 .foo {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+.nav1 .foo .logo {
+  width: 125px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+.nav1 .foo .icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav1 .foo .icon .iconfb,
+.nav1 .foo .icon .iconig {
   width: 48px;
+}
+.nav1 .foo .footersamll {
+  padding-top: 10px;
 }/*# sourceMappingURL=Footer.css.map */

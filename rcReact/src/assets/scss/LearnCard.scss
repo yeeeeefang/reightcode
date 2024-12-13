@@ -1,0 +1,32 @@
+.Learn-Card-1 {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    border: 1px solid;
+
+    .Learn-Card-bk-1 {
+        border: 1px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+
+        .Learn-Card-icon-1 {
+            width: 24px;
+            height: 24px;
+            margin-left: auto;
+
+margin-right: 10px;
+        }
+
+        .Learn-Card-Content-1 {
+            display: block;
+        }
+
+        .Learn-Card-Content-2 {
+            display: flex;
+        }
+
+    }
+}
