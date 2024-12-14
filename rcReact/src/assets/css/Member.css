@@ -168,24 +168,30 @@ a {
 /* reset end */
 #nav {
   background-color: #FFD640;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 #memberPage {
   background-color: #FFD640;
   display: flex;
-  justify-content: space-around;
+  justify-content: end;
+  padding-top: 118px;
 }
-
-#member {
+#memberPage #member {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   height: 700px;
   width: 390px;
-  position: relative;
+  position: fixed;
+  left: 7.5rem;
+  bottom: 0;
+  z-index: 10;
 }
-#member .memberPic {
+#memberPage #member .memberPic {
   position: absolute;
   top: 0px;
   display: flex;
@@ -196,11 +202,11 @@ a {
   width: 200px;
   height: 200px;
 }
-#member .memberPic img {
+#memberPage #member .memberPic img {
   width: 160px;
   height: 130px;
 }
-#member #memberAll {
+#memberPage #member #memberAll {
   width: 390px;
   height: 545px;
   display: flex;
@@ -211,7 +217,7 @@ a {
   border-radius: 75px 75px 0 0;
   box-shadow: 10px 10px #897359;
 }
-#member #memberAll .memberInfo {
+#memberPage #member #memberAll .memberInfo {
   width: 260px;
   height: 260px;
   background-image: url(/images/memberInfo.png);
@@ -219,18 +225,18 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-#member #memberAll .memberInfo h2 {
+#memberPage #member #memberAll .memberInfo h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #FA8F21;
   margin: 0 0 12px 0;
 }
-#member #memberAll .memberInfo .name,
-#member #memberAll .memberInfo .sexal,
-#member #memberAll .memberInfo .age,
-#member #memberAll .memberInfo .school,
-#member #memberAll .memberInfo .time {
+#memberPage #member #memberAll .memberInfo .name,
+#memberPage #member #memberAll .memberInfo .sexal,
+#memberPage #member #memberAll .memberInfo .age,
+#memberPage #member #memberAll .memberInfo .school,
+#memberPage #member #memberAll .memberInfo .time {
   font-size: 1rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
@@ -238,14 +244,14 @@ a {
   flex-direction: row;
   margin: 0 37px 8px 37px;
 }
-#member #memberAll .memberInfo .name p,
-#member #memberAll .memberInfo .sexal p,
-#member #memberAll .memberInfo .age p,
-#member #memberAll .memberInfo .school p,
-#member #memberAll .memberInfo .time p {
+#memberPage #member #memberAll .memberInfo .name p,
+#memberPage #member #memberAll .memberInfo .sexal p,
+#memberPage #member #memberAll .memberInfo .age p,
+#memberPage #member #memberAll .memberInfo .school p,
+#memberPage #member #memberAll .memberInfo .time p {
   margin-right: 10px;
 }
-#member #memberAll .memberAward {
+#memberPage #member #memberAll .memberAward {
   width: 260px;
   height: 260px;
   background-image: url(../public/images/memberInfo.png);
@@ -253,26 +259,33 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-#member #memberAll .memberAward h2 {
+#memberPage #member #memberAll .memberAward h2 {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   color: #FA8F21;
   margin: 0 0 12px 0;
 }
-#member #memberAll .memberAward .award {
+#memberPage #member #memberAll .memberAward .award {
   align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
 }
-#member #memberAll .memberAward .award img {
+#memberPage #member #memberAll .memberAward .award img {
   width: 95px;
   height: 95px;
 }
-
-#progress {
+#memberPage #memberRight {
+  display: flex;
+  flex-direction: column;
+  margin-right: 7.5rem;
+}
+#memberPage #memberRight #rightUp {
+  display: flex;
+}
+#memberPage #memberRight #rightUp #progress {
   width: 380px;
   height: 380px;
   background-image: url(../public/images/memberCourse.png);
@@ -284,9 +297,9 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 10px 20px 10px;
-  margin: 15px;
+  margin: 15px 15px 0 15px;
 }
-#progress .progressTitle {
+#memberPage #memberRight #rightUp #progress .progressTitle {
   width: 215px;
   height: 60px;
   display: flex;
@@ -296,16 +309,16 @@ a {
   background-size: contain;
   background-repeat: no-repeat;
 }
-#progress .progressTitle h2 {
+#memberPage #memberRight #rightUp #progress .progressTitle h2 {
   color: rgba(0, 0, 0, 0.85);
   font-size: 1.25rem;
   font-weight: 700;
 }
-#progress .progressTitle img {
+#memberPage #memberRight #rightUp #progress .progressTitle img {
   width: 48px;
   height: 48px;
 }
-#progress .course1 {
+#memberPage #memberRight #rightUp #progress .course1 {
   display: flex;
   align-items: center;
   background-color: #FFFCF0;
@@ -315,24 +328,25 @@ a {
   margin: 25px 0 10px 0;
   font-size: 0.85rem;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
 }
-#progress .course1 img {
+#memberPage #memberRight #rightUp #progress .course1 img {
   width: 85px;
   height: 55px;
 }
-#progress .course1 .course1Info {
+#memberPage #memberRight #rightUp #progress .course1 .course1Info {
   padding-left: 15px;
 }
-#progress .course1 .course1Info h2 {
+#memberPage #memberRight #rightUp #progress .course1 .course1Info h2 {
   font-size: 1rem;
   font-weight: 700;
 }
-#progress .course1 .course1Info .progress {
+#memberPage #memberRight #rightUp #progress .course1 .course1Info .progress {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#progress .course2 {
+#memberPage #memberRight #rightUp #progress .course2 {
   display: flex;
   align-items: center;
   background-color: #FFFCF0;
@@ -341,25 +355,26 @@ a {
   box-shadow: 5px 5px #897359;
   font-size: 0.85rem;
   font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
 }
-#progress .course2 img {
+#memberPage #memberRight #rightUp #progress .course2 img {
   width: 85px;
   height: 55px;
 }
-#progress .course2 .course2Info {
+#memberPage #memberRight #rightUp #progress .course2 .course2Info {
   padding-left: 15px;
 }
-#progress .course2 .course2Info h2 {
+#memberPage #memberRight #rightUp #progress .course2 .course2Info h2 {
   font-size: 1rem;
   font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
 }
-#progress .course2 .course2Info .progress {
+#memberPage #memberRight #rightUp #progress .course2 .course2Info .progress {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-#collection {
+#memberPage #memberRight #rightUp #collectionAll {
   width: 330px;
   height: 360px;
   background-image: url(../public/images/memberCourse.png);
@@ -371,9 +386,9 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 10px 20px 10px;
-  margin: 15px;
+  margin: 35px 0 0 15px;
 }
-#collection .collectionTitle {
+#memberPage #memberRight #rightUp #collectionAll .collectionTitle {
   width: 215px;
   height: 60px;
   display: flex;
@@ -384,32 +399,26 @@ a {
   background-repeat: no-repeat;
   margin-top: 20px;
 }
-#collection .collectionTitle h2 {
+#memberPage #memberRight #rightUp #collectionAll .collectionTitle h2 {
   color: rgba(0, 0, 0, 0.85);
   font-size: 1.25rem;
   font-weight: 700;
 }
-#collection .collectionTitle img {
+#memberPage #memberRight #rightUp #collectionAll .collectionTitle img {
   width: 48px;
   height: 48px;
 }
-#collection .collect1,
-#collection .collect2,
-#collection .collect3,
-#collection .collect4 {
+#memberPage #memberRight #rightUp #collectionAll .collect, #memberPage #memberRight #rightUp #collectionAll .collect1 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFFCF0;
   border-radius: 85px;
-  width: 230px;
   margin: 5px 0;
 }
-#collection .collect1 .title,
-#collection .collect2 .title,
-#collection .collect3 .title,
-#collection .collect4 .title {
+#memberPage #memberRight #rightUp #collectionAll .collect .title, #memberPage #memberRight #rightUp #collectionAll .collect1 .title {
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.85);
   background-color: #FFD640;
   border-radius: 85px;
   width: 75px;
@@ -417,59 +426,59 @@ a {
   justify-content: center;
   align-items: center;
 }
-#collection .collect1 P,
-#collection .collect2 P,
-#collection .collect3 P,
-#collection .collect4 P {
+#memberPage #memberRight #rightUp #collectionAll .collect P, #memberPage #memberRight #rightUp #collectionAll .collect1 P {
   font-size: 0.85rem;
   font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
   margin: 5px 8px;
 }
-#collection .collect1 {
+#memberPage #memberRight #rightUp #collectionAll .collect1 {
   margin-top: 25px;
 }
-
-#memberRight {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#memberRight #rightUp {
-  display: flex;
-}
-#memberRight #award {
-  border: 1px solid black;
+#memberPage #memberRight #award {
   width: 730px;
   height: 1090px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  margin-left: 20px;
+  background-image: url(./images/memberAward.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
 }
-#memberRight #award .awardContent {
+#memberPage #memberRight #award .awardContent {
   width: 475px;
   height: 220px;
   background-color: #FFF0C0;
   padding: 10px;
+  margin-bottom: 40px;
   border-radius: 15px;
 }
-#memberRight #award .awardContent h2 {
+#memberPage #memberRight #award .awardContent h2 {
   display: flex;
   align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
 }
-#memberRight #award .awardContent h2 img {
+#memberPage #memberRight #award .awardContent h2 img {
   width: 40px;
   height: 40px;
+  margin-right: 10px;
 }
-#memberRight #award .awardContent .awardPic {
-  width: 100%;
-  height: 100%;
+#memberPage #memberRight #award .awardContent .awardPic {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
-#memberRight #award .awardContent .awardPic img {
+#memberPage #memberRight #award .awardContent .awardPic .apic {
+  display: flex;
+  justify-content: center;
+}
+#memberPage #memberRight #award .awardContent .awardPic .apic img {
   width: 80px;
   height: 80px;
-  margin: 18px;
+  display: flex;
+  margin: 0 18px;
 }/*# sourceMappingURL=Member.css.map */
