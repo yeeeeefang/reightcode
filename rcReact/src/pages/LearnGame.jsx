@@ -8,7 +8,7 @@ function LearnGame() {
             <section id='LearnGame-page'>
                 <div className='LearnGame-blackboard'>
                     <div className='LearnGame-content-1'>
-                        <p>遊戲玩法介紹規則介紹，遊戲玩法介紹規則介紹遊戲玩法介紹規則介紹遊戲玩法介紹規則介紹！</p>
+                        <p>不間斷地提供題目，給予問答提供四個選項給你選擇，達成一定的數量將會有成就獎勵!</p>
                     </div>
                     <div className='LearnGame-content-2'>
                         <p>準備好挑戰了？</p>
