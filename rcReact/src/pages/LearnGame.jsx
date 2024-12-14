@@ -1,6 +1,6 @@
-import '../assets/css/LearneGame.css'
+import '../assets/css/LearnGame.css'
 
-function LearneGame() {
+function LearnGame() {
 
 
     return (
@@ -34,4 +34,4 @@ function LearneGame() {
     )
 }
 
-export default LearneGame
+export default LearnGame
