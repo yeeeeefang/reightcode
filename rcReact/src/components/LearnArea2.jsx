@@ -16,17 +16,17 @@ function LearnArea2() {
                         <p className='areap1'>在生活當中會看到許多字體，小朋友們可以舉例看看嗎？</p>
                     </div>
                     {/* <img src="./public/images/LearnArea-dialogbox1.svg" alt="" /> */}
-                    <div>
+                    <div className='areatwo'>
                         <div className='areap2'>
-                            <p>這些字體有些大大的像太陽</p>
-                            <p>有些小小的像星星</p>
+                            <p className='areap2-1'>這些字體有些大大的像太陽</p>
+                            <p className='areap2-2'>有些小小的像星星</p>
                         </div>
                         {/* <img src="./public/images/LearnArea-dialogbox2.svg" alt="" /> */}
-                        <div>
-                            <img src="./public/images/redBack.svg" alt="" />
+                        <div className='areaimg1'>
+                            <img className='areaimg1-1' src="./public/images/redBack.svg" alt="" />
                         </div>
                     </div>
-                    <div>
+                    <div className='areathree'>
                         <div className='areap3'>
                             <p>甚至還有斜斜的像溜滑梯！</p>
                         </div>
@@ -35,14 +35,14 @@ function LearnArea2() {
                             <img src="./public/images/pinkBack.svg" alt="" />
                         </div>
                     </div>
-                    <div>
+                    <div className='areafour'>
                         <div className='areap4'>
-                            <p>有些粗粗的像電線杆，</p>
-                            <p>也有些細細的像電線</p>
+                            <p className='areap4-1'>有些粗粗的像電線杆，</p>
+                            <p className='areap4-2'>也有些細細的像電線</p>
                         </div>
                         {/* <img src="./public/images/LearnArea-dialogbox4.svg" alt="" /> */}
                         <div>
-                            <img src="./public/images/green.svg" alt="" />
+                            <img src="./public/images/greenBack.svg" alt="" />
                         </div>
                     </div>
                 </div>

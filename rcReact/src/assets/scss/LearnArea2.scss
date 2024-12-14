@@ -8,6 +8,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
     .areaTitle {
         display: flex;
         justify-content: center;
@@ -23,15 +24,100 @@
             font-size: $font-size-36;
             font-weight: $font-w-bold;
             text-align: center;
-            
+
         }
     }
-    .areaContent{
-        .areap1{
-            // background-image: url('../../../public/images/LearnArea-dialogbox1.svg');
-            // background-size: contain;
-            // // background-position: center;
-            // background-repeat: no-repeat;
+
+    .areaContent {
+        p {
+            font-size: $font-size-20;
+            font-weight: $font-w-bold;
         }
+
+        .areap1 {
+            background-image: url('../../../public/images/LearnArea-dialogbox1.svg');
+            // background-size: contain;
+            // background-position: center;
+            background-repeat: no-repeat;
+            line-height: 75px;
+            width: fit-content;
+            padding: 0 45px 0 48px;
+        }
+
+        .areatwo {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            .areap2 {
+                background-image: url('../../../public/images/LearnArea-dialogbox3.svg');
+                // background-size: contain;
+                // background-position: center;
+                background-repeat: no-repeat;
+                line-height: 45px;
+                width: fit-content;
+                padding: 0 45px 0 40px;
+                position: relative;
+                width: 100%;
+
+                .areap2-1 {
+                    padding-top: 20px;
+                }
+
+                .areap2-2 {
+                    padding: 0 0 70px 150px;
+                }
+
+                .areaimg1 {
+                    position: absolute;
+                    // width: 100%;
+
+                    .areaimg1-1 {
+                        width: 25%;
+                        left: 250px;
+                    }
+                }
+            }
+        }
+
+        .areathree {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            .areap3 {
+                background-image: url('../../../public/images/LearnArea-dialogbox4.svg');
+                // background-size: contain;
+                // background-position: center;
+                background-repeat: no-repeat;
+                line-height: 75px;
+                width: fit-content;
+                padding: 30px 45px 70px 48px;
+            }
+        }
+        .areafour {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+
+            .areap4 {
+                background-image: url('../../../public/images/LearnArea-dialogbox2.svg');
+                // background-size: contain;
+                // background-position: center;
+                background-repeat: no-repeat;
+                line-height: 45px;
+                width: fit-content;
+                padding: 30px 45px 0px 0px;
+
+                .areap4-1 {
+                    padding-left: 40px;
+                }
+
+                .areap4-2 {
+                    padding: 0 0 95px 180px;
+                }
+            }
+        }
+
     }
 }
