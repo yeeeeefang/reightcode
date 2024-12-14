@@ -18,8 +18,8 @@ function LearnArea1() {
                             <img className='rai2' src="./public/images/redD.svg" alt="" />
                         </div>
                         <div>
-                            <p className="rainbowtitle">HTML</p>
-                            <img className='rainbow' src="./public/images/learnAreaRainbow.svg" alt="" />
+                            {/* <p className="rainbowtitle">HTML</p> */}
+                            <img className='rainbow' src="./public/images/learnAreaRainbow1.svg" alt="" />
                         </div>
                     </div>
 
