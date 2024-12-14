@@ -1,0 +1,37 @@
+@use './reset';
+@use './variables/' as *;
+
+#LearnAreaal2 {
+    width: 100%;
+    background-color: $primary;
+    background-image: url('../../../public/images/LearnArea-bg.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    .areaTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .areaimportant {
+            width: 25%;
+        }
+
+        .areah2 {
+            flex: 1.5;
+            font-size: $font-size-36;
+            font-weight: $font-w-bold;
+            text-align: center;
+            
+        }
+    }
+    .areaContent{
+        .areap1{
+            // background-image: url('../../../public/images/LearnArea-dialogbox1.svg');
+            // background-size: contain;
+            // // background-position: center;
+            // background-repeat: no-repeat;
+        }
+    }
+}
