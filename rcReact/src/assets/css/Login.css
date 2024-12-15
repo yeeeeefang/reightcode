@@ -187,9 +187,21 @@ a {
   width: 180px;
   height: 180px;
   position: absolute;
-  bottom: 600px;
-  left: 380px;
-  transform: rotate(75deg);
+  bottom: 570px;
+  left: 400px;
+  animation: rotate-small 2s ease-in-out infinite;
+  transform-origin: bottom right;
+}
+@keyframes rotate-small {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 #login-page .login-main .characters .red-char {
   width: 175px;

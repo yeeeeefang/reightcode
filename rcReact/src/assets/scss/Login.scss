@@ -7,10 +7,7 @@
     height: 100vh;
     // border: 1px solid red;
 
-
-
     .login-main {
-
         // overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -27,19 +24,32 @@
             // border: 1px solid red;
         }
 
-
         .characters {
-
-            
-            .green-char{
+            .green-char {
                 width: 180px;
                 height: 180px;
                 position: absolute;
-                bottom: 600px; 
-                left: 380px;
-                transform: rotate(75deg);
+                bottom: 570px;
+                left: 400px;
+                // transform: rotate(180deg);
+
+                animation: rotate-small 2s ease-in-out infinite;
+                transform-origin:  bottom right; // 設置旋轉的固定點在右上角
+
+                @keyframes rotate-small {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    50% {
+                        // transform: rotate(8deg); // 順時針小幅旋轉
+                        transform:translateX(20px);
+                    }
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
             }
-            .red-char{
+            .red-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
@@ -48,14 +58,14 @@
                 transform: rotate(-5deg);
                 // border: 1px solid red;
             }
-            .blue-char{
+            .blue-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
                 bottom: 280px;
                 left: 140px;
             }
-            .pink-char{
+            .pink-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
@@ -120,11 +130,10 @@
                     font-size: 1rem;
                     font-weight: bold;
                     cursor: pointer;
-                    
+
                     // &:hover {
                     //     background-color: $shadow-3;
                     // }
-                    
                 }
             }
 
@@ -155,7 +164,6 @@
                     cursor: pointer;
                     border: none;
                     background-color: transparent;
-
                 }
             }
         }

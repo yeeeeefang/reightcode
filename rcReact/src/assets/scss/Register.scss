@@ -7,10 +7,7 @@
     height: 100vh;
     // border: 1px solid red;
 
-
-
     .register-main {
-
         // overflow: hidden;
         justify-content: center;
         align-items: center;
@@ -27,37 +24,45 @@
             // border: 1px solid red;
         }
 
-
         .characters {
-
-            
-            .green-char{
+            .green-char {
                 width: 180px;
                 height: 180px;
                 position: absolute;
-                bottom: 600px;
-                left: 380px;
-                transform: rotate(75deg);
-
+                bottom: 480px;
+                left: 450px;
+                transform: rotate(-35deg);
             }
-            .red-char{
+            .red-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
                 bottom: 220px;
-                left: 120px;
-
+                left: 110px;
                 transform: rotate(-5deg);
+                animation: float 2s ease-in-out infinite;
                 // border: 1px solid red;
+
+                @keyframes float {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-20px); // 向上移動 10px（可調整）
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
             }
-            .blue-char{
+            .blue-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
-                bottom: 15px;
+                bottom: 20px;
                 left: 550px;
             }
-            .pink-char{
+            .pink-char {
                 width: 175px;
                 height: 175px;
                 position: absolute;
@@ -78,7 +83,7 @@
             padding: 36px;
             border-radius: 20px;
             box-shadow: 8px 8px 0 $shadow-3;
-            width: 400px;
+            width: 450px;
             position: absolute;
             bottom: 100px;
             left: 800px;
@@ -125,11 +130,10 @@
                     font-size: 1rem;
                     font-weight: bold;
                     cursor: pointer;
-                    
+
                     // &:hover {
                     //     background-color: $shadow-3;
                     // }
-                    
                 }
             }
 
@@ -160,7 +164,6 @@
                     cursor: pointer;
                     border: none;
                     background-color: transparent;
-
                 }
             }
         }

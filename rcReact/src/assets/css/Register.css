@@ -187,22 +187,35 @@ a {
   width: 180px;
   height: 180px;
   position: absolute;
-  bottom: 20px;
-  left: 1230px;
+  bottom: 480px;
+  left: 450px;
+  transform: rotate(-35deg);
 }
 #register-page .register-main .characters .red-char {
   width: 175px;
   height: 175px;
   position: absolute;
   bottom: 220px;
-  left: 120px;
+  left: 110px;
   transform: rotate(-5deg);
+  animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 #register-page .register-main .characters .blue-char {
   width: 175px;
   height: 175px;
   position: absolute;
-  bottom: 15px;
+  bottom: 20px;
   left: 550px;
 }
 #register-page .register-main .characters .pink-char {
@@ -210,8 +223,9 @@ a {
   height: 175px;
   position: absolute;
   z-index: 888;
-  bottom: 540px;
-  left: 390px;
+  bottom: 20px;
+  left: 1230px;
+  transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
 #register-page .register-main .register-form {
@@ -220,7 +234,7 @@ a {
   padding: 36px;
   border-radius: 20px;
   box-shadow: 8px 8px 0 #534D97;
-  width: 400px;
+  width: 450px;
   position: absolute;
   bottom: 100px;
   left: 800px;
