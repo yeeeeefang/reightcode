@@ -1,49 +1,51 @@
 @use "./reset";
-@use "./variables" as *;
-
-#LearnGame-page {
-    height: 100vh;
+@use "./variables"as *;
+#LearnGameChoose-page-all{
+    background-color: $primary;
+}
+#LearnGameChoose-page {
+    height:100vh;
     /* 確保父容器高度為視口高度 */
     display: flex;
     /* 啟用 flexbox 布局 */
     justify-content: center;
     /* 水平方向置中 */
-    align-items: center;
+margin-top: 50px;
     /* 垂直方向置中 */
     background-color: $primary;
     position: relative;
 
-    .LearnGame-img-position-1 {
+    .LearnGameChoose-img-position-1 {
         position: absolute;
         width: 5%;
         left: 50px;
         top: 100px;
     }
 
-    .LearnGame-img-position-2 {
+    .LearnGameChoose-img-position-2 {
         position: absolute;
         width: 3%;
         right: 50px;
         top: 200px;
     }
 
-    .LearnGame-img-position-3 {
+    .LearnGameChoose-img-position-3 {
         position: absolute;
         width: 2%;
         left: 80px;
         bottom: 100px;
     }
 
-    .LearnGame-img-position-4 {
+    .LearnGameChoose-img-position-4 {
         position: absolute;
         width: 5%;
         right: 110px;
         bottom: 100px;
     }
 
-    .LearnGame-blackboard {
-        width: 1000px;
-        height: 564px;
+    .LearnGameChoose-blackboard {
+        height: 75%;
+        width: 75%;
         background-color: $g-board1;
         border: 13px solid $g-board2;
         border-radius: 10px;
@@ -56,21 +58,21 @@
         z-index: 10;
 
 
-        .LearnGame-img-position-5 {
+        .LearnGameChoose-img-position-5 {
             position: absolute;
             width: 5%;
             bottom: 0px;
             right: 80px;
         }
 
-        .LearnGame-content-1,
-        .LearnGame-content-2 {
+        .LearnGameChoose-content-1,
+        .LearnGameChoose-content-2 {
             font-size: $font-size-40;
             color: #fff;
             font-weight: $font-w-bold;
         }
 
-        #LearnGame-Choose {
+        #LearnGameChoose-Choose {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -80,35 +82,35 @@
             gap: 20px;
             padding: 20px;
 
-            .LearnGame-Choose-bk-G {
+            .LearnGameChoose-Choose-bk-G {
                 background-color: $g-card1;
             }
 
-            .LearnGame-Choose-bk-B {
+            .LearnGameChoose-Choose-bk-B {
                 background-color: $g-card2;
             }
 
-            .LearnGame-Choose-bk-P {
+            .LearnGameChoose-Choose-bk-P {
                 background-color: $g-card3;
             }
 
-            .LearnGame-Choose-bk-R {
+            .LearnGameChoose-Choose-bk-R {
                 background-color: $g-card4;
             }
 
-            .LearnGame-Choose-bk-G,
-            .LearnGame-Choose-bk-B {
+            .LearnGameChoose-Choose-bk-G,
+            .LearnGameChoose-Choose-bk-B {
                 position: relative;
                 flex: 0 0 calc(50% - 20px);
                 border-radius: 10px;
                 padding: 20px;
-                height: 60%;
-
+min-height: 55%;
                 p {
                     display: flex;
                     align-items: center;
                     font-size: $font-size-20;
                     font-weight: $font-w-bold;
+                    line-height: 80px;
                 }
 
                 img {
@@ -125,20 +127,20 @@
                 }
             }
 
-            .LearnGame-Choose-bk-P,
-            .LearnGame-Choose-bk-R {
+            .LearnGameChoose-Choose-bk-P,
+            .LearnGameChoose-Choose-bk-R {
                 position: relative;
                 flex: 0 0 calc(50% - 20px);
                 border-radius: 10px;
-                padding: 20px; 
-                height: 60%;
+                padding: 20px;
+                min-height: 55%;
 
                 p {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    text-align: right;
                     font-size: $font-size-20;
                     font-weight: $font-w-bold;
+                    line-height: 80px;
+
                 }
 
                 img {
@@ -154,12 +156,165 @@
                     /* 圖片高度 */
                 }
             }
+
+            .LearnGameChoose-Ans-bk-G {
+                background-color: $g-card1;
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 10px;
+                min-height: 55%;
+
+                .LearnGameChoose-Ans-bk-content-G {
+                    .LearnGameChoose-Ans-p1 {
+                        color: #33BB33;
+                        text-align: center;
+                        font-size: $font-size-20;
+                        font-weight: $font-w-bold;
+                    }
+
+                    .LearnGameChoose-Ans-p2 {
+                        text-align: center;
+                        color: #000000a6;
+                        font-size: 1.12rem;
+                        font-weight: $font-w-bold;
+                    }
+
+                    img {
+                        position: absolute;
+                        /* 絕對定位 */
+                        bottom: 10px;
+                        /* 靠底 */
+                        right: 10px;
+                        /* 靠右 */
+                        width: 60px;
+                        /* 圖片寬度 */
+                        height: 60px;
+                        /* 圖片高度 */
+                    }
+                }
+            }
+
+            .LearnGameChoose-Ans-bk-B {
+                background-color: $g-card2;
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 10px;
+                min-height: 55%;
+
+
+                .LearnGameChoose-Ans-bk-content-B {
+                    .LearnGameChoose-Ans-p1 {
+                        color: #9E4C5F;
+                        text-align: center;
+                        font-size: $font-size-20;
+                        font-weight: $font-w-bold;
+                    }
+
+                    .LearnGameChoose-Ans-p2 {
+                        text-align: center;
+                        color: #000000a6;
+                        font-size: 1.12rem;
+                        font-weight: $font-w-bold;
+                    }
+
+                    img {
+                        position: absolute;
+                        /* 絕對定位 */
+                        bottom: 10px;
+                        /* 靠底 */
+                        right: 10px;
+                        /* 靠右 */
+                        width: 60px;
+                        /* 圖片寬度 */
+                        height: 60px;
+                        /* 圖片高度 */
+                    }
+                }
+            }
+
+            .LearnGameChoose-Ans-bk-P {
+                background-color: $g-card3;
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 10px;
+                min-height: 55%;
+
+                .LearnGameChoose-Ans-bk-content-P {
+                    .LearnGameChoose-Ans-p1 {
+                        color: #9E4C5F;
+                        text-align: center;
+                        font-size: $font-size-20;
+                        font-weight: $font-w-bold;
+                    }
+
+                    .LearnGameChoose-Ans-p2 {
+                        text-align: center;
+                        color: #000000a6;
+                        font-size: 1.12rem;
+                        font-weight: $font-w-bold;
+                    }
+
+                    img {
+                        position: absolute;
+                        /* 絕對定位 */
+                        bottom: 10px;
+                        /* 靠底 */
+                        right: 10px;
+                        /* 靠右 */
+                        width: 60px;
+                        /* 圖片寬度 */
+                        height: 60px;
+                        /* 圖片高度 */
+                    }
+                }
+            }
+
+            .LearnGameChoose-Ans-bk-R {
+                background-color: $g-card4;
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 10px;
+                height: 50%;
+                min-height: 55%;
+
+                .LearnGameChoose-Ans-bk-content-R {
+                    .LearnGameChoose-Ans-p1 {
+                        color: #9E4C5F;
+                        text-align: center;
+                        font-size: $font-size-20;
+                        font-weight: $font-w-bold;
+                    }
+
+                    .LearnGameChoose-Ans-p2 {
+                        text-align: center;
+                        color: #000000a6;
+                        font-size: 1.12rem;
+                        font-weight: $font-w-bold;
+                    }
+
+                    img {
+                        position: absolute;
+                        /* 絕對定位 */
+                        bottom: 10px;
+                        /* 靠底 */
+                        right: 10px;
+                        /* 靠右 */
+                        width: 60px;
+                        /* 圖片寬度 */
+                        height: 60px;
+                        /* 圖片高度 */
+                    }
+                }
+            }
+
         }
 
 
-
-
-        .LearnGame-ready-1 {
+        .LearnGameChoose-ready-1 {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -167,8 +322,8 @@
             margin-right: 80px;
 
 
-            .LearnGame-content-3,
-            .LearnGame-content-4 {
+            .LearnGameChoose-content-3,
+            .LearnGameChoose-content-4 {
                 font-size: $font-size-24;
                 color: #000;
                 font-weight: $font-w-bold;
@@ -180,8 +335,8 @@
                 text-align: center;
             }
 
-            .LearnGame-img-1,
-            .LearnGame-img-2 {
+            .LearnGameChoose-img-1,
+            .LearnGameChoose-img-2 {
                 opacity: 0;
                 width: 10%;
             }

@@ -12,11 +12,12 @@ import LearnPageExp from './components/LearnPageExp';
 import Member from './pages/Member';
 import LearnPage from './pages/LearnPage';
 import LearnGame from './pages/LearnGame';
+import LearnGameChoose from './pages/LearnGameChoose';
 
 function App() {
   return (
     <>
-      <LearnGame />
+      <LearnGameChoose />
     </>
   )
 }
