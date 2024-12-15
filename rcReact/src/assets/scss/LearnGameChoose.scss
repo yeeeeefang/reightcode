@@ -1,0 +1,190 @@
+@use "./reset";
+@use "./variables" as *;
+
+#LearnGame-page {
+    height: 100vh;
+    /* 確保父容器高度為視口高度 */
+    display: flex;
+    /* 啟用 flexbox 布局 */
+    justify-content: center;
+    /* 水平方向置中 */
+    align-items: center;
+    /* 垂直方向置中 */
+    background-color: $primary;
+    position: relative;
+
+    .LearnGame-img-position-1 {
+        position: absolute;
+        width: 5%;
+        left: 50px;
+        top: 100px;
+    }
+
+    .LearnGame-img-position-2 {
+        position: absolute;
+        width: 3%;
+        right: 50px;
+        top: 200px;
+    }
+
+    .LearnGame-img-position-3 {
+        position: absolute;
+        width: 2%;
+        left: 80px;
+        bottom: 100px;
+    }
+
+    .LearnGame-img-position-4 {
+        position: absolute;
+        width: 5%;
+        right: 110px;
+        bottom: 100px;
+    }
+
+    .LearnGame-blackboard {
+        width: 1000px;
+        height: 564px;
+        background-color: $g-board1;
+        border: 13px solid $g-board2;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 68px 100px 83px 100px;
+        position: relative;
+        z-index: 10;
+
+
+        .LearnGame-img-position-5 {
+            position: absolute;
+            width: 5%;
+            bottom: 0px;
+            right: 80px;
+        }
+
+        .LearnGame-content-1,
+        .LearnGame-content-2 {
+            font-size: $font-size-40;
+            color: #fff;
+            font-weight: $font-w-bold;
+        }
+
+        #LearnGame-Choose {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 70%;
+            height: 100%;
+            gap: 20px;
+            padding: 20px;
+
+            .LearnGame-Choose-bk-G {
+                background-color: $g-card1;
+            }
+
+            .LearnGame-Choose-bk-B {
+                background-color: $g-card2;
+            }
+
+            .LearnGame-Choose-bk-P {
+                background-color: $g-card3;
+            }
+
+            .LearnGame-Choose-bk-R {
+                background-color: $g-card4;
+            }
+
+            .LearnGame-Choose-bk-G,
+            .LearnGame-Choose-bk-B {
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 20px;
+                height: 60%;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    font-size: $font-size-20;
+                    font-weight: $font-w-bold;
+                }
+
+                img {
+                    position: absolute;
+                    /* 絕對定位 */
+                    bottom: 10px;
+                    /* 靠底 */
+                    right: 10px;
+                    /* 靠右 */
+                    width: 60px;
+                    /* 圖片寬度 */
+                    height: 60px;
+                    /* 圖片高度 */
+                }
+            }
+
+            .LearnGame-Choose-bk-P,
+            .LearnGame-Choose-bk-R {
+                position: relative;
+                flex: 0 0 calc(50% - 20px);
+                border-radius: 10px;
+                padding: 20px; 
+                height: 60%;
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: $font-size-20;
+                    font-weight: $font-w-bold;
+                }
+
+                img {
+                    position: absolute;
+                    /* 絕對定位 */
+                    bottom: 10px;
+                    /* 靠底 */
+                    left: 10px;
+                    /* 靠右 */
+                    width: 60px;
+                    /* 圖片寬度 */
+                    height: 60px;
+                    /* 圖片高度 */
+                }
+            }
+        }
+
+
+
+
+        .LearnGame-ready-1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            margin-right: 80px;
+
+
+            .LearnGame-content-3,
+            .LearnGame-content-4 {
+                font-size: $font-size-24;
+                color: #000;
+                font-weight: $font-w-bold;
+                background-color: $g-board3;
+                display: inline-block;
+                border-radius: 20px;
+                line-height: 60px;
+                padding: 0 6px;
+                text-align: center;
+            }
+
+            .LearnGame-img-1,
+            .LearnGame-img-2 {
+                opacity: 0;
+                width: 10%;
+            }
+        }
+    }
+}
