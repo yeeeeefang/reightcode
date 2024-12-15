@@ -1,6 +1,9 @@
 @use "./reset";
 @use "./variables" as *;
+#LearnGame-page-all{
+    background-color: $primary;
 
+}
 #LearnGame-page {
     height: 100vh;
     /* 確保父容器高度為視口高度 */
@@ -10,7 +13,6 @@
     /* 水平方向置中 */
     align-items: center;
     /* 垂直方向置中 */
-    background-color: $primary;
     position: relative;
 
     .LearnGame-img-position-1 {

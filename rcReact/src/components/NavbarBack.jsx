@@ -9,8 +9,7 @@ function NavbarBack() {
                     <div className="navlogo">
 
                         {/* <Link to=''>1234</Link> Link 打了之後出不來 */}
-                        <a href="./"></a>
-                        <img src="../public/images/logo.png" alt="" />
+                        <Link to='/'><img src="../public/images/logo.png" alt="" /></Link>
                     </div>
                     <div className="navBarBk-1">
                         <div className="navlearningBtn">

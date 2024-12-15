@@ -1,20 +1,25 @@
+import { Link, Route, Routes } from 'react-router-dom'
 import '../assets/css/Hamburger.css'
 
 function Hamburger() {
     return (
         <>
+
             <section id="Hamburger">
                 <div className="Ham-Bk-1">
-                    <p>會員登入</p>
+                    <Link to='Login'>
+                        <p>會員登入</p>
+                    </Link>
                     <p>註冊新會員</p>
-                    <div className="iconX">
-                        <span class="bar"> </span>
-                        <span class="bar"> </span>
-                    </div>
+                    <Link to='/'>{/* 暫時設定首頁 */}
+                        <div className="iconX">
+                            <span class="bar"> </span>
+                            <span class="bar"> </span>
+                        </div>
+                    </Link>
                 </div>
                 <div className="barLink">
                     <div className="bar-Content">
-
                         <img src="../public/images/icon_greenA.svg" alt="" />
                         <p>關於我們</p>
                         <img src="../public/images/icon_greenA.svg" alt="" />

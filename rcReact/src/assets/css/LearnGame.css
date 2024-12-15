@@ -165,6 +165,10 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+#LearnGame-page-all {
+  background-color: #FFD640;
+}
+
 #LearnGame-page {
   height: 100vh;
   /* 確保父容器高度為視口高度 */
@@ -174,7 +178,6 @@ a {
   /* 水平方向置中 */
   align-items: center;
   /* 垂直方向置中 */
-  background-color: #FFD640;
   position: relative;
 }
 #LearnGame-page .LearnGame-img-position-1 {

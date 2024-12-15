@@ -6,7 +6,7 @@ export default function Login() {
     return (
         <>
         
-            <div id="login-page"> 
+            <div id="login-page">  
             <Navbar/>
                 {/* topbar  */}
                 {/* <header className="topbar">
