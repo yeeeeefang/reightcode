@@ -11,11 +11,12 @@ import './assets/scss/App.scss';
 import LearnPageExp from './components/LearnPageExp';
 import Member from './pages/Member';
 import LearnPage from './pages/LearnPage';
+import LearnGame from './pages/LearnGame';
 
 function App() {
   return (
     <>
-      <LearnPage />
+      <LearnGame />
     </>
   )
 }

@@ -6,7 +6,19 @@ function LearnGame() {
     return (
         <>
             <section id='LearnGame-page'>
+                <div className='LearnGame-img-position'>
+                    <img className='LearnGame-img-position-1' src="../public/images/GameDecoA.svg" alt="" />
+                    <img className='LearnGame-img-position-2' src="../public/images/GameDecoB.svg" alt="" />
+                    <img className='LearnGame-img-position-3' src="../public/images/GameDecoC.svg" alt="" />
+                    <img className='LearnGame-img-position-4' src="../public/images/GameDecoD.svg" alt="" />
+                    <img className='LearnGame-img-position-green' src="../public/images/greenBackB.svg" alt="" />
+                    <img className='LearnGame-img-position-red' src="../public/images/redBackB.svg" alt="" />
+                    <img className='LearnGame-img-position-pink' src="../public/images/pinkBackC.svg" alt="" />
+                    <img className='LearnGame-img-position-blue' src="../public/images/blueA.svg" alt="" />
+
+                </div>
                 <div className='LearnGame-blackboard'>
+                    <img className='LearnGame-img-position-5' src="../public/images/GameEraser.svg" alt="" />
                     <div className='LearnGame-content-1'>
                         <p>不間斷地提供題目，給予問答提供四個選項給你選擇，達成一定的數量將會有成就獎勵!</p>
                     </div>
