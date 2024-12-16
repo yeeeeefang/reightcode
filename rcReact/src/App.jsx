@@ -19,22 +19,20 @@ import LearnArea from './pages/LearnArea';
 function App() {
   return (
     <>
-
       <Routes>
-        <Route path='/' element={<LinkPage/>}></Route>
-        <Route path='Home' element={<Home/>}></Route>
-        <Route path='Hamburger' element={<Hamburger/>}></Route>
-        <Route path='LearnSelect' element={<LearnSelect/>}></Route>
-        <Route path='Login' element={<Login/>}></Route>
-        <Route path='LearnHome' element={<LearnHome/>}></Route>
-        <Route path='LearnPage' element={<LearnPage/>}></Route>
-        <Route path='LearnGame' element={<LearnGame/>}></Route>
-        <Route path='LearnGameChoose' element={<LearnGameChoose/>}></Route>
-        <Route path='Trend' element={<Trend/>}></Route>
-        <Route path='Member' element={<Member/>}></Route>
-        <Route path='Register' element={<Register/>}></Route>
-        <Route path='LearnArea' element={<LearnArea/>}></Route>
-
+        <Route path='/' element={<LinkPage />}></Route>
+        <Route path='/Home' element={<Home />}></Route>
+        <Route path='/Hamburger' element={<Hamburger />}></Route>
+        <Route path='/LearnSelect' element={<LearnSelect />}></Route>
+        <Route path='/Login' element={<Login />}></Route>
+        <Route path='/LearnHome' element={<LearnHome />}></Route>
+        <Route path='/LearnPage' element={<LearnPage />}></Route>
+        <Route path='/LearnGame' element={<LearnGame />}></Route>
+        <Route path='/LearnGameChoose' element={<LearnGameChoose />}></Route>
+        <Route path='/Trend' element={<Trend />}></Route>
+        <Route path='/Member' element={<Member />}></Route>
+        <Route path='/Register' element={<Register />}></Route>
+        <Route path='/LearnArea' element={<LearnArea />}></Route>
       </Routes>
     </>
   )

@@ -167,16 +167,17 @@ a {
 /* reset end */
 #LearnGame-page-all {
   background-color: #FFD640;
+  overflow: hidden;
 }
 
 #LearnGame-page {
-  height: 100vh;
+  height: 90vh;
   /* 確保父容器高度為視口高度 */
   display: flex;
   /* 啟用 flexbox 布局 */
   justify-content: center;
   /* 水平方向置中 */
-  align-items: center;
+  margin-top: 30px;
   /* 垂直方向置中 */
   position: relative;
 }
@@ -229,13 +230,13 @@ a {
   position: absolute;
   width: 12%;
   top: 250px;
-  left: 120px;
+  left: 100px;
   transform: rotate(-35deg);
   z-index: 9;
 }
 #LearnGame-page .LearnGame-blackboard {
-  width: 1000px;
-  height: 564px;
+  width: 73%;
+  height: 80%;
   background-color: #2B7551;
   border: 13px solid #C3825A;
   border-radius: 10px;
