@@ -25,7 +25,7 @@ export default function Login() {
 
                     <div className="characters">
                         <img src="/images/greenA.svg" alt="" className="green-char" />
-                        <img src="/images/red.svg" alt="" className="red-char" /> 
+                        <img src="/images/redB.svg" alt="" className="red-char" /> 
                         <img src="/images/blueA.svg" alt="" className="blue-char" />
                         <img src="/images/pinkA.svg" alt="" className="pink-char" />
                     </div>
@@ -36,7 +36,7 @@ export default function Login() {
                             <label for="email">*Email：</label>
                             <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
 
-                            <label for="password">請輸入密碼：</label>
+                            <label for="password">*請輸入密碼：</label>
                             <input type="password" name="password" id="password" title="重設密碼" placeholder="請輸入6~8英數混合字元" />
 
                             <a href="/" className="forgot-password">忘記密碼</a>

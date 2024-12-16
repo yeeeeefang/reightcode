@@ -187,45 +187,43 @@ a {
   width: 180px;
   height: 180px;
   position: absolute;
-  bottom: 570px;
-  left: 400px;
-  animation: rotate-small 2s ease-in-out infinite;
-  transform-origin: bottom right;
+  bottom: 595px;
+  left: 380px;
+  transform: rotate(60deg);
 }
-@keyframes rotate-small {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-#login-page .login-main .characters .red-char {
-  width: 175px;
-  height: 175px;
+#login-page .login-main .red-char {
+  width: 220px;
+  height: 220px;
   position: absolute;
-  bottom: 15px;
-  left: 550px;
-  transform: rotate(-5deg);
+  bottom: 20px;
+  left: 1230px;
 }
-#login-page .login-main .characters .blue-char {
+#login-page .login-main .blue-char {
   width: 175px;
   height: 175px;
   position: absolute;
   bottom: 280px;
   left: 140px;
 }
-#login-page .login-main .characters .pink-char {
+#login-page .login-main .pink-char {
   width: 175px;
   height: 175px;
   position: absolute;
-  z-index: 888;
   bottom: 20px;
-  left: 1230px;
-  transform: rotateY(-180deg);
+  left: 610px;
+  z-index: 888;
+  animation: rotate-small 2s ease-in-out infinite;
+}
+@keyframes rotate-small {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: rotate(0);
+  }
 }
 #login-page .login-main .login-form {
   flex: 1;
@@ -235,8 +233,9 @@ a {
   box-shadow: 8px 8px 0 #534D97;
   width: 400px;
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   left: 800px;
+  z-index: 777;
 }
 #login-page .login-main .login-form h2 {
   color: #534D97;

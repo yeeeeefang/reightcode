@@ -184,7 +184,8 @@ a {
   height: 28vh;
 }
 #learnhome-page .learnhome-section1 .learning-section img {
-  width: 200px;
+  width: 240px;
+  transform: rotate(10deg);
 }
 #learnhome-page .learnhome-section1 .learning-section h2 {
   font-size: 4rem;
@@ -211,7 +212,8 @@ a {
   height: 28.2vh;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section img {
-  width: 150px;
+  margin-top: 120px;
+  width: 250px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
   font-size: 4rem;
@@ -225,7 +227,8 @@ a {
   height: 28.5vh;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section img {
-  width: 180px;
+  margin-top: 120px;
+  width: 250px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section h2 {
   font-size: 4rem;

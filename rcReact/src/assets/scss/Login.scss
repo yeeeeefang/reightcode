@@ -29,33 +29,32 @@
                 width: 180px;
                 height: 180px;
                 position: absolute;
-                bottom: 570px;
-                left: 400px;
-                // transform: rotate(180deg);
+                bottom: 595px;
+                left: 380px;
+                transform: rotate(60deg);
 
-                animation: rotate-small 2s ease-in-out infinite;
-                transform-origin:  bottom right; // 設置旋轉的固定點在右上角
+                // @keyframes rotate-small {
+                //     0% {
+                //         transform: rotate(0deg);
+                //     }
+                //     50% {
+                //         transform:translateX(20px);
+                //     }
+                //     100% {
+                //         transform: rotate(0deg);
+                //     }
+                // }
+            }
 
-                @keyframes rotate-small {
-                    0% {
-                        transform: rotate(0deg);
-                    }
-                    50% {
-                        // transform: rotate(8deg); // 順時針小幅旋轉
-                        transform:translateX(20px);
-                    }
-                    100% {
-                        transform: rotate(0deg);
-                    }
-                }
             }
             .red-char {
-                width: 175px;
-                height: 175px;
+                width: 220px;
+                height: 220px;
                 position: absolute;
-                bottom: 15px;
-                left: 550px;
-                transform: rotate(-5deg);
+                bottom: 20px;
+                left: 1230px;
+
+                // transform: rotate(5deg) rotateY(-180deg);
                 // border: 1px solid red;
             }
             .blue-char {
@@ -69,12 +68,24 @@
                 width: 175px;
                 height: 175px;
                 position: absolute;
-                z-index: 888;
                 bottom: 20px;
-                left: 1230px;
-                transform: rotateY(-180deg);
+                left: 610px;
+                z-index: 888;
                 // border: 1px solid red;
-            }
+
+                animation: rotate-small 2s ease-in-out infinite;
+                @keyframes rotate-small {
+                    0% {
+                        transform: rotate(0);
+                    }
+                    15% {
+                        transform:translateX(30px);
+                    }
+                    50% {
+                        transform: rotate(0);
+                    }
+                }
+
         }
 
         .login-form {
@@ -85,8 +96,9 @@
             box-shadow: 8px 8px 0 $shadow-3;
             width: 400px;
             position: absolute;
-            bottom: 100px;
+            bottom: 150px;
             left: 800px;
+            z-index: 777;
             // border: 1px solid red;
 
             h2 {
