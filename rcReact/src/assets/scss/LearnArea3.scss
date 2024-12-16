@@ -10,19 +10,26 @@
     background-repeat: no-repeat;
 
     .wordclass {
-        .learnbigtitle {}
+        .learnbigtitle {
+            
+            padding: 45px 0 0 65px;
+            .bigtitleimg{
+                width: 310px;
+                height: 140px;
+            }
+        }
 
         .learnwordall {
 
             .learnword {
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: center;
                              
 
                 .wordall {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: column;padding-bottom: 40px;
 
                     .wwword {
                         font-size: $font-size-40;
@@ -47,7 +54,7 @@
 
                             position: absolute; //絕對定位
                             top: 10px;
-                            left: 50px;
+                            left: 40px;
                         }
                     }
                     .wordtitle2 {
@@ -63,7 +70,7 @@
 
                             position: absolute; //絕對定位
                             top: 10px;
-                            left: 50px;
+                            left: 40px;
                         }
                     }
                     .wordtitle3 {
@@ -79,7 +86,7 @@
 
                             position: absolute; //絕對定位
                             top: 10px;
-                            left: 50px;
+                            left: 40px;
                         }
                     }
 
@@ -146,5 +153,28 @@
         }
 
 
+    }
+
+    #LearnAreaall3-1{
+        .learnimportant{
+            .impbox{
+                width: 777px;
+                height: 300px;
+                background-image: url('../../../public/images/learnAreaPoint.svg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+    
+                &:hover {
+                    background-image: url('../../../public/images/learnAreaPoint_hover.svg');
+                }
+            }
+            .charblue{
+                width: 10%;
+            }
+            .cloud1{
+                width: 17%;
+            }
+        }
     }
 }

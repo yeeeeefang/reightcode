@@ -173,14 +173,22 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
+#LearnAreaall3 .wordclass .learnbigtitle {
+  padding: 45px 0 0 65px;
+}
+#LearnAreaall3 .wordclass .learnbigtitle .bigtitleimg {
+  width: 310px;
+  height: 140px;
+}
 #LearnAreaall3 .wordclass .learnwordall .learnword {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordall {
   display: flex;
   flex-direction: column;
+  padding-bottom: 40px;
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wwword {
   font-size: 2.5rem;
@@ -202,7 +210,7 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 40px;
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wordtitle2::before {
   content: "";
@@ -215,7 +223,7 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 40px;
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wordtitle3::before {
   content: "";
@@ -228,7 +236,7 @@ a {
   background-repeat: no-repeat;
   position: absolute;
   top: 10px;
-  left: 50px;
+  left: 40px;
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordcontent {
   display: flex;
@@ -279,4 +287,21 @@ a {
 }
 #LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish3:hover {
   background-image: url("../../../public/images/learnAreaBoardU.png");
+}
+#LearnAreaall3 #LearnAreaall3-1 .learnimportant .impbox {
+  width: 777px;
+  height: 300px;
+  background-image: url("../../../public/images/learnAreaPoint.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#LearnAreaall3 #LearnAreaall3-1 .learnimportant .impbox:hover {
+  background-image: url("../../../public/images/learnAreaPoint_hover.svg");
+}
+#LearnAreaall3 #LearnAreaall3-1 .learnimportant .charblue {
+  width: 10%;
+}
+#LearnAreaall3 #LearnAreaall3-1 .learnimportant .cloud1 {
+  width: 17%;
 }/*# sourceMappingURL=LearnArea3.css.map */

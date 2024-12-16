@@ -6,7 +6,7 @@ function LearnArea3() {
             <section id="LearnAreaall3">
                 <div className="wordclass">
                     <div className='learnbigtitle'>
-                        <img src="./public/images/learnAreaVocab.png" alt="" />
+                        <img className='bigtitleimg' src="./public/images/learnAreaVocab.png" alt="" />
                     </div>
                     <div className='learnwordall'>
                         {/* 第一條 */}
@@ -27,8 +27,8 @@ function LearnArea3() {
                                 <h4 className="wwword wordtitle2">{"<i>"}
                                 </h4>
                                 <div className="wordcontent">
-                                <p className="contentch">替代語氣或語氣定義文字的一部分。裡面的內容通常以斜體顯示。</p>
-                                <p className="contenten">The{"<i>"}tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
+                                    <p className="contentch">替代語氣或語氣定義文字的一部分。裡面的內容通常以斜體顯示。</p>
+                                    <p className="contenten">The{"<i>"}tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.</p>
                                 </div>
                             </div>
                             <div className="wordEnglish2"></div>
@@ -39,15 +39,35 @@ function LearnArea3() {
                                 <h4 className="wwword wordtitle3">{"<u>"}
                                 </h4>
                                 <div className="wordcontent">
-                                <p className="contentch">表示一些未明確表達且樣式與普通文本不同的文本，例如中文文本中拼寫錯誤的單字或專有名稱。</p>
-                                <p className="contenten">The{"<u>"}tag represents some text that is unarticulated and styled differently from normal text.</p>
+                                    <p className="contentch">表示一些未明確表達且樣式與普通文本不同的文本，例如中文文本中拼寫錯誤的單字或專有名稱。</p>
+                                    <p className="contenten">The{"<u>"}tag represents some text that is unarticulated and styled differently from normal text.</p>
                                 </div>
                             </div>
                             <div className="wordEnglish3"></div>
                         </div>
                     </div>
                 </div>
+                {/* 講點雲飄飄 */}
+                <div id='LearnAreaall3-1'>
+                    <div className="learnimportant">
+                        <div className="impbox"></div>
+                        <div className="charblue">
+                        <img className='charblueimg' src="./public/images/blueC.svg" alt="" />
+                        </div>
+                        <div className="cloud1">
+                            <img src="./public/images/LearnAreacloud1.svg" alt="" />
+                        </div>
+                        <div className="charred"></div>
+                        <div className="cloud2"></div>
+                    </div>
+                    <div className="happy">
+                        <div className="practice"></div>
+                        <div className="practicebox"></div>
+                    </div>
+
+                </div>
             </section>
+
         </>
     )
 }
