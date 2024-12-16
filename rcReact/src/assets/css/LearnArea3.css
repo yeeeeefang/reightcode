@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置字體 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, "蘋方-繁", "PingFang TC", "黑體-繁", "Heiti TC", "微軟正黑體", "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+}
+
+/* 重置標題 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置列表 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連結 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高*/
+  color: #000000;
+  text-decoration: none;
+}
+
+/* 卷軸樣式 */
+/* ::-webkit-scrollbar {
+    //捲動條
+    width: 15px; //垂直卷軸寬
+    height: 15px; //水平卷軸高
+    // border-radius: 99px;
+
+}
+
+::-webkit-scrollbar-button {
+    background-color: $lesser-3;
+    width: 15px; //水平卷軸按鈕寬
+    height: 15px; //垂直捲職按鈕寬
+}
+
+// 卷軸按鈕(上下按鈕)
+
+::-webkit-scrollbar-thumb {
+    //卷軸手柄
+    background-color: $lesser-4;
+    width: 12px;
+    border-radius: 99;
+}
+
+::-webkit-scrollbar-track {
+    //滾動條軌道的顏色
+    background-color: $lesser-1;
+}
+
+::-webkit-scrollbar-corner {
+    //水平垂直卷軸的右下底角
+    background-color: $lesser-2;
+}
+::-webkit-resizer{//多行文字欄位右下縮放按鈕
+    background-color: $lesser-1;
+} */
+/* reset end */
+#LearnAreaall3 {
+  height: 250vh;
+  background-color: #FFD640;
+  background-image: url("../../../public/images/learnAreaLine.svg");
+  background-size: w;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordall {
+  display: flex;
+  flex-direction: column;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wwword {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  -webkit-text-stroke: 1px #000000;
+  text-stroke: 1px #000000;
+  position: relative;
+  padding-left: 100px;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wordtitle1::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url("../public/images/icon_greenA.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wordtitle2::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url("../public/images/icon_red.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordall .wordtitle3::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  background-image: url("../public/images/icon_blue.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 560px;
+  height: 100px;
+  padding: 10px 55px;
+  margin-right: 90px;
+  font-size: 1rem;
+  font-weight: 500;
+  word-wrap: break-word;
+  word-break: keep-all;
+  text-align: center;
+  border-radius: 99px;
+  background-color: #FFFFFF;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish1 {
+  width: 200px;
+  height: 130px;
+  background-image: url("../../../public/images/learnAreaBoard.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish1:hover {
+  background-image: url("../../../public/images/learnAreaBoardS.png");
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish2 {
+  width: 200px;
+  height: 130px;
+  background-image: url("../../../public/images/learnAreaBoard.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish2:hover {
+  background-image: url("../../../public/images/learnAreaBoardI.png");
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish3 {
+  width: 200px;
+  height: 130px;
+  background-image: url("../../../public/images/learnAreaBoard.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#LearnAreaall3 .wordclass .learnwordall .learnword .wordEnglish3:hover {
+  background-image: url("../../../public/images/learnAreaBoardU.png");
+}/*# sourceMappingURL=LearnArea3.css.map */

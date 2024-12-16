@@ -2,7 +2,7 @@ import '../assets/scss/LearnArea2.scss'
 function LearnArea2() {
     return (
         <>
-            <section id='LearnAreaal2'>
+            <section id='LearnAreaall2'>
                 <div className="areaTitle">
                     <div className="areaBlue">
                         <img src="./public/images/blueB.svg" alt="" />

@@ -1,0 +1,150 @@
+@use './reset';
+@use './variables/' as *;
+
+#LearnAreaall3 {
+    height: 250vh;
+    background-color: $primary;
+    background-image: url('../../../public/images/learnAreaLine.svg');
+    background-size: w;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .wordclass {
+        .learnbigtitle {}
+
+        .learnwordall {
+
+            .learnword {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                             
+
+                .wordall {
+                    display: flex;
+                    flex-direction: column;
+
+                    .wwword {
+                        font-size: $font-size-40;
+                        font-weight: $font-w-black;
+                        color: $fc-6;
+                        -webkit-text-stroke: 1px $fc-7;
+                        text-stroke: 1px $fc-7;
+                        position: relative;
+                        padding-left: 100px;
+                    }
+
+                    .wordtitle1 {
+                        &::before {
+                            content: "";
+                            width: 48px;
+                            height: 48px;
+                            background-color: transparent;
+                            background-image: url('../public/images/icon_greenA.svg');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute; //絕對定位
+                            top: 10px;
+                            left: 50px;
+                        }
+                    }
+                    .wordtitle2 {
+                        &::before {
+                            content: "";
+                            width: 48px;
+                            height: 48px;
+                            background-color: transparent;
+                            background-image: url('../public/images/icon_red.svg');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute; //絕對定位
+                            top: 10px;
+                            left: 50px;
+                        }
+                    }
+                    .wordtitle3 {
+                        &::before {
+                            content: "";
+                            width: 48px;
+                            height: 48px;
+                            background-color: transparent;
+                            background-image: url('../public/images/icon_blue.svg');
+                            background-position: center;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+
+                            position: absolute; //絕對定位
+                            top: 10px;
+                            left: 50px;
+                        }
+                    }
+
+                }
+
+                .wordcontent {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 560px;
+                    height: 100px;
+                    padding: 10px 55px;
+                    margin-right: 90px;
+                    font-size: $font-size-16;
+                    font-weight: $font-w-medium;
+                    word-wrap: break-word;
+                    word-break: keep-all;
+                    text-align: center;
+
+                    border-radius: 99px;
+                    background-color:$fc-6 ;
+                }
+
+                .wordEnglish1 {
+                    width: 200px;
+                    height: 130px;
+                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &:hover {
+                        background-image: url('../../../public/images/learnAreaBoardS.png');
+                    }
+                }
+
+                .wordEnglish2 {
+                    width: 200px;
+                    height: 130px;
+                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &:hover {
+                        background-image: url('../../../public/images/learnAreaBoardI.png');
+                    }
+                }
+
+                .wordEnglish3 {
+                    width: 200px;
+                    height: 130px;
+                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+
+                    &:hover {
+                        background-image: url('../../../public/images/learnAreaBoardU.png');
+                    }
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,11 +1,11 @@
 @use './reset';
 @use './variables/' as *;
 
-#LearnAreaal2 {
+#LearnAreaall2 {
     height: 100vh;
     background-color: $primary;
     background-image: url('../../../public/images/LearnArea-bg.svg');
-    background-size: w;
+    // background-size: w;
     background-position: center;
     background-repeat: no-repeat;
 
