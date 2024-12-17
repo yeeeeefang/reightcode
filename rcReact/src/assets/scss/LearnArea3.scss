@@ -1,35 +1,45 @@
 @use './reset';
 @use './variables/' as *;
 
-#LearnAreaall3 {
-    height: 250vh;
+#LearnAreaallall {
     background-color: $primary;
     background-image: url('../../../public/images/learnAreaLine.svg');
     background-size: w;
     background-position: center;
     background-repeat: no-repeat;
 
-    .wordclass {
+    #LearnAreaall3 {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
         .learnbigtitle {
-            
+            align-self: flex-start;
             padding: 45px 0 0 65px;
-            .bigtitleimg{
+
+            .bigtitleimg {
                 width: 310px;
                 height: 140px;
             }
         }
 
         .learnwordall {
+            padding: 30px;
+            margin-top: 80px;
 
             .learnword {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                             
+
 
                 .wordall {
                     display: flex;
-                    flex-direction: column;padding-bottom: 40px;
+                    flex-direction: column;
+                    padding-bottom: 40px;
 
                     .wwword {
                         font-size: $font-size-40;
@@ -57,6 +67,7 @@
                             left: 40px;
                         }
                     }
+
                     .wordtitle2 {
                         &::before {
                             content: "";
@@ -73,6 +84,7 @@
                             left: 40px;
                         }
                     }
+
                     .wordtitle3 {
                         &::before {
                             content: "";
@@ -93,7 +105,7 @@
                 }
 
                 .wordcontent {
-                    display:flex;
+                    display: flex;
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
@@ -108,7 +120,7 @@
                     text-align: center;
 
                     border-radius: 99px;
-                    background-color:$fc-6 ;
+                    background-color: $fc-6 ;
                 }
 
                 .wordEnglish1 {
@@ -155,26 +167,59 @@
 
     }
 
-    #LearnAreaall3-1{
-        .learnimportant{
-            .impbox{
+    #LearnAreaall3-1 {
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+
+        .learnimportant {
+            display: flex;
+            flex: 2;
+
+            .impbox {
+                flex: 3;
                 width: 777px;
                 height: 300px;
+                align-self: flex-end;
                 background-image: url('../../../public/images/learnAreaPoint.svg');
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
-    
+
                 &:hover {
                     background-image: url('../../../public/images/learnAreaPoint_hover.svg');
                 }
             }
-            .charblue{
-                width: 10%;
+
+            .charblue {
+                flex: 1;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                background-image: url('./public/images/LearnAreacloud1.svg');
+                background-position: left bottom;
+                background-size: 50%;
+                background-repeat: no-repeat;
+
+                .charblueimg {
+                    width: 40%;
+                }
             }
-            .cloud1{
-                width: 17%;
-            }
+
+            // .cloud1{
+            //     width: 17%;
+            // }
+        }
+
+        .happy {
+            display: flex;
+            justify-content: center;
+
+            // align-items: flex-end;
+            .practice {}
+
+            .practicebox {}
         }
     }
 }
