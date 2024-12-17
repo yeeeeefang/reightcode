@@ -23,13 +23,13 @@ function Navbar() {
     const navbtnMouseDown = () => {
         starLearnBtnRef.current.src = '../public/images/navBtn_hover.png';
         starLearnBtnRef.current.style.width = '215px'
-        starLearnBtnRef.current.style.margin = '8px 0px 0px 8px'
+        starLearnBtnRef.current.style.padding = '8px 0px 0px 8px'
     }
     /* 放開換回圖片 */
     const navbtnMouseUp = () => {
         starLearnBtnRef.current.src = '../public/images/navBtn.png';
         starLearnBtnRef.current.style.width = '220px'
-        starLearnBtnRef.current.style.margin = '0px'
+        starLearnBtnRef.current.style.padding = '0px'
     }
     /* 同上 */
     const humBtnRef = useRef(null)
@@ -39,7 +39,7 @@ function Navbar() {
     const humBtnMouseUp = () => {
         humBtnRef.current.src = '../public/images/hamBtn.svg'
     }
-    
+
     return (
         <>
             <div>

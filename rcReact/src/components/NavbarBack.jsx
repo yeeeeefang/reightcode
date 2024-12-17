@@ -17,7 +17,18 @@ function NavbarBack() {
         setHamburgerVisible(false);
     };
 
-
+    /* 切換 返回選單按鈕 */
+    const changBtnRef = useRef(null)
+    const changBtnMouseDown = () => {
+        changBtnRef.current.src = '../public/images/navBtnB_hover.png'
+        changBtnRef.current.style.width = '215px'
+        changBtnRef.current.style.margin = '8px 0px 0px 8px'
+    }
+    const changBtnMounseUp = () => {
+        changBtnRef.current.src = '../public/images/navBtnB.png'
+        changBtnRef.current.style.width = '215px'
+        changBtnRef.current.style.margin = '0px'
+    }
 
     const humBtnRef = useRef(null)
     const humBtnMouseDown = () => {
@@ -39,9 +50,13 @@ function NavbarBack() {
                     {/* 這邊back跟two的navbar尚未處理 剩下接完成 */}
                     <div className="navBarBk-1">
                         <div className="navlearningBtn">
-                            <img src="../public/images/navBtnB.png" alt="" />
+                            <img src="../public/images/navBtnB.png" alt=""
+                                ref={changBtnRef}
+                                onMouseDown={changBtnMouseDown}
+                                onMouseUp={changBtnMounseUp}
+                            />
                         </div>
-                        <div className="navhamBtn"  onClick={toggleHamburger}>
+                        <div className="navhamBtn" onClick={toggleHamburger}>
                             <img src="../public/images/hamBtn.svg" alt=""
                                 ref={humBtnRef}
                                 onMouseDown={humBtnMouseDown}

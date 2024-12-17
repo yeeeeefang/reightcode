@@ -168,14 +168,23 @@ a {
 /* body {
     background-color: $primary;
 } */
-#topbar {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  margin: 30px 50px;
-}
-#topbar .logo img {
-  width: 65px;
+/* #topbar {
+
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 30px 50px;
+
+
+    .logo {
+        img {
+            width: 65px;
+        }
+    }
+
+} */
+#LearnSelectAllpage {
+  background-color: #FFD640;
 }
 
 #codeCourse {
