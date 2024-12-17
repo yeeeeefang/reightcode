@@ -1,5 +1,9 @@
+import { useEffect } from 'react';
 import '../assets/scss/LearnArea2.scss'
+import $ from 'jquery';
+
 function LearnArea2() {
+    
     return (
         <>
             <section id='LearnAreaall2'>
@@ -55,6 +59,7 @@ function LearnArea2() {
                 </div>
 
             </section>
+            
         </>
     )
 }
