@@ -30,3 +30,18 @@
         }
     }
 }
+
+/* 漢堡按鈕的進場動畫 */
+.HumMenu {
+    position: fixed;
+    right: -10px;
+    top: 15px;
+    z-index: 999;
+    transition: transform 0.5s ease;
+}
+.HumMenu.show {
+    transform: translateX(-1%);
+}
+.HumMenu.hide {
+    transform: translateX(100%);
+}

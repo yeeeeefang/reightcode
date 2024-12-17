@@ -1,10 +1,9 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import '../assets/css/Hamburger.css'
-import Login from '../pages/Login'
 
-
-function Hamburger() {
-    return (
+ 
+function Hamburger({ onClose }) {
+    return ( 
         <>
             <section id="Hamburger">
                 <div className="Ham-Bk-1">
@@ -14,11 +13,9 @@ function Hamburger() {
                     <Link to='/Register'>
                         <p>註冊新會員</p>
                     </Link>
-                    <div className="iconX">
-                        <Link to='/'>{/* 暫時設定首頁 */}
-                            <span class="bar"> </span>
-                            <span class="bar"> </span>
-                        </Link>
+                    <div className="iconX" onClick={onClose}>
+                            <span className="bar"> </span>
+                            <span className="bar"> </span>
                     </div>
                 </div>
                 <div className="barLink">
