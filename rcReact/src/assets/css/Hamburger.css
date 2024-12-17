@@ -196,6 +196,7 @@ a {
   width: 48px;
   height: 48px;
   border-radius: 10px;
+  cursor: pointer;
 }
 #Hamburger .Ham-Bk-1 .iconX .bar {
   display: block;
