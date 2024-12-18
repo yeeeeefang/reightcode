@@ -50,11 +50,13 @@ function NavbarBack() {
                     {/* 這邊back跟two的navbar尚未處理 剩下接完成 */}
                     <div className="navBarBk-1">
                         <div className="navlearningBtn">
-                            <img src="../public/images/navBtnB.png" alt=""
-                                ref={changBtnRef}
-                                onMouseDown={changBtnMouseDown}
-                                onMouseUp={changBtnMounseUp}
-                            />
+                            <Link to='/LearnHome'>
+                                <img src="../public/images/navBtnB.png" alt=""
+                                    ref={changBtnRef}
+                                    onMouseDown={changBtnMouseDown}
+                                    onMouseUp={changBtnMounseUp}
+                                />
+                            </Link>
                         </div>
                         <div className="navhamBtn" onClick={toggleHamburger}>
                             <img src="../public/images/hamBtn.svg" alt=""

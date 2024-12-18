@@ -50,7 +50,7 @@ function Navbar() {
                         <Link to='/'><img src="../public/images/logo.png" alt="" /></Link>
                     </div>
                     <div className="navBarBk-1">
-                        <Link to='/LearnSelect'>
+                        <Link to='/LearnHome'>
                             <div className="navlearningBtn">
                                 <img src="../public/images/navBtn.png" alt=""
                                     ref={starLearnBtnRef}
