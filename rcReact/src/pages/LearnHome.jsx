@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../assets/css/LearnHome.css"
+import "../assets/scss/LearnHome.scss"
 import Navbar from "../components/Navbar"
 
 

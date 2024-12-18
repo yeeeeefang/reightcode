@@ -190,6 +190,7 @@ a {
   background-color: #FFD640;
   width: 100%;
   height: 28.6vh;
+  cursor: pointer;
 }
 #learnhome-page .learnhome-section1 .learning-section h2 {
   width: 40%;
@@ -213,6 +214,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  cursor: pointer;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section {
   display: flex;

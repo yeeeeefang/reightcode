@@ -29,6 +29,7 @@
             background-color: $primary; // 黃色背景
             width: 100%;
             height: 28.6vh;
+            cursor: pointer;
             h2 {
                 width: 40%;
                 transition: font-size 0.35s ease-in;
@@ -55,11 +56,13 @@
             justify-content: center;
             width: 100%;
 
+
             // 垂直排列的區域
             .learnhome-section3 {
                 display: flex;
                 flex-direction: column; // 垂直排列
                 width: 100%;
+                cursor: pointer;
 
                 // 第二區：小試身手
                 .practice-section {
