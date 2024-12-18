@@ -201,7 +201,9 @@ function LearnCard({ selectedSection }) {
         setCardItem(prev => Math.min(prev + 1, chooseCard.length - cardsToShow));
     };
 
-    const chooseCard = CardTitle[selectedSection]?.children || [];
+    const chooseCard = selectedSection === null
+        ? CardTitle.flatMap(section => section.children)
+        : CardTitle[selectedSection]?.children || [];
     const visibleCards = chooseCard.slice(CardItem, CardItem + cardsToShow);
 
 

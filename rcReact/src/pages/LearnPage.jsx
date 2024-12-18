@@ -10,7 +10,7 @@ import { useState } from "react"
 
 function LearnPage() {
 
-    const [selectedSection, setSelectedSection] = useState(0); // 初始顯示第一個標題
+    const [selectedSection, setSelectedSection] = useState(null); // 初始顯示第一個標題
 
 
     return (
