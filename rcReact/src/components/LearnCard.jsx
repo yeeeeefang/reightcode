@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import '../assets/css/LearnCard.css'
+import { Link } from 'react-router-dom';
 function LearnCard({ selectedSection }) {
-    
+
     const CardTitle = [
         {
             id: "section-0",
@@ -220,24 +221,26 @@ function LearnCard({ selectedSection }) {
                 </div>
                 <div className='Learn-Card-all'>
                     {visibleCards.map((child, index) => (
-                        <div className="Learn-Card-1" key={index}>
-                            <div className="Learn-Card-bk-1">
-                                <div className="Learn-Card-icon-1">
-                                    <img src="../public/images/learnPageLeftHeart.svg" alt="icon" />
-                                </div>
-                                <div className="Learn-Card-img-1">
-                                    <img src={child.imgSrc} alt={child.title} />
-                                </div>
-                                <div className="Learn-Card-Content-1">
-                                    <p>{child.title}</p>
-                                </div>
-                                <div className="Learn-Card-Content-2">
-                                    {child.tags.map((tag, tagIndex) => (
-                                        <p key={tagIndex}>{tag}</p>
-                                    ))}
+                        <Link to='/LearnArea'>
+                            <div className="Learn-Card-1" key={index}>
+                                <div className="Learn-Card-bk-1">
+                                    <div className="Learn-Card-icon-1">
+                                        <img src="../public/images/learnPageLeftHeart.svg" alt="icon" />
+                                    </div>
+                                    <div className="Learn-Card-img-1">
+                                        <img src={child.imgSrc} alt={child.title} />
+                                    </div>
+                                    <div className="Learn-Card-Content-1">
+                                        <p>{child.title}</p>
+                                    </div>
+                                    <div className="Learn-Card-Content-2">
+                                        {child.tags.map((tag, tagIndex) => (
+                                            <p key={tagIndex}>{tag}</p>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
                 <div className='LearnPageLeft-2' onClick={chalgRight}>
