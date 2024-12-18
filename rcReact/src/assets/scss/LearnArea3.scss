@@ -3,7 +3,7 @@
 
 #LearnAreaallall {
     background-color: $primary;
-    background-image: url('./images/learnAreaLine.svg');
+    background-image: url('../images/learnAreaLine.svg');
     // background-size: w;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,7 +57,7 @@
                             width: 48px;
                             height: 48px;
                             background-color: transparent;
-                            background-image: url('./images/icon_greenA.svg');
+                            background-image: url('../images/icon_greenA.svg');
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -74,7 +74,7 @@
                             width: 48px;
                             height: 48px;
                             background-color: transparent;
-                            background-image: url('./images/icon_red.svg');
+                            background-image: url('../images/icon_red.svg');
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -91,7 +91,7 @@
                             width: 48px;
                             height: 48px;
                             background-color: transparent;
-                            background-image: url('./images/icon_blue.svg');
+                            background-image: url('../images/icon_blue.svg');
                             background-position: center;
                             background-size: contain;
                             background-repeat: no-repeat;
@@ -126,39 +126,39 @@
                 .wordEnglish1 {
                     width: 200px;
                     height: 130px;
-                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-image: url('../images/learnAreaBoard.png');
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
 
                     &:hover {
-                        background-image: url('../../../public/images/learnAreaBoardS.png');
+                        background-image: url('../images/learnAreaBoardS.png');
                     }
                 }
 
                 .wordEnglish2 {
                     width: 200px;
                     height: 130px;
-                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-image: url('../images/learnAreaBoard.png');
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
 
                     &:hover {
-                        background-image: url('../../../public/images/learnAreaBoardI.png');
+                        background-image: url('../images/learnAreaBoardI.png');
                     }
                 }
 
                 .wordEnglish3 {
                     width: 200px;
                     height: 130px;
-                    background-image: url('../../../public/images/learnAreaBoard.png');
+                    background-image: url('../images/learnAreaBoard.png');
                     background-position: center;
                     background-size: contain;
                     background-repeat: no-repeat;
 
                     &:hover {
-                        background-image: url('../../../public/images/learnAreaBoardU.png');
+                        background-image: url('../images/learnAreaBoardU.png');
                     }
                 }
             }
@@ -181,13 +181,13 @@
                 width: 777px;
                 height: 300px;
                 align-self: flex-end;
-                background-image: url('./images/learnAreaPoint.svg');
+                background-image: url('../images/learnAreaPoint.svg');
                 background-position: center;
                 background-size: contain;
                 background-repeat: no-repeat;
 
                 &:hover {
-                    background-image: url('./images/learnAreaPoint_hover.svg');
+                    background-image: url('../images/learnAreaPoint_hover.svg');
                 }
             }
 
@@ -197,7 +197,7 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-                background-image: url('./images/LearnAreacloud1.svg');
+                background-image: url('../images/LearnAreacloud1.svg');
                 background-position: left bottom;
                 background-size: 50%;
                 background-repeat: no-repeat;

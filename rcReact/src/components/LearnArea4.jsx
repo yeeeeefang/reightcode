@@ -99,7 +99,7 @@ export default function LearnArea4() {
               再試一次
             </button>
             <button className="feedback-btn" onClick={() => setIsModalVisible(true)}>
-              離開
+              結束課程
             </button>
           </div>
         )}
@@ -131,8 +131,11 @@ export default function LearnArea4() {
           </div>
         )}
       </div>
+      <div className="road">
+       <img className="road1" src="./public/images/greenA.svg" alt="" />
+       <img className="road2" src="./public/images/learnAreaPath.png" alt="" />
+      </div>
     </section>
   );
 }
-
 
