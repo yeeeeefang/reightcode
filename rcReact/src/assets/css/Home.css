@@ -172,7 +172,7 @@ a {
 }
 
 #Home-page-all {
-  background-image: url(../public/images/homeAll.svg);
+  background-image: url(../images/homeAll.svg);
   background-color: #FFD640;
   background-size: cover;
   background-repeat: no-repeat;
@@ -454,7 +454,7 @@ a {
   padding-right: 35%;
 }
 #Home-page-5 .Home-content-bk-4 .Home-content-15 {
-  background-image: url(../public/images/Home-content-1.png);
+  background-image: url(../images/Home-content-1.png);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: 80%;
