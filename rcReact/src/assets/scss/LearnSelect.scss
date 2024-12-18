@@ -25,61 +25,67 @@
         .tier4 {
             position: absolute;
             z-index: 1;
-            background-color: transparent;
-            width: 650px;
-            height: 650px;
+            pointer-events: none;
         }
 
         .tier3 {
             position: absolute;
             z-index: 2;
-            background-color: transparent;
-            width: 110px;
-            height: 80px;
-            left: 390px;
-            top: 130px;
-            transform: rotatey(-180deg);
+            width: 120px;
+            height: 100px;
+            left: 400px;
+            top: 120px;
+            transform: rotate(-20deg);
+
+            &:hover {
+                animation: rotateIn 350ms ease-in-out forwards;
+            }
+
+            &:not(:hover) {
+                animation: rotateOut 350ms ease-in-out forwards;
+            }
         }
 
         .tier2 {
             position: absolute;
             z-index: 3;
-            background-color: transparent;
-            width: 630px;
-            height: 630px;
-            left: 20px;
-            bottom: 10px;
+            pointer-events: none;
         }
 
         .tier1a {
             position: absolute;
             z-index: 4;
-            background-color: transparent;
-            width: 90px;
-            height: 90px;
-            top: 155px;
-            left: 150px
+            top: 140px;
+            left: 160px;
+
+            &:hover {
+                g.eye {
+                    animation: translateXIn 350ms ease-in-out both;
+                }
+            }
+
+            &:not(:hover) {
+                g.eye {
+                    animation: translateXOut 350ms ease-in-out forwards;
+                }
+            }
         }
 
         .tier1b {
             position: absolute;
             z-index: 5;
-            background-color: transparent;
-            width: 100px;
-            height: 85px;
-            bottom: 265px;
-            left: 200px;
+            bottom: 255px;
+            left: 230px;
             transform: rotate(20deg)
         }
 
         .tier1c {
             position: absolute;
             z-index: 6;
-            background-color: transparent;
             width: 80px;
             height: 100px;
-            bottom: 120px;
-            left: 425px;
+            bottom: 90px;
+            right: 120px;
         }
     }
 
@@ -102,7 +108,7 @@
                 transition: background-image 0.3s ease-in-out;
             }
 
-            h3 {
+            h2 {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -110,28 +116,75 @@
                 justify-content: center;
                 align-items: center;
                 font-size: $font-size-48;
+                font-weight: $font-w-bold;
                 color: white;
             }
         }
 
         .HTML {
             a {
-                background-image: url('/images/learnSelectHTML.svg');
+                background-image: url('../images/learnSelectHTML.svg');
 
                 &:hover {
-                    background-image: url('/images/learnSelectHTML_hover.svg');
+                    background-image: url('../images/learnSelectHTML_hover.svg');
                 }
             }
         }
 
         .CSS {
             a {
-                background-image: url('/images/learnSelectCSS.svg');
+                background-image: url('../images/learnSelectCSS.svg');
 
                 &:hover {
-                    background-image: url('/images/learnSelectCSS_hover.svg');
+                    background-image: url('../images/learnSelectCSS_hover.svg');
                 }
             }
         }
     }
 }
+
+
+
+
+/* 小粉愛心 */
+@keyframes translateXIn {
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes translateXOut {
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* 小紅旋轉 */
+@keyframes rotateIn {
+    0% {
+        transform: rotate(-20deg)
+    }
+
+    100% {
+        transform: rotate(8deg)
+    }
+}
+
+@keyframes rotateOut {
+    0% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
