@@ -1,5 +1,5 @@
 @use "./reset";
-@use "./variables" as *;
+@use "./variables"as *;
 
 #learnhome-page {
     overflow: hidden;
@@ -9,12 +9,11 @@
         font-size: $font-size-64;
         font-weight: bold;
         color: #000;
-        letter-spacing: 3rem;
-
-        
+        letter-spacing: 2rem;
+        text-align: center;
     }
 
-
+    /* 最大的容器 */
     .learnhome-section1 {
         display: flex;
         flex-direction: column; // 整體垂直排列
@@ -24,16 +23,28 @@
         // 第一區：學習區
         .learning-section {
             display: flex;
+            // position: relative;
             justify-content: space-around;
             align-items: center;
             background-color: $primary; // 黃色背景
             width: 100%;
             height: 28.6vh;
-
-            img {
-                width: 240px; // 綠色角色大小
-                transform: rotate(10deg);
+            h2 {
+                width: 40%;
+                transition: font-size 0.35s ease-in;
             }
+            &:hover {
+                h2 {
+                    font-size: 5rem;
+                }
+            }
+            // 綠色角色
+            img {
+                width: 270px; 
+                transform: rotate(15deg);
+                // position: absolute;
+            }
+
         }
 
         // 第二區和第三區的容器，水平排列
@@ -57,6 +68,16 @@
                     align-items: center;
                     background-color: $learn-h3; // 紅色背景
                     height: 28.5vh;
+                    h2 {
+                        width: 50%;
+                        transition: font-size 0.35s ease-in;
+                    }
+                    &:hover {
+                        h2 {
+                            font-size: 5rem;
+                        }
+                    }
+                    
 
                     img {
                         margin-top: 120px;
@@ -72,11 +93,19 @@
                     background-color: $learn-h2; // 綠色背景
                     height: 28.5vh;
                     overflow: hidden;
-
+                    h2 {
+                        width: 70%;
+                        transition: font-size 0.35s ease-in;
+                    }
+                    &:hover {
+                        h2 {
+                            font-size: 5rem;
+                        }
+                    }
 
                     img {
-                        margin-top: 120px;
-                        width: 250px; // 粉紅角色大小
+                        margin-top: 130px;
+                        width: 270px; // 粉紅角色大小
                     }
                 }
             }
@@ -88,14 +117,13 @@
                 align-items: center;
                 flex-direction: column;
                 background-color: $learn-h1;
-
-
                 justify-content: center;
-                width: 450px;
+                width: 500px;
+                padding-top: 30px;
 
 
                 .speech-bubble {
-                    background-image:url('./images/speech-bobble.png');
+                    background-image: url("../images/speech-bobble.png");
                     width: fit-content;
                     background-position: center;
                     background-repeat: no-repeat;
@@ -114,7 +142,7 @@
                 }
 
                 img {
-                    width: 300px; // 紅色角色大小
+                    width: 320px; // 紅色角色大小
                 }
             }
         }

@@ -168,6 +168,14 @@ a {
 #learnhome-page {
   overflow: hidden;
   background-color: #8ECAE6;
+  /* 最大的容器 */
+}
+#learnhome-page h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: 2rem;
+  text-align: center;
 }
 #learnhome-page .learnhome-section1 {
   display: flex;
@@ -181,16 +189,18 @@ a {
   align-items: center;
   background-color: #FFD640;
   width: 100%;
-  height: 28vh;
-}
-#learnhome-page .learnhome-section1 .learning-section img {
-  width: 240px;
-  transform: rotate(10deg);
+  height: 28.6vh;
 }
 #learnhome-page .learnhome-section1 .learning-section h2 {
-  font-size: 4rem;
-  font-weight: bold;
-  color: #000;
+  width: 40%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learning-section:hover h2 {
+  font-size: 5rem;
+}
+#learnhome-page .learnhome-section1 .learning-section img {
+  width: 270px;
+  transform: rotate(15deg);
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 {
   display: flex;
@@ -209,15 +219,18 @@ a {
   justify-content: space-around;
   align-items: center;
   background-color: #EE3627;
-  height: 28.2vh;
+  height: 28.5vh;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
+  width: 50%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover h2 {
+  font-size: 5rem;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section img {
   margin-top: 120px;
   width: 250px;
-}
-#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
-  font-size: 4rem;
-  font-weight: bold;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section {
   display: flex;
@@ -225,14 +238,18 @@ a {
   align-items: center;
   background-color: #1CB76B;
   height: 28.5vh;
-}
-#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section img {
-  margin-top: 120px;
-  width: 250px;
+  overflow: hidden;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section h2 {
-  font-size: 4rem;
-  font-weight: bold;
+  width: 70%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover h2 {
+  font-size: 5rem;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section img {
+  margin-top: 130px;
+  width: 270px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section {
   position: relative;
@@ -241,19 +258,19 @@ a {
   flex-direction: column;
   background-color: #8ECAE6;
   justify-content: center;
-  width: 450px;
+  width: 500px;
+  padding-top: 30px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section .speech-bubble {
-  position: relative;
-  top: -20px;
-  left: 10%;
-  background: rgba(255, 255, 255, 0.655);
-  padding: 8px 16px;
-  border-radius: 99px;
+  background-image: url("../images/speech-bobble.png");
+  width: fit-content;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 25px 60px 50px;
   font-size: 3rem;
   font-weight: 900;
   color: #000;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section img {
-  width: 280px;
+  width: 320px;
 }/*# sourceMappingURL=LearnHome.css.map */

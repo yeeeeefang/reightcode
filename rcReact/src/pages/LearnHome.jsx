@@ -1,12 +1,15 @@
-import "../assets/scss/LearnHome.scss"
+import { useState } from "react"
+import "../assets/css/LearnHome.css"
 import Navbar from "../components/Navbar"
 
 
 export default function LearnHome() {
+
+
     return (
         <>
-            <div id="learnhome-page">        
-                <Navbar/>
+            <div id="learnhome-page">
+                <Navbar />
                 {/* topbar  */}
                 {/* <header id="topbar">
                     <div className="logo">
