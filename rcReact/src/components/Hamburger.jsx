@@ -31,7 +31,7 @@ function Hamburger({ onClose }) {
                             <img src="../public/images/icon_greenA.svg" alt="" />
                         </div>
                     </Link>
-                    <Link to='/LearnPage'>
+                    <Link to='/LearnSelect'>
                         <div className="bar-Content">
                             <img src="../public/images/icon_greenA.svg" alt="" />
                             <p>學習區</p>

@@ -9,13 +9,11 @@ function Home() {
     const startMouseUp = () => {
         startRef.current.src = '../public/images/btn.png'
         startRef.current.style.margin = '0 0 30px 0'
-        startRef.current.style.width = '251px'
         startRef.current.style.padding = '0'
     }
     const startMouseDown = () => {
         startRef.current.src = '../public/images/btn_hover.png'
         startRef.current.style.margin = '0'
-        startRef.current.style.width = '251px'
         startRef.current.style.padding = '10px 0 0 5px'
     }
     return (
@@ -23,7 +21,6 @@ function Home() {
 
             <div id='Home-page-1'>
                 <Navbar />
-                {/* 合併後上方有空白 待處理 */}
             </div>
             <div id="Home-page-all">
                 <section id="Home-page-2">{/* 第二分頁 */}
@@ -102,8 +99,8 @@ function Home() {
                                     特別是偏遠地區的家庭，能夠選擇的課程資源更有限。</p>
                             </div>
                         </div>
-                        <div className="Home-ladder">
-                            <img src="../public/images/pinkA.svg" alt="梯子" />
+                        <div >
+                            <img className="Home-ladder" src="../public/images/pinkB.svg" alt="梯子" />
                         </div>
                     </div>
 
