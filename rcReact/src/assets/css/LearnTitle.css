@@ -203,6 +203,10 @@ a {
   /* 不換行 */
   text-overflow: ellipsis;
   /* 超出部分顯示省略號 */
+  cursor: pointer;
+}
+#HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2.selected {
+  background-color: #8ECAE6;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-Span {
   font-size: 0.8rem;

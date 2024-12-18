@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import '../assets/css/LearnTitle.css'
 
 function LearnTitle() {
@@ -64,6 +65,12 @@ function LearnTitle() {
         },
     ];
 
+    const [selectedIndex, setSelectedIndex] = useState(null); // 用于追踪当前选中的 Html-H2
+
+    const handleTitleClick = (index) => {
+        setSelectedIndex(index); // 设置选中的标题索引
+    };
+
     return (
         <>
             <section id='HtmlClassTitle-all'>
@@ -72,7 +79,8 @@ function LearnTitle() {
                     {HtmlClassList.map((Class, index) => (
                         <div key={index} className='Html-Class'>
                             <div >
-                                <h2 className='Html-H2'>{Class.title}</h2>
+                                <h2 className={`Html-H2 ${selectedIndex === index ? 'selected' : ''}`}
+                                    onClick={() => handleTitleClick(index)}>{Class.title}</h2>
                             </div>
                             <div className='Html-Span'>
                                 {Class.children.map((child, childIndex) => (

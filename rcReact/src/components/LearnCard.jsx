@@ -1,5 +1,7 @@
 import '../assets/css/LearnCard.css'
 function LearnCard() {
+
+    
     return (
         <> 
             <section id='LearnPageAll'>

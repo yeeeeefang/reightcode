@@ -45,8 +45,13 @@
                 /* 不換行 */
                 text-overflow: ellipsis;
                 /* 超出部分顯示省略號 */
+                cursor: pointer;
 
             }
+            .Html-H2.selected {
+                background-color: $learn-p4;
+            }
+
 
             .Html-Span {
                 font-size: $font-size-12;
