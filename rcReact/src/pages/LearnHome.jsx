@@ -6,11 +6,6 @@ import Navbar from "../components/Navbar"
 export default function LearnHome() {
 
 
-    const [isHovered, setIsHovered]=useState(false);
-
-
-
-
     return (
         <>
             <div id="learnhome-page">
@@ -28,15 +23,13 @@ export default function LearnHome() {
                 {/* 最大的:要垂直排 */}
                 <div className="learnhome-section1">
                     {/* 第一區 - 學習區 */}
-                    <div className="learning-section"
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}>
+                    <div className="learning-section">
                         <img
                             src="/images/greenA.svg"
                             alt="Green Character"
                             className="greenA"
                         />
-                        <h2 className={isHovered ? "hovered" : ""}>學習區</h2>
+                        <h2>學習區</h2>
                     </div>
                     {/* 第二大的:水平 */}
                     <div className="learnhome-section2">
