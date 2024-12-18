@@ -8,7 +8,7 @@
 }
 
 #Home-page-all {
-    background-image: url(../public/images/homeAll.svg);
+    background-image: url(../images/homeAll.svg);
     background-color: $primary;
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,7 +78,6 @@
 
             .Home-text-2 {
                 display: inline-block;
-
                 font-size: 32px;
                 color: $fc-2;
                 font-weight: $font-w-bold;
@@ -166,7 +165,7 @@
 
 #Home-page-3 {
     margin-top: 80px;
-
+    margin-bottom: 100px;
 
     /* height: 820px;
     background-color: $primary;
@@ -234,14 +233,9 @@
             }
         }
     }
-
-
-
-
 }
-
 #Home-page-4 {
-
+    padding-top: 50px;
 
     /* height: 2000px;
     background-color: $primary;
@@ -255,22 +249,27 @@
         font-size: 36px;
         text-align: center;
         color: #FFFFFF;
-        margin-right: 150px;
-        padding-top: 160px;
         font-weight: $font-w-bold;
+        margin: 10px 150px;
     }
 
     .Home-content-bk-all {
         display: flex;
+
         .Home-content-bk-1 {
             margin: 40px 0 0 250px;
+            width: 25%;
+
+
             .Home-content-7 {
                 transform: rotate(13deg);
                 text-align: right;
                 font-size: 24px;
                 padding-bottom: 10px;
                 font-weight: $font-w-bold;
+
             }
+
             .Home-content-8 {
                 transform: rotate(-13deg);
                 text-align: start;
@@ -278,31 +277,43 @@
                 font-size: 24px;
                 font-weight: $font-w-bold;
             }
+
             .Home-content-img {
+                width: 80%;
                 margin: auto;
-                width: 210px;
                 /* 記得調整 */
                 padding-top: 30px;
             }
         }
+
         .Home-content-bk-2,
         .Home-content-bk-3 {
             display: flex;
             flex-direction: column;
+            justify-content: space-around;
             align-items: center;
-            margin: 100px 0 0 100px;
-            padding-bottom: 15px;
-            img {
-                width: 250px;
-                /* 記得調整 */
-                padding-bottom: 15px;
+            margin-top: 9rem;
+
+            .Home-content-bk-2-img {
+                mask-image: url(../scss/images/home-page3-img1.png);
+                mask-position: center;
+                mask-size: contain;
+                mask-repeat: no-repeat;
             }
+
+            .Home-content-bk-3-img {
+                mask-image: url(../scss/images/home-page3-img2.png);
+                mask-position: center;
+                mask-size: contain;
+                mask-repeat: no-repeat;
+            }
+
             .Home-content-9,
             .Home-content-11 {
                 font-size: 36px;
-                padding-bottom: 15px;
                 font-weight: $font-w-bold;
             }
+
             .Home-content-10,
             .Home-content-12 {
                 font-size: 20px;
@@ -315,16 +326,14 @@
 }
 
 #Home-page-5 {
-
-    margin-top: 250px;
-    height: 700px;
+    padding: 190px 0px;
     .Home-content-bk-4 {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-right: 500px;
+        padding-right: 35%;
         .Home-content-15 {
-            background-image: url(../public/images/Home-content-1.png);
+            background-image: url(../images/Home-content-1.png);
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: 80%;
@@ -338,11 +347,31 @@
         .Home-content-bk-5 {
             .Home-greenIp {
                 width: 295px;
+                animation: jump 1.5s ease-in-out infinite;
+                /* 套用動畫 */
             }
+
             .Home-btn {
                 width: 251px;
-                margin-bottom: 30px;
+                margin-bottom: 45px;
             }
         }
+    }
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+        /* 初始位置 */
+    }
+
+    30% {
+        transform: translateY(-80px);
+        /* 向上跳動 */
+    }
+
+    70% {
+        transform: translateY(0);
+        /* 回到初始位置 */
     }
 }

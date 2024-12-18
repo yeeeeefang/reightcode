@@ -1,12 +1,28 @@
+import { useRef } from 'react'
 import '../assets/css/Home.css'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom'
 
 function Home() {
+
+    const startRef = useRef(null)
+    const startMouseUp = () => {
+        startRef.current.src = '../public/images/btn.png'
+        startRef.current.style.margin = '0 0 30px 0'
+        startRef.current.style.width = '251px'
+        startRef.current.style.padding = '0'
+    }
+    const startMouseDown = () => {
+        startRef.current.src = '../public/images/btn_hover.png'
+        startRef.current.style.margin = '0'
+        startRef.current.style.width = '251px'
+        startRef.current.style.padding = '10px 0 0 5px'
+    }
     return (
         <>
 
             <div id='Home-page-1'>
-                <Navbar/>
+                <Navbar />
                 {/* 合併後上方有空白 待處理 */}
             </div>
             <div id="Home-page-all">
@@ -110,9 +126,7 @@ function Home() {
                             <img className="Home-content-img" src="../public/images/pinkA.svg" alt="" />
                         </div>
                         <div className="Home-content-bk-2">
-                            <div>
-                                <img src="../public/images/home-page3-img1.png" alt="" />
-                            </div>
+                                <img className='Home-content-bk-2-img' src="../public/images/homeIntroA.jpg" alt="" />
                             <p className="Home-content-9">程式結合單字學習</p>
                             <p className="Home-content-10">寓教於樂的學習樂園
                                 <br />
@@ -122,7 +136,7 @@ function Home() {
 
 
                         <div className="Home-content-bk-3">
-                            <img src="../public/images/home-page3-img2.png" alt="" />
+                            <img className='Home-content-bk-3-img' src="../public/images/homeIntroB.jpg" alt="" />
                             <p className="Home-content-11">情緒覺察</p>
                             <p className="Home-content-12">學習後選擇心情，一起分享成就感
                                 <br />
@@ -140,7 +154,13 @@ function Home() {
                                 <br /> 程式世界等著你去探索 ！</p>
                         </div>
                         <div className="Home-content-bk-5">
-                            <img className="Home-btn" src="../public/images/btn.png" alt="" />
+                            <Link to='/LearnSelect'>
+                                <img className="Home-btn" src="../public/images/btn.png" alt=""
+                                    ref={startRef}
+                                    onMouseUp={startMouseUp}
+                                    onMouseDown={startMouseDown}
+                                />
+                            </Link>
                             <img className="Home-greenIp" src="../public/images/greenB.svg" alt="" />
                         </div>
                     </div>
