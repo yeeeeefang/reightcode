@@ -29,24 +29,19 @@
             background-color: $primary; // 黃色背景
             width: 100%;
             height: 28.6vh;
-
             h2 {
                 width: 40%;
                 transition: font-size 0.35s ease-in;
             }
-
             &:hover {
                 h2 {
                     font-size: 5rem;
                 }
-
             }
-
-
-
+            // 綠色角色
             img {
-                width: 240px; // 綠色角色大小
-                transform: rotate(10deg);
+                width: 270px; 
+                transform: rotate(15deg);
                 // position: absolute;
             }
 
@@ -73,10 +68,16 @@
                     align-items: center;
                     background-color: $learn-h3; // 紅色背景
                     height: 28.5vh;
-
                     h2 {
                         width: 50%;
+                        transition: font-size 0.35s ease-in;
                     }
+                    &:hover {
+                        h2 {
+                            font-size: 5rem;
+                        }
+                    }
+                    
 
                     img {
                         margin-top: 120px;
@@ -92,14 +93,19 @@
                     background-color: $learn-h2; // 綠色背景
                     height: 28.5vh;
                     overflow: hidden;
-
                     h2 {
                         width: 70%;
+                        transition: font-size 0.35s ease-in;
+                    }
+                    &:hover {
+                        h2 {
+                            font-size: 5rem;
+                        }
                     }
 
                     img {
-                        margin-top: 120px;
-                        width: 250px; // 粉紅角色大小
+                        margin-top: 130px;
+                        width: 270px; // 粉紅角色大小
                     }
                 }
             }
@@ -117,7 +123,7 @@
 
 
                 .speech-bubble {
-                    background-image: url('./images/speech-bobble.png');
+                    background-image: url("../images/speech-bobble.png");
                     width: fit-content;
                     background-position: center;
                     background-repeat: no-repeat;

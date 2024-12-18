@@ -199,8 +199,8 @@ a {
   font-size: 5rem;
 }
 #learnhome-page .learnhome-section1 .learning-section img {
-  width: 240px;
-  transform: rotate(10deg);
+  width: 270px;
+  transform: rotate(15deg);
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 {
   display: flex;
@@ -223,6 +223,10 @@ a {
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
   width: 50%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover h2 {
+  font-size: 5rem;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section img {
   margin-top: 120px;
@@ -238,10 +242,14 @@ a {
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section h2 {
   width: 70%;
+  transition: font-size 0.35s ease-in;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover h2 {
+  font-size: 5rem;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section img {
-  margin-top: 120px;
-  width: 250px;
+  margin-top: 130px;
+  width: 270px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section {
   position: relative;
@@ -254,7 +262,7 @@ a {
   padding-top: 30px;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section .speech-bubble {
-  background-image: url("./images/speech-bobble.png");
+  background-image: url("../images/speech-bobble.png");
   width: fit-content;
   background-position: center;
   background-repeat: no-repeat;
