@@ -1,6 +1,7 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../assets/css/LearnCard.css'
-function LearnCard() {
+function LearnCard({ selectedSection }) {
+    
     const CardTitle = [
         {
             id: "section-0",
@@ -171,17 +172,7 @@ function LearnCard() {
         },
     ];
 
-    const allCards = CardTitle.flatMap(section => section.children);
-    const [cardItem, setCardItem] = useState(0);
-    const cardsToShow = 3;
 
-    const changLeft = () => {
-        setCardItem(prev => Math.max(prev - 1, 0));
-    };
-
-    const chalgRight = () => {
-        setCardItem(prev => Math.min(prev + 1, allCards.length - cardsToShow));
-    };
     const LeftRef = useRef(null)
     const LeftImgMouseDown = () => {
         LeftRef.current.src = '../public/images/learnPageLeft_hover.svg'
@@ -198,6 +189,25 @@ function LearnCard() {
         RightRef.current.src = '../public/images/learnPageRight.svg'
     }
 
+    const [CardItem, setCardItem] = useState(0);
+    const cardsToShow = 3;
+
+    const changLeft = () => {
+        setCardItem(prev => Math.max(prev - 1, 0));
+    };
+
+    const chalgRight = () => {
+        setCardItem(prev => Math.min(prev + 1, chooseCard.length - cardsToShow));
+    };
+
+    const chooseCard = CardTitle[selectedSection]?.children || [];
+    const visibleCards = chooseCard.slice(CardItem, CardItem + cardsToShow);
+
+
+    useEffect(() => {
+        setCardItem(0);
+    }, [selectedSection]);
+
     return (
         <>
             <section id='LearnPageAll'>
@@ -209,14 +219,14 @@ function LearnCard() {
                     />
                 </div>
                 <div className='Learn-Card-all'>
-                    {allCards.slice(cardItem, cardItem + cardsToShow).map((child, index) => (
+                    {visibleCards.map((child, index) => (
                         <div className="Learn-Card-1" key={index}>
                             <div className="Learn-Card-bk-1">
                                 <div className="Learn-Card-icon-1">
                                     <img src="../public/images/learnPageLeftHeart.svg" alt="icon" />
                                 </div>
                                 <div className="Learn-Card-img-1">
-                                    <img src={child.imgSrc} alt="image" />
+                                    <img src={child.imgSrc} alt={child.title} />
                                 </div>
                                 <div className="Learn-Card-Content-1">
                                     <p>{child.title}</p>

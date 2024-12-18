@@ -5,13 +5,18 @@ import LearnTitle from "../components/LearnTitle"
 import "../assets/css/LearnPage.css"
 import LearnPagePerson from "../components/LearnPagePerson"
 import NavbarBack from "../components/NavbarBack"
+import { useState } from "react"
 
 
 function LearnPage() {
+
+    const [selectedSection, setSelectedSection] = useState(0); // 初始顯示第一個標題
+
+
     return (
         <>
             <section id="LEP-Home">
-            <NavbarBack/>
+                <NavbarBack />
                 <div id="LEP-bk-big">
                     <div className="LEP-img-top"><img src="../public/images/homeBubble.png" alt="" /></div>
                     <div className="LEP-content-top">
@@ -20,7 +25,7 @@ function LearnPage() {
                         <p className="LEP-content-top-3">- Albert Einstein</p>
                     </div>
                     <div className="LEP-title">
-                        <LearnTitle />
+                        <LearnTitle onSelectTitle={setSelectedSection} />
                     </div>
                     <div className="LEP-PersonCard">
                         <div className="LEP-personAll">
@@ -33,7 +38,7 @@ function LearnPage() {
                             </div>
                         </div>
                         <div className="LEP-card">
-                            <LearnCard />
+                            <LearnCard selectedSection={selectedSection} />
                         </div>
                     </div>
                 </div>
