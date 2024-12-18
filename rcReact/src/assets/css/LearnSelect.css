@@ -165,33 +165,16 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
-/* body {
-    background-color: $primary;
-} */
-/* #topbar {
-
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    margin: 30px 50px;
-
-
-    .logo {
-        img {
-            width: 65px;
-        }
-    }
-
-} */
 #LearnSelectAllpage {
   background-color: #FFD640;
+  height: 100vh;
 }
 
 #codeCourse {
   display: flex;
   position: relative;
+  flex-direction: row;
   justify-content: space-evenly;
-  margin: 0 50px;
 }
 @media (max-width: 1023px) {
   #codeCourse {
@@ -217,7 +200,7 @@ a {
   background-color: transparent;
   width: 110px;
   height: 80px;
-  left: 370px;
+  left: 390px;
   top: 130px;
   transform: rotatey(-180deg);
 }
@@ -236,8 +219,8 @@ a {
   background-color: transparent;
   width: 90px;
   height: 90px;
-  top: 145px;
-  left: 135px;
+  top: 155px;
+  left: 150px;
 }
 #codeCourse #codePic .tier1b {
   position: absolute;
@@ -256,59 +239,45 @@ a {
   width: 80px;
   height: 100px;
   bottom: 120px;
-  left: 440px;
+  left: 425px;
 }
 #codeCourse #course {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#codeCourse #course .selectHTML {
+#codeCourse #course .select {
   position: relative;
+  padding: 20px 0;
+}
+#codeCourse #course .select a {
+  display: block;
   width: 450px;
   height: 275px;
-  margin: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
 }
-#codeCourse #course .selectHTML img {
-  background-color: transparent;
+#codeCourse #course .select h3 {
   position: absolute;
-  width: 450px;
-  height: 275px;
-  z-index: 7;
-}
-#codeCourse #course .selectHTML img:hover {
-  content: url(../public/images/learnSelectHTML_hover.svg);
-}
-#codeCourse #course .selectHTML p {
-  background-color: transparent;
-  position: absolute;
-  z-index: 9;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 3rem;
   color: white;
-  top: 115px;
-  right: 165px;
 }
-#codeCourse #course .selectCSS {
-  position: relative;
-  width: 450px;
-  height: 275px;
-  margin: 20px;
+#codeCourse #course .HTML a {
+  background-image: url("/images/learnSelectHTML.svg");
 }
-#codeCourse #course .selectCSS img {
-  background-color: transparent;
-  position: absolute;
-  width: 450px;
-  height: 275px;
-  z-index: 8;
+#codeCourse #course .HTML a:hover {
+  background-image: url("/images/learnSelectHTML_hover.svg");
 }
-#codeCourse #course .selectCSS img:hover {
-  content: url(../public/images/learnSelectCSS_hover.svg);
+#codeCourse #course .CSS a {
+  background-image: url("/images/learnSelectCSS.svg");
 }
-#codeCourse #course .selectCSS p {
-  background-color: transparent;
-  position: absolute;
-  z-index: 10;
-  font-size: 3rem;
-  color: white;
-  bottom: 100px;
-  right: 185px;
+#codeCourse #course .CSS a:hover {
+  background-image: url("/images/learnSelectCSS_hover.svg");
 }/*# sourceMappingURL=LearnSelect.css.map */

@@ -6,34 +6,26 @@ export default function LearnSelect() {
         <>
             <section id="LearnSelectAllpage">
                 <header id="topbar">
-                    {/*   <div className="logo">
-                    <h1 className="logo"><a href="./index.html"><img src="/images/logo.png" alt="rightCode" title="rightCode" /></a></h1>
-                </div>
-                <div className="learnBtn">
-                    <figure><img src="/images/hamBtn.svg" alt="" /></figure>
-                </div>*/}
-                    <NavbarTwo></NavbarTwo>
+                    <NavbarTwo/>
                 </header>
                 <div id="codeCourse">
-                    <div id="codePic">
-                        <figure><img className="tier4" src="/images/selectCodeA.svg" alt="" /></figure>
-                        <figure><img className="tier3" src="/images/red.svg" alt="" /></figure>
-                        <figure><img className="tier2" src="/images/selectCodeB.svg" alt="" /></figure>
-                        <figure><img className="tier1a" src="/images/pinkA.svg" alt="" /></figure>
-                        <figure><img className="tier1b" src="/images/greenA.svg" alt="" /></figure>
-                        <figure><img className="tier1c" src="/images/blueA.svg" alt="" /></figure>
-                    </div>
+                    <section id="codePic">
+                        <img className="tier4" src="/images/selectCodeA.svg" alt="" />
+                        <img className="tier3" src="/images/red.svg" alt="" />
+                        <img className="tier2" src="/images/selectCodeB.svg" alt="" />
+                        <img className="tier1a" src="/images/pinkA.svg" alt="" />
+                        <img className="tier1b" src="/images/greenA.svg" alt="" />
+                        <img className="tier1c" src="/images/blueA.svg" alt="" />
+                    </section>
 
-                    <div id="course">
-                        <div className="selectHTML">
-                            <a href=""><img src="/images/learnSelectHTML.svg" alt="" /></a>
-                            <p>HTML</p>
+                    <section id="course">
+                        <div className="select HTML">
+                            <a href=""><h3>HTML</h3></a>
                         </div>
-                        <div className="selectCSS">
-                            <a href=""><img src="/images/learnSelectCSS.svg" alt="" /></a>
-                            <p>CSS</p>
+                        <div className="select CSS">
+                            <a href=""><h3>CSS</h3></a>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </section>
         </>
