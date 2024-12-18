@@ -56,7 +56,8 @@ export default function LearnHome() {
                         {/* 第四區 - doit */}
                         <div className="doit-section">
                             <div className="speech-bubble">
-                                <span>Do it!</span>
+                                <p>Do it!</p>
+                                {/* <img src="/images/speech-bobble.png" alt="" /> */}
                             </div>
                             <img
                                 src="/images/redB.svg"
