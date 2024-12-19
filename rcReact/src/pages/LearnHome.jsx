@@ -1,7 +1,8 @@
 import { useState } from "react"
 import "../assets/scss/LearnHome.scss"
 import Navbar from "../components/Navbar"
-
+import NavbarTwo from "../components/NavbarTwo"
+import { Link } from 'react-router-dom'
 
 export default function LearnHome() {
 
@@ -9,7 +10,7 @@ export default function LearnHome() {
     return (
         <>
             <div id="learnhome-page">
-                <Navbar />
+                <NavbarTwo />
                 {/* topbar  */}
                 {/* <header id="topbar">
                     <div className="logo">
@@ -23,39 +24,49 @@ export default function LearnHome() {
                 {/* 最大的:要垂直排 */}
                 <div className="learnhome-section1">
                     {/* 第一區 - 學習區 */}
-                    <div className="learning-section">
-                        <img
-                            src="/images/greenA.svg"
-                            alt="Green Character"
-                            className="greenA"
-                        />
-                        <h2>學習區</h2>
+                    {/*  className="lin" */}
+                    <div className="link-learn">
+                        <Link to='/LearnSelect'>
+                            <div className="learning-section">
+                                <img
+                                    src="/images/greenA.svg"
+                                    alt="Green Character"
+                                    className="greenA"
+                                />
+                                <h2>學習區</h2>
+                            </div>
+                        </Link>
                     </div>
                     {/* 第二大的:水平 */}
                     <div className="learnhome-section2">
                         {/* 第三大的:垂直排 */}
                         <div className="learnhome-section3">
                             {/* 第二區 - 小試身手 */}
-                            <div className="practice-section">
-                                <h2>小試身手</h2>
-                                <img
-                                    src="/images/blueA.svg"
-                                    alt="Blue Character"
-                                    className="blueA"
-                                />
 
-                            </div>
+                            <Link to='/LearnGame'>
+                                <div className="practice-section">
+                                    <h2>小試身手</h2>
+                                    <img
+                                        src="/images/blueA.svg"
+                                        alt="Blue Character"
+                                        className="blueA"
+                                    />
+                                </div>
+                            </Link>
 
                             {/* 第三區 - 探索學習趨勢 */}
-                            <div className="explore-section">
-                                <img
-                                    src="/images/pinkA.svg"
-                                    alt="Pink Character"
-                                    className="pinkA"
-                                />
-                                <h2>探索學習趨勢</h2>
-                            </div>
+                            <Link to='/Trend'>
+                                <div className="explore-section">
+                                    <img
+                                        src="/images/pinkA.svg"
+                                        alt="Pink Character"
+                                        className="pinkA"
+                                    />
+                                    <h2>探索學習趨勢</h2>
+                                </div>
+                            </Link>
                         </div>
+
                         {/* 第四區 - doit */}
                         <div className="doit-section">
                             <div className="speech-bubble">

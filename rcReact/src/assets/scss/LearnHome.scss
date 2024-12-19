@@ -4,6 +4,12 @@
 #learnhome-page {
     overflow: hidden;
     background-color: $learn-h1; // 背景藍
+    height: 100vh;
+
+    .link-learn {
+        width: 100%;
+    }
+
 
     h2 {
         font-size: $font-size-64;

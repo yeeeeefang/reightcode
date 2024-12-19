@@ -1,7 +1,7 @@
 import { Link} from 'react-router-dom'
 import '../assets/css/Hamburger.css'
 
- 
+
 function Hamburger({ onClose }) {
     return ( 
         <>
