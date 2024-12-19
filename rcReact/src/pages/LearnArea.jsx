@@ -13,15 +13,15 @@ function LearnArea() {
                 <div className='lanav'>
                     <NavbarBack />
                 </div>
-                <div>
+                <div id='la1'>
                     <LearnArea1 />
-                    <LearnArea2/>
-                    <LearnArea3/>
+                    <LearnArea2 />
                 </div>
                 <div>
-                    <LearnArea4/>
+                    <LearnArea3 />
+                    <LearnArea4 />
                 </div>
-<Footer/>
+                <Footer />
             </div>
 
         </>
