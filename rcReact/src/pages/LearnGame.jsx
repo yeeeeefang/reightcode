@@ -1,5 +1,6 @@
 import '../assets/css/LearnGame.css'
 import Navbar from '../components/Navbar'
+import { Link } from 'react-router-dom';
 
 function LearnGame() {
 
@@ -40,7 +41,7 @@ function LearnGame() {
                                 <img src="../public/images/GameChalk.svg" alt="" />
                             </div>
                             <div className='LearnGame-content-4'>
-                                <p>準備好了</p>
+                            <Link to="/LearnGameChoose"><p>準備好了</p></Link>
                             </div>
                         </div>
                     </div>
