@@ -1,5 +1,5 @@
 @use "./reset";
-@use "./variables"as *;
+@use "./variables" as *;
 
 #learnhome-page {
     overflow: hidden;
@@ -36,18 +36,21 @@
             width: 100%;
             height: 28.6vh;
             cursor: pointer;
+
             h2 {
                 width: 40%;
                 transition: font-size 0.35s ease-in;
             }
+
             &:hover {
                 h2 {
                     font-size: 5rem;
                 }
             }
+
             // 綠色角色
             img {
-                width: 270px; 
+                width: 280px;
                 transform: rotate(15deg);
                 // position: absolute;
             }
@@ -77,21 +80,50 @@
                     align-items: center;
                     background-color: $learn-h3; // 紅色背景
                     height: 28.5vh;
+
                     h2 {
-                        width: 50%;
+                        width: 40%;
                         transition: font-size 0.35s ease-in;
                     }
+
                     &:hover {
                         h2 {
                             font-size: 5rem;
                         }
                     }
-                    
 
-                    img {
+
+                    .learnblue {
                         margin-top: 120px;
-                        width: 250px; // 藍色角色大小
+                        height: 280px; // 藍色角色大小
+                        width: 280px;
+
+                        .learnblue-svg {
+                            height: 100%;
+                            width: 100%;
+                        }
+
+                        // .star {
+                            // display: none;
+
+                            // @keyframes blink {
+
+                            //     0%,
+                            //     100% {
+                            //         opacity: 0;
+                            //     }
+
+                            //     50% {
+                            //         opacity: 1;
+                            //     }
+                            // }
+
+                            // &:hover  {
+                            //     animation: blink 1s infinite ease-in-out;
+                            // }
+                        // }
                     }
+
                 }
 
                 // 第三區：探索學習趨勢
@@ -102,19 +134,28 @@
                     background-color: $learn-h2; // 綠色背景
                     height: 28.5vh;
                     overflow: hidden;
+
                     h2 {
                         width: 70%;
                         transition: font-size 0.35s ease-in;
                     }
+
                     &:hover {
                         h2 {
                             font-size: 5rem;
                         }
                     }
 
-                    img {
-                        margin-top: 130px;
-                        width: 270px; // 粉紅角色大小
+                    .learnpink {
+                        width: 260px;
+                        height: 260px;
+
+                        .learnpink-svg {
+                            margin-top: 80px;
+                            width: 100%; // 粉紅角色大小
+                            height: 100%;
+                        }
+
                     }
                 }
             }
