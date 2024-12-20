@@ -204,6 +204,7 @@ a {
   text-overflow: ellipsis;
   /* 超出部分顯示省略號 */
   cursor: pointer;
+  padding: 0 10px;
 }
 #HtmlClassTitle-all .Html-title-all .Html-Class .Html-H2.selected {
   background-color: #8ECAE6;
