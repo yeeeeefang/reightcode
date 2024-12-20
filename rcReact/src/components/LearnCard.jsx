@@ -220,37 +220,51 @@ function LearnCard({ selectedSection }) {
     const favoriteImg = "../public/images/learnPageLeftHeart_hover.svg"; // 收藏圖片
     const notFavoriteImg = "../public/images/learnPageLeftHeart.svg"; // 未收藏圖片
 
-    const imgRef = useRef(null)
+    /* const imgRef = useRef(null)
     const [isFavorite, setIsFavorite] = useState(false);
     const toggleFavorite = () => {
         setIsFavorite(prev => !prev); // 更新狀態
+    }; */
+
+
+    /* 第二次 */
+    /* const [favorites, setFavorites] = useState(() =>
+        CardTitle.flatMap((section) =>
+            section.children.map(() => false) // 初始狀態全為 false
+        )
+    );
+
+    const toggleFavorite = (index) => {
+        setFavorites((prevFavorites) =>
+            prevFavorites.map((fav, i) => (i === index ? !fav : fav)) // 切換指定索引的狀態
+        );
+    }; */
+
+    /* 第三次 更新 */
+
+    const [favorites, setFavorites] = useState({}); // 存儲每個卡片的愛心狀態
+
+    // 切換愛心狀態
+    const toggleFavorite = (title) => {
+        setFavorites((prevFavorites) => ({
+            ...prevFavorites,
+            [title]: !prevFavorites[title], // 根據 title 切換對應狀態
+        }));
     };
+
+
+
 
     /* 調整卡片頁面顯示方式 */
-    const [cardIndex, setCardIndex] = useState(0); // 當前卡片索引
-    const [scrollLeft, setScrollLeft] = useState(0);
-    const cardWidth = 220; // 每張卡片的寬度
-    const totalCards = 10; // 卡片總數
-    const cardsToShow = 3; // 每次顯示的卡片數
-
-    /* const changLeft = () => {
-        setCardIndex((prevIndex) => Math.max(prevIndex - 1, 0)); // 防止越界
-    };
-
-    const chalgRight = () => {
-        const maxIndex = CardTitle.flatMap((section) => section.children).length - cardsToShow;
-        setCardIndex((prevIndex) => Math.min(prevIndex + 1, maxIndex)); // 防止越界
-    }; */
 
     const containerRef = useRef(null); // 參考滾動容器
     const chooseCard = selectedSection === null
         ? CardTitle.flatMap((section) => section.children)
         : CardTitle[selectedSection]?.children || [];
+
+
+
     let currentScrollLeft = 0; // 初始化當前滾動位置
-
-
-
-
     $(function () {
         const step = 220; // 每次滾動的距離
         const container = $('.Learn-Card-all'); // 滾動容器
@@ -284,11 +298,7 @@ function LearnCard({ selectedSection }) {
                 behavior: 'smooth',
             });
         }
-    }, [selectedSection]);
 
-    useEffect(() => {
-
-        setCardIndex(0);
 
         // 當 selectedSection 改變時，重置索引
     }, [selectedSection]);
@@ -316,9 +326,17 @@ function LearnCard({ selectedSection }) {
                         <div className="Learn-Card-bk-1">
                             <div className="Learn-Card-icon-1">
                                 <img
-                                    src={isFavorite ? favoriteImg : notFavoriteImg} // 動態根據 isFavorite 設定圖片
+                                    /* src={favorites[index] ? favoriteImg : notFavoriteImg} // 動態根據狀態切換圖片
                                     alt="favorite toggle"
-                                    onClick={toggleFavorite}
+                                    onClick={() => toggleFavorite(index)} // 點擊觸發切換 */
+
+                                    src={
+                                        favorites[child.title]
+                                            ? "../public/images/learnPageLeftHeart_hover.svg"
+                                            : "../public/images/learnPageLeftHeart.svg"
+                                    }
+                                    alt="favorite toggle"
+                                    onClick={() => toggleFavorite(child.title)} // 使用 title 作為鍵切換狀態
                                 />
                             </div>
                             <Link to='/LearnArea'>
