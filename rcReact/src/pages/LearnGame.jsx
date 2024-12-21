@@ -1,4 +1,4 @@
-import '../assets/css/LearnGame.css'
+import '../assets/scss/LearnGame.scss'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ function LearnGame() {
                                 <img src="../public/images/GameChalk.svg" alt="" />
                             </div>
                             <div className='LearnGame-content-3'>
-                                <p>需要再複習</p>
+                               <Link to='/LearnHome'><p>需要再複習</p></Link> 
                             </div>
                             <div className='LearnGame-img-2'>
                                 <img src="../public/images/GameChalk.svg" alt="" />
