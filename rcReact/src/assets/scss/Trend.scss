@@ -38,12 +38,18 @@
             display: flex;
             justify-content: center;
             width: 100%;
+            
+            img {
+                opacity: 0; // 初始為隱藏
+                animation: fadeInLight 1s ease-out forwards; 
+              }
 
             .light1 {
                 position: absolute;
                 height: 600px;
                 transform: translate(30px, 120px);
                 z-index: 1;
+                animation-delay: 0.2s;
             }
 
             .light2 {
@@ -51,6 +57,7 @@
                 position: absolute;
                 height: 600px;
                 z-index: 2;
+                animation-delay: 1.5s;
             }
 
             .light3 {
@@ -58,6 +65,7 @@
                 position: absolute;
                 height: 600px;
                 z-index: 3;
+                animation-delay: 2.8s;
             }
         }
     }
@@ -132,48 +140,17 @@
     background-size: 99%;
     background-position:left top  140px;
     background-repeat: no-repeat;
-
+    opacity: 0; // 初始透明
+    transition: opacity 0.5s ease-out; // 平滑顯現過渡
 }
 
-// @keyframes lighttt1 {
-//     0%{
-//       transform:opacity(0) ; 
-//     }
-//     100% {
-//       transform: opacity(100%); 
-//     }
-//   }
-//   .light1{
-//     animation-duration: 1s ;  
-//   }
-//   @keyframes lighttt2 {
-//     0%,100%{
-//       transform: rotate(0deg); /* 初始位置 */
-//     }
-//     25%{
-//         transform: rotate(-45deg); 
-//     }
-//     50% {
-//       transform: rotate(-90deg); 
-//     }
-//     75%{
-//         transform: rotate(-135deg); 
-//     }
-//     // 100%{
-//     //     transform: rotate(-180deg);
-//     // }
-//   }
-//    {
-//     animation: lighttt2 0.6s infinite linear ; 
-//   }
-//   @keyframes lighttt3 {
-//     0%,100%{
-//       transform: rotate(0deg); /* 初始位置 */
-//     }
-//     50% {
-//       transform: rotate(-45deg); 
-//     }
-//   }
-//   {
-//     animation: lighttt3 3s infinite ; 
-//   }
+@keyframes fadeInLight {
+    0% {
+      opacity: 0;
+    //   filter: brightness(0%);
+    }
+    100% {
+      opacity: 1;
+    //   filter: brightness(100%);
+    }
+  }

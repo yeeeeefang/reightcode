@@ -144,8 +144,9 @@
             }
           }
           
-          .card1-1,.card3-1 {
+          .card1-1,.card3-1,.card5-1,.card7-1 {
             animation: float 2s infinite ease-in-out; /* 2秒循环 */
+            rotate: -5deg;
           }
           @keyframes float1 {
             0%, 100% {
@@ -155,8 +156,9 @@
               transform: translate(0); 
             }
           }
-          .card2-1,.card4-1 {
+          .card2-1,.card4-1,.card6-1,.card8-1 {
             animation: float 3s infinite ease-in-out; 
+            rotate: 5deg;
           }
           
     }
