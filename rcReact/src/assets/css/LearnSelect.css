@@ -314,7 +314,7 @@ a {
     margin: 0 20px;
   }
 }
-#codeCourse #course .select a {
+#codeCourse #course .select .select-link {
   display: block;
   width: 450px;
   height: 275px;
@@ -323,7 +323,7 @@ a {
   transition: background-image 0.3s ease-in-out;
 }
 @media (max-width: 1023px) {
-  #codeCourse #course .select a {
+  #codeCourse #course .select .select-link {
     width: 300px;
     height: 250px;
     background-size: contain;
@@ -346,16 +346,16 @@ a {
     font-size: 2.3rem;
   }
 }
-#codeCourse #course .HTML a {
+#codeCourse #course .HTML {
   background-image: url("../images/learnSelectHTML.svg");
 }
-#codeCourse #course .HTML a:hover {
+#codeCourse #course .HTML:hover {
   background-image: url("../images/learnSelectHTML_hover.svg");
 }
-#codeCourse #course .CSS a {
+#codeCourse #course .CSS {
   background-image: url("../images/learnSelectCSS.svg");
 }
-#codeCourse #course .CSS a:hover {
+#codeCourse #course .CSS:hover {
   background-image: url("../images/learnSelectCSS_hover.svg");
 }
 

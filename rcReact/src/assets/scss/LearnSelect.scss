@@ -19,6 +19,7 @@
         justify-content: center;
         align-items: center;
     }
+
     // @media (max-width:640px) {
     //     display: flex;
     //     justify-content: center;
@@ -53,6 +54,7 @@
             left: 400px;
             top: 120px;
             transform: rotate(-20deg);
+
             &:hover {
                 animation: rotateIn 350ms ease-in-out forwards;
             }
@@ -60,6 +62,7 @@
             &:not(:hover) {
                 animation: rotateOut 350ms ease-in-out forwards;
             }
+
             @media (max-width:1023px) {
                 width: 85px;
                 height: 65px;
@@ -91,6 +94,7 @@
                     animation: translateXOut 350ms ease-in-out forwards;
                 }
             }
+
             @media (max-width:1023px) {
                 width: 65px;
                 height: 65px;
@@ -157,19 +161,21 @@
         .select {
             position: relative;
             padding: 20px 0;
+
             @media (max-width:1023px) {
                 width: 300px;
                 height: 250px;
                 margin: 0 20px;
             }
 
-            a {
+            .select-link {
                 display: block;
                 width: 450px;
                 height: 275px;
                 background-size: cover;
                 background-position: center;
                 transition: background-image 0.3s ease-in-out;
+
                 @media (max-width:1023px) {
                     width: 300px;
                     height: 250px;
@@ -188,6 +194,7 @@
                 font-size: $font-size-48;
                 font-weight: $font-w-bold;
                 color: white;
+
                 @media (max-width:1023px) {
                     font-size: $font-size-36;
                 }
@@ -195,22 +202,18 @@
         }
 
         .HTML {
-            a {
-                background-image: url('../images/learnSelectHTML.svg');
+            background-image: url('../images/learnSelectHTML.svg');
 
-                &:hover {
-                    background-image: url('../images/learnSelectHTML_hover.svg');
-                }
+            &:hover {
+                background-image: url('../images/learnSelectHTML_hover.svg');
             }
         }
 
         .CSS {
-            a {
-                background-image: url('../images/learnSelectCSS.svg');
+            background-image: url('../images/learnSelectCSS.svg');
 
-                &:hover {
-                    background-image: url('../images/learnSelectCSS_hover.svg');
-                }
+            &:hover {
+                background-image: url('../images/learnSelectCSS_hover.svg');
             }
         }
     }
