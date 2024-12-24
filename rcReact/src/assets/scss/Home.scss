@@ -355,10 +355,28 @@
                 animation: jump 1.5s ease-in-out infinite;
                 /* 套用動畫 */
             }
-
             .Home-btn {
                 width: 251px;
                 margin-bottom: 80px;
+            }
+            p {
+                display: block;
+                background-color: #FF6C64;
+                width: 240px;
+                line-height: 113px;
+                font-size: 40px;
+                text-align: center;
+                font-weight: $font-w-bold;
+                border-radius: 20px;
+                box-shadow: 10px 10px 0px 2px #000000;
+                transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
+                margin-bottom: 90px;
+
+                &:active {
+                    box-shadow: none; // 點擊時移除陰影
+                    transform: translateX(5px) translateY(5px);
+
+                }
             }
         }
     }
@@ -427,6 +445,7 @@
                 .Home-sml-text-2 {
                     font-size: 24px;
                     padding-top: 30px;
+                    font-weight: $font-w-medium;
                 }
             }
 
@@ -444,6 +463,8 @@
 
                     .Home-sml-text-2 {
                         font-size: 24px;
+                        font-weight: $font-w-medium;
+
                     }
                 }
 
@@ -493,6 +514,7 @@
 
                 .Home-sml-text-3 {
                     font-size: 24px;
+                    font-weight: $font-w-medium;
                 }
             }
 
@@ -558,9 +580,31 @@
             }
 
             .Home-content-bk-5 {
-
                 .Home-greenIp {
                     width: 350px;
+                }
+
+                p {
+                    display: block;
+                    background-color: #FF6C64;
+                    width: 240px;
+                    line-height: 113px;
+                    font-size: 40px;
+                    text-align: center;
+                    font-weight: $font-w-bold;
+                    border-radius: 20px;
+                    box-shadow: 10px 10px 0px 2px #000000;
+                    transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
+                    margin-bottom: 90px;
+                    &:hover{
+                    background-color: #f44f46;
+                    }
+
+                    &:active {
+                        box-shadow: none; // 點擊時移除陰影
+                        transform: translateX(5px) translateY(5px);
+
+                    }
                 }
 
                 .Home-btn {

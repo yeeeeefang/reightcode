@@ -4,21 +4,11 @@ import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import 'aos/dist/aos.css'
 import Aos from 'aos'
+import Footer from '../components/footer'
 
 
 function Home() {
 
-    const startRef = useRef(null)
-    const startMouseUp = () => {
-        startRef.current.src = '../public/images/btn.png'
-        startRef.current.style.margin = '0 0 30px 0'
-        startRef.current.style.padding = '0'
-    }
-    const startMouseDown = () => {
-        startRef.current.src = '../public/images/btn_hover.png'
-        startRef.current.style.margin = '0'
-        startRef.current.style.padding = '10px 0 0 5px'
-    }
     document.addEventListener('mousemove', (event) => {
         const eyes = [
             { element: document.querySelector('.greenLeftEye'), centerX: 158, centerY: 209.69 },
@@ -246,7 +236,7 @@ function Home() {
                                 讓知識充滿溫度</p>
                         </div>
                         <div className="Home-content-bk-3"
-                            data-aos="fade-down-left"
+                            data-aos="fade-down"
                             data-aos-duration="500"
                             data-aos-offset='300'>
                             <img className='Home-content-bk-3-img' src="../public/images/homeIntroB.jpg" alt="" />
@@ -272,18 +262,21 @@ function Home() {
                         </div>
                         <div className="Home-content-bk-5">
                             <Link to='/LearnSelect'>
-                                <img className="Home-btn" src="../public/images/btn.png" alt=""
+                                <p>Start Now</p>
+                                {/* <img className="Home-btn" src="../public/images/btn.png" alt=""
                                     ref={startRef}
                                     onMouseUp={startMouseUp}
                                     onMouseDown={startMouseDown}
-                                />
+                                /> */}
                             </Link>
                             <img className="Home-greenIp" src="../public/images/greenB.svg" alt="" />
                         </div>
                     </div>
                 </section>
-
             </div>
+            <footer>
+                <Footer></Footer>
+            </footer>
         </>
 
     )
