@@ -1,9 +1,13 @@
+import { useNavigate } from 'react-router-dom';
 import '../../src/assets/scss/TrendCard.scss'
 function TrendCard() {
-
+ 
+    const turnLearnArea = useNavigate();
+    const handleturn =()=>turnLearnArea('/LearnArea');
     return (
         <div className="cardcontent">
-            <div className="card1">
+            
+            <div className="card1" onClick={handleturn}>
                 <h3 className="learn">CSS</h3>
                 <img src="../public/images/trendCourse2.svg" alt="" />
                 <div class="item">
@@ -12,7 +16,7 @@ function TrendCard() {
                     <p className="content">收藏人數 1022人</p>
                 </div>
             </div>
-            <div className="card2">
+            <div className="card2" onClick={handleturn}>
                 <h3 className="learn">HTML</h3>
                 <img src="../public/images/trendCourse1.svg" alt="" />
                 <div class="item">
@@ -21,7 +25,7 @@ function TrendCard() {
                     <p className="content">收藏人數 2211人</p>
                 </div>
             </div>
-            <div className="card3">
+            <div className="card3" onClick={handleturn}>
                 <h3 className="learn">CSS</h3>
                 <img src="../public/images/trendCourse3.svg" alt="" />
                 <div class="item">

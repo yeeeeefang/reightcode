@@ -49,6 +49,7 @@
             display: flex;
             justify-content: flex-end;
             padding-right: 90px;
+
             .trendtitle2 {
                 // border: 1px solid tomato;
                 background-image: url('../images/trendDeco2.png');
@@ -104,6 +105,15 @@
                 text-align: center;
                 padding: 10px 0;
                 margin-bottom: 100px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+
+                /* 卡片暫停動畫 */
+                &:hover {
+                    animation-play-state: paused;
+                    rotate: 0deg;
+                    scale: 1.05;
+                }
 
 
                 .learn-1 {
@@ -134,69 +144,91 @@
                     }
                 }
             }
+
+
+
+            @keyframes float {
+
+                0%,
+                100% {
+                    transform: translate(0);
+                    /* 初始位置 */
+                }
+
+                50% {
+                    transform: translate(10px, -10px);
+                    /* 向上浮动的高度 */
+                }
+            }
+
+            .card1-1,
+            .card3-1,
+            .card5-1,
+            .card7-1 {
+                animation: float 2s infinite ease-in-out;
+                /* 2秒循环 */
+                rotate: -5deg;
+
+            }
+
+            @keyframes float1 {
+
+                0%,
+                100% {
+                    transform: translate(10px, -10px);
+                    /* 初始位置 */
+                }
+
+                50% {
+                    transform: translate(0);
+                }
+            }
+
+            .card2-1,
+            .card4-1,
+            .card6-1,
+            .card8-1 {
+                animation: float 3s infinite ease-in-out;
+                rotate: 5deg;
+            }
+
+        }}
+
+        .out {
+            position: relative;
+            width: 100%;
+            // margin-top: 200px;
+
+            .sofa {
+                // border: 1px solid red;
+                height: 500px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    height: 300px;
+                }
+            }
+
+            .deco1-1 {
+                width: 4%;
+                position: absolute;
+                z-index: 10;
+                left: 168px;
+                bottom: 350px;
+
+
+            }
+
+            .deco1-2 {
+                width: 3%;
+                position: absolute;
+                z-index: 11;
+                right: 150px;
+                top: 100px;
+            }
         }
-        @keyframes float {
-            0%, 100% {
-              transform: translate(0); /* 初始位置 */
-            }
-            50% {
-              transform: translate(10px,-10px); /* 向上浮动的高度 */
-            }
-          }
-          
-          .card1-1,.card3-1,.card5-1,.card7-1 {
-            animation: float 2s infinite ease-in-out; /* 2秒循环 */
-            rotate: -5deg;
-          }
-          @keyframes float1 {
-            0%, 100% {
-              transform: translate(10px,-10px); /* 初始位置 */
-            }
-            50% {
-              transform: translate(0); 
-            }
-          }
-          .card2-1,.card4-1,.card6-1,.card8-1 {
-            animation: float 3s infinite ease-in-out; 
-            rotate: 5deg;
-          }
-          
-    }
 
-    .out {
-        position: relative;
-        width: 100%;
-        // margin-top: 200px;
-
-        .sofa {
-            // border: 1px solid red;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                height: 300px;
-            }
-        }
-
-        .deco1-1 {
-            width: 4%;
-            position: absolute;
-            z-index: 10;
-            left: 168px;
-            bottom: 350px;
-
-
-        }
-
-        .deco1-2 {
-            width: 3%;
-            position: absolute;
-            z-index: 11;
-            right: 150px;
-            top: 100px;
-        }
-    }
-
+    
 }
