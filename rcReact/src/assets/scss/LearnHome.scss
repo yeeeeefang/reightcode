@@ -46,16 +46,34 @@
                 h2 {
                     font-size: 5rem;
                 }
+                .hand1 {
+                    animation: rotate-hand1 1s ease-in-out infinite;
+                    @keyframes rotate-hand1 {
+                        0% {
+                            transform: rotate(0);
+                        }
+                        45% {
+                            transform:rotate(30deg);
+                        }
+                        80% {
+                            transform: rotate(0);
+                        }
+                    }
+                }
             }
 
             // 綠色角色
             .learngreen {
-                width: 280px;
-                height: 280px;
+                width: 310px;
+                height: 310px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 .learngreen-svg {
-                    width: 100%; 
-                    height: 100%;
+                    width: 80%; 
+                    height: 80%;
+                    align-content: center;
                     transform: rotate(5deg);
                 }
             }
@@ -98,7 +116,7 @@
 
                     &:hover {
                         h2 {
-                            font-size: 5rem;
+                            font-size: 4.5rem;
                         }
 
                         .star {
@@ -147,7 +165,7 @@
 
                     &:hover {
                         h2 {
-                            font-size: 5rem;
+                            font-size: 4.5rem;
                         }
                         .heart{
                             animation: my-animation 2s infinite;
@@ -177,8 +195,8 @@
                     }
                     // 粉紅角色
                     .learnpink {
-                        width: 260px;
-                        height: 260px;
+                        width: 250px;
+                        height: 250px;
 
                         .learnpink-svg {
                             margin-top: 80px;
