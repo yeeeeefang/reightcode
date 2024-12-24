@@ -1,5 +1,6 @@
 import "../assets/css/LearnSelect.css"
 import NavbarTwo from "../components/NavbarTwo"
+import { Link } from 'react-router-dom'
 
 export default function LearnSelect() {
     return (
@@ -90,11 +91,11 @@ export default function LearnSelect() {
                     </section>
 
                     <section id="course">
-                        <div className="select HTML">
-                            <a href=""><h2>HTML</h2></a>
+                        <div className="select">
+                            <Link to="/LearnPage" className="select-link HTML"><h2>HTML</h2></Link>
                         </div>
-                        <div className="select CSS">
-                            <a href=""><h2>CSS</h2></a>
+                        <div className="select">
+                            <Link to="/LearnPage" className="select-link CSS"><h2>CSS</h2></Link>
                         </div>
                     </section>
                 </div>
