@@ -140,8 +140,11 @@
     background-size: 99%;
     background-position:left top  140px;
     background-repeat: no-repeat;
-    opacity: 0; // 初始透明
-    transition: opacity 0.5s ease-out; // 平滑顯現過渡
+    // opacity: 0; // 初始透明
+    // transition: opacity 0.5s ease-out; // 平滑顯現過渡
+    // &.scrolled {
+    //     opacity: 1; // 滚动时显示
+    //   }
 }
 
 @keyframes fadeInLight {
