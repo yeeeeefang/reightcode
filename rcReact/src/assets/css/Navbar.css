@@ -185,8 +185,53 @@ a {
   height: 48px;
   margin-right: 50px;
 }
-.navBarBk .navBarBk-1 .navhamBtn {
+.navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn {
+  display: block;
+  width: 220px;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+.navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn:hover {
+  background-color: #d2cbcb;
+}
+.navBarBk .navBarBk-1 .navlearningBtn .navHamBtn-starLearn:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+.navBarBk .navBarBk-1 .navhamBtn .nav-hamburger {
+  margin-bottom: 5px;
+  background-color: transparent;
+  border: none;
+  background-color: #ef933a;
+  border-radius: 10px;
+  height: 48px;
   width: 48px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+  cursor: pointer;
+}
+.navBarBk .navBarBk-1 .navhamBtn .nav-hamburger:hover {
+  background-color: #ef7f0f;
+}
+.navBarBk .navBarBk-1 .navhamBtn .nav-hamburger:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+}
+.navBarBk .navBarBk-1 .navhamBtn .nav-hamburger .nav-bar {
+  display: block;
+  width: 36px;
+  height: 5px;
+  background-color: #333;
+  margin: 5px auto;
+  transition: 0.35s;
 }
 
 /* 漢堡按鈕的進場動畫 */
@@ -204,4 +249,21 @@ a {
 
 .HumMenu.hide {
   transform: translateX(100%);
+}
+
+.donimg:hover .testt {
+  animation-name: ani-love1;
+  /*動畫名稱*/
+  animation-duration: 2s;
+  /*一次完整動畫時間為2秒*/
+  animation-iteration-count: infinite;
+  /*播放次數為無限次*/
+}
+.donimg:hover .testt1 {
+  animation-name: ani-love2;
+  /*動畫名稱*/
+  animation-duration: 2s;
+  /*一次完整動畫時間為2秒*/
+  animation-iteration-count: infinite;
+  /*播放次數為無限次*/
 }/*# sourceMappingURL=Navbar.css.map */

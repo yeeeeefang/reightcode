@@ -39,17 +39,19 @@
             justify-content: center;
             width: 100%;
             
-            img {
-                opacity: 0; // 初始為隱藏
-                animation: fadeInLight 1s ease-out forwards; 
-              }
+            // img {
+            //     opacity: 0; // 初始為隱藏
+            //     animation: fadeInLight 1s linear  forwards; 
+            //   }
 
             .light1 {
                 position: absolute;
                 height: 600px;
                 transform: translate(30px, 120px);
                 z-index: 1;
-                animation-delay: 0.2s;
+                opacity: 0; // 初始為隱藏
+                animation: fadeInLight .3s ease-Out  forwards; 
+                animation-delay: 0.5s;
             }
 
             .light2 {
@@ -57,7 +59,9 @@
                 position: absolute;
                 height: 600px;
                 z-index: 2;
-                animation-delay: 1.5s;
+                opacity: 0; // 初始為隱藏
+                animation: fadeInLight .1s ease-Out  forwards; 
+                animation-delay: 1s;
             }
 
             .light3 {
@@ -65,7 +69,10 @@
                 position: absolute;
                 height: 600px;
                 z-index: 3;
-                animation-delay: 2.8s;
+                opacity: 0; // 初始為隱藏
+                animation: fadeInLight .1s ease-Out  forwards; 
+                animation-delay: 1.5s;
+                
             }
         }
     }

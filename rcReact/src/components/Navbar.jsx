@@ -20,25 +20,6 @@ function Navbar() {
 
     const starLearnBtnRef = useRef(null)
     /* 按下切換圖片 */
-    const navbtnMouseDown = () => {
-        starLearnBtnRef.current.src = '../public/images/navBtn_hover.png';
-        starLearnBtnRef.current.style.width = '215px'
-        starLearnBtnRef.current.style.padding = '8px 0px 0px 8px'
-    }
-    /* 放開換回圖片 */
-    const navbtnMouseUp = () => {
-        starLearnBtnRef.current.src = '../public/images/navBtn.png';
-        starLearnBtnRef.current.style.width = '220px'
-        starLearnBtnRef.current.style.padding = '0px'
-    }
-    /* 同上 */
-    const humBtnRef = useRef(null)
-    const humBtnMouseDown = () => {
-        humBtnRef.current.src = '../public/images/hamBtn_hover.svg'
-    }
-    const humBtnMouseUp = () => {
-        humBtnRef.current.src = '../public/images/hamBtn.svg'
-    }
 
     return (
         <>
@@ -52,24 +33,32 @@ function Navbar() {
                     <div className="navBarBk-1">
                         <Link to='/LearnHome'>
                             <div className="navlearningBtn">
-                                <img src="../public/images/navBtn.png" alt=""
+                                <p className='navHamBtn-starLearn'>Start Learning</p>
+
+                                {/* <img src="../public/images/navBtn.png" alt=""
                                     ref={starLearnBtnRef}
                                     onMouseDown={navbtnMouseDown}
                                     onMouseUp={navbtnMouseUp}
-                                />
+                                /> */}
                             </div>
                         </Link>
                         <div className="navhamBtn"  /* onClick={toggleMenu} */ onClick={toggleHamburger}>
-                            <img src="../public/images/hamBtn.svg" alt=""
+                            <button class="nav-hamburger">
+                                <span class="nav-bar"></span>
+                                <span class="nav-bar"></span>
+                                <span class="nav-bar"></span>
+                            </button>
+                            {/* <img src="../public/images/hamBtn.svg" alt=""
                                 ref={humBtnRef}
                                 onMouseDown={humBtnMouseDown}
                                 onMouseUp={humBtnMouseUp}
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
             </div>
             <div className={`HumMenu ${isHamburgerVisible ? 'show' : ''} ${!isHamburgerVisible ? 'hide' : ''}`}>
+
                 <Hamburger onClose={hideHamburger} />
             </div>
         </>

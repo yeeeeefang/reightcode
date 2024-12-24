@@ -17,13 +17,6 @@ function NavbarTwo() {
         setHamburgerVisible(false);
     };
 
-    const humBtnRef = useRef(null)
-    const humBtnMouseDown = () => {
-        humBtnRef.current.src = '../public/images/hamBtn_hover.svg'
-    }
-    const humBtnMouseUp = () => {
-        humBtnRef.current.src = '../public/images/hamBtn.svg'
-    }
     return (
         <>
             <section id="NavbarTwo-page-1">
@@ -34,12 +27,13 @@ function NavbarTwo() {
                         {/* <div className="learningBtn">
                             <img src="../public/images/navBtn.png" alt="" />
                         </div> */}
+
                         <div className="navhamBtn" onClick={toggleHamburger}>
-                            <img src="../public/images/hamBtn.svg" alt=""
-                                ref={humBtnRef}
-                                onMouseDown={humBtnMouseDown}
-                                onMouseUp={humBtnMouseUp}
-                            />
+                            <button class="nav-hamburger">
+                                <span class="nav-bar"></span>
+                                <span class="nav-bar"></span>
+                                <span class="nav-bar"></span>
+                            </button>
                         </div>
                     </div>
                 </div>

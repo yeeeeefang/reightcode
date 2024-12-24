@@ -168,10 +168,11 @@ a {
 #LearnGame-page-all {
   background-color: #FFD640;
   overflow: hidden;
+  height: 100vh;
+  position: relative;
 }
 
 #LearnGame-page {
-  height: 90vh;
   /* 確保父容器高度為視口高度 */
   display: flex;
   /* 啟用 flexbox 布局 */
@@ -179,7 +180,6 @@ a {
   /* 水平方向置中 */
   margin-top: 30px;
   /* 垂直方向置中 */
-  position: relative;
 }
 #LearnGame-page .LearnGame-img-position-1 {
   position: absolute;
@@ -235,8 +235,8 @@ a {
   z-index: 9;
 }
 #LearnGame-page .LearnGame-blackboard {
-  width: 73%;
-  height: 80%;
+  width: 1000px;
+  height: 575px;
   background-color: #2B7551;
   border: 13px solid #C3825A;
   border-radius: 10px;
@@ -264,11 +264,42 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
-  margin-right: 80px;
 }
-#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-content-3,
-#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-content-4 {
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 {
+  display: flex;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 img {
+  width: 20%;
+  flex: 1;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1 p {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  background-color: #E7E7E7;
+  display: inline-block;
+  border-radius: 20px;
+  line-height: 60px;
+  padding: 0 6px;
+  text-align: center;
+  margin-right: 10px;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-1:hover img {
+  opacity: 1;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 {
+  display: flex;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 img {
+  width: 20%;
+  margin-right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2 p {
   font-size: 1.5rem;
   color: #000;
   font-weight: 700;
@@ -279,8 +310,8 @@ a {
   padding: 0 6px;
   text-align: center;
 }
-#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-img-1,
-#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-img-2 {
-  opacity: 0;
-  width: 10%;
-}/*# sourceMappingURL=LearnGame.css.map */
+#LearnGame-page .LearnGame-blackboard .LearnGame-ready-1 .LearnGame-ready-bk-2:hover img {
+  opacity: 1;
+}
+
+/* 動畫 *//*# sourceMappingURL=LearnGame.css.map */
