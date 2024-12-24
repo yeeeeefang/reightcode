@@ -46,24 +46,47 @@
                 h2 {
                     font-size: 5rem;
                 }
+
+                .hand1 {
+                    animation: rotate-hand1 1s ease-in-out infinite;
+
+                    @keyframes rotate-hand1 {
+                        0% {
+                            transform: rotateY(0);
+                        }
+
+                        45% {
+                            transform: rotateY(-30deg) translateY(10px);
+                        }
+
+                        80% {
+                            transform: rotateY(0);
+                        }
+                    }
+                }
             }
 
             // 綠色角色
             .learngreen {
-                width: 280px;
-                height: 280px;
+                width: 310px;
+                height: 310px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 .learngreen-svg {
-                    width: 100%; 
-                    height: 100%;
+                    width: 80%;
+                    height: 80%;
+                    align-content: center;
                     transform: rotate(5deg);
                 }
             }
+
             // img {
             //     width: 280px;
             //     transform: rotate(15deg);
             // }
-            
+
 
         }
 
@@ -98,15 +121,17 @@
 
                     &:hover {
                         h2 {
-                            font-size: 5rem;
+                            font-size: 4.5rem;
                         }
 
                         .star {
                             animation: my-animation 2s infinite;
+
                             @keyframes my-animation {
                                 0% {
                                     opacity: 0;
                                 }
+
                                 100% {
                                     opacity: 1;
                                 }
@@ -117,7 +142,7 @@
                     // 藍色角色
                     .learnblue {
                         margin-top: 120px;
-                        height: 280px; 
+                        height: 280px;
                         width: 280px;
 
                         .learnblue-svg {
@@ -147,42 +172,50 @@
 
                     &:hover {
                         h2 {
-                            font-size: 5rem;
+                            font-size: 4.5rem;
                         }
-                        .heart{
+
+                        .heart {
                             animation: my-animation 2s infinite;
+
                             @keyframes my-animation {
                                 0% {
                                     opacity: 0;
                                 }
+
                                 100% {
                                     opacity: 1;
                                 }
                             }
                         }
+
                         .mouth {
                             animation: rotate-mouth 2s ease-in-out infinite;
+
                             @keyframes rotate-mouth {
                                 0% {
                                     transform: rotate(0);
                                 }
+
                                 15% {
-                                    transform:translateX(15px);
+                                    transform: translateX(15px);
                                 }
+
                                 50% {
                                     transform: rotate(0);
                                 }
                             }
                         }
                     }
+
                     // 粉紅角色
                     .learnpink {
-                        width: 260px;
-                        height: 260px;
+                        width: 250px;
+                        height: 250px;
 
                         .learnpink-svg {
                             margin-top: 80px;
-                            width: 100%; 
+                            width: 100%;
                             height: 100%;
                         }
 

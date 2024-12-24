@@ -27,6 +27,19 @@
             border-radius: 99px;
             width: 150px;
             height: 60px;
+            box-shadow: 5px 5px 0px 2px #000000;
+            transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+            &:hover {
+                background-color: #fda2a2;
+
+            }
+
+            &:active {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
+
+            }
         }
 
         .iconX {
@@ -35,6 +48,17 @@
             height: 48px;
             border-radius: 10px;
             cursor: pointer;
+            box-shadow: 5px 5px 0px 2px #000000;
+            transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+            &:hover {
+                background-color: #fda2a2;
+            }
+
+            &:active {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
+            }
 
             .bar {
                 display: block;
@@ -64,7 +88,6 @@
         align-items: center;
 
         .bar-Content {
-            border: 1px solid;
             display: flex;
             align-items: center;
             width: 322px;
@@ -73,6 +96,14 @@
             background-color: $primary;
             border-radius: 30px;
             justify-content: space-around;
+            box-shadow: 5px 5px 0px 2px #000000;
+            transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+            &:hover {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
+
+            }
 
             p {
                 text-align: center;
@@ -105,11 +136,83 @@
             font-weight: $font-w-medium;
             background-color: #FDBABA;
             border-radius: 30px;
+            box-shadow: 5px 5px 0px 2px #000000;
+            transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+            &:hover {
+                background-color: #fda2a2;
+
+            }
+
+            &:active {
+                box-shadow: none; // 點擊時移除陰影
+                transform: translateX(5px) translateY(5px);
+
+            }
         }
 
         img {
             width: 100px;
             height: 87px;
         }
+    }
+}
+
+.bar-content-icon {
+    display: none;
+}
+
+.bar-Content {
+    &:hover {
+        .bar-content-icon {
+            display: block;
+        }
+    }
+}
+
+
+.bar-content-iconiconhover {
+    display: none;
+}
+
+.bar-Content-1 {
+    display: flex;
+    align-items: center;
+    width: 322px;
+    height: 60px;
+    margin: 15px 0;
+    background-color: $primary;
+    border-radius: 30px;
+    justify-content: center;
+    box-shadow: 5px 5px 0px 2px #000000;
+    transition: transform 0.5s, box-shadow 0.1s; // 添加平滑效果
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-weight: $font-w-medium;
+        padding-right: 40px;
+    }
+
+    img {
+        width: 48px;
+        height: 48px;
+        margin-right: 10px;
+        opacity: 0;
+    }
+
+    &:hover {
+        background-color: #fabf33;
+
+        img {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        box-shadow: none; // 點擊時移除陰影
+        transform: translateX(5px) translateY(5px);
+        background-color: #fabf33;
     }
 }

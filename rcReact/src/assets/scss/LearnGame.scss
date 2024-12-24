@@ -1,5 +1,5 @@
 @use "./reset";
-@use "./variables" as *;
+@use "./variables"as *;
 
 #LearnGame-page-all {
     background-color: $primary;
@@ -117,28 +117,70 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 50%;
-            margin-right: 80px;
 
 
-            .LearnGame-content-3,
-            .LearnGame-content-4 {
-                font-size: $font-size-24;
-                color: #000;
-                font-weight: $font-w-bold;
-                background-color: $g-board3;
-                display: inline-block;
-                border-radius: 20px;
-                line-height: 60px;
-                padding: 0 6px;
-                text-align: center;
+
+            .LearnGame-ready-bk-1 {
+                display: flex;
+
+                img {
+                    width: 20%;
+                    flex: 1;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                p {
+                    font-size: $font-size-24;
+                    color: #000;
+                    font-weight: $font-w-bold;
+                    background-color: $g-board3;
+                    display: inline-block;
+                    border-radius: 20px;
+                    line-height: 60px;
+                    padding: 0 6px;
+                    text-align: center;
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
             }
 
-            .LearnGame-img-1,
-            .LearnGame-img-2 {
-                opacity: 0;
-                width: 10%;
+            .LearnGame-ready-bk-2 {
+                display: flex;
+
+                img {
+                    width: 20%;
+                    margin-right: 10px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                p {
+                    font-size: $font-size-24;
+                    color: #000;
+                    font-weight: $font-w-bold;
+                    background-color: $g-board3;
+                    display: inline-block;
+                    border-radius: 20px;
+                    line-height: 60px;
+                    padding: 0 6px;
+                    text-align: center;
+                }
+
+                &:hover {
+                    img {
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
 }
+
+/* 動畫 */

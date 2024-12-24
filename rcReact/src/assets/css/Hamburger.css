@@ -191,6 +191,15 @@ a {
   border-radius: 99px;
   width: 150px;
   height: 60px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .Ham-Bk-1 p:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .Ham-Bk-1 p:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
 }
 #Hamburger .Ham-Bk-1 .iconX {
   background-color: #FDBABA;
@@ -198,6 +207,15 @@ a {
   height: 48px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .Ham-Bk-1 .iconX:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .Ham-Bk-1 .iconX:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
 }
 #Hamburger .Ham-Bk-1 .iconX .bar {
   display: block;
@@ -219,7 +237,6 @@ a {
   align-items: center;
 }
 #Hamburger .barLink .bar-Content {
-  border: 1px solid;
   display: flex;
   align-items: center;
   width: 322px;
@@ -228,6 +245,12 @@ a {
   background-color: #FFD640;
   border-radius: 30px;
   justify-content: space-around;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .barLink .bar-Content:hover {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
 }
 #Hamburger .barLink .bar-Content p {
   text-align: center;
@@ -256,8 +279,66 @@ a {
   font-weight: 500;
   background-color: #FDBABA;
   border-radius: 30px;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+#Hamburger .bar-bottom p:hover {
+  background-color: #fda2a2;
+}
+#Hamburger .bar-bottom p:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
 }
 #Hamburger .bar-bottom img {
   width: 100px;
   height: 87px;
+}
+
+.bar-content-icon {
+  display: none;
+}
+
+.bar-Content:hover .bar-content-icon {
+  display: block;
+}
+
+.bar-content-iconiconhover {
+  display: none;
+}
+
+.bar-Content-1 {
+  display: flex;
+  align-items: center;
+  width: 322px;
+  height: 60px;
+  margin: 15px 0;
+  background-color: #FFD640;
+  border-radius: 30px;
+  justify-content: center;
+  box-shadow: 5px 5px 0px 2px #000000;
+  transition: transform 0.5s, box-shadow 0.1s;
+}
+.bar-Content-1 p {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 500;
+  padding-right: 40px;
+}
+.bar-Content-1 img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  opacity: 0;
+}
+.bar-Content-1:hover {
+  background-color: #fabf33;
+}
+.bar-Content-1:hover img {
+  opacity: 1;
+}
+.bar-Content-1:active {
+  box-shadow: none;
+  transform: translateX(5px) translateY(5px);
+  background-color: #fabf33;
 }/*# sourceMappingURL=Hamburger.css.map */

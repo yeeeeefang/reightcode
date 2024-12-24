@@ -31,18 +31,15 @@ function LearnGame() {
                             <p>準備好挑戰了？</p>
                         </div>
                         <div className='LearnGame-ready-1'>
-                            <div className='LearnGame-img-1'>
+                            <div className='LearnGame-ready-bk-1'>
                                 <img src="../public/images/GameChalk.svg" alt="" />
+                                <Link to='/LearnHome'><p >需要再複習</p></Link>
                             </div>
-                            <div className='LearnGame-content-3'>
-                               <Link to='/LearnHome'><p>需要再複習</p></Link> 
-                            </div>
-                            <div className='LearnGame-img-2'>
+                            <div className='LearnGame-ready-bk-2'>
                                 <img src="../public/images/GameChalk.svg" alt="" />
+                                <Link to="/LearnGameChoose"><p>準備好了</p></Link>
                             </div>
-                            <div className='LearnGame-content-4'>
-                            <Link to="/LearnGameChoose"><p>準備好了</p></Link>
-                            </div>
+
                         </div>
                     </div>
                 </div>
