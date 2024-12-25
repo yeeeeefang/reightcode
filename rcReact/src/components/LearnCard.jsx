@@ -262,8 +262,6 @@ function LearnCard({ selectedSection }) {
         ? CardTitle.flatMap((section) => section.children)
         : CardTitle[selectedSection]?.children || [];
 
-
-
     let currentScrollLeft = 0; // 初始化當前滾動位置
     $(function () {
         const step = 220; // 每次滾動的距離

@@ -43,12 +43,88 @@ function Home() {
         Aos.init()
     }, [])
 
+    const blueARef = useRef(null);
+    useEffect(() => {
+        const handleScroll = () => {
+            if (blueARef.current) {
+                const rect = blueARef.current.getBoundingClientRect(); // 获取元素的位置
+                const windowHeight = window.innerHeight;
+
+                // 判断元素是否进入视窗的一半
+                if (rect.top <= windowHeight / 2 && rect.bottom >= 0) {
+                    blueARef.current.classList.add('active'); // 添加动画类
+                } else {
+                    blueARef.current.classList.remove('active'); // 移除动画类
+                }
+            }
+        };
+
+        // 添加滚动监听
+        window.addEventListener('scroll', handleScroll);
+
+        // 清除监听
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const redRef = useRef(null)
+    useEffect(() => {
+        const handleScroll = () => {
+            if (redRef.current) {
+                const rect = redRef.current.getBoundingClientRect(); // 获取元素的位置
+                const windowHeight = window.innerHeight;
+
+                // 判断元素是否进入视窗的一半
+                if (rect.top <= windowHeight / 2 && rect.bottom >= 0) {
+                    redRef.current.classList.add('active'); // 添加动画类
+                } else {
+                    redRef.current.classList.remove('active'); // 移除动画类
+                }
+            }
+        };
+
+        // 添加滚动监听
+        window.addEventListener('scroll', handleScroll);
+
+        // 清除监听
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const pinkRef = useRef(null)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (pinkRef.current) {
+                const rect = pinkRef.current.getBoundingClientRect(); // 获取元素的位置
+                const windowHeight = window.innerHeight;
+
+                // 判断元素是否进入视窗的一半
+                if (rect.top <= windowHeight / 2 && rect.bottom >= 0) {
+                    pinkRef.current.classList.add('active'); // 添加动画类
+                } else {
+                    pinkRef.current.classList.remove('active'); // 移除动画类
+                }
+            }
+        };
+
+        // 添加滚动监听
+        window.addEventListener('scroll', handleScroll);
+
+        // 清除监听
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
     return (
         <>
             <div id='Home-page-1'>
-                <div id='navbartext'>
-                    <NavbarTwo></NavbarTwo>
-                </div>
+
+                {/*  */}
                 <svg id="x" data-name="圖層 26 影像" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 675">
                     <path className="am" d="M871,0c-9.19,10.56-14.73,23.96-17.95,37.5-2.71,11.42-2.48,16.47.02,27.83,1.29,5.84,3.79,15.64,5.91,21.06,3.72,9.53,10.62,14.92,16.43,22.53,19.06,24.94,35.18,39.85,60.67,58.25,20.71,14.94,44.62,29.81,67.24,41.69,13.99,7.35,23.77,9.74,37.95,15.03,43.65,16.27,85.91,32.91,130.93,46,17.68,5.14,26.97,6.42,45.3,7.68,31.97,2.2,63.89,3.36,96.03,2.96,14.39-.18,28.56-2.25,42.95-3.96,19.94-2.36,39.96-5.19,58.77-12.21,8.37-3.12,16.45-7.43,24.74-10.75v86.87c-3.02.08-5.57-1.87-8.53-2.05-6.95-.41-11.38,3.73-17.2,5.8-38.64,13.77-77.18,27.57-115.75,41.19-12.77,4.51-27.32,8.08-39.79,13.19-11.04,4.52-21.75,11.41-32.74,16.24-26.79,11.77-54.99,19.8-81.01,32.95-11.47,5.8-21.74,12.75-34,17.98-12.02,5.12-40.95,10.92-39.92,28.84.93,16.23,21.45,43.46,29.49,58.51,14.87,27.84,27.54,56.83,40.28,85.59,5.2,11.73,13.17,23.28,18.17,35.27H509c4.24-9.86,5.56-20.55,8.73-30.72,9.49-30.47,21.38-59.37,29.19-90.68,8.76-35.11,17.61-72.65,24.78-108.06,3.5-17.29,13.91-51.78-12.44-55.88-18.22-2.83-34.14-.7-51.75-1.25-7.96-.25-16.91-2.61-24.96-3.03-26.15-1.35-55.8,4.2-83.09,4.08-65.3-.28-129.68-.7-194.97,3.94-18.85,1.34-36.75-2.15-46.36,18.61-1.75,3.78-2.06,7.74-3.62,11.36-1.8,4.19-5.8,8.32-7.68,12.3-21.91,46.22-40.81,94.25-60.34,141.45-9.94,24.03-18.85,49.18-29,72.89-3.61,8.43-10.75,15.1-9.48,24.98H0v-348.48c2.84,2.38,3.42,5.38,6.5,7.99,3.96,3.35,11.92,6.96,16.83,10.16,3.76,2.45,6.9,6.3,11.34,8.64,7.56,3.99,15.86,4.66,23.32,7.67,4.55,1.84,8.17,5.26,13.21,6.78,7.86,2.37,22.72,4.3,31.41,5.59,52.59,7.77,98.63,5.44,149.39-10.38,84.49-26.34,169.21-89.1,198.27-175.47,18.72-55.64,21.19-94.23,9.44-151.75-2.51-12.28-4.88-23.51-10.71-34.74h422ZM808.01,244.64c-.68-21.99-1.33-44.41-4.15-66.26-1.39-10.75-5.62-47-22.13-43.38-8.37,1.84-2.86,11.52-2.02,16.58,7.1,43.13,1.32,92.34,4.31,136.49.58,8.65,1.73,24.1,13.47,24.31,14.14.25,11.66-16.8,12.63-25.19,1.1-9.43,7.26-21.28,14.39-27.55,5.67,13.54,9.52,50.91,29.03,51.95,11.24.6,20.97-12.97,24.64-22.34,2.47-6.31,4.31-15.11-5.43-12.4-2.86.79-10.57,9.95-11.73,8.73-5.53-26.9-19.07-75.65-53-40.93ZM495,311.04c.46-6.74-.34-13.72,0-20.47,15.96,7.48,33.45,23.02,49.73,28.73,20.21,7.09,33.01-7.27,23.46-26.42-7.92-15.88-27.74-24.45-43.18-31.28-.32-1.4.21-1.64.97-2.51,3.92-4.45,10.67-8.8,15-13.98,41.28-49.36-12.32-93.93-58.47-60.4-5.64-5.27-1.85-20.42-8.45-22.5-6.7-2.11-11.3,2.6-12.07,9.01-1.56,12.94,3.75,28.85,3.82,41.96.03,5.1-1.86,11.87-1.88,16.96-.03,9.33,1.83,20.5,2.12,29.93.24,7.76.95,16.57,1,23.96.08,12.37-4.9,38.55,1.12,47.81,5.58,8.57,19.1,7.64,23.35-1.32,2.8-5.9,1.93-10.6,2.45-16.53.11-1.31,1.01-2.48,1.04-2.96ZM943.74,225.42c1.26-1.31,1.67-5.35,1.11-7.07-2.16-6.59-29.26,1.11-34.86-.14-3.72-5.5-11.57-25.46-20.01-16.03-5.47,6.12,3.11,14.47,2,21.47-.95.99-23.2,4.06-27,5.5-4.45,1.68-6.48,6.04-4.46,10.49,3.8,8.37,28.79,1.68,36.48,2l1.04,26.51c-.1,12.17-5.76,32.52,2.11,42.75,3.77,4.9,10.23,6.62,16.13,5.41,9.96-2.05,30.74-28.48,37.7-37.24,3.61-4.54,14.22-16.08,12.61-21.47-3.08-10.31-19.84,3.67-24.9,7.2-7.08,4.94-13.51,10.95-20.68,15.79l-5.01-44.93c5.36-1.59,24.55-6.92,27.75-10.24ZM629.79,212.98c-8.24.71-41.07,5.82-47.49,8.5-5.64,2.35-7.75,7.03-5.38,12.75,4.11,9.94,32.37,7.51,41.28,6.12s33.08-6.92,30.4-19.72c-1.85-8.85-11.82-8.26-18.82-7.65ZM726.99,286.58c-.12,19.77.54,40.61-3.31,60.09-1.63,8.26-5.26,24.63-15.16,25.8-16.57,1.96-38.47-6.12-50.53-17.49-4.54-4.27-7.44-15.11-13.29-13.32-5.97,1.82-3.41,13.04-1.72,17.33,11.42,28.93,67.7,58.95,93.54,29.44,26.19-29.92,15.27-106.44,18.48-144.28-.81-8.07-4.35-13-12.64-14.14-1.37-.19-3.12,1.03-4.67.55-1.25-.38-2.58-3.57-4.18-4.89-28.97-24.06-57.49,20.37-58.51,46.47-.84,21.58,20.17,28.39,38,21.91,4.99-1.81,9.25-5.26,14.01-7.47ZM604.7,244.84c-6.82,2.05.39,17.48,1.43,22.14,1.87,8.41,3.29,17.46,3.91,26.05.59,8.11-3.25,28.75,8.54,30.45,17.88,2.59,13.49-30.88,11.13-41.1-2.08-9-6.77-19.39-11.89-27.07-2.89-4.33-7.48-12.17-13.11-10.48ZM936.02,460.31c-13.06-18.23-40.43-17.25-52.86,1.67-14.82,22.57-13.65,70.25,15.17,81.39,19.8,7.66,35.85-6.86,46.16-22.1,11.62,7.26,19.23,1.91,18.49-11.51-.52-9.48-3.48-20.09-4.02-29.92-1.67-30.44,1.01-61.54-3.1-91.76-.44-3.22-1.75-14.51-4.52-15.46l-4.7-.03c-3.85,1.33-4.23,24.9-5.63,29.33l-3,57.9-1.98.49ZM747.65,435.71c-12.79-12.81-30.3-8.64-43.13,1.67-26.47,21.28-44.36,86.77-13.43,110.23,26.51,20.11,62.75-2.02,77.33-26.45,3.76-6.3,7.13-12.46,4.57-19.89-8.28.55-11.89,9-17.47,14.01-12.12,10.89-42.03,24.55-48.84,1.79-4.85-16.22,2.82-55.83,15.79-67.74,3.48-3.19,8.87-6.33,13.76-5.78,5.81.65,12.49,8.95,16.62,2.09.83-3.01-3.09-7.8-5.21-9.91ZM1008,481.3c18.9-.15,64.75-25.1,38.47-45.92-24.02-19.02-62.74.24-65.46,30.45-3.91,43.46,26.97,72.48,66.89,44.83,6.57-4.55,22.39-20.37,8.61-25.46-11.3-4.18-44.34,23.81-48.52-3.89ZM825.73,433.6c-13.25,2.21-22.25,23.96-25.45,35.49-4.82,17.33-8.81,48.9,12.03,57.32,25.18,10.17,46.16-26.83,47.67-47.63,1.41-19.46-10.44-49.14-34.25-45.18Z" />
                     <path className="af" d="M449,0c5.83,11.23,8.2,22.46,10.71,34.74,11.75,57.52,9.27,96.1-9.44,151.75-29.06,86.37-113.77,149.13-198.27,175.47-50.76,15.83-96.8,18.15-149.39,10.38-8.69-1.28-23.55-3.22-31.41-5.59-5.04-1.52-8.66-4.94-13.21-6.78-7.46-3.01-15.75-3.68-23.32-7.67-4.44-2.34-7.58-6.19-11.34-8.64-4.91-3.2-12.87-6.81-16.83-10.16-3.08-2.61-3.66-5.6-6.5-7.99v-21.97c0-.18,1.07-1.54,1.07-3.38C1.34,200.12.72,100.04,1,0,150.32-.01,299.68.02,449,0ZM253.76,38.21c-21.26,2.9-34.88,22.58-33.8,43.22,1.8,34.36,31.04,68.07,67.53,64.35,27.54-2.81,40.05-38.99,29.99-61.88-10.08-22.96-36.62-49.39-63.72-45.69ZM158.73,99.08c-13.49,2.74-10.07,25.83,3.53,24.53,18.49-1.77,12.1-27.7-3.53-24.53ZM158,209.69c.21-5.67-1.16-8.88-5-12.98-3.23-7.65-9.64-15.93-15.03-22.44-14.98-18.07-38.73-38.62-61.89-20.91-20.17,15.42-18.38,32.89-9.85,54.6,9.48,24.12,29.88,46.27,58.14,43.55,17.81-1.72,40.38-22.58,33.62-41.81Z" />
@@ -111,183 +187,186 @@ function Home() {
 
                 </svg>
             </div>
-            <div id="Home-page-all">
-                <section id="Home-page-2">{/* 第二分頁 */}
-                    <div className="Home-content-bk-1"
-                        data-aos="fade-down-right"
-                        data-aos-duration="500"
-                        data-aos-offset='300'>
-                        <div className="Home-content-1">
-                            <p className="Home-text-1">用<span>程式</span>創造未來</p>
-                            <p className="Home-eng-text-1">Create the Future with Programming</p>
-                        </div>
-                        <div className="Home-content-2">
-                            <p className="Home-text-1">用<span>英語</span>世界接軌</p>
-                            <p className="Home-eng-text-2">Connect the World in English</p>
-                        </div>
-                    </div>
-                    <div className="Home-content-bk-2">
-                        <div className="Home-content-3">
-                            <div className="Home-text-block-1"
-                                data-aos="fade-right"
-                                data-aos-duration="500"
-                                data-aos-offset='300'>
-                                <p className="Home-text-2">程式語言納入108課綱</p>
-                                <br />
-                                <p className="Home-eng-text-2">Programming included in 108 syllabus</p>
-                                <p className="Home-sml-text-2">為了因應科技時代的需求，<br />
-                                    108課綱將「程式設計」正式納入中小學的資訊教育。<br />
-                                    通過基礎程式學習來鍛鍊孩子的邏輯思考、創意思維和問題解決能力，<br />
-                                    並且學會技術應用，強化數位素養。</p>
-                            </div>
-                            <div className="Home-content-3-img">
-                                <img src="../public/images/blueA.svg" alt="" />
-                            </div>
-                        </div>
-                        <div className="Home-content-4">
-                            <div className="Home-text-block-2"
-                                data-aos="fade-left"
-                                data-aos-duration="500"
-                                data-aos-offset='300' >
-                                <p className="Home-text-2">2030雙語政策</p>
-                                <br />
-                                <p className="Home-eng-text-2">Bilingual 2030</p>
-                                <p className="Home-sml-text-2">教育部正在推動「2030雙語政策」。
-                                    <br />目標是到2030年在國民教育中達成雙語環境，
-                                    <br />
-                                    希望孩子不僅能在課堂上學習語法與詞彙，
-                                    <br />更能在日常生活和學習中靈活運用英語，
-                                    <br />讓孩子未來更具國際競爭力！</p>
-                            </div>
-                            <div className="Home-content-4-img">
-                                <img src="../public/images/red.svg" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <figure id="Home-blueA"></figure>
-                    {/*<figure id="homeDecoB"><img src="../public/images/homeDecoB.png" alt="" /></figure> */}
-                    {/* <figure id="homePathA"><img src="../public/images/homePathA.png" alt="" /></figure> */}
-                </section>
+            <div id='Home-page-all2'>
+                <div id='navbartext'>
+                    <NavbarTwo></NavbarTwo>
+                </div>
 
-                <section id="Home-page-3">
-                    <div className="Home-content-bk">
-                        <div className="Home-content-bk-3"
-                            data-aos="fade-up"
-                            data-aos-offset='300'>
-                            <p>會</p><p>擔</p><p>心</p><p>這</p><p>些</p><p>情</p><p>況</p><p>嗎</p><p>？</p>
-                        </div>
-                        <div className="Home-content-bk-4">
-                            <div className="Home-content-5"
-                                data-aos="fade-left"
-                                data-aos-duration="500"
-                                data-aos-offset='300'>
-                                <p className="Home-text-3">課程 <span>枯燥乏味</span></p>
-                                <p className="Home-sml-text-3">傳統程式設計課程往往過於理論化，
-                                    <br />缺乏趣味性，
-                                    缺少互動和遊戲化的學習方式，<br />
-                                    使得學習變得單調、難以引起學生的持續動力。</p>
-                            </div>
-                            <div className="Home-content-6"
-                                data-aos="fade-right"
-                                data-aos-duration="500"
-                                data-aos-offset='300'>
-                                <p className="Home-text-3">額外補習課程 <span>費用昂貴</span></p>
-                                <p className="Home-sml-text-3">
-                                    市面上的程式補習班通常價格高昂，<br />
-                                    對許多家庭來說是額外的經濟負擔，<br />
-                                    導致家長對於讓孩子接觸這類課程望而卻步。
-                                </p>
-                            </div>
-                            <div className="Home-content-7"
-                                data-aos="fade-left"
-                                data-aos-duration="500"
-                                data-aos-offset='300'>
-                                <p className="Home-text-3"><span>時間及距離</span> 無法配合</p>
-                                <p className="Home-sml-text-3">許多補習班的上課時間與學校課程衝突，<br />
-                                    加上需要通勤，對於家長與孩子而言  都很不方便。<br />
-                                    特別是偏遠地區的家庭，能夠選擇的課程資源更有限。</p>
-                            </div>
-                        </div>
-                        <div >
-                            <img className="Home-ladder" src="../public/images/pinkB.svg" alt="梯子" />
-                        </div>
-                    </div>
-
-                </section>
-                <section id="Home-page-4">
-                    <div className="Home-content-6"
-                        data-aos="zoom-in"
-                        data-aos-duration="500"
-                        data-aos-offset='300'
-                    >
-                        <p>不只是學習<br />
-                            更是一場充滿樂趣的探索之旅</p>
-                    </div>
-                    <div className="Home-content-bk-all">
+                <div id="Home-page-all">
+                    <section id="Home-page-2">{/* 第二分頁 */}
                         <div className="Home-content-bk-1"
                             data-aos="fade-down-right"
                             data-aos-duration="500"
-                            data-aos-offset='300'
-                        >
-                            <div className="Home-content-7">
-                                <p>
-                                    \ 讓學程式成為習慣 /
-                                </p>
-                            </div>
-                            <div className="Home-content-8">
-                                <p>\ 好玩又好學 /</p>
-                            </div>
-                            <img className="Home-content-img" src="../public/images/pinkA.svg" alt="" />
-                        </div>
-                        <div className="Home-content-bk-2"
-                            data-aos="fade-down"
-                            data-aos-duration="500"
-                            data-aos-offset='300'
-                        >
-                            <img className='Home-content-bk-2-img' src="../public/images/homeIntroA.jpg" alt="" />
-                            <p className="Home-content-9">程式結合單字學習</p>
-                            <p className="Home-content-10">寓教於樂的學習樂園
-                                <br />
-                                讓知識充滿溫度</p>
-                        </div>
-                        <div className="Home-content-bk-3"
-                            data-aos="fade-down"
-                            data-aos-duration="500"
                             data-aos-offset='300'>
-                            <img className='Home-content-bk-3-img' src="../public/images/homeIntroB.jpg" alt="" />
-                            <p className="Home-content-11">情緒覺察</p>
-                            <p className="Home-content-12">學習後選擇心情，一起分享成就感
-                                <br />
-                                加入程式探索的行列</p>
+                            <div className="Home-content-1">
+                                <p className="Home-text-1">用<span>程式</span>創造未來</p>
+                                <p className="Home-eng-text-1">Create the Future with Programming</p>
+                            </div>
+                            <div className="Home-content-2">
+                                <p className="Home-text-1">用<span>英語</span>世界接軌</p>
+                                <p className="Home-eng-text-2">Connect the World in English</p>
+                            </div>
                         </div>
-                    </div>
-
-                </section>
-                <section id="Home-page-5">
-
-
-                    <div className="Home-content-bk-4"
-                        data-aos="zoom-in"
-                        data-aos-duration="500"
-                        data-aos-offset='300'
-                    >
-                        <div className="Home-content-15">
-                            <p className="Home-content-13">還在猶豫什麼？
-                                <br /> 程式世界等著你去探索 ！</p>
+                        <div className="Home-content-bk-2">
+                            <div className="Home-content-3">
+                                <div className="Home-text-block-1"
+                                    data-aos="fade-right"
+                                    data-aos-duration="500"
+                                    data-aos-offset='300'>
+                                    <p className="Home-text-2">程式語言納入108課綱</p>
+                                    <br />
+                                    <p className="Home-eng-text-2">Programming included in 108 syllabus</p>
+                                    <p className="Home-sml-text-2">為了因應科技時代的需求，<br />
+                                        108課綱將「程式設計」正式納入中小學的資訊教育。<br />
+                                        通過基礎程式學習來鍛鍊孩子的邏輯思考、創意思維和問題解決能力，<br />
+                                        並且學會技術應用，強化數位素養。</p>
+                                </div>
+                                <div className="Home-content-3-img">
+                                    <img className='move-right-blue' ref={blueARef} src="../images/blueA.svg" alt="" />
+                                </div>
+                            </div>
+                            <div className="Home-content-4">
+                                <div className="Home-text-block-2"
+                                    data-aos="fade-left"
+                                    data-aos-duration="500"
+                                    data-aos-offset='300' >
+                                    <p className="Home-text-2">2030雙語政策</p>
+                                    <br />
+                                    <p className="Home-eng-text-2">Bilingual 2030</p>
+                                    <p className="Home-sml-text-2">教育部正在推動「2030雙語政策」。
+                                        <br />目標是到2030年在國民教育中達成雙語環境，
+                                        <br />
+                                        希望孩子不僅能在課堂上學習語法與詞彙，
+                                        <br />更能在日常生活和學習中靈活運用英語，
+                                        <br />讓孩子未來更具國際競爭力！</p>
+                                </div>
+                                <div className="Home-content-4-img">
+                                    <img className='move-left-red' ref={redRef} src="../images/red.svg" alt="" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="Home-content-bk-5">
-                            <Link to='/LearnSelect'>
-                                <p>Start Now</p>
-                                {/* <img className="Home-btn" src="../public/images/btn.png" alt=""
+                    </section>
+
+                    <section id="Home-page-3">
+                        <div className="Home-content-bk">
+                            <div className="Home-content-bk-3"
+                                data-aos="fade-up"
+                                data-aos-offset='300'>
+                                <p>會</p><p>擔</p><p>心</p><p>這</p><p>些</p><p>情</p><p>況</p><p>嗎</p><p>？</p>
+                            </div>
+                            <div className="Home-content-bk-4">
+                                <div className="Home-content-5"
+                                    data-aos="fade-left"
+                                    data-aos-duration="500"
+                                    data-aos-offset='300'>
+                                    <p className="Home-text-3">課程 <span>枯燥乏味</span></p>
+                                    <p className="Home-sml-text-3">傳統程式設計課程往往過於理論化，
+                                        <br />缺乏趣味性，
+                                        缺少互動和遊戲化的學習方式，<br />
+                                        使得學習變得單調、難以引起學生的持續動力。</p>
+                                </div>
+                                <div className="Home-content-6"
+                                    data-aos="fade-right"
+                                    data-aos-duration="500"
+                                    data-aos-offset='300'>
+                                    <p className="Home-text-3">額外補習課程 <span>費用昂貴</span></p>
+                                    <p className="Home-sml-text-3">
+                                        市面上的程式補習班通常價格高昂，<br />
+                                        對許多家庭來說是額外的經濟負擔，<br />
+                                        導致家長對於讓孩子接觸這類課程望而卻步。
+                                    </p>
+                                </div>
+                                <div className="Home-content-7"
+                                    data-aos="fade-left"
+                                    data-aos-duration="500"
+                                    data-aos-offset='300'>
+                                    <p className="Home-text-3"><span>時間及距離</span> 無法配合</p>
+                                    <p className="Home-sml-text-3">許多補習班的上課時間與學校課程衝突，<br />
+                                        加上需要通勤，對於家長與孩子而言  都很不方便。<br />
+                                        特別是偏遠地區的家庭，能夠選擇的課程資源更有限。</p>
+                                </div>
+                            </div>
+                            <div >
+                                <img className="Home-ladder" ref={pinkRef} src="../images/pinkB.svg" alt="梯子" />
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="Home-page-4">
+                        <div className="Home-content-6"
+                            data-aos="zoom-in"
+                            data-aos-duration="500"
+                            data-aos-offset='300'
+                        >
+                            <p>不只是學習<br />
+                                更是一場充滿樂趣的探索之旅</p>
+                        </div>
+                        <div className="Home-content-bk-all">
+                            <div className="Home-content-bk-1"
+                                data-aos="fade-down-right"
+                                data-aos-duration="500"
+                                data-aos-offset='300'
+                            >
+                                <div className="Home-content-7">
+                                    <p>
+                                        \ 讓學程式成為習慣 /
+                                    </p>
+                                </div>
+                                <div className="Home-content-8">
+                                    <p>\ 好玩又好學 /</p>
+                                </div>
+                                <img className="Home-content-img" src="../public/images/pinkA.svg" alt="" />
+                            </div>
+                            <div className="Home-content-bk-2"
+                                data-aos="fade-down"
+                                data-aos-duration="500"
+                                data-aos-offset='300'
+                            >
+                                <img className='Home-content-bk-2-img' src="../public/images/homeIntroA.jpg" alt="" />
+                                <p className="Home-content-9">程式結合單字學習</p>
+                                <p className="Home-content-10">寓教於樂的學習樂園
+                                    <br />
+                                    讓知識充滿溫度</p>
+                            </div>
+                            <div className="Home-content-bk-3"
+                                data-aos="fade-down"
+                                data-aos-duration="500"
+                                data-aos-offset='300'>
+                                <img className='Home-content-bk-3-img' src="../public/images/homeIntroB.jpg" alt="" />
+                                <p className="Home-content-11">情緒覺察</p>
+                                <p className="Home-content-12">學習後選擇心情，一起分享成就感
+                                    <br />
+                                    加入程式探索的行列</p>
+                            </div>
+                        </div>
+
+                    </section>
+                    <section id="Home-page-5">
+
+
+                        <div className="Home-content-bk-4"
+                            data-aos="zoom-in"
+                            data-aos-duration="500"
+                            data-aos-offset='300'
+                        >
+                            <div className="Home-content-15">
+                                <p className="Home-content-13">還在猶豫什麼？
+                                    <br /> 程式世界等著你去探索 ！</p>
+                            </div>
+                            <div className="Home-content-bk-5">
+                                <Link to='/LearnSelect'>
+                                    <p>Start Now</p>
+                                    {/* <img className="Home-btn" src="../public/images/btn.png" alt=""
                                     ref={startRef}
                                     onMouseUp={startMouseUp}
                                     onMouseDown={startMouseDown}
                                 /> */}
-                            </Link>
-                            <img className="Home-greenIp" src="../public/images/greenB.svg" alt="" />
+                                </Link>
+                                <img className="Home-greenIp" src="../public/images/greenB.svg" alt="" />
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
             <footer>
                 <Footer></Footer>

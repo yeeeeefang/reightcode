@@ -170,6 +170,10 @@ a {
   background-color: #FFD640;
 }
 
+#Home-page-all2 {
+  background-color: #FFD640;
+}
+
 #Home-page-all {
   background-image: url(../images/homeAll.svg);
   background-color: #FFD640;
@@ -814,7 +818,42 @@ a {
   }
 }
 #navbartext {
-  position: absolute;
+  position: sticky;
+  left: 0;
+  top: 0;
   z-index: 999;
-  width: 100%;
+}
+
+.move-right-blue {
+  transform: translateX(0);
+  transition: transform 1s ease-out;
+  /* 平滑移动效果 */
+}
+
+/* 滾動到視窗中觸發後的位置 */
+.move-right-blue.active {
+  transform: translateX(100px);
+  /* 向右移動 100px */
+}
+
+.move-left-red {
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+  /* 平滑移动效果 */
+}
+
+/* 滾動到視窗中觸發後的位置 */
+.move-left-red.active {
+  transform: translateX(-100px);
+  /* 向右移動 100px */
+}
+
+.Home-ladder {
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
+}
+
+.Home-ladder.active {
+  transform: translateY(200px);
+  /* 向右移動 100px */
 }/*# sourceMappingURL=Home.css.map */
