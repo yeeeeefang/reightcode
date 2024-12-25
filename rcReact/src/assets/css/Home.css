@@ -678,11 +678,11 @@ a {
 }
 
 .ab {
-  fill: #030302;
+  fill: rgb(3, 3, 2);
 }
 
 .ac {
-  fill: #020202;
+  fill: hwb(0 1% 99%);
 }
 
 .ad {
@@ -759,4 +759,62 @@ a {
 
 .av {
   fill: #030202;
+}
+
+.backcolor {
+  fill: #fdfad3;
+}
+
+.handwriting {
+  stroke: rgb(3, 3, 2);
+  /* 描邊顏色 */
+  stroke-width: 3;
+  /* 描邊寬度 */
+  fill: none;
+  /* 沒有填充 */
+  stroke-linecap: round;
+  /* 圓形的邊角 */
+  stroke-linejoin: round;
+  /* 圓形的連接點 */
+  stroke-dasharray: 1000;
+  /* 設置虛線總長度（值需大於 path 總長度） */
+  stroke-dashoffset: 1000;
+  /* 初始化時，將虛線偏移設置為總長度，隱藏整個 path */
+  animation: draw 2s linear forwards, fill 1s 1s linear forwards;
+  /* 動畫效果 */
+}
+
+/* 填充效果 */
+.handwriting {
+  transition: fill 2s ease-in-out;
+}
+
+/* 定義描邊動畫 */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+    /* 動畫結束時，偏移設置為 0，完整顯示 path */
+  }
+}
+/* 定義填充動畫 */
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  25% {
+    fill: rgba(3, 3, 2, 0.25);
+  }
+  50% {
+    fill: rgba(3, 3, 2, 0.5);
+    /* 半透明填充 */
+  }
+  100% {
+    fill: rgb(3, 3, 2);
+    /* 完整填充 */
+  }
+}
+#navbartext {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
 }/*# sourceMappingURL=Home.css.map */
