@@ -52,19 +52,13 @@ function LearnArea3() {
                 <section id='LearnAreaall3-1'>
                     <div className="learnimportant">
                         <div className="impbox"></div>
-                        <div className="charblue">
-                            <img className='charblueimg' src="./public/images/blueC.svg" alt="" />
-                        </div>
-                        {/* <div className="cloud1">
-                            <img src="./public/images/LearnAreacloud1.svg" alt="" />
-                        </div> */}
+                            <img className='charblueimg' src="/images/blueCloud.svg" alt="" />
+                        
                     </div>
-                    {/* <div className="charred">
-                        <img src="./public/images/red.svg" alt="" />
+                    <div className="charredimg">
+                        <img src="/images/redCloud.svg" alt="" />
                     </div>
-                    <div className="cloud2">
-                        <img src="./public/images/learnAreaDecoB.svg" alt="" />
-                    </div> */}
+                    
                     <div className="happy">
                         <div className="practice">
                             <img src="./public/images/learnAreaPractice.svg" alt="" />
