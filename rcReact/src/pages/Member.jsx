@@ -3,15 +3,122 @@ import Navbar from "../components/Navbar"
 import { Link } from 'react-router-dom'
 
 export default function Member() {
+    const awardNames = [
+        {
+            id: "1",
+            name: "我是獎盃名稱1",
+        },
+        {
+            id: "2",
+            name: "我是獎盃名稱2",
+        },
+        {
+            id: "3",
+            name: "我是獎盃名稱3",
+        },
+        {
+            id: "4",
+            name: "我是獎盃名稱4",
+        },
+        {
+            id: "5",
+            name: "我是獎盃名稱5",
+        },
+        {
+            id: "6",
+            name: "我是獎盃名稱6",
+        },
+    ]
+
+    const awardNames2 = [
+        {
+            id: "1",
+            name: "我是獎盃名稱1",
+        },
+        {
+            id: "2",
+            name: "我是獎盃名稱2",
+        },
+        {
+            id: "3",
+            name: "我是獎盃名稱3",
+        },
+        {
+            id: "4",
+            name: "我是獎盃名稱4",
+        },
+        {
+            id: "5",
+            name: "我是獎盃名稱5",
+        },
+        {
+            id: "6",
+            name: "我是獎盃名稱6",
+        },
+    ]
+
+    const awardNames3 = [
+        {
+            id: "1",
+            name: "我是獎盃名稱1",
+        },
+        {
+            id: "2",
+            name: "我是獎盃名稱2",
+        },
+        {
+            id: "3",
+            name: "我是獎盃名稱3",
+        },
+        {
+            id: "4",
+            name: "我是獎盃名稱4",
+        },
+        {
+            id: "5",
+            name: "我是獎盃名稱5",
+        },
+        {
+            id: "6",
+            name: "我是獎盃名稱6",
+        },
+    ]
+
+    const awardNames4 = [
+        {
+            id: "1",
+            name: "我是獎盃名稱1",
+        },
+        {
+            id: "2",
+            name: "我是獎盃名稱2",
+        },
+        {
+            id: "3",
+            name: "我是獎盃名稱3",
+        },
+        {
+            id: "4",
+            name: "我是獎盃名稱4",
+        },
+        {
+            id: "5",
+            name: "我是獎盃名稱5",
+        },
+        {
+            id: "6",
+            name: "我是獎盃名稱6",
+        },
+    ]
+
     return (
         <>
-
             <div id="nav">
                 <Navbar />
             </div>
             <div id="memberPage">
                 {/* 會員總資料 */}
-                <div id="member">
+                <section id="member">
                     {/* 會員圖片 */}
                     <div className="memberPic"><img src="./images/greenE.svg" alt="會員圖片" />
                     </div>
@@ -44,17 +151,19 @@ export default function Member() {
                         <div className="memberAward">
                             <h2>獎盃挑戰</h2>
                             <div className="award">
-                                <div className="aPic1"><img src="./images/award.svg" alt="" /></div>
-                                <div className="aPic1"><img src="./images/award.svg" alt="" /></div>
+                                <div className="aPic1"><img src="./images/award.svg" alt="" />
+                                <span className="awardName">我是獎盃名稱</span></div>
+                                <div className="aPic1"><img src="./images/award.svg" alt="" />
+                                <span className="awardName">我是獎盃名稱</span></div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
 
                 <div id="memberRight">
                     <div id="rightUp">
                         {/* 課程進度 */}
-                        <div id="progress">
+                        <section id="progress">
                             <div className="progressTitle">
                                 <img src="./images/icon_blue.svg" alt="" />
                                 <h2>課程進度</h2>
@@ -71,25 +180,21 @@ export default function Member() {
                                 </div>
                             </Link>
 
-                            
 
-                                <Link to="/LearnPage" className="course">
-                                    <img src="./images/memberCSS.png" alt="" className="CSS" />
-                                    <div className="courseInfo">
-                                        <h2>CSS 第<span>5</span>堂</h2>
-                                        <div className="progress">
-                                            <progress value={20} max={100} /> <p>20%</p>
-                                        </div>
-                                        <h3>最後學習時間：<span>2024年12月25日</span></h3>
+                            <Link to="/LearnPage" className="course">
+                                <img src="./images/memberCSS.png" alt="" className="CSS" />
+                                <div className="courseInfo">
+                                    <h2>CSS 第<span>5</span>堂</h2>
+                                    <div className="progress">
+                                        <progress value={20} max={100} /> <p>20%</p>
                                     </div>
-                                </Link>
+                                    <h3>最後學習時間：<span>2024年12月25日</span></h3>
+                                </div>
+                            </Link>
 
-                            
-
-                        </div>
-
+                        </section>
                         {/* 收藏課程 */}
-                        <div id="collectionAll">
+                        <section id="collectionAll">
                             <div className="collectionTitle">
                                 <img src="./images/icon_pink.svg" alt="" />
                                 <h2>收藏課程</h2>
@@ -114,72 +219,84 @@ export default function Member() {
                                 <p>HTML的各種標籤</p>
                             </Link>
 
-                        </div>
+                        </section>
                     </div>
 
                     {/* 獎盃總表 */}
-                    <div id="award">
+                    <section id="award">
+                        {/* 總堂數 */}
                         <div className="awardContent">
                             <h2><img src="./images/iconGreenA.png" alt="" />總堂數</h2>
                             <div className="awardPic">
                                 <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                </div>
-                                <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
+                                    {
+                                        awardNames.map((data) => {
+                                            return (
+                                                <div key={data.id} className="aPic1">
+                                                    <img src="./images/award.svg" alt="獎盃" />
+                                                    <span className="awardName">{data.name}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
+                        {/* 挑戰次數 */}
                         <div className="awardContent">
                             <h2><img src="./images/iconRed.png" alt="" />挑戰次數</h2>
                             <div className="awardPic">
                                 <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                </div>
-                                <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
+                                    {
+                                        awardNames2.map((data) => {
+                                            return (
+                                                <div key={data.id} className="aPic1">
+                                                    <img src="./images/award.svg" alt="獎盃" />
+                                                    <span className="awardName">{data.name}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
+                        {/* HTML */}
                         <div className="awardContent">
                             <h2><img src="./images/iconBlue.png" alt="" />HTML</h2>
                             <div className="awardPic">
                                 <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                </div>
-                                <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
+                                    {
+                                        awardNames3.map((data) => {
+                                            return (
+                                                <div key={data.id} className="aPic1">
+                                                    <img src="./images/award.svg" alt="獎盃" />
+                                                    <span className="awardName">{data.name}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
+                        {/* CSS */}
                         <div className="awardContent">
                             <h2><img src="./images/iconPink.png" alt="" />CSS</h2>
                             <div className="awardPic">
                                 <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                </div>
-                                <div className="aPic">
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
-                                    <div className="aPic1"><img src="./images/award.svg" alt="獎盃" /></div>
+                                    {
+                                        awardNames4.map((data) => {
+                                            return (
+                                                <div key={data.id} className="aPic1">
+                                                    <img src="./images/award.svg" alt="獎盃" />
+                                                    <span className="awardName">{data.name}</span>
+                                                </div>
+                                            )
+                                        })
+                                    }
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
 
 

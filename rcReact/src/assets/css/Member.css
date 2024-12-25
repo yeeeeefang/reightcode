@@ -284,18 +284,22 @@ a {
   width: 100px;
   height: 100px;
 }
-#memberPage #member #memberAll .memberAward .award .aPic1:hover::before {
+#memberPage #member #memberAll .memberAward .award .aPic1 .awardName {
   position: absolute;
   z-index: 9;
-  right: 0%;
+  right: 5%;
   bottom: 0;
   color: rgba(0, 0, 0, 0.85);
   font-size: 0.8em;
   background: #FFD640;
   padding: 5px 10px;
   border-radius: 15px;
-  content: "我是獎盃名稱";
   font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#memberPage #member #memberAll .memberAward .award .aPic1:hover .awardName {
+  opacity: 1;
 }
 #memberPage #memberRight {
   display: flex;
@@ -509,6 +513,7 @@ a {
 #memberPage #memberRight #award .awardContent .awardPic .aPic {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 #memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1 {
   position: relative;
@@ -519,7 +524,7 @@ a {
   display: flex;
   margin: 0 18px;
 }
-#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1:hover::before {
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1 .awardName {
   position: absolute;
   z-index: 9;
   right: 5%;
@@ -529,11 +534,10 @@ a {
   background: #FFD640;
   padding: 5px 10px;
   border-radius: 15px;
-  content: "我是獎盃名稱";
   font-weight: 700;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1:hover {
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1:hover .awardName {
   opacity: 1;
-  transition: 1s ease-in-out 3s;
 }/*# sourceMappingURL=Member.css.map */

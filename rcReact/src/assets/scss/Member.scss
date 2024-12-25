@@ -125,20 +125,25 @@
                             height: 100px;
                         }
 
-                        &:hover::before {
+                        .awardName {
                             position: absolute;
                             z-index: 9;
-                            right: 0%;
+                            right: 5%;
                             bottom: 0;
                             color: $fc-2;
                             font-size: .8em;
                             background: $primary;
                             padding: 5px 10px;
                             border-radius: 15px;
-                            content: '我是獎盃名稱';
                             font-weight: $font-w-bold;
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in-out;
                         }
-
+                
+                        &:hover .awardName {
+                            opacity: 1;
+                        }
+                        
                     }
 
                 }
@@ -257,7 +262,6 @@
                                     border: 2px solid black;
                                 }
                             }
-
 
                         }
                     }
@@ -394,12 +398,10 @@
                     .aPic {
                         display: flex;
                         justify-content: center;
-                        // transition: all 5s ease-in-out ;
-
+                        flex-wrap: wrap;
 
                         .aPic1 {
                             position: relative;
-                            
 
                             img {
                                 width: 80px;
@@ -407,13 +409,7 @@
                                 display: flex;
                                 margin: 0 18px;
                             }
-
-                            // &:before {
-                            //     opacity: 0;
-
-                            // }
-
-                            &:hover::before {
+                            .awardName {
                                 position: absolute;
                                 z-index: 9;
                                 right: 5%;
@@ -423,13 +419,35 @@
                                 background: $primary;
                                 padding: 5px 10px;
                                 border-radius: 15px;
-                                content: '我是獎盃名稱';
                                 font-weight: $font-w-bold;
-                                // animation: aaaaa  5s ease-in-out forwards 2s;
                                 opacity: 0;
-                                
-
+                                transition: opacity 0.3s ease-in-out;
                             }
+                    
+                            &:hover .awardName {
+                                opacity: 1;
+                            }
+
+                            // &:before {
+                            //     opacity: 0;
+
+                            // }
+
+                            // &:hover::before {
+                            //     position: absolute;
+                            //     z-index: 9;
+                            //     right: 5%;
+                            //     bottom: 0;
+                            //     color: $fc-2;
+                            //     font-size: .8em;
+                            //     background: $primary;
+                            //     padding: 5px 10px;
+                            //     border-radius: 15px;
+                            //     content: '我是獎盃名稱';
+                            //     font-weight: $font-w-bold;
+                            //     // transition: all 1s ease-in-out;
+                            // }
+
                             // &::before:hover{
                             //     opacity: 1;
                             //     transition: 1s ease-in-out 3s;
@@ -440,10 +458,7 @@
                             //     100% { opacity: 1; }
                             // }
                         }
-                        .aPic1:hover{
-                            opacity: 1;
-                                transition: 1s ease-in-out 3s;
-                        }
+
 
                     }
 
@@ -452,6 +467,8 @@
 
             }
         }
+
+
     }
 
 
