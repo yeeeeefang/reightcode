@@ -43,10 +43,10 @@ function Navbar() {
                             </div>
                         </Link>
                         <div className="navhamBtn"  /* onClick={toggleMenu} */ onClick={toggleHamburger}>
-                            <button class="nav-hamburger">
-                                <span class="nav-bar"></span>
-                                <span class="nav-bar"></span>
-                                <span class="nav-bar"></span>
+                            <button className="nav-hamburger">
+                                <span className="nav-bar"></span>
+                                <span className="nav-bar"></span>
+                                <span className="nav-bar"></span>
                             </button>
                             {/* <img src="../public/images/hamBtn.svg" alt=""
                                 ref={humBtnRef}
