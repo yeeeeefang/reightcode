@@ -29,10 +29,10 @@ function NavbarTwo() {
                         </div> */}
 
                         <div className="navhamBtn" onClick={toggleHamburger}>
-                            <button class="nav-hamburger">
-                                <span class="nav-bar"></span>
-                                <span class="nav-bar"></span>
-                                <span class="nav-bar"></span>
+                            <button className="nav-hamburger">
+                                <span className="nav-bar"></span>
+                                <span className="nav-bar"></span>
+                                <span className="nav-bar"></span>
                             </button>
                         </div>
                     </div>

@@ -169,7 +169,7 @@ a {
 #nav {
   background-color: #FFD640;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
 }
 
@@ -187,9 +187,14 @@ a {
   height: 700px;
   width: 390px;
   position: fixed;
-  left: 7.5rem;
+  left: 5%;
   bottom: 0;
   z-index: 10;
+}
+@media (min-width: 1441px) {
+  #memberPage #member {
+    left: 15%;
+  }
 }
 #memberPage #member .memberPic {
   position: absolute;
@@ -220,7 +225,7 @@ a {
 #memberPage #member #memberAll .memberInfo {
   width: 260px;
   height: 260px;
-  background-image: url(/images/memberInfo.png);
+  background-image: url(../images/memberInfo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,7 +259,7 @@ a {
 #memberPage #member #memberAll .memberAward {
   width: 260px;
   height: 260px;
-  background-image: url(../public/images/memberInfo.png);
+  background-image: url(../images/memberInfo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,20 +272,44 @@ a {
   margin: 0 0 12px 0;
 }
 #memberPage #member #memberAll .memberAward .award {
-  align-items: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 30px;
+  margin: 20px 15px;
 }
-#memberPage #member #memberAll .memberAward .award img {
-  width: 95px;
-  height: 95px;
+#memberPage #member #memberAll .memberAward .award .aPic1 {
+  display: flex;
+  position: relative;
+  margin: auto;
+}
+#memberPage #member #memberAll .memberAward .award .aPic1 img {
+  width: 100px;
+  height: 100px;
+}
+#memberPage #member #memberAll .memberAward .award .aPic1 .awardName {
+  position: absolute;
+  z-index: 9;
+  right: 5%;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.8em;
+  background: #FFD640;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#memberPage #member #memberAll .memberAward .award .aPic1:hover .awardName {
+  opacity: 1;
 }
 #memberPage #memberRight {
   display: flex;
   flex-direction: column;
-  margin-right: 7.5rem;
+  margin-right: 3em;
+}
+@media (min-width: 1441px) {
+  #memberPage #memberRight {
+    margin-right: 18em;
+  }
 }
 #memberPage #memberRight #rightUp {
   display: flex;
@@ -288,7 +317,7 @@ a {
 #memberPage #memberRight #rightUp #progress {
   width: 380px;
   height: 380px;
-  background-image: url(../public/images/memberCourse.png);
+  background-image: url(../images/memberCourse.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -305,7 +334,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../public/images/memberB.png);
+  background-image: url(../images/memberB.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -318,7 +347,7 @@ a {
   width: 48px;
   height: 48px;
 }
-#memberPage #memberRight #rightUp #progress .course1 {
+#memberPage #memberRight #rightUp #progress .course {
   display: flex;
   align-items: center;
   background-color: #FFFCF0;
@@ -329,55 +358,50 @@ a {
   font-size: 0.85rem;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.85);
+  transition: 0.3s ease-in-out;
 }
-#memberPage #memberRight #rightUp #progress .course1 img {
+#memberPage #memberRight #rightUp #progress .course:hover {
+  background-color: #FFD640;
+}
+#memberPage #memberRight #rightUp #progress .course img {
   width: 85px;
   height: 55px;
 }
-#memberPage #memberRight #rightUp #progress .course1 .course1Info {
+#memberPage #memberRight #rightUp #progress .course .courseInfo {
   padding-left: 15px;
 }
-#memberPage #memberRight #rightUp #progress .course1 .course1Info h2 {
+#memberPage #memberRight #rightUp #progress .course .courseInfo h2 {
   font-size: 1rem;
   font-weight: 700;
 }
-#memberPage #memberRight #rightUp #progress .course1 .course1Info .progress {
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-#memberPage #memberRight #rightUp #progress .course2 {
-  display: flex;
-  align-items: center;
-  background-color: #FFFCF0;
-  padding: 5px 15px;
-  border-radius: 10px;
-  box-shadow: 5px 5px #897359;
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.85);
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress progress {
+  appearance: none;
+  width: 65%;
+  height: 10px;
 }
-#memberPage #memberRight #rightUp #progress .course2 img {
-  width: 85px;
-  height: 55px;
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress progress::-webkit-progress-bar {
+  background-color: black;
 }
-#memberPage #memberRight #rightUp #progress .course2 .course2Info {
-  padding-left: 15px;
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress progress progress-bar {
+  background-color: black;
 }
-#memberPage #memberRight #rightUp #progress .course2 .course2Info h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.85);
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress progress::-webkit-progress-value {
+  background-color: white;
+  border: 2px solid black;
 }
-#memberPage #memberRight #rightUp #progress .course2 .course2Info .progress {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+#memberPage #memberRight #rightUp #progress .course .courseInfo .progress progress progress-value {
+  background-color: white;
+  border: 2px solid black;
 }
 #memberPage #memberRight #rightUp #collectionAll {
   width: 330px;
   height: 360px;
-  background-image: url(../public/images/memberCourse.png);
+  background-image: url(../images/memberCourse.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -394,7 +418,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../public/images/memberP.png);
+  background-image: url(../images/memberP.png);
   background-size: contain;
   background-repeat: no-repeat;
   margin-top: 20px;
@@ -408,15 +432,19 @@ a {
   width: 48px;
   height: 48px;
 }
-#memberPage #memberRight #rightUp #collectionAll .collect, #memberPage #memberRight #rightUp #collectionAll .collect1 {
+#memberPage #memberRight #rightUp #collectionAll .collect,
+#memberPage #memberRight #rightUp #collectionAll .collect1 {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFFCF0;
   border-radius: 85px;
-  margin: 5px 0;
+  box-shadow: 5px 5px #897359;
+  margin: 8px 0;
+  transition: 0.3s ease-in-out;
 }
-#memberPage #memberRight #rightUp #collectionAll .collect .title, #memberPage #memberRight #rightUp #collectionAll .collect1 .title {
+#memberPage #memberRight #rightUp #collectionAll .collect .title,
+#memberPage #memberRight #rightUp #collectionAll .collect1 .title {
   font-size: 15px;
   color: rgba(0, 0, 0, 0.85);
   background-color: #FFD640;
@@ -425,15 +453,25 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.3s ease-in-out;
 }
-#memberPage #memberRight #rightUp #collectionAll .collect P, #memberPage #memberRight #rightUp #collectionAll .collect1 P {
+#memberPage #memberRight #rightUp #collectionAll .collect P,
+#memberPage #memberRight #rightUp #collectionAll .collect1 P {
   font-size: 0.85rem;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.85);
   margin: 5px 8px;
 }
+#memberPage #memberRight #rightUp #collectionAll .collect:hover,
+#memberPage #memberRight #rightUp #collectionAll .collect1:hover {
+  background-color: #FFC800;
+}
+#memberPage #memberRight #rightUp #collectionAll .collect:hover .title,
+#memberPage #memberRight #rightUp #collectionAll .collect1:hover .title {
+  background-color: #FFFFFF;
+}
 #memberPage #memberRight #rightUp #collectionAll .collect1 {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 #memberPage #memberRight #award {
   width: 730px;
@@ -443,7 +481,7 @@ a {
   align-items: center;
   padding-top: 50px;
   margin-left: 20px;
-  background-image: url(./images/memberAward.png);
+  background-image: url(../images/memberAward.png);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -472,13 +510,34 @@ a {
   display: flex;
   flex-direction: column;
 }
-#memberPage #memberRight #award .awardContent .awardPic .apic {
+#memberPage #memberRight #award .awardContent .awardPic .aPic {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-#memberPage #memberRight #award .awardContent .awardPic .apic img {
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1 {
+  position: relative;
+}
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1 img {
   width: 80px;
   height: 80px;
   display: flex;
   margin: 0 18px;
+}
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1 .awardName {
+  position: absolute;
+  z-index: 9;
+  right: 5%;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.8em;
+  background: #FFD640;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: 700;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+#memberPage #memberRight #award .awardContent .awardPic .aPic .aPic1:hover .awardName {
+  opacity: 1;
 }/*# sourceMappingURL=Member.css.map */

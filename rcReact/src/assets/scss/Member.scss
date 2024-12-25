@@ -5,7 +5,7 @@
 #nav {
     background-color: $primary;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
 }
 
@@ -24,9 +24,13 @@
         width: 390px;
         // border: 1px solid black;
         position: fixed;
-        left: 7.5rem;
+        left: 5%;
         bottom: 0;
         z-index: 10;
+
+        @media (min-width:1441px) {
+            left: 15%;
+        }
 
         .memberPic {
             position: absolute;
@@ -60,7 +64,7 @@
             .memberInfo {
                 width: 260px;
                 height: 260px;
-                background-image: url(/images/memberInfo.png);
+                background-image: url(../images/memberInfo.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -94,7 +98,7 @@
             .memberAward {
                 width: 260px;
                 height: 260px;
-                background-image: url(../public/images/memberInfo.png);
+                background-image: url(../images/memberInfo.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -108,16 +112,40 @@
                 }
 
                 .award {
-                    align-items: center;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 30px;
+                    margin: 20px 15px;
 
-                    img {
-                        width: 95px;
-                        height: 95px;
+                    .aPic1 {
+                        display: flex;
+                        position: relative;
+                        margin: auto;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        .awardName {
+                            position: absolute;
+                            z-index: 9;
+                            right: 5%;
+                            bottom: 0;
+                            color: $fc-2;
+                            font-size: .8em;
+                            background: $primary;
+                            padding: 5px 10px;
+                            border-radius: 15px;
+                            font-weight: $font-w-bold;
+                            opacity: 0;
+                            transition: opacity 0.3s ease-in-out;
+                        }
+                
+                        &:hover .awardName {
+                            opacity: 1;
+                        }
+                        
                     }
+
                 }
             }
 
@@ -127,7 +155,11 @@
     #memberRight {
         display: flex;
         flex-direction: column;
-        margin-right: 7.5rem;
+        margin-right: 3em;
+
+        @media (min-width:1441px) {
+            margin-right: 18em;
+        }
 
         #rightUp {
             display: flex;
@@ -135,7 +167,7 @@
             #progress {
                 width: 380px;
                 height: 380px;
-                background-image: url(../public/images/memberCourse.png);
+                background-image: url(../images/memberCourse.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -152,7 +184,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-image: url(../public/images/memberB.png);
+                    background-image: url(../images/memberB.png);
                     background-size: contain;
                     background-repeat: no-repeat;
 
@@ -169,7 +201,7 @@
                     }
                 }
 
-                .course1 {
+                .course {
 
                     display: flex;
                     align-items: center;
@@ -181,13 +213,18 @@
                     font-size: $font-size-14;
                     font-weight: $font-w-medium;
                     color: $fc-2;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        background-color: $primary;
+                    }
 
                     img {
                         width: 85px;
                         height: 55px;
                     }
 
-                    .course1Info {
+                    .courseInfo {
                         padding-left: 15px;
 
                         h2 {
@@ -199,48 +236,43 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+
+                            progress {
+                                appearance: none;
+                                width: 65%;
+                                height: 10px;
+
+                                &::-webkit-progress-bar {
+                                    background-color: black; // 背景顏色
+
+                                }
+
+                                progress-bar {
+                                    background-color: black; // 背景顏色
+
+                                }
+
+                                &::-webkit-progress-value {
+                                    background-color: white; // 進度顏色
+                                    border: 2px solid black;
+                                }
+
+                                progress-value {
+                                    background-color: white; // 進度顏色
+                                    border: 2px solid black;
+                                }
+                            }
+
                         }
                     }
                 }
 
-                .course2 {
-                    display: flex;
-                    align-items: center;
-                    background-color: #FFFCF0;
-                    padding: 5px 15px;
-                    border-radius: 10px;
-                    box-shadow: 5px 5px #897359;
-                    font-size: $font-size-14;
-                    font-weight: $font-w-medium;
-                    color: $fc-2;
-
-                    img {
-                        width: 85px;
-                        height: 55px;
-                    }
-
-                    .course2Info {
-                        padding-left: 15px;
-
-                        h2 {
-                            font-size: $font-size-16;
-                            font-weight: $font-w-bold;
-                            color: $fc-2;
-                        }
-
-                        .progress {
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                        }
-                    }
-                }
             }
 
             #collectionAll {
                 width: 330px;
                 height: 360px;
-                background-image: url(../public/images/memberCourse.png);
+                background-image: url(../images/memberCourse.png);
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -257,7 +289,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-image: url(../public/images/memberP.png);
+                    background-image: url(../images/memberP.png);
                     background-size: contain;
                     background-repeat: no-repeat;
                     margin-top: 20px;
@@ -274,13 +306,16 @@
                     }
                 }
 
-                .collect, .collect1 {
+                .collect,
+                .collect1 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     background-color: #FFFCF0;
                     border-radius: 85px;
-                    margin: 5px 0;
+                    box-shadow: 5px 5px #897359;
+                    margin: 8px 0;
+                    transition: 0.3s ease-in-out;
 
                     .title {
                         font-size: 15px;
@@ -291,6 +326,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        transition: 0.3s ease-in-out;
                     }
 
                     P {
@@ -298,11 +334,20 @@
                         font-weight: $font-w-bold;
                         color: $fc-2;
                         margin: 5px 8px;
+
+                    }
+
+                    &:hover {
+                        background-color: #FFC800;
+
+                        .title {
+                            background-color: $fc-6;
+                        }
                     }
                 }
 
                 .collect1 {
-                    margin-top: 25px;
+                    margin-top: 20px;
                 }
 
             }
@@ -317,7 +362,7 @@
             align-items: center;
             padding-top: 50px;
             margin-left: 20px;
-            background-image: url(./images/memberAward.png);
+            background-image: url(../images/memberAward.png);
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;
@@ -350,16 +395,71 @@
                     display: flex;
                     flex-direction: column;
 
-                    .apic {
+                    .aPic {
                         display: flex;
                         justify-content: center;
+                        flex-wrap: wrap;
 
-                        img {
-                            width: 80px;
-                            height: 80px;
-                            display: flex;
-                            margin: 0 18px;
+                        .aPic1 {
+                            position: relative;
+
+                            img {
+                                width: 80px;
+                                height: 80px;
+                                display: flex;
+                                margin: 0 18px;
+                            }
+                            .awardName {
+                                position: absolute;
+                                z-index: 9;
+                                right: 5%;
+                                bottom: 0;
+                                color: $fc-2;
+                                font-size: .8em;
+                                background: $primary;
+                                padding: 5px 10px;
+                                border-radius: 15px;
+                                font-weight: $font-w-bold;
+                                opacity: 0;
+                                transition: opacity 0.3s ease-in-out;
+                            }
+                    
+                            &:hover .awardName {
+                                opacity: 1;
+                            }
+
+                            // &:before {
+                            //     opacity: 0;
+
+                            // }
+
+                            // &:hover::before {
+                            //     position: absolute;
+                            //     z-index: 9;
+                            //     right: 5%;
+                            //     bottom: 0;
+                            //     color: $fc-2;
+                            //     font-size: .8em;
+                            //     background: $primary;
+                            //     padding: 5px 10px;
+                            //     border-radius: 15px;
+                            //     content: '我是獎盃名稱';
+                            //     font-weight: $font-w-bold;
+                            //     // transition: all 1s ease-in-out;
+                            // }
+
+                            // &::before:hover{
+                            //     opacity: 1;
+                            //     transition: 1s ease-in-out 3s;
+                            // }
+
+                            // @keyframes aaaaa {
+                            //     0%   { opacity: 0;}
+                            //     100% { opacity: 1; }
+                            // }
                         }
+
+
                     }
 
                 }
@@ -367,6 +467,8 @@
 
             }
         }
+
+
     }
 
 

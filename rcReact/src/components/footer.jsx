@@ -43,7 +43,7 @@ function Footer() {
                 </div>
                 <div className="foo">
                     <div id="nav1-2">
-                        <h1 class="logo"><a href="./index.html">
+                        <h1 className="logo"><a href="./index.html">
                             {/*  SVG預設自動寬度100%  */}
                             <img className='logoimg' src="./public/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
                         </a></h1>
