@@ -45,7 +45,7 @@
       // width: 160px;
       a{
         font-size: $font-size-16;
-      font-weight: $font-w-bold ;
+      font-weight: $font-w-medium ;
       }
     }
   }
@@ -98,6 +98,7 @@
 /* 跳窗 */
 .foomodal {
   position: fixed;
+  z-index: 1001;
   top: 0;
   left: 0;
   width: 100%;
