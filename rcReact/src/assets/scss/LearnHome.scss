@@ -47,34 +47,34 @@
                     font-size: 5rem;
                 }
 
-                .hand1 {
-                    animation: rotate-hand1 1s ease-in-out infinite;
+                // .hand1 {
+                //     animation: rotate-hand1 1s ease-in-out infinite;
 
-                    @keyframes rotate-hand1 {
-                        0% {
-                            transform: rotateY(0);
-                        }
+                //     @keyframes rotate-hand1 {
+                //         0% {
+                //             transform: rotateY(0);
+                //         }
 
-                        45% {
-                            transform: rotateY(-30deg) translateY(10px);
-                        }
+                //         45% {
+                //             transform: rotateY(-30deg) translateY(10px);
+                //         }
 
-                        80% {
-                            transform: rotateY(0);
-                        }
-                    }
-                }
+                //         80% {
+                //             transform: rotateY(0);
+                //         }
+                //     }
+                // }
             }
 
             // 綠色角色
             .learngreen {
-                width: 310px;
-                height: 310px;
+                width: 220px;
+                height: 220px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
-                .learngreen-svg {
+                .learngreenB {
                     width: 80%;
                     height: 80%;
                     align-content: center;

@@ -16,10 +16,12 @@
         justify-content: space-around;
         overflow: auto;
         transition: transform 0.5s ease;
+        padding-top: 10px;
         height: 300px;
-        width:800px;
+        width: 800px;
         border-radius: 19px;
         flex: 1;
+
         .Learn-Card-1 {
             min-width: 200px; // 卡片寬度
             flex-shrink: 0; // 卡片不壓縮
@@ -30,6 +32,10 @@
             box-shadow: 10px 10px 0px 2px #000000;
             transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
             margin-left: 50px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             &:active {
                 box-shadow: none; // 點擊時移除陰影

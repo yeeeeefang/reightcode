@@ -18,7 +18,6 @@ export default function Login() {
                     </div>
                 </header> */}
                 <div className="login-main">
-
                     <div className="amoeba-blobs">
                         <img src="/images/login.png" alt="" />
                     </div>
