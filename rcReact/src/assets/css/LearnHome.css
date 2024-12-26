@@ -168,7 +168,11 @@ a {
 #learnhome-page {
   overflow: hidden;
   background-color: #8ECAE6;
+  height: 100vh;
   /* 最大的容器 */
+}
+#learnhome-page .link-learn {
+  width: 100%;
 }
 #learnhome-page h2 {
   font-size: 4rem;
@@ -199,9 +203,32 @@ a {
 #learnhome-page .learnhome-section1 .learning-section:hover h2 {
   font-size: 5rem;
 }
-#learnhome-page .learnhome-section1 .learning-section img {
-  width: 270px;
-  transform: rotate(15deg);
+#learnhome-page .learnhome-section1 .learning-section:hover .hand1 {
+  animation: rotate-hand1 1s ease-in-out infinite;
+}
+@keyframes rotate-hand1 {
+  0% {
+    transform: rotateY(0);
+  }
+  45% {
+    transform: rotateY(-30deg) translateY(10px);
+  }
+  80% {
+    transform: rotateY(0);
+  }
+}
+#learnhome-page .learnhome-section1 .learning-section .learngreen {
+  width: 310px;
+  height: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#learnhome-page .learnhome-section1 .learning-section .learngreen .learngreen-svg {
+  width: 80%;
+  height: 80%;
+  align-content: center;
+  transform: rotate(5deg);
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 {
   display: flex;
@@ -224,15 +251,34 @@ a {
   height: 28.5vh;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section h2 {
-  width: 50%;
+  width: 55%;
   transition: font-size 0.35s ease-in;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
-#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section img {
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section:hover .star {
+  animation: my-animation 2s infinite;
+}
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue {
   margin-top: 120px;
-  width: 250px;
+  height: 280px;
+  width: 280px;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue .learnblue-svg {
+  height: 100%;
+  width: 100%;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .practice-section .learnblue .star {
+  opacity: 0;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section {
   display: flex;
@@ -247,11 +293,44 @@ a {
   transition: font-size 0.35s ease-in;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover h2 {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
-#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section img {
-  margin-top: 130px;
-  width: 270px;
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover .heart {
+  animation: my-animation 2s infinite;
+}
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section:hover .mouth {
+  animation: rotate-mouth 2s ease-in-out infinite;
+}
+@keyframes rotate-mouth {
+  0% {
+    transform: rotate(0);
+  }
+  15% {
+    transform: translateX(15px);
+  }
+  50% {
+    transform: rotate(0);
+  }
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink {
+  width: 250px;
+  height: 250px;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink .learnpink-svg {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+}
+#learnhome-page .learnhome-section1 .learnhome-section2 .learnhome-section3 .explore-section .learnpink .heart {
+  opacity: 0;
 }
 #learnhome-page .learnhome-section1 .learnhome-section2 .doit-section {
   position: relative;
