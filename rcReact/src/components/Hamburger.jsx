@@ -21,10 +21,12 @@ function Hamburger({ onClose }) {
                     </div>
                 </div>
                 <div className="barLink">
-                    <div className="bar-Content-1">
-                        <img className='bar-content-icon-1' src="../public/images/icon_greenA.svg" alt="" />
-                        <p>關於我們</p>
-                    </div>
+                    <Link to='/'>
+                        <div className="bar-Content-1">
+                            <img className='bar-content-icon-1' src="../public/images/icon_greenA.svg" alt="" />
+                            <p>關於我們</p>
+                        </div>
+                    </Link>
                     <Link to='/LearnSelect'>
                         <div className="bar-Content-1">
                             <img className='bar-content-icon-1' src="../public/images/icon_pink.svg" alt="" />
