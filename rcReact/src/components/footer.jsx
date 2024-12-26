@@ -13,7 +13,7 @@ function Footer() {
                 <div id="nav1-1">
                     <ul className="item1">
                         <p className='pp1'>首頁</p>
-                        <li className="item2"><a href="/Home"><p>關於我們</p></a></li>
+                        <li className="item2"><a href="/"><p>關於我們</p></a></li>
 
                     </ul>
                     <ul className="item1">
