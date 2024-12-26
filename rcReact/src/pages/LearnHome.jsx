@@ -29,7 +29,7 @@ export default function LearnHome() {
                         <Link to='/LearnSelect'>
                             <div className="learning-section">
                                 <div className="learngreen">
-                                    <svg className="learngreen-svg" width="122" height="112" viewBox="0 0 122 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    {/* <svg className="learngreen-svg" width="122" height="112" viewBox="0 0 122 112" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g filter="url(#filter0_d_1742_2109)">
                                             <path className="hand2" d="M100.329 90.1916C99.0745 92.3105 97.7753 93.0476 95.3132 93.0374C87.9267 93.0066 80.6392 67.1762 80.6392 67.1762L85.6545 64.3304C85.6545 64.3304 104.091 83.835 100.329 90.1916Z" fill="#1CB76B" />
                                             <path d="M70.9166 96.8383C69.3284 98.7197 67.925 99.2311 65.4987 98.8125C58.2197 97.5567 55.3187 70.8752 55.3187 70.8752L60.7366 68.9009C60.7366 68.9009 75.6813 91.1939 70.9166 96.8383Z" fill="#1CB76B" />
@@ -67,7 +67,8 @@ export default function LearnHome() {
                                                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1742_2109" result="shape" />
                                             </filter>
                                         </defs>
-                                    </svg>
+                                    </svg> */}
+                                        <img src="/images/learngreenB.gif" alt="" />
                                 </div>
                                 <h2>學習區</h2>
                             </div>
@@ -107,6 +108,8 @@ export default function LearnHome() {
                                                 </linearGradient>
                                             </defs>
                                         </svg>
+                                        
+
                                     </div>
                                 </div>
                             </Link>

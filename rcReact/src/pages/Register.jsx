@@ -18,7 +18,6 @@ export default function Register() {
                     </div>
                 </header> */}
                 <div className="register-main">
-
                     <div className="amoeba-blobs2">
                         <img src="/images/register.png" alt="" />
                     </div>
@@ -33,12 +32,12 @@ export default function Register() {
                     <div className="register-form">
                         <h2>會員註冊</h2>
                         <form>
-                            <label for="email">*Email：</label>
+                            <label  htmlFor="email">*Email：</label>
                             <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
 
-                            <label for="password">請輸入密碼：</label>
+                            <label  htmlFor="password">請輸入密碼：</label>
                             <input type="password" name="password" id="password" title="密碼" placeholder="請輸入6~8英數混合字元" />
-                            <label for="password-1">再次確認密碼</label>
+                            <label  htmlFor="password-1">再次確認密碼</label>
                             <input type="password" name="password" id="password-1" title="再次確認密碼" placeholder="請輸入6~8英數混合字元" />
 
                             <a href="/" className="forgot-password">記住這個帳號密碼</a>
