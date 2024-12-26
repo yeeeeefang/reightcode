@@ -179,6 +179,7 @@ a {
   justify-content: space-around;
   overflow: auto;
   transition: transform 0.5s ease;
+  padding-top: 10px;
   height: 300px;
   width: 800px;
   border-radius: 19px;
@@ -194,6 +195,9 @@ a {
   box-shadow: 10px 10px 0px 2px #000000;
   transition: transform 0.5s, box-shadow 0.2s;
   margin-left: 50px;
+}
+#LearnPageAll .Learn-Card-all .Learn-Card-1:hover {
+  transform: scale(1.05);
 }
 #LearnPageAll .Learn-Card-all .Learn-Card-1:active {
   box-shadow: none;
