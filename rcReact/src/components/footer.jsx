@@ -13,7 +13,7 @@ function Footer() {
                 <div id="nav1-1">
                     <ul className="item1">
                         <p className='pp1'>首頁</p>
-                        <li className="item2"><a href="/"><p>關於我們</p></a></li>
+                        <li className="item2"><a href="/Home"><p>關於我們</p></a></li>
 
                     </ul>
                     <ul className="item1">
@@ -25,7 +25,7 @@ function Footer() {
                     </ul>
                     <ul className="item1">
                         <p className='pp1'>會員專區</p>
-                        <li className="item2 lm"><a href="/Login">登入</a>/<a href="/Register">註冊</a></li>
+                        <li className="item2 lm"><a href="/Login"><p>登入</p></a>/<a href="/Register"><p>註冊</p></a></li>
                         <li className="item2"><a href="/Member"><p>我的帳號</p></a></li>
 
                     </ul>
@@ -50,14 +50,14 @@ function Footer() {
                     <div id="nav1-2">
                         <h1 className="logo"><a href="./index.html">
                             {/*  SVG預設自動寬度100%  */}
-                            <img className='logoimg' src="./public/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
+                            <img className='logoimg' src="/images/logo.png" alt="RightCodeLOGO" title="RightCodeLOGO" />
                         </a></h1>
                         <ul className="icon">
-                            <li><a className="iconfb" href="">
-                                <img src="./public/images/icon_fb.svg" alt="" />
+                            <li><a className="iconfb" href="#">
+                                <img src="/images/icon_fb.svg" alt="" />
                             </a></li>
-                            <li><a className="iconig" href="">
-                                <img src="./public/images/icon_ig.svg" alt="" />
+                            <li><a className="iconig" href="#">
+                                <img src="/images/icon_ig.svg" alt="" />
                             </a></li>
                         </ul>
 

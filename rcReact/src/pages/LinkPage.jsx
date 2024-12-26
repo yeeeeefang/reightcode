@@ -10,6 +10,7 @@ function LinkPage() {
                 <Link to='/'><p>回到主頁</p></Link>
                 <hr />
                 志祥區
+                <Link to='/Home'><p>進入首頁</p></Link>
                 <Link to='/LearnPage'><p>進入課程總覽頁</p></Link>
                 <Link to='/LearnGame'><p>進入小試身手頁</p></Link>
                 <Link to='/LearnGameChoose'><p>進入小試身選擇頁</p></Link>

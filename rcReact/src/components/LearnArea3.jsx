@@ -6,7 +6,7 @@ function LearnArea3() {
             <main id="LearnAreaallall">
                 <section id="LearnAreaall3">
                     <div className='learnbigtitle'>
-                        <img className='bigtitleimg' src="./public/images/learnAreaVocab.png" alt="" />
+                        <img className='bigtitleimg' src="/images/learnAreaVocab.png" alt="" />
                     </div>
                     <div className='learnwordall'>
                         {/* 第一條 */}
@@ -249,7 +249,7 @@ function LearnArea3() {
 
                         </div>
                         <div className="practicebox">
-                            <img src="./public/images/learnAreaQATitle.svg" alt="" />
+                            <img src="/images/learnAreaQATitle.svg" alt="" />
                         </div>
                     </div>
 

@@ -36,7 +36,7 @@ export default function Trend() {
 
         <div className="lightcontainer">
 
-          <img className="light" src="./public/images/trendLight.png" alt="" />
+          <img className="light" src="/images/trendLight.png" alt="" />
           <h3 className="hottitle">熱門學習趨勢</h3>
           <div className="container">
             {/* 
@@ -56,16 +56,16 @@ export default function Trend() {
           </div>
         </div>
         <TrendCard />
-        <img className="deco-1" src="./public/images/trendDecoA.png" alt="" />
-        <img className="deco-2" src="./public/images/trendDecoB.png" alt="" />
-        <img className="deco-3" src="./public/images/trendDecoC.png" alt="" />
+        <img className="deco-1" src="/images/trendDecoA.png" alt="" />
+        <img className="deco-2" src="/images/trendDecoB.png" alt="" />
+        <img className="deco-3" src="/images/trendDecoC.png" alt="" />
         <div id="item3">
-          <div className="item4"><img className="char-1" src="./public/images/blueA.svg" alt="" /></div>
-          <div className="item4"><img className="char-2" src="./public/images/redC.svg" alt="" /></div>
-          <div className="item4"><img className="char-3" src="./public/images/pinkE.svg" alt="" /></div>
+          <div className="item4"><img className="char-1" src="/images/blueA.svg" alt="" /></div>
+          <div className="item4"><img className="char-2" src="/images/redC.svg" alt="" /></div>
+          <div className="item4"><img className="char-3" src="/images/pinkE.svg" alt="" /></div>
         </div>
         <div >
-          <img className="path" src="./public/images/trendPath.svg" alt="" />
+          <img className="path" src="/images/trendPath.svg" alt="" />
         </div>
       </section>
       <section id="div2">
