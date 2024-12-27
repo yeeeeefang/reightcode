@@ -61,8 +61,8 @@
             }
 
             .blue-char {
-                width: 175px;
-                height: 175px;
+                width: 178px;
+                height: 178px;
                 position: absolute;
                 top: 470px;
                 left: 550px;
@@ -81,10 +81,10 @@
         }
 
         .register-form {
-            background-color: #FEE3EC;
+            background-color: $register-1;
             padding: 36px;
             border-radius: 20px;
-            box-shadow: 8px 8px 0 #534D97;
+            box-shadow: 8px 8px 0 $shadow-3;
             left: 770px;
             width: 450px;
             position: absolute;
@@ -128,13 +128,17 @@
                     border: none;
                     padding: 18px 36px;
                     border-radius: 10px;
+                    box-shadow: 2px 2px 0 rgb(233, 210, 243);
                     font-size: 1rem;
                     font-weight: bold;
                     cursor: pointer;
 
-                    // &:hover {
-                    //     background-color: $shadow-3;
-                    // }
+                }
+
+                &:hover {
+                    .register-button {
+
+                    }
                 }
             }
 

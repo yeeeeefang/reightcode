@@ -49,7 +49,7 @@
                 font-size: 64px;
                 color: #FFFFFF;
                 padding: 0 20px;
-                text-shadow: 10px 5px $shadow-1;
+                text-shadow: 5px 5px $shadow-1;
             }
 
             .Home-eng-text-1,
@@ -226,17 +226,18 @@
                     color: $fc-4;
                 }
 
-                .Home-sml-text-3 {
-                    font-size: 20px;
-                    font-weight: $font-w-medium;
-                }
+                
+            }
+            .Home-sml-text-3 {
+                font-size: 20px;
+                font-weight: $font-w-medium;
             }
         }
     }
 }
 
 #Home-page-4 {
-    padding-top: 50px;
+    padding-top: 20px;
 
     /* height: 2000px;
     background-color: $primary;
@@ -504,15 +505,11 @@
                 .Home-content-6 {
                     padding-bottom: 150px;
                 }
-
                 .Home-text-3 {
                     font-size: 40px;
-
                     span {
                         font-size: 70px;
                     }
-
-
                 }
 
                 .Home-sml-text-3 {
@@ -761,7 +758,7 @@
 
 /* 滾動到視窗中觸發後的位置 */
 .move-right-blue.active {
-    transform: translateX(100px);
+    transform: translateX(-100px);
     /* 向右移動 100px */
 }
 
@@ -773,7 +770,7 @@
 
 /* 滾動到視窗中觸發後的位置 */
 .move-left-red.active {
-    transform: translateX(-100px);
+    transform: translateX(100px);
     /* 向右移動 100px */
 }
 
@@ -783,6 +780,6 @@
 }
 
 .Home-ladder.active {
-    transform: translateY(200px);
+    transform: translateY(150px);
     /* 向右移動 100px */
 }

@@ -215,7 +215,7 @@ a {
   font-size: 64px;
   color: #FFFFFF;
   padding: 0 20px;
-  text-shadow: 10px 5px #897359;
+  text-shadow: 5px 5px #897359;
 }
 #Home-page-2 .Home-content-bk-1 .Home-content-1 .Home-eng-text-1,
 #Home-page-2 .Home-content-bk-1 .Home-content-1 .Home-eng-text-2,
@@ -359,13 +359,13 @@ a {
   font-size: 58px;
   color: #69B169;
 }
-#Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 .Home-sml-text-3 {
+#Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-sml-text-3 {
   font-size: 20px;
   font-weight: 500;
 }
 
 #Home-page-4 {
-  padding-top: 50px;
+  padding-top: 20px;
   /* height: 2000px;
   background-color: $primary;
   background-image: url(../public/images/homePathB.png);
@@ -804,7 +804,7 @@ a {
 
 /* 滾動到視窗中觸發後的位置 */
 .move-right-blue.active {
-  transform: translateX(100px);
+  transform: translateX(-100px);
   /* 向右移動 100px */
 }
 
@@ -816,7 +816,7 @@ a {
 
 /* 滾動到視窗中觸發後的位置 */
 .move-left-red.active {
-  transform: translateX(-100px);
+  transform: translateX(100px);
   /* 向右移動 100px */
 }
 
@@ -826,6 +826,6 @@ a {
 }
 
 .Home-ladder.active {
-  transform: translateY(200px);
+  transform: translateY(150px);
   /* 向右移動 100px */
 }/*# sourceMappingURL=Home.css.map */
