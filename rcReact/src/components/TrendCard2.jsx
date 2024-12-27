@@ -17,7 +17,7 @@ function TrendCard2() {
                         <div className="card1-1" onClick={handleturn}>
                             <h3 className="learn-1">HTML</h3>
                             <img src="/images/trendCourse1.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">文字樣式-1</h4>
                                 <p className="content-1">學習人數 2391人</p>
                                 <p className="content-1">收藏人數 1022人</p>
@@ -26,7 +26,7 @@ function TrendCard2() {
                         <div className="card2-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
                             <img src="/images/trendCourse2.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">背景</h4>
                                 <p className="content-1">學習人數 473人</p>
                                 <p className="content-1">收藏人數 294人</p>
@@ -35,7 +35,7 @@ function TrendCard2() {
                         <div className="card3-1" onClick={handleturn}>
                             <h3 className="learn-1">HTML</h3>
                             <img src="/images/trendCourse4.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">音檔與影片</h4>
                                 <p className="content-1">學習人數 930人</p>
                                 <p className="content-1">收藏人數 467人</p>
@@ -44,7 +44,7 @@ function TrendCard2() {
                         <div className="card4-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
                             <img src="/images/trendCourse3.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">顏色</h4>
                                 <p className="content-1">學習人數 1930人</p>
                                 <p className="content-1">收藏人數 874人</p>
@@ -63,7 +63,7 @@ function TrendCard2() {
                         <div className="card5-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
                             <img src="/images/trendCourse3.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">邊距與內距</h4>
                                 <p className="content-1">學習人數 930人</p>
                                 <p className="content-1">收藏人數 467人</p>
@@ -72,7 +72,7 @@ function TrendCard2() {
                         <div className="card6-1" onClick={handleturn}>
                             <h3 className="learn-1">HTML</h3>
                             <img src="/images/trendCourse6.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">表單擴展</h4>
                                 <p className="content-1">學習人數 1121人</p>
                                 <p className="content-1">收藏人數 855人</p>
@@ -81,7 +81,7 @@ function TrendCard2() {
                         <div className="card7-1" onClick={handleturn}>
                             <h3 className="learn-1">CSS</h3>
                             <img src="/images/trendCourse7.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">定位</h4>
                                 <p className="content-1">學習人數 2512人</p>
                                 <p className="content-1">收藏人數 1111人</p>
@@ -90,7 +90,7 @@ function TrendCard2() {
                         <div className="card8-1" onClick={handleturn}>
                             <h3 className="learn-1">HTML</h3>
                             <img src="/images/trendCourse8.svg" alt="" />
-                            <div class="item-1">
+                            <div className="item-1">
                                 <h4 className="learn1-1">嵌入內容</h4>
                                 <p className="content-1">學習人數 930人</p>
                                 <p className="content-1">收藏人數 467人</p>

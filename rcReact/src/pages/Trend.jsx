@@ -6,30 +6,7 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 
 export default function Trend() {
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const div2 = document.querySelector('#div2');
-  //     const threshold = 20; // 滾動高度門檻
-
-  //     if (div2) {
-  //       const rect = div2.getBoundingClientRect(); // 獲取元素相對於視窗的位置
-  //       if (rect.top < window.innerHeight && rect.bottom > 0) {
-  //         div2.classList.add('scrolled'); // 滾動進入視窗範圍時，添加類名
-  //       } else {
-  //         div2.classList.remove('scrolled'); // 滾動離開視窗時，移除類名
-  //       }
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // 清除滾動事件監聽
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  return (
+    return (
     <>
       <section id="div1" >
         <Navbar />
