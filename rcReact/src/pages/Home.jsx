@@ -427,7 +427,7 @@ function Home() {
                                     <br /> 程式世界等著你去探索 ！</p>
                             </div>
                             <div className="Home-content-bk-5">
-                                <Link to='/LearnSelect'>
+                                <Link to='/LearnHome'>
                                     <p>Start Now</p>
                                     {/* <img className="Home-btn" src="../public/images/btn.png" alt=""
                                     ref={startRef}
@@ -435,7 +435,7 @@ function Home() {
                                     onMouseDown={startMouseDown}
                                 /> */}
                                 </Link>
-                                <img className="Home-greenIp" src="../public/images/greenB.svg" alt="" />
+                                <img className="Home-greenIp" src="../images/greenB.svg" alt="" />
                             </div>
                         </div>
                     </section>
