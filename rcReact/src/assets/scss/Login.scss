@@ -33,18 +33,6 @@
                 top: -67px;
                 left: 380px;
                 transform: rotate(40deg);
-
-                // @keyframes rotate-small {
-                //     0% {
-                //         transform: rotate(0deg);
-                //     }
-                //     50% {
-                //         transform:translateX(20px);
-                //     }
-                //     100% {
-                //         transform: rotate(0deg);
-                //     }
-                // }
             }
 
             }
@@ -109,8 +97,8 @@
             padding: 36px;
             border-radius: 20px;
             box-shadow: 8px 8px 0 $shadow-3;
-            width: 450px;
-            height: 560px;
+            width: 440px;
+            height: 530px;
             position: absolute;
             top: 20px;
             left: 700px;
@@ -195,5 +183,55 @@
                 }
             }
         }
+        @media ($mediaLg) {
+            .amoeba-blobs {
+                width: 100%;
+                top: -600px;
+                left: 172px;
+                overflow: hidden;
+                // border: 1px solid red;
+            }
+    
+            .characters {
+                .green-char {
+                    width: 280px;
+                    height: 280px;
+                    top: -150px;
+                    left: 520px;
+                    transform: rotate(20deg);
+
+                }
+    
+                }
+                .red-char {
+                    width: 300px;
+                    height: 300px;
+                    top: 500px;
+                    left: 1440px;
+                }
+                .blue-char {
+                    width: 240px;
+                    height: 240px;
+                    top:300px;
+                    left: 160px;
+                }
+                .pink-char {
+                    width: 220px;
+                    height: 220px;
+                    top: 570px;
+                    left: 680px;
+            }
+    
+            .login-form {
+                width: 480px;
+                height: 560px;
+                top: 90px;
+                left: 920px;
+    
+                .login-divider {
+                    margin: 36px 0 24px;
+                }
+        }
     }
+}
 }
