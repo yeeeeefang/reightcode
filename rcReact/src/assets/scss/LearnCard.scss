@@ -9,9 +9,18 @@
     .LearnPageLeft-1,
     .LearnPageLeft-2 {
         width: 48px;
+
+        &:active {
+            scale: (1.2);
+        }
+    }
+    .LearnPageLeft-1.hideArrow,
+    .LearnPageLeft-2.hideArrow {
+        opacity: 0;
     }
 
     .Learn-Card-all {
+        /* 捲軸效果讓他消失 超過數量箭頭要消失 */
         display: flex;
         justify-content: space-around;
         overflow: auto;
@@ -21,6 +30,10 @@
         width: 800px;
         border-radius: 19px;
         flex: 1;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         .Learn-Card-1 {
             min-width: 200px; // 卡片寬度
@@ -89,5 +102,6 @@
 
             }
         }
+        
     }
 }

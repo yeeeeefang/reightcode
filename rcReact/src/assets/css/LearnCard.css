@@ -174,7 +174,16 @@ a {
 #LearnPageAll .LearnPageLeft-2 {
   width: 48px;
 }
+#LearnPageAll .LearnPageLeft-1:active,
+#LearnPageAll .LearnPageLeft-2:active {
+  scale: 1.2;
+}
+#LearnPageAll .LearnPageLeft-1.hideArrow,
+#LearnPageAll .LearnPageLeft-2.hideArrow {
+  opacity: 0;
+}
 #LearnPageAll .Learn-Card-all {
+  /* 捲軸效果讓他消失 超過數量箭頭要消失 */
   display: flex;
   justify-content: space-around;
   overflow: auto;
@@ -184,6 +193,9 @@ a {
   width: 800px;
   border-radius: 19px;
   flex: 1;
+}
+#LearnPageAll .Learn-Card-all::-webkit-scrollbar {
+  display: none;
 }
 #LearnPageAll .Learn-Card-all .Learn-Card-1 {
   min-width: 200px;

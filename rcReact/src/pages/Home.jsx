@@ -125,7 +125,7 @@ function Home() {
                 <svg version="1.1" id="img1_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                     viewBox="0 0 1920 1080" >
                     <g>
-                        <rect className="st0" width="1920" height="1080"  />
+                        <rect className="st0" width="1920" height="1080" />
                     </g>
                     <path className="st1" d="M542.43,0c7.04,13.57,9.91,27.13,12.94,41.97c14.2,69.49,11.2,116.1-11.4,183.33
 	c-35.11,104.34-137.44,180.16-239.53,211.98c-61.32,19.12-116.94,21.93-180.48,12.54c-10.5-1.55-28.45-3.89-37.95-6.75
@@ -135,7 +135,7 @@ function Home() {
                     <path className="st2" d="M364.57,104.16c32.75-4.47,64.8,27.46,76.98,55.2c12.14,27.65-2.97,71.36-36.23,74.76
 	c-44.08,4.49-79.41-36.23-81.58-77.74C322.43,131.44,338.88,107.67,364.57,104.16z"/>
                     <path className="st3" d="M249.76,177.7c18.88-3.83,26.6,27.5,4.26,29.63C237.6,208.9,233.48,181.01,249.76,177.7z" />
-                    <path /* 綠色右邊眼睛 */ className="st4 greenRightEye"  d="M392.85,158.04c22.72-3.26,36.07,16.82,32.84,37.6c-1.16,7.45-12.68,18.41-20.15,19.69
+                    <path /* 綠色右邊眼睛 */ className="st4 greenRightEye" d="M392.85,158.04c22.72-3.26,36.07,16.82,32.84,37.6c-1.16,7.45-12.68,18.41-20.15,19.69
 	c-19.14,3.27-30.64-8.54-34.99-26C366.61,173.51,377.02,160.31,392.85,158.04z"/>
                     <path className="st5" d="M1670.44,1.17H1920v321.29c-10.5,4.21-20.72,9.65-31.34,13.62c-23.83,8.89-49.19,12.48-74.45,15.47
 	c-18.23,2.15-36.18,4.79-54.41,5.02c-40.71,0.51-81.15-0.96-121.65-3.75c-23.23-1.6-34.99-3.22-57.39-9.73
@@ -245,7 +245,7 @@ function Home() {
 	c0.85-6.95,5.82-12.06,13.09-9.77c7.16,2.26,5.47,17.46,7.47,25.46c2.3,39.05,6,29,8,83"/>
                     <path className="st2" d="M174.57,233.16c32.75-4.47,64.8,27.46,76.98,55.2c12.14,27.65-2.97,71.36-36.23,74.76
 	c-44.08,4.49-79.41-36.23-81.58-77.74C132.43,260.44,148.88,236.67,174.57,233.16z"/>
-                    <path /* 綠色左邊眼睛 */ className="st4 greenLeftEye"  d="M233.88,311.33c-0.4,10.66-10.41,26.64-21.42,28.67c-20.8,3.84-41.4-16.71-34.43-37.99
+                    <path /* 綠色左邊眼睛 */ className="st4 greenLeftEye" d="M233.88,311.33c-0.4,10.66-10.41,26.64-21.42,28.67c-20.8,3.84-41.4-16.71-34.43-37.99
 	c2.39-7.32,16.5-17.3,23.92-18.35c8.89-1.26,20.02,5.73,25.89,12C232.48,300.6,234.13,304.48,233.88,311.33L233.88,311.33z"/>
                 </svg>
             </div>
@@ -257,14 +257,18 @@ function Home() {
                 <div id="Home-page-all">
                     <section id="Home-page-2">{/* 第二分頁 */}
                         <div className="Home-content-bk-1"
-                            data-aos="fade-down-right"
-                            data-aos-duration="500"
-                            data-aos-offset='300'>
-                            <div className="Home-content-1">
+                        >
+                            <div className="Home-content-1"
+                                data-aos="fade-right"
+                                data-aos-duration="500"
+                                data-aos-offset='300'>{/* 左邊 第一次進入 逮捕互動 done */}
                                 <p className="Home-text-1">用<span>程式</span>創造未來</p>
                                 <p className="Home-eng-text-1">Create the Future with Programming</p>
                             </div>
-                            <div className="Home-content-2">
+                            <div className="Home-content-2"
+                                data-aos="fade-right"
+                                data-aos-duration="500"
+                                data-aos-offset='300'>{/* 左邊第二次進入 逮捕互動 done */}
                                 <p className="Home-text-1">用<span>英語</span>世界接軌</p>
                                 <p className="Home-eng-text-2">Connect the World in English</p>
                             </div>
@@ -283,7 +287,7 @@ function Home() {
                                         通過基礎程式學習來鍛鍊孩子的邏輯思考、創意思維和問題解決能力，<br />
                                         並且學會技術應用，強化數位素養。</p>
                                 </div>
-                                <div className="Home-content-3-img">
+                                <div className="Home-content-3-img"> {/* 右往左邊移動 逮捕 done */}
                                     <img className='move-right-blue' ref={blueARef} src="../images/blueA.svg" alt="" />
                                 </div>
                             </div>
@@ -302,7 +306,7 @@ function Home() {
                                         <br />更能在日常生活和學習中靈活運用英語，
                                         <br />讓孩子未來更具國際競爭力！</p>
                                 </div>
-                                <div className="Home-content-4-img">
+                                <div className="Home-content-4-img"> {/* 左往右邊移動 逮捕done */}
                                     <img className='move-left-red' ref={redRef} src="../images/red.svg" alt="" />
                                 </div>
                             </div>
@@ -348,7 +352,7 @@ function Home() {
                                         特別是偏遠地區的家庭，能夠選擇的課程資源更有限。</p>
                                 </div>
                             </div>
-                            <div >
+                            <div > {/* 下移速度改150px done  */}
                                 <img className="Home-ladder" ref={pinkRef} src="../images/pinkB.svg" alt="梯子" />
                             </div>
                         </div>
@@ -356,26 +360,33 @@ function Home() {
                     </section>
                     <section id="Home-page-4">
                         <div className="Home-content-6"
-                            data-aos="zoom-in"
-                            data-aos-duration="500"
-                            data-aos-offset='300'
+
                         >
-                            <p>不只是學習<br />
+                            <p
+                                data-aos="zoom-in-down"
+                                data-aos-duration="500"
+                                data-aos-offset='300'
+                            >不只是學習<br /> {/* 從土地中間出來 done */}
                                 更是一場充滿樂趣的探索之旅</p>
                         </div>
                         <div className="Home-content-bk-all">
                             <div className="Home-content-bk-1"
-                                data-aos="fade-down-right"
-                                data-aos-duration="500"
-                                data-aos-offset='300'
-                            >
+
+                            > {/* 變個改為字體效果  done */}
                                 <div className="Home-content-7">
-                                    <p>
+                                    <p
+                                        data-aos="fade-up"
+                                        data-aos-duration="500"
+                                        data-aos-delay="700"
+                                        data-aos-offset='300'>
                                         \ 讓學程式成為習慣 /
                                     </p>
                                 </div>
                                 <div className="Home-content-8">
-                                    <p>\ 好玩又好學 /</p>
+                                    <p
+                                        data-aos="fade-up"
+                                        data-aos-duration="500"
+                                        data-aos-offset='300'>\ 好玩又好學 /</p>
                                 </div>
                                 <img className="Home-content-img" src="../public/images/pinkA.svg" alt="" />
                             </div>

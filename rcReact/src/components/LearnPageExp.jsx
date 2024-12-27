@@ -5,7 +5,7 @@ function LearnPageExp() {
 
 
     const [progressValues, setProgressValues] = useState([0, 0, 0, 0]); // 初始化为 0
-    const targetValues = [50, 30, 70, 10]; // 目标值
+    const targetValues = [50, 30, 70, 50]; // 目标值
 
     useEffect(() => {
         const intervals = targetValues.map((target, index) => {
