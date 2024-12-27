@@ -359,13 +359,13 @@ a {
   font-size: 58px;
   color: #69B169;
 }
-#Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-text-3 .Home-sml-text-3 {
+#Home-page-3 .Home-content-bk .Home-content-bk-4 .Home-sml-text-3 {
   font-size: 20px;
   font-weight: 500;
 }
 
 #Home-page-4 {
-  padding-top: 50px;
+  padding-top: 20px;
   /* height: 2000px;
   background-color: $primary;
   background-image: url(../public/images/homePathB.png);

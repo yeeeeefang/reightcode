@@ -226,17 +226,18 @@
                     color: $fc-4;
                 }
 
-                .Home-sml-text-3 {
-                    font-size: 20px;
-                    font-weight: $font-w-medium;
-                }
+                
+            }
+            .Home-sml-text-3 {
+                font-size: 20px;
+                font-weight: $font-w-medium;
             }
         }
     }
 }
 
 #Home-page-4 {
-    padding-top: 50px;
+    padding-top: 20px;
 
     /* height: 2000px;
     background-color: $primary;
@@ -504,15 +505,11 @@
                 .Home-content-6 {
                     padding-bottom: 150px;
                 }
-
                 .Home-text-3 {
                     font-size: 40px;
-
                     span {
                         font-size: 70px;
                     }
-
-
                 }
 
                 .Home-sml-text-3 {
