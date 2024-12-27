@@ -166,6 +166,10 @@ a {
     background-color: $lesser-1;
 } */
 /* reset end */
+@font-face {
+  font-family: SweiGothicCJKtc-Regular;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+}
 #LEP-Home {
   background-color: #FFD640;
   background-image: url(../images/homeDeco.png);
@@ -207,7 +211,7 @@ a {
   background-color: #fff;
   border-radius: 20px;
   padding: 0px 20px;
-  font-family: "Zen Maru Gothic", serif;
+  font-family: "SweiGothicCJKtc-Regular", serif;
 }
 #LEP-Home #LEP-bk-big .LEP-PersonCard {
   width: 100%;

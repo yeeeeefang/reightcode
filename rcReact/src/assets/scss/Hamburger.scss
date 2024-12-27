@@ -1,6 +1,11 @@
 @use './reset';
 @use './variables'as *;
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@font-face {
+    font-family: SweiGothicCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+  }
 
 #Hamburger {
     display: flex;
@@ -21,7 +26,7 @@
             background-color: #FDBABA;
             font-size: 24px;
             font-weight: $font-w-bold;
-            font-family: 'Zen Maru Gothic', sans-serif;
+            font-family: 'SweiGothicCJKtc-Regular', sans-serif;
             text-align: center;
             line-height: 60px;
             border-radius: 99px;
@@ -108,7 +113,7 @@
             p {
                 text-align: center;
                 font-size: 24px;
-                font-family: 'Zen Maru Gothic', sans-serif;
+                font-family: 'SweiGothicCJKtc-Regular', sans-serif;
                 font-weight: $font-w-medium;
             }
 
@@ -132,7 +137,7 @@
             height: 60px;
             font-size: 24px;
             line-height: 60px;
-            font-family: 'Zen Maru Gothic', sans-serif;
+            font-family: 'SweiGothicCJKtc-Regular', sans-serif;
             font-weight: $font-w-medium;
             background-color: #FDBABA;
             border-radius: 30px;
@@ -190,7 +195,7 @@
     p {
         text-align: center;
         font-size: 24px;
-        font-family: 'Zen Maru Gothic', sans-serif;
+        font-family: 'SweiGothicCJKtc-Regular', sans-serif;
         font-weight: $font-w-medium;
         padding-right: 40px;
     }

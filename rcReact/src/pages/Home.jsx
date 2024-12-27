@@ -428,7 +428,7 @@ function Home() {
                             </div>
                             <div className="Home-content-bk-5">
                                 <Link to='/LearnHome'>
-                                    <p>Start Now</p>
+                                    <p className='Home-content-bk-text-5'>Start Now</p>
                                     {/* <img className="Home-btn" src="../public/images/btn.png" alt=""
                                     ref={startRef}
                                     onMouseUp={startMouseUp}

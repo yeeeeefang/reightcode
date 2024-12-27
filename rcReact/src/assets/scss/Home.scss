@@ -1,7 +1,11 @@
 @use './reset';
 @use './variables'as *;
 @import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
-
+@font-face {
+    font-family: SweiGothicCJKtc-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/swei-gothic@2.129/WebFont/CJK%20TC/SweiGothicCJKtc-Regular.woff) format("woff");
+  }
 #Home-page-1 {
     background-color: $primary;
 }
@@ -13,7 +17,7 @@
     background-color: $primary;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Zen Maru Gothic', sans-serif;
+    font-family: 'SweiGothicCJKtc-Regular', sans-serif;
 }
 
 #Home-page-2 {
@@ -328,7 +332,7 @@
 }
 
 #Home-page-5 {
-    padding: 190px 0px;
+    padding: 160px 0px 180px;
 
     .Home-content-bk-4 {
         display: flex;
@@ -347,7 +351,7 @@
             text-align: center;
             font-size: 32px;
             font-weight: $font-w-bold;
-            margin: 80px 100px 80px 65px;
+            margin: 80px 100px 90px 65px;
         }
 
         .Home-content-bk-5 {
@@ -374,7 +378,7 @@
                 border-radius: 20px;
                 box-shadow: 10px 10px 0px 2px #000000;
                 transition: transform 0.5s, box-shadow 0.2s; // 添加平滑效果
-                margin-bottom: 90px;
+                margin-bottom: 110px;
 
                 &:active {
                     box-shadow: none; // 點擊時移除陰影
@@ -575,8 +579,8 @@
         .Home-content-bk-4 {
 
             .Home-content-13 {
-                font-size: 40px;
-                margin: 100px 250px 100px 80px;
+                font-size: 48px;
+                margin: 100px 150px 100px 80px;
             }
 
             .Home-content-bk-5 {
@@ -584,7 +588,7 @@
                     width: 350px;
                 }
 
-                p {
+                .Home-content-bk-text-5 {
                     display: block;
                     background-color: #FF6C64;
                     width: 240px;
