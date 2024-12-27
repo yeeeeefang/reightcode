@@ -34,7 +34,7 @@ export default function Register() {
                         <form>
                             <div className="register-form-content">
                                 <label htmlFor="username">*姓名：</label>
-                                <input type="text" name="username" id="username" title="姓名" placeholder="請輸入姓名" required autofocus />
+                                <input type="text" name="username" id="username" title="姓名" placeholder="請輸入姓名" required autoFocus />
                                 <label htmlFor="email">*Email：</label>
                                 <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
 
