@@ -35,10 +35,13 @@
             font-weight: $font-w-bold;
         }
 
-        .diabox1 {
+        .diabox1 {//藍紅框
             padding: 20px;
+            position: relative;
+            align-self: self-start;
 
-            .areap1 {
+
+            .areap1 {//藍
                 background-image: url('../images/LearnArea-dialogbox1.svg');
                 // background-size: contain;
                 // background-position: center;
@@ -48,10 +51,13 @@
                 padding: 0 45px 20px 48px;
             }
 
-            .areatwo {
+            .areatwo {//紅
                 display: flex;
                 flex-direction: column;
                 width: fit-content;
+                position: absolute;
+                top: 150px;
+                left: 150px;
 
                 .areap2 {
                     background-image: url('../images/LearnArea-dialogbox3.svg');
