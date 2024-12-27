@@ -138,18 +138,19 @@
                     border: none;
                     padding: 18px 36px;
                     border-radius: 10px;
-                    box-shadow: 2px 2px 0 rgb(233, 210, 243);
+                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
                     font-size: 1rem;
                     font-weight: bold;
                     cursor: pointer;
 
+                    &:hover {
+                        background-color: #b9b4f5;
+                        color: $shadow-3;
+                    }
+
                 }
 
-                &:hover {
-                    .register-button {
-                        background-color:#b9b4f5 ;
-                    }
-                }
+
             }
 
             .register-divider {
@@ -186,6 +187,7 @@
                 }
             }
         }
+
         // 桌機板
         @media($mediaLg) {
 
@@ -241,6 +243,7 @@
                         margin-bottom: 16px;
                     }
                 }
+
                 .register-divider {
                     margin: 36px 0 24px;
                 }

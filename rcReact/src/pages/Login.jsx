@@ -33,7 +33,7 @@ export default function Login() {
                         <h2>會員登入</h2>
                         <form>
                             <label htmlFor="email">*Email：</label>
-                            <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required />
+                            <input type="email" name="email" id="email" title="Email" placeholder="請輸入Email" required autoFocus/>
 
                             <label htmlFor="password">*請輸入密碼：</label>
                             <input type="password" name="password" id="password" title="重設密碼" placeholder="請輸入6~8英數混合字元" />

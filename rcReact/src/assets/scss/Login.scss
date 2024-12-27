@@ -145,11 +145,12 @@
                     border-radius: 10px;
                     font-size: 1rem;
                     font-weight: bold;
+                    box-shadow: 3px 3px 0 rgb(233, 210, 243);
                     cursor: pointer;
-
-                    // &:hover {
-                    //     background-color: $shadow-3;
-                    // }
+                    &:hover {
+                        background-color: #b9b4f5;
+                        color: $shadow-3;
+                    }
                 }
             }
 
@@ -180,6 +181,9 @@
                     cursor: pointer;
                     border: none;
                     background-color: transparent;
+                    &:hover {
+                        scale: 1.05;
+                    }
                 }
             }
         }
@@ -225,7 +229,7 @@
             .login-form {
                 width: 480px;
                 height: 560px;
-                top: 90px;
+                top: 50px;
                 left: 920px;
     
                 .login-divider {
