@@ -6,6 +6,7 @@ import LearnArea3 from '../components/LearnArea3';
 import LearnArea4 from '../components/LearnArea4';
 import NavbarBack from '../components/NavbarBack';
 import Footer from '../components/Footer';
+import LearnAreaCollect from '../components/LearnAreaCollect';
 
 
 function LearnArea() {
@@ -28,6 +29,7 @@ function LearnArea() {
                     <LearnArea4 />
                 </div>
                 <Footer/>
+                <LearnAreaCollect/>
             </div>
 
         </>

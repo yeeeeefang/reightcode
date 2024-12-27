@@ -215,11 +215,7 @@ function LearnCard({ selectedSection }) {
         RightRef.current.src = '../images/learnPageRight.svg'
     }
 
-
     /* 愛心卡片 */
-    const favoriteImg = "../images/learnPageLeftHeart_hover.svg"; // 收藏圖片
-    const notFavoriteImg = "../images/learnPageLeftHeart.svg"; // 未收藏圖片
-
     /* const imgRef = useRef(null)
     const [isFavorite, setIsFavorite] = useState(false);
     const toggleFavorite = () => {
@@ -252,11 +248,7 @@ function LearnCard({ selectedSection }) {
         }));
     };
 
-
-
-
     /* 調整卡片頁面顯示方式 */
-
     const containerRef = useRef(null); // 參考滾動容器
     const chooseCard = selectedSection === null
         ? CardTitle.flatMap((section) => section.children)
@@ -266,12 +258,18 @@ function LearnCard({ selectedSection }) {
     $(function () {
         const step = 220; // 每次滾動的距離
         const container = $('.Learn-Card-all'); // 滾動容器
-        $('.LearnPageLeft-2').click(function () {
-            const maxScroll = container[0].scrollWidth - container.width(); // 最大可滾動距離
+        const maxScroll = container[0].scrollWidth - container.width(); // 最大可滾動距離
+        const leftArrow = $('.LearnPageLeft-1');
+        const rightArrow = $('.LearnPageLeft-2');
 
+        const updateScroll = () => { // 將滾動和箭頭顯示/隱藏的邏輯封裝成一個函式
+            const maxScroll = container[0].scrollWidth - container.width();
+            rightArrow.toggleClass('hideArrow', maxScroll <= 0); // 使用 toggleClass 更簡潔
+            leftArrow.toggleClass('hideArrow', maxScroll <= 0);
+        };
+        $('.LearnPageLeft-2').click(function () {
             // 計算新的滾動位置，不能超過最大滾動距離
             currentScrollLeft = Math.min(currentScrollLeft + step, maxScroll);
-
             // 更新滾動位置
             container.stop().animate({
                 scrollLeft: currentScrollLeft
@@ -280,12 +278,13 @@ function LearnCard({ selectedSection }) {
         $('.LearnPageLeft-1').click(function () {
             // 計算新的滾動位置，不能小於 0
             currentScrollLeft = Math.max(currentScrollLeft - step, 0);
-
             // 更新滾動位置
             container.stop().animate({
                 scrollLeft: currentScrollLeft
             }, 500); // 500ms 平滑滾動
         });
+        $(window).on('resize load', updateScroll); // 在視窗大小調整和頁面載入完成後更新箭頭狀態
+        updateScroll(); // 初始呼叫一次，確保初始狀態正確
     })
 
     useEffect(() => {
@@ -296,19 +295,19 @@ function LearnCard({ selectedSection }) {
                 behavior: 'smooth',
             });
         }
-
-
         // 當 selectedSection 改變時，重置索引
     }, [selectedSection]);
+
+
     return (
         <section id='LearnPageAll'>
-            <div className='LearnPageLeft-1' /* onClick={changLeft} */>
+            <div className='LearnPageLeft-1 ' /* onClick={changLeft} */>
                 <img
                     src="../images/learnPageLeft.svg"
                     alt="Previous"
                     ref={LeftRef}
-                    onMouseDown={LeftImgMouseDown}
-                    onMouseUp={LeftImgMouseUp}
+                    onMouseEnter={LeftImgMouseDown}
+                    onMouseLeave={LeftImgMouseUp}
                 />
             </div>
             <div
@@ -356,13 +355,13 @@ function LearnCard({ selectedSection }) {
                     </div>
                 ))}
             </div>
-            <div className='LearnPageLeft-2' /* onClick={chalgRight} */>
+            <div className='LearnPageLeft-2 ' /* onClick={chalgRight} */>
                 <img
                     src="../images/learnPageRight.svg"
                     alt="Next"
                     ref={RightRef}
-                    onMouseDown={RightImgMouseDown}
-                    onMouseUp={RightImgMouseUp}
+                    onMouseEnter={RightImgMouseDown}
+                    onMouseLeave={RightImgMouseUp}
                 />
             </div>
         </section>
