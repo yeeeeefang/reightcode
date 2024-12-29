@@ -10,32 +10,44 @@ import NavbarTwo from '../components/NavbarTwo'
 
 function Home() {
 
-    document.addEventListener('mousemove', (event) => {
-        const eyes = [
-            { element: document.querySelector('.greenLeftEye'), centerX: 233.88, centerY: 311.33 },
-            { element: document.querySelector('.greenRightEye'), centerX: 392.85, centerY: 158.04 },
-            { element: document.querySelector('.redRightEye'), centerX: 1657.66, centerY: 188.94 },
-            { element: document.querySelector('.redLeftEye'), centerX: 1474, centerY: 150.25 },
-            { element: document.querySelector('.pinkLeftEye'), centerX: 267.04, centerY: 875.77 },
-            { element: document.querySelector('.pinkRightEye'), centerX: 489.84, centerY: 887.29 },
-            { element: document.querySelector('.blueRightEye'), centerX: 1644.83, centerY: 812.64 },
-            { element: document.querySelector('.blueLeftEye'), centerX: 1595.06, centerY: 930.49 },
-        ];
+    useEffect(() => {
+        const handleMouseMove = (event) => {
+            const eyes = [
+                { element: document.querySelector('.greenLeftEye'), centerX: 233.88, centerY: 311.33 },
+                { element: document.querySelector('.greenRightEye'), centerX: 392.85, centerY: 158.04 },
+                { element: document.querySelector('.redRightEye'), centerX: 1657.66, centerY: 188.94 },
+                { element: document.querySelector('.redLeftEye'), centerX: 1474, centerY: 150.25 },
+                { element: document.querySelector('.pinkLeftEye'), centerX: 267.04, centerY: 875.77 },
+                { element: document.querySelector('.pinkRightEye'), centerX: 489.84, centerY: 887.29 },
+                { element: document.querySelector('.blueRightEye'), centerX: 1644.83, centerY: 812.64 },
+                { element: document.querySelector('.blueLeftEye'), centerX: 1595.06, centerY: 930.49 },
+            ];
 
-        eyes.forEach((eye) => {
-            const dx = event.pageX - eye.centerX;
-            const dy = event.pageY - eye.centerY;
-            const angle = Math.atan2(dy, dx);
+            eyes.forEach((eye) => {
+                if (eye.element) { // 檢查元素是否存在
+                    const dx = event.pageX - eye.centerX;
+                    const dy = event.pageY - eye.centerY;
+                    const angle = Math.atan2(dy, dx);
 
-            // 限制瞳孔最大移動範圍，例如 10px
-            const distance = Math.min(Math.sqrt(dx * dx + dy * dy), 20);
+                    // 限制瞳孔最大移動範圍，例如 20px
+                    const distance = Math.min(Math.sqrt(dx * dx + dy * dy), 20);
 
-            const translateX = Math.cos(angle) * distance;
-            const translateY = Math.sin(angle) * distance;
+                    const translateX = Math.cos(angle) * distance;
+                    const translateY = Math.sin(angle) * distance;
 
-            eye.element.style.transform = `translate(${translateX}px, ${translateY}px)`;
-        });
-    });
+                    eye.element.style.transform = `translate(${translateX}px, ${translateY}px)`;
+                }
+            });
+        };
+
+        document.addEventListener('mousemove', handleMouseMove);
+
+        // 清理事件監聽器
+        return () => {
+            document.removeEventListener('mousemove', handleMouseMove);
+        };
+    }, []); // 空依賴陣列確保只在組件掛載後執行一次
+
 
     useEffect(() => {
         Aos.init()
